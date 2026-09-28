@@ -9,6 +9,11 @@ the "why and what" from Apple; the field notes are the "exactly how, on the web"
 approved screens. Notes are read later by Claude, so optimise for **retrieval and precision**,
 not prose.
 
+## Priority **[user decision]**
+What the page **says** (its guidance, messages, rules, examples, the ideas behind linked items)
+is the most important thing to capture — completely. Page structure and measured CSS are
+useful but secondary: put them after the content in each note.
+
 ## Workflow per page (the user sends a URL + screenshots)
 1. **Fetch the full content.**
    - HIG pages (`/design/human-interface-guidelines/...`): `node tools/hig-fetch.mjs <url>` —

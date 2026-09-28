@@ -12,7 +12,7 @@ ingested so far.
 | Settings / list screen | + `field-notes/components.md` § Settings list | HIG: Settings, Lists and tables, Toggles |
 | Wizard / onboarding / form | + `field-notes/components.md` § Wizard | HIG: Onboarding, Entering data, Text fields, Pickers |
 | Consent / permission / connect screen | + `field-notes/components.md` § Consent screen | HIG: Privacy, Managing accounts, Alerts/Sheets |
-| Landing / marketing page | + `field-notes/landing-and-motion.md` | HIG: Branding, Typography, Motion, Materials |
+| Landing / marketing page | + `field-notes/landing-and-motion.md`, `hig/overview/design-landing.md` (Apple's own page: section rhythm, cards, links) | HIG: Branding, Typography, Motion, Materials |
 | Dashboard / analytics | + `field-notes/components.md` § Dashboard tiles | HIG: Charting data, Charts, Layout |
 | Dark mode | + `field-notes/tokens.md` § Dark | HIG: Dark Mode, Color, Materials |
 | Design review / audit | `field-notes/anti-patterns.md` + checklist in `SKILL.md` | HIG pages for every component on screen |
@@ -31,7 +31,7 @@ ingestion. `—` = not yet ingested.
 ### Landing & overview
 | Page | File | Ingested |
 |---|---|---|
-| developer.apple.com/design (landing) | — | — |
+| developer.apple.com/design (landing) | `hig/overview/design-landing.md` | 2026-09-28 |
 | Human Interface Guidelines (overview) | — | — |
 
 ### Getting started

@@ -15,6 +15,12 @@ other.
 | Segmented thumb | `#FFFFFF` | `#48484A` |
 | Row hover | `rgba(0,0,0,0.025)` | `rgba(255,255,255,0.035)` |
 
+## Apple's own web values (measured on developer.apple.com/design, 2026-09-28)
+Canvas/card tones `#FFFFFF` ↔ `#F5F5F7` (alternating by section) · primary text `#1D1D1F` ·
+secondary caption `#666666` · link `#0066CC` (on dark `#2997FF`) · card radius 18px, no
+border, no shadow · section padding 68px · column 980px · grid gap 24px · body 17/25
+−0.374px · beginner-CTA gradient `#0055C7 → #0071E3`. See `../hig/overview/design-landing.md`.
+
 ## Ink (text) — tones by opacity
 | Role | Light | Dark |
 |---|---|---|
