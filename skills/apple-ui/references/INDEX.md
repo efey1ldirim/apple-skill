@@ -34,7 +34,7 @@ ingested so far.
 | Share button, share sheet/popover, permissions ("who can edit"), presence/collaborator lists, collaboration notifications with deep links | + `hig/patterns/collaboration-and-sharing.md`, `hig/foundations/writing.md` (permission phrases), `hig/foundations/materials.md` | HIG: Activity views, Sheets, Popovers, Toolbars, Notifications |
 | Drag and drop, reordering lists/boards, file upload drop zones, moving items between containers, multi-select drag | + `hig/patterns/drag-and-drop.md` (move vs copy, drag image, target feedback, undo, alternatives), `hig/foundations/accessibility.md` (dragging alternatives), `field-notes/anti-patterns.md` (no dashed drop frame at rest) | HIG: Pointing devices, Undo and redo, Feedback, Loading, Keyboards |
 | Settings / list screen | + `field-notes/components.md` § Settings list | HIG: Settings, Lists and tables, Toggles |
-| Wizard / onboarding / form | + `field-notes/components.md` § Wizard, `hig/foundations/privacy.md` (no permission requests up front; ask only for needed data) | HIG: Onboarding, Entering data, Text fields, Pickers |
+| Wizard / onboarding / form | + `field-notes/components.md` § Wizard, `hig/patterns/entering-data.md` (pre-gather, defaults, choices over typing, live validation, Continue only when required data is in), `hig/foundations/privacy.md` (no permission requests up front; ask only for needed data) | HIG: Onboarding, Entering data, Text fields, Pickers |
 | Consent / permission / connect screen | + `field-notes/components.md` § Consent screen, `hig/foundations/privacy.md` (grant dialog vs pre-alert screen) | HIG: Managing accounts, Alerts/Sheets |
 | Asking for location/camera/mic/notifications/contacts, pre-permission ("soft ask") screens, cookie/tracking consent, purpose/reason copy, sign-in & password/passkey flows, storing tokens | + `hig/foundations/privacy.md` (visuals `privacy-01 … 04`) | HIG: Managing accounts, Sign in with Apple, Entering data, Onboarding |
 | Landing / marketing page | + `field-notes/landing-and-motion.md`, `hig/overview/design-landing.md` (Apple's own page: section rhythm, cards, links), `hig/foundations/motion.md` (purposeful motion, no ~0.2 Hz loops, no edge motion) | HIG: Branding, Typography, Materials |
@@ -94,13 +94,13 @@ on every ingestion. `—` = not yet ingested.
 | Typography `typography` ⚠️ CRITICAL | `hig/foundations/typography.md` (+ exact tables `tokens/apple-typography.json`, CSS web preview) | 2026-09-28 |
 | Writing `writing` | `hig/foundations/writing.md` | 2026-09-28 |
 
-### Patterns  (collection page: —; 3 of 25 ingested)
+### Patterns  (collection page: —; 4 of 25 ingested)
 | Page | File | Ingested |
 |---|---|---|
 | Charting data `charting-data` | `hig/patterns/charting-data.md` | 2026-09-28 |
 | Collaboration and sharing `collaboration-and-sharing` | `hig/patterns/collaboration-and-sharing.md` | 2026-09-28 |
 | Drag and drop `drag-and-drop` | `hig/patterns/drag-and-drop.md` | 2026-09-28 |
-| Entering data `entering-data` | — | — |
+| Entering data `entering-data` | `hig/patterns/entering-data.md` | 2026-09-28 |
 | Feedback `feedback` | — | — |
 | File management `file-management` | — | — |
 | Going full screen `going-full-screen` | — | — |
