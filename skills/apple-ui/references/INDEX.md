@@ -42,6 +42,7 @@ ingested so far.
 | Push/email/SMS notifications: permission timing, urgency levels, time-sensitive alerts, marketing opt-in, quiet hours/digest, notification settings | + `hig/patterns/managing-notifications.md`, `hig/foundations/privacy.md`, `hig/patterns/feedback.md` | HIG: Notifications, Settings, Alerts |
 | Modals, dialogs, sheets, drawers, confirmations, popups, "are you sure" prompts, unsaved-changes dialogs, full-screen viewers | + `hig/patterns/modality.md` (only when beneficial, one at a time, obvious dismissal, data-loss guard), `hig/patterns/feedback.md` (FEEDBACK GATE: alertdialog rules), `hig/foundations/materials.md` | HIG: Sheets, Alerts, Popovers, Action sheets |
 | Multitasking: tabs/windows, resizing, split screen, background tabs, PiP, media that keeps playing, save/restore state, background uploads | + `hig/patterns/multitasking.md`, `hig/patterns/launching.md`, `hig/foundations/layout.md` (any window size) | HIG: Windows, Playing video, Playing audio |
+| Help, tips, coach marks, tooltips, help text, tutorials, first-use hints | + `hig/patterns/offering-help.md` (tip types + eligibility, tooltip copy 60–75 chars), `hig/foundations/writing.md`, `hig/patterns/feedback.md`; visuals `offering-help-01 … 03` | HIG: Onboarding, Help menu |
 | Settings / list screen | + `field-notes/components.md` § Settings list | HIG: Settings, Lists and tables, Toggles |
 | Wizard / onboarding / form | + `field-notes/components.md` § Wizard, `hig/patterns/entering-data.md` (pre-gather, defaults, choices over typing, live validation, Continue only when required data is in), `hig/foundations/privacy.md` (no permission requests up front; ask only for needed data) | HIG: Onboarding, Entering data, Text fields, Pickers |
 | Consent / permission / connect screen | + `field-notes/components.md` § Consent screen, `hig/foundations/privacy.md` (grant dialog vs pre-alert screen) | HIG: Managing accounts, Alerts/Sheets |
@@ -103,7 +104,7 @@ on every ingestion. `—` = not yet ingested.
 | Typography `typography` ⚠️ CRITICAL | `hig/foundations/typography.md` (+ exact tables `tokens/apple-typography.json`, CSS web preview) | 2026-09-28 |
 | Writing `writing` | `hig/foundations/writing.md` | 2026-09-28 |
 
-### Patterns  (collection page: —; 14 of 25 ingested)
+### Patterns  (collection page: —; 15 of 25 ingested)
 | Page | File | Ingested |
 |---|---|---|
 | Charting data `charting-data` | `hig/patterns/charting-data.md` | 2026-09-28 |
@@ -120,7 +121,7 @@ on every ingestion. `—` = not yet ingested.
 | Managing notifications `managing-notifications` | `hig/patterns/managing-notifications.md` | 2026-09-28 |
 | Modality `modality` | `hig/patterns/modality.md` | 2026-09-28 |
 | Multitasking `multitasking` | `hig/patterns/multitasking.md` | 2026-09-28 |
-| Offering help `offering-help` | — | — |
+| Offering help `offering-help` | `hig/patterns/offering-help.md` | 2026-09-28 |
 | Onboarding `onboarding` | — | — |
 | Playing audio `playing-audio` | — | — |
 | Playing haptics `playing-haptics` | — | — |

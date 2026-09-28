@@ -105,5 +105,5 @@ Field-note cross-links:
 
 ## Related
 - Ingested: Writing (✓), Privacy (✓), Accessibility (✓), Drag and drop (✓), Layout (✓ CRITICAL), Typography (✓ CRITICAL), Right to left (✓).
-- Ingested since: Feedback (✓ CRITICAL). Ingested since: Managing accounts (✓). Not yet ingested: **Text fields**, **Virtual keyboards**, **Keyboards**, Pickers, Offering help (§ macOS, visionOS expansion tooltip), Digit entry views, Onboarding.
+- Ingested since: Feedback (✓ CRITICAL). Ingested since: Managing accounts (✓). Not yet ingested: **Text fields**, **Virtual keyboards**, **Keyboards**, Pickers, Offering help (✓ § macOS, visionOS expansion tooltip), Digit entry views, Onboarding.
 - Developer docs: SwiftUI *Input events*. Video: *What's new in UIKit* (WWDC21 10059).
