@@ -1,0 +1,59 @@
+/* Apple layout tokens — LAYOUT GATE (CRITICAL). Source of every value is stated.
+ * HIG = developer.apple.com/design/human-interface-guidelines/layout (+ accessibility).
+ * FN  = field notes (validated production values). CONV = this skill's web convention.
+ * Import once; use the variables — never retype the numbers. */
+
+:root {
+  /* Safe areas (HIG: respect safe areas). Requires viewport-fit=cover in the viewport meta. */
+  --safe-top: env(safe-area-inset-top, 0px);
+  --safe-right: env(safe-area-inset-right, 0px);
+  --safe-bottom: env(safe-area-inset-bottom, 0px);
+  --safe-left: env(safe-area-inset-left, 0px);
+  --edge-pad: 1.25rem;                                           /* FN: 20px page gutter (px-5) */
+  --bar-pad-bottom: max(var(--edge-pad), var(--safe-bottom));   /* FN: fixed bottom bars */
+
+  /* Size-class breakpoints (CONV mapping of HIG compact/regular; use min-width queries). */
+  --bp-regular-width: 768px;   /* < 768 compact width, ≥ 768 regular width */
+  --bp-wide: 1024px;           /* sidebar comfortably fits */
+  --bp-compact-height: 500px;  /* < 500 tall = compact height (landscape phone) */
+
+  /* Spacing rhythm (FN, 4-pt based). */
+  --space-1: 4px;  --space-2: 8px;  --space-3: 12px; --space-4: 16px;
+  --space-5: 20px; --space-6: 24px; --space-8: 32px; --space-12: 48px;
+  --space-section: 68px;       /* FN: Apple web section padding */
+  --indent-step: 16px;         /* HIG: indentation conveys subordination (value = FN) */
+
+  /* Readable widths (HIG: guides restrict text width; values FN). */
+  --measure-form: 38rem;       /* wizard / settings column */
+  --measure-lede: 34em;
+  --measure-marketing: 980px;  /* Apple web content column */
+  --measure-dashboard: 1400px;
+
+  /* Targets & spacing around controls (HIG Accessibility). */
+  --target-touch: 44px;        /* iOS/iPadOS/watchOS default */
+  --target-touch-min: 28px;
+  --target-pointer: 28px;      /* macOS default */
+  --target-pointer-min: 20px;
+  --target-spatial: 60px;      /* visionOS */
+  --gap-bezeled: 12px;         /* ~12 pt around bezeled controls */
+  --gap-bare: 24px;            /* ~24 pt around bezel-less controls */
+  --target-gap-min: 8px;       /* CONV: never less between adjacent targets */
+
+  /* Platform specs (HIG Layout). */
+  --tv-safe-y: 60px;           /* tvOS: 60 pt top & bottom */
+  --tv-safe-x: 80px;           /* tvOS: 80 pt sides */
+  --tv-grid-gap-x: 40px;       /* tvOS grids: 40 pt horizontal */
+  --tv-grid-gap-y-min: 100px;  /* tvOS grids: ≥ 100 pt vertical (unfocused) */
+  --spatial-button-center-gap: 60px; /* visionOS: button centres ≥ 60 pt apart */
+  --watch-max-glyph-buttons-per-row: 3;
+  --watch-max-text-buttons-per-row: 2;
+
+  /* Viewport height (FN: dvh, never vh). */
+  --viewport-h: 100dvh;
+}
+
+/* tvOS grid column widths (HIG Layout table), unfocused item width in pt. */
+:root {
+  --tv-col-2: 860px; --tv-col-3: 560px; --tv-col-4: 410px; --tv-col-5: 320px;
+  --tv-col-6: 260px; --tv-col-7: 217px; --tv-col-8: 184px; --tv-col-9: 160px;
+}

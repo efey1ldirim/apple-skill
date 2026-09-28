@@ -27,7 +27,7 @@ const ASSET = "https://developer.apple.com/tutorials";
 const PAGES = [
   "design-principles", "designing-for-ios", "designing-for-ipados", "designing-for-macos",
   "designing-for-tvos", "designing-for-visionos", "designing-for-watchos", "designing-for-games",
-  "designing-for-iphone-duo", "accessibility", "app-icons", "branding", "color", "dark-mode", "icons", "images", "immersive-experiences", "inclusion",
+  "designing-for-iphone-duo", "accessibility", "app-icons", "branding", "color", "dark-mode", "icons", "images", "immersive-experiences", "inclusion", "layout",
 ];
 // Stand-alone images that are comparisons on their own (before/after drawn inside one image, or
 // a sequence of single images under one rule). Consecutive singles under the same rule are grouped.
@@ -37,6 +37,7 @@ const SINGLES = {
     "asymmetric-glyph-optically-centered.png", "asymmetric-glyph-before-and-after.png",
     "icons-selection-correct", "doc-icon-parts-margins.png",
   ],
+  layout: ["layout-background-extention-view.png", "visual-design-safe-zone.png", "visual-design-padding.png", "layout-controls.png"],
 };
 const slugs = [...new Set([...PAGES, ...process.argv.slice(2)])];
 

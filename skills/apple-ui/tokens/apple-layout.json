@@ -1,0 +1,38 @@
+{
+  "$source": {
+    "HIG": "https://developer.apple.com/design/human-interface-guidelines/layout (revision 2026-09-09) + accessibility",
+    "FN": "field notes (validated production values)",
+    "CONV": "apple-skill web convention"
+  },
+  "readingOrder": { "value": "top-to-bottom, leading-to-trailing (flip in RTL)", "src": "HIG" },
+  "sizeClasses": {
+    "src": "HIG (web thresholds CONV)",
+    "horizontal": { "compact": "< 768px", "regular": ">= 768px" },
+    "vertical": { "compact": "< 500px", "regular": ">= 500px" },
+    "rule": "decide layout by available space, never by device type, user agent or orientation"
+  },
+  "safeArea": { "src": "HIG", "web": "viewport-fit=cover + env(safe-area-inset-*) on every fixed/sticky edge" },
+  "spacing": { "src": "FN", "scale": [4, 8, 12, 16, 20, 24, 32, 48, 68], "indentStep": 16, "pageGutter": 20 },
+  "measure": { "src": "FN", "form": "38rem", "lede": "34em", "marketing": "980px", "dashboard": "1400px" },
+  "targets": {
+    "src": "HIG Accessibility",
+    "iOS_iPadOS_watchOS": { "default": 44, "min": 28 },
+    "macOS": { "default": 28, "min": 20 },
+    "visionOS": { "default": 60, "min": 28 },
+    "paddingBezeled": 12, "paddingBezelLess": 24, "webMinGapBetweenTargets": 8
+  },
+  "tvOS": {
+    "src": "HIG",
+    "safeArea": { "top": 60, "bottom": 60, "left": 80, "right": 80 },
+    "grid": {
+      "horizontalSpacing": 40, "minVerticalSpacing": 100,
+      "unfocusedWidth": { "2": 860, "3": 560, "4": 410, "5": 320, "6": 260, "7": 217, "8": 184, "9": 160 }
+    }
+  },
+  "visionOS": { "src": "HIG", "buttonCenterSpacingMin": 60, "resizing": "support; centre content at very large sizes; min/max never to block resizing" },
+  "watchOS": { "src": "HIG", "maxGlyphButtonsPerRow": 3, "maxTextButtonsPerRow": 2, "sideBySideTextButtonsOnlyIfNoScroll": true },
+  "macOS": { "src": "HIG", "noCriticalControlsAtWindowBottom": true, "noContentBehindCameraHousing": true },
+  "textScaling": { "src": "HIG Accessibility", "minimum": "200%", "watchOS": "140%" },
+  "viewportHeight": { "src": "FN", "use": "100dvh", "never": "100vh" },
+  "deviceSpecs": { "src": "HIG", "note": "Removed from the page in the 2026-09-09 revision; do not use remembered device point sizes." }
+}

@@ -37,7 +37,7 @@ useful but secondary: put them after the content in each note.
      the page note's § Visual notes.
      Stand-alone images that are comparisons by themselves (before/after inside one image, e.g.
      optical centring) are not in rows — add their image names to `SINGLES` in the script.
-   - **Critical pages [user decision]**: pages the user marks critical (so far: **Color**) get a
+   - **Critical pages [user decision]**: pages the user marks critical (so far: **Color**, **Layout**) get a
      ⚠️ CRITICAL header, an exact machine-readable token file under `skills/apple-ui/tokens/`, a
      checker in `tools/`, and a gate in `SKILL.md`. Extract every value from the JSON (never
      retype from screenshots) and cross-check against the screenshots.

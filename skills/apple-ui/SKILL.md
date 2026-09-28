@@ -28,6 +28,23 @@ description: >
 >    small-text pairs aim for 7:1; overlays elevated (lighter) over the dark base.
 > If any step fails, the design is not finished.
 
+> ## ⚠️ LAYOUT GATE — CRITICAL, zero tolerance
+> Layout must follow Apple's HIG Layout page **exactly**. Before any UI is called done:
+> 1. Read `references/hig/foundations/layout.md` (CRITICAL page) — every rule and its web translation apply.
+> 2. Take spacing, widths, breakpoints, safe-area and target values **only** from
+>    `tokens/apple-layout.css` / `.json`. Decide layout by available width (size classes),
+>    **never** by device, user agent or orientation. Never use remembered device point sizes.
+> 3. `node tools/check-layout.mjs <changed files>` → **0 errors** (WARNs fixed or justified with
+>    `// layout-ok: <reason>`).
+> 4. `node tools/run-layout-probe.mjs <url>` (or paste `tools/layout-probe.js` and call
+>    `layoutProbe({ textScale: 2 })` at 320, 375, 667×375, 768, 1024, 1440) → **PASS at every
+>    viewport**: no horizontal overflow, no clipped text at 200%, targets ≥ 44 px, no content stuck
+>    under fixed bars, zoom not blocked.
+> 5. Hierarchy check: most important content top-leading; alignment/indent show hierarchy; one
+>    grouping mechanism per boundary; same features at every size (only placement changes).
+> 6. Compare screenshots with Apple's layout pairs `layout-01 … 07`.
+> If any step fails, the design is not finished.
+
 You are designing as an Apple design engineer would: restraint first, one idea per surface,
 depth from light and tone instead of borders and colour, and every number chosen on purpose.
 
@@ -95,7 +112,8 @@ never decoration). Use them to resolve trade-offs; details and web translations 
 
 ## Pre-ship checklist
 
-- [ ] **COLOR GATE passed** (all five steps above; `color.md` checklist fully ✓).
+- [ ] **COLOR GATE passed** (all steps above; `color.md` checklist fully ✓).
+- [ ] **LAYOUT GATE passed** (all steps above; `layout.md` checklist fully ✓; probe PASS at every viewport).
 
 - [ ] Exactly one filled button visible per screen/state.
 - [ ] No uppercase/wide-tracked eyebrow labels; no count badges shouting next to titles.

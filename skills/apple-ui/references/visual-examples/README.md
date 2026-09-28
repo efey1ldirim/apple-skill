@@ -59,11 +59,18 @@ File names: `images/<id>-<dont|do|neutral|single|tab>-<n>-<light|dark>.png`.
 | immersive-experiences-01 | tabs | Dim the surroundings to focus attention | window in the room, no dimming | same room dimmed, window stays bright | Focus modes: subtle backdrop dim, focused element full brightness |
 | immersive-experiences-02 | tabs (3) | Immersion styles | mixed: virtual objects in the real room | progressive: custom environment as a soft portal | full: 360° environment replaces the room | Choosing how much of the page a focus/fullscreen mode takes over |
 | inclusion-01 | compare (3) | Generic person = nongendered glyph | person in a circle (`person.crop.circle`) | group of three (`person.3.fill`) | waving figure (`figure.wave`) | Default avatars/empty states using gendered silhouettes |
+| layout-01 | single | Controls distinct from content; background extends under bars | iPad Landmarks: photo blurs under floating glass toolbar buttons and continues flipped+blurred under the sidebar | — | Opaque coloured header/sidebar slabs; hero images cut off at a bar edge |
+| layout-02 | compare | Size classes (compact width) | compact width + compact height window | compact width + regular height window | Designing for one window shape only |
+| layout-03 | compare | Size classes (regular width) | regular width + compact height | regular width + regular height | Same, at wide widths — layout by available space, not device |
+| layout-04 | single | tvOS safe area 60 / 80 pt | TV frame with 60 pt top/bottom and 80 pt side bands | — | Content touching screen edges; kiosk/TV UIs without overscan margins |
+| layout-05 | single | Padding absorbs focus growth | three tiles, focused centre tile enlarged, red padding bands | — | Hover/focus scale effects that overlap neighbours |
+| layout-06 | tabs (8) | tvOS grids 2–9 columns | 2-column … 9-column grid, focused item with title, edge items peeking | — | Grid gaps too small for focus/hover growth; asymmetric peeking |
+| layout-07 | single | ≤ 2 text buttons per row on watch | full-width capsule "Text Button" under content | — | Tiny screens with 3+ side-by-side text buttons |
 | branding-01 | do/don't | Brand colour judiciously; put it in content | brand blue on every control (close, locate, filled search bar) | brand blue in the map content; controls neutral glass | Brand colour on nav, inputs, secondary buttons; colour that should live in content |
 
 ## Pages scanned
 design-principles, designing-for-{ios, ipados, macos, tvos, visionos, watchos, games, iphone-duo}
-(no image pairs), accessibility, app-icons, branding, color, dark-mode, icons, images, immersive-experiences, inclusion (iPhone Duo pairs found once tab support was added).
+(no image pairs), accessibility, app-icons, branding, color, dark-mode, icons, images, immersive-experiences, inclusion, layout (iPhone Duo pairs found once tab support was added).
 
 Kind **tabs**: images shown behind tabs on Apple's page (one image per tab) — detected automatically.
 Kind **single**: a stand-alone image that is itself a comparison (before/after drawn inside one
