@@ -41,8 +41,8 @@ function Group({ children, inset = true, footnote }) {
 **Row** — link, button, or static; whole row is the target:
 ```tsx
 const ROW = "flex w-full min-h-[52px] items-center gap-3 px-4 py-2.5 text-left transition-colors hover:bg-black/[0.025] dark:hover:bg-white/[0.035]";
-// leading: 28px coloured squircle  → <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-[8px] text-white bg-[#007AFF] dark:bg-[#0A84FF]">{icon}</span>
-// title:   text-[16px] leading-[1.3] tracking-[-0.01em]   (danger: text-[#FF3B30] dark:text-[#FF453A])
+// leading: 28px coloured squircle  → <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-[8px] text-white bg-[var(--apple-blue)]">{icon}</span>
+// title:   text-[16px] leading-[1.3] tracking-[-0.01em]   (danger: text-[var(--apple-red)] — tokens switch light/dark/contrast)
 // desc:    mt-0.5 text-[13px] leading-[1.4] text-black/40
 // detail:  quiet value on the right ("Plus", "3 apps") text-[15px] text-black/40
 // trailing: ChevronRight h-4 w-4 text-black/25 — only when the row navigates and has no custom control
@@ -73,7 +73,7 @@ and form never look like two card languages. Title `17/600/-0.015em`, descriptio
 ```
 Card-level action set (list of integration cards), base `h-9 px-[18px] rounded-full text-sm font-medium active:scale-[0.97]`:
 - FILLED black pill (the heavy action) · QUIET grey text, `px-1` (healthy state — a door, not a task)
-- DANGER filled red `#FF3B30/#FF453A` (broken → repair) · DANGER_QUIET red text, no fill ("Disconnect")
+- DANGER filled red `var(--apple-red)` with a **bold/≥18px** label or dark label (white on `#FF383C` = 3.57:1) (broken → repair) · DANGER_QUIET red text, no fill ("Disconnect")
 - SECONDARY transparent + `shadow-[inset_0_0_0_1px_rgba(0,0,0,0.07)]` · GHOST grey text
 - COMPACT variant `h-[30px] px-3.5 text-[13px]` for dense request cards
 - SOON: non-interactive `span` grey pill `bg-black/[0.045] text-gray-500 cursor-default`
@@ -165,7 +165,7 @@ Real `disabled` (not just faded) when a precondition is unmet (e.g. agreement no
 - Card = one per **platform** (not per connection). Horizontal, `rounded-[20px]`, hairline +
   card shadow, `px-[18px] py-4 min-h-[92px]`, hover lift 1px.
 - States → action weight: not connected = black pill · connected = quiet grey text · broken =
-  red pill + thin red outline (`border-[#ff3b30]/50`) + red "!" badge top-left with canvas-colour
+  red pill + thin red outline (`border-[color-mix(in_srgb,var(--apple-red)_50%,transparent)]`) + red "!" badge top-left with canvas-colour
   halo · coming soon = grey `span` pill. Healthy = 8px green dot in the same corner as the "!".
 - Logos: brand's own vector, whole, uncropped. Square marks sized by glyph box; wide wordmarks
   sized as % of tile (`w-[84%] h-auto` — 88% touches the edges, 80% looks weak). Clean SVGs

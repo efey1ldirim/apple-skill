@@ -40,23 +40,29 @@ disabled or ≥ 18 pt text.
 | Chevron / decorative dots | `black/25` | `white/25` | decorative | same |
 | UI component boundaries (inputs, toggles) | ≥ 3:1 against adjacent colour | ≥ 3:1 | WCAG 1.4.11 | hairlines are separators, not boundaries |
 
-Filled-button colours: white on `#007AFF` is only 4.0:1 → for body-size labels use a deeper
-blue (`#0040DD`, 7.6:1) or black/white pills (21:1). Never white text on system green
-`#34C759` (2.2:1) or `#FF3B30` red for small labels (3.6:1; use `#D70015`, 5.4:1).
+Filled-button colours (current 2025 values): white on blue `#0088FF` is only 3.52:1 → for
+body-size labels use black/white pills (21:1), indigo `#6155F5` (5.09), the increased-contrast
+blue `#1E6EF4` (4.57) or a deeper `#0040DD` (7.6). Never white text on system green `#34C759`
+(2.2:1); red `#FF383C` is 3.57:1 → use `#E9152D` (4.56) for small labels. Full table and rules:
+`../hig/foundations/color.md` (CRITICAL).
 
 (Tailwind `text-gray-500` = `#6B7280` ≈ 4.8:1 on white → acceptable secondary; `text-gray-400` ✗.)
 
-## System colours (Apple)
-| Name | Light | Dark |
-|---|---|---|
-| Blue | `#007AFF` | `#0A84FF` |
-| Indigo | `#5856D6` | `#5E5CE6` |
-| Green | `#34C759` | `#30D158` |
-| Red | `#FF3B30` | `#FF453A` |
-| Orange | `#FF9500` | `#FF9F0A` |
-| Purple | `#AF52DE` | `#BF5AF2` |
-| Grey | `#8E8E93` | `#8E8E93` |
-Status tints used for dots/checks: emerald-600 / emerald-400 (ok), amber-500 (unknown).
+## System colours (Apple) — ⚠️ exact values live ONLY in `../../tokens/apple-system-colors.css|json`
+Current HIG values (updated by Apple 2025-06-09). **Never use the pre-2025 values** (`#007AFF`,
+`#FF3B30`, `#FF9500`, `#5856D6`, `#AF52DE` …) — `tools/check-colors.mjs` rejects them.
+
+| Name | Light | Dark | Incr. contrast light | Incr. contrast dark |
+|---|---|---|---|---|
+| Blue | `#0088FF` | `#0091FF` | `#1E6EF4` | `#5CB8FF` |
+| Indigo | `#6155F5` | `#6D7CFF` | `#564ADE` | `#A7AAFF` |
+| Green | `#34C759` | `#30D158` | `#008932` | `#4AD968` |
+| Red | `#FF383C` | `#FF4245` | `#E9152D` | `#FF6165` |
+| Orange | `#FF8D28` | `#FF9230` | `#C55300` | `#FFA056` |
+| Purple | `#CB30E0` | `#DB34F2` | `#B02FC2` | `#EA8DFF` |
+| Gray | `#8E8E93` | `#8E8E93` | `#6C6C70` | `#AEAEB2` |
+(All 12 hues + 6 grays: `hig/foundations/color.md`.) Status tints for dots/checks: use
+`--apple-green` / `--apple-orange` tokens (plus an icon/word — never colour alone).
 
 ## Lines
 - Hairline separator: `h-px bg-black/[0.06] dark:bg-white/[0.07]`.

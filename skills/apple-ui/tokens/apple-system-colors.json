@@ -1,0 +1,252 @@
+{
+  "meta": {
+    "source": "https://developer.apple.com/design/human-interface-guidelines/color#Specifications",
+    "appleLastChange": "2025-12-16 (values updated 2025-06-09)",
+    "capturedOn": "2026-09-28",
+    "note": "Exact Apple system colour values (sRGB). visionOS uses the dark values. Hard-code these only on the web, where no system colour API exists; native apps must use the Color/UIColor/NSColor APIs.",
+    "modes": {
+      "light": "Default (light)",
+      "dark": "Default (dark)",
+      "lightHC": "Increased contrast (light)",
+      "darkHC": "Increased contrast (dark)"
+    }
+  },
+  "colors": {
+    "red": {
+      "light": "#FF383C",
+      "dark": "#FF4245",
+      "lightHC": "#E9152D",
+      "darkHC": "#FF6165"
+    },
+    "orange": {
+      "light": "#FF8D28",
+      "dark": "#FF9230",
+      "lightHC": "#C55300",
+      "darkHC": "#FFA056"
+    },
+    "yellow": {
+      "light": "#FFCC00",
+      "dark": "#FFD600",
+      "lightHC": "#A16A00",
+      "darkHC": "#FEDF43"
+    },
+    "green": {
+      "light": "#34C759",
+      "dark": "#30D158",
+      "lightHC": "#008932",
+      "darkHC": "#4AD968"
+    },
+    "mint": {
+      "light": "#00C8B3",
+      "dark": "#00DAC3",
+      "lightHC": "#008575",
+      "darkHC": "#54DFCB"
+    },
+    "teal": {
+      "light": "#00C3D0",
+      "dark": "#00D2E0",
+      "lightHC": "#008198",
+      "darkHC": "#3BDDEC"
+    },
+    "cyan": {
+      "light": "#00C0E8",
+      "dark": "#3CD3FE",
+      "lightHC": "#007EAE",
+      "darkHC": "#6DD9FF"
+    },
+    "blue": {
+      "light": "#0088FF",
+      "dark": "#0091FF",
+      "lightHC": "#1E6EF4",
+      "darkHC": "#5CB8FF"
+    },
+    "indigo": {
+      "light": "#6155F5",
+      "dark": "#6D7CFF",
+      "lightHC": "#564ADE",
+      "darkHC": "#A7AAFF"
+    },
+    "purple": {
+      "light": "#CB30E0",
+      "dark": "#DB34F2",
+      "lightHC": "#B02FC2",
+      "darkHC": "#EA8DFF"
+    },
+    "pink": {
+      "light": "#FF2D55",
+      "dark": "#FF375F",
+      "lightHC": "#E7124D",
+      "darkHC": "#FF8AC4"
+    },
+    "brown": {
+      "light": "#AC7F5E",
+      "dark": "#B78A66",
+      "lightHC": "#956D51",
+      "darkHC": "#DBA679"
+    },
+    "gray": {
+      "light": "#8E8E93",
+      "dark": "#8E8E93",
+      "lightHC": "#6C6C70",
+      "darkHC": "#AEAEB2"
+    },
+    "gray2": {
+      "light": "#AEAEB2",
+      "dark": "#636366",
+      "lightHC": "#8E8E93",
+      "darkHC": "#7C7C80"
+    },
+    "gray3": {
+      "light": "#C7C7CC",
+      "dark": "#48484A",
+      "lightHC": "#AEAEB2",
+      "darkHC": "#545456"
+    },
+    "gray4": {
+      "light": "#D1D1D6",
+      "dark": "#3A3A3C",
+      "lightHC": "#BCBCC0",
+      "darkHC": "#444446"
+    },
+    "gray5": {
+      "light": "#E5E5EA",
+      "dark": "#2C2C2E",
+      "lightHC": "#D8D8DC",
+      "darkHC": "#363638"
+    },
+    "gray6": {
+      "light": "#F2F2F7",
+      "dark": "#1C1C1E",
+      "lightHC": "#EBEBF0",
+      "darkHC": "#242426"
+    }
+  },
+  "contrast": {
+    "red": {
+      "light_on_white": 3.57,
+      "white_on_light": 3.57,
+      "dark_on_black": 6.12,
+      "lightHC_on_white": 4.56,
+      "darkHC_on_black": 7.15
+    },
+    "orange": {
+      "light_on_white": 2.31,
+      "white_on_light": 2.31,
+      "dark_on_black": 9.41,
+      "lightHC_on_white": 4.55,
+      "darkHC_on_black": 10.41
+    },
+    "yellow": {
+      "light_on_white": 1.51,
+      "white_on_light": 1.51,
+      "dark_on_black": 14.87,
+      "lightHC_on_white": 4.59,
+      "darkHC_on_black": 15.85
+    },
+    "green": {
+      "light_on_white": 2.22,
+      "white_on_light": 2.22,
+      "dark_on_black": 10.39,
+      "lightHC_on_white": 4.54,
+      "darkHC_on_black": 11.42
+    },
+    "mint": {
+      "light_on_white": 2.12,
+      "white_on_light": 2.12,
+      "dark_on_black": 11.82,
+      "lightHC_on_white": 4.55,
+      "darkHC_on_black": 12.79
+    },
+    "teal": {
+      "light_on_white": 2.16,
+      "white_on_light": 2.16,
+      "dark_on_black": 11.3,
+      "lightHC_on_white": 4.57,
+      "darkHC_on_black": 12.74
+    },
+    "cyan": {
+      "light_on_white": 2.16,
+      "white_on_light": 2.16,
+      "dark_on_black": 11.94,
+      "lightHC_on_white": 4.57,
+      "darkHC_on_black": 13.02
+    },
+    "blue": {
+      "light_on_white": 3.52,
+      "white_on_light": 3.52,
+      "dark_on_black": 6.49,
+      "lightHC_on_white": 4.57,
+      "darkHC_on_black": 9.76
+    },
+    "indigo": {
+      "light_on_white": 5.09,
+      "white_on_light": 5.09,
+      "dark_on_black": 5.98,
+      "lightHC_on_white": 6.12,
+      "darkHC_on_black": 9.84
+    },
+    "purple": {
+      "light_on_white": 4.17,
+      "white_on_light": 4.17,
+      "dark_on_black": 5.79,
+      "lightHC_on_white": 5.21,
+      "darkHC_on_black": 9.75
+    },
+    "pink": {
+      "light_on_white": 3.65,
+      "white_on_light": 3.65,
+      "dark_on_black": 5.96,
+      "lightHC_on_white": 4.57,
+      "darkHC_on_black": 9.68
+    },
+    "brown": {
+      "light_on_white": 3.53,
+      "white_on_light": 3.53,
+      "dark_on_black": 6.84,
+      "lightHC_on_white": 4.58,
+      "darkHC_on_black": 9.74
+    },
+    "gray": {
+      "light_on_white": 3.26,
+      "white_on_light": 3.26,
+      "dark_on_black": 6.44,
+      "lightHC_on_white": 5.23,
+      "darkHC_on_black": 9.5
+    },
+    "gray2": {
+      "light_on_white": 2.21,
+      "white_on_light": 2.21,
+      "dark_on_black": 3.51,
+      "lightHC_on_white": 3.26,
+      "darkHC_on_black": 5.05
+    },
+    "gray3": {
+      "light_on_white": 1.68,
+      "white_on_light": 1.68,
+      "dark_on_black": 2.3,
+      "lightHC_on_white": 2.21,
+      "darkHC_on_black": 2.78
+    },
+    "gray4": {
+      "light_on_white": 1.52,
+      "white_on_light": 1.52,
+      "dark_on_black": 1.85,
+      "lightHC_on_white": 1.89,
+      "darkHC_on_black": 2.16
+    },
+    "gray5": {
+      "light_on_white": 1.26,
+      "white_on_light": 1.26,
+      "dark_on_black": 1.51,
+      "lightHC_on_white": 1.42,
+      "darkHC_on_black": 1.74
+    },
+    "gray6": {
+      "light_on_white": 1.12,
+      "white_on_light": 1.12,
+      "dark_on_black": 1.23,
+      "lightHC_on_white": 1.19,
+      "darkHC_on_black": 1.36
+    }
+  }
+}

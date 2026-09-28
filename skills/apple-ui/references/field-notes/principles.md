@@ -58,8 +58,10 @@ cheap". Almost every rule below exists to remove one specific source of that fee
   agrees: minimise brand colour on controls, reserve it for the primary action or status, and
   put it in the **content layer** (imagery, maps, charts) under neutral controls.
 - iOS Settings pattern: **28px coloured squircle icon tiles** in system colours
-  (`#007AFF` blue, `#5856D6` indigo, `#34C759` green, `#FF3B30` red, `#AF52DE` purple,
-  `#FF9500` orange, `#8E8E93` grey). Colour lives only in the tile; the row stays neutral.
+  (current HIG tokens `--apple-blue`, `--apple-indigo`, `--apple-green`, `--apple-red`,
+  `--apple-purple`, `--apple-orange`, `--apple-gray` from `tokens/apple-system-colors.css` — the
+  old `#007AFF`-era values are outdated). Colour lives only in the tile; the row stays neutral.
+  White glyphs on these tiles are fine (icons ≥ 3:1 UI-component rule; tiles are decorative).
   Monochrome grey glyphs make six rows indistinguishable.
 - Third-party marks are shown **in their own colours and whole** — never recoloured to a single
   monochrome glyph, never cropped **[user decision]**: "use the logo I gave you".

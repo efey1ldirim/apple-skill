@@ -171,8 +171,8 @@ spatial experiences* (WWDC23 10034), *Design considerations for vision and motio
 - Type defaults/minimums, control defaults/minimums — tables above.
 - Contrast (WCAG AA): **4.5:1** up to 17 pt; **3:1** at 18 pt+ or bold.
 - Spacing: **~12 pt** around bezeled controls; **~24 pt** around bezel-less ones.
-- Known system colour values (Apple, for reference): `systemRed` light `#FF3B30` / dark
-  `#FF453A`; accessible (Increase Contrast) light `#D70015` / dark `#FF6961`.
+- System colour values: see `color.md` (current 2025 values; e.g. red `#FF383C` / dark `#FF4245`;
+  increased contrast `#E9152D` / `#FF6165`).
 
 ## Visual notes (from screenshots)
 - **(from screenshot)** Foundations pages add a **"Supported platforms"** block at the top of the
@@ -237,9 +237,9 @@ Visual pairs: `visual-examples` ids accessibility-01 … 07.
 | `white/40` on `#08080A` | 3.76 | — | ✗ |
 | `white/45` on `#08080A` | 4.47 | — | borderline ✗ |
 | `white/50` on `#08080A` | 5.35 | — | ✓ minimum for small secondary text (dark) |
-| white on `#007AFF` | 4.02 | — | ✗ for body-size labels |
+| white on blue `#0088FF` (2025 value) | 3.52 | — | ✗ for body-size labels |
 | white on `#0040DD` | 7.56 | — | ✓ |
-| white on `#FF3B30` / `#D70015` | 3.55 / 5.38 | — | ✗ / ✓ |
+| white on red `#FF383C` / incr. contrast `#E9152D` | 3.57 / 4.56 | — | ✗ / ✓ |
 | white on `#34C759` | 2.22 | — | ✗ (don't put white text on system green) |
 → `field-notes/tokens.md` now carries an accessible ink scale.
 

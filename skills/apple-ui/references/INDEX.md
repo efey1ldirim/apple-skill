@@ -7,7 +7,7 @@ ingested so far.
 
 | Task | Always read | Then read |
 |---|---|---|
-| Any UI work | `hig/foundations/accessibility.md` (contrast/size/motion minimums), `hig/getting-started/design-principles.md` (Apple's 8 principles — the decision lens), `field-notes/principles.md`, `field-notes/anti-patterns.md` | — |
+| Any UI work | **`hig/foundations/color.md` (CRITICAL — colour gate)**, `tokens/apple-system-colors.css`, `hig/foundations/accessibility.md` (contrast/size/motion minimums), `hig/getting-started/design-principles.md` (Apple's 8 principles — the decision lens), `field-notes/principles.md`, `field-notes/anti-patterns.md` | — |
 | Web UI (React/Tailwind/CSS) | + `field-notes/tokens.md`, `field-notes/components.md`, `field-notes/engineering-gotchas.md` | HIG pages for the components you use |
 | Mobile web / phone layouts (reach zone, swipe-back, Dynamic Type, autofill) | + `hig/getting-started/designing-for-ios.md` | HIG: Layout, Gestures, Virtual keyboards |
 | Tablet / large-screen / resizable layouts (split view, popovers, pointer vs touch density, keyboard shortcuts) | + `hig/getting-started/designing-for-ipados.md` | HIG: Multitasking, Pointing devices, Keyboards, Split views |
@@ -25,7 +25,7 @@ ingested so far.
 | Consent / permission / connect screen | + `field-notes/components.md` § Consent screen | HIG: Privacy, Managing accounts, Alerts/Sheets |
 | Landing / marketing page | + `field-notes/landing-and-motion.md`, `hig/overview/design-landing.md` (Apple's own page: section rhythm, cards, links) | HIG: Branding, Typography, Motion, Materials |
 | Dashboard / analytics | + `field-notes/components.md` § Dashboard tiles | HIG: Charting data, Charts, Layout |
-| Dark mode | + `field-notes/tokens.md` § Dark | HIG: Dark Mode, Color, Materials |
+| Dark mode | + `field-notes/tokens.md` § Dark, `hig/foundations/color.md`, `tokens/apple-system-colors.css` | HIG: Dark Mode, Color, Materials |
 | Design review / audit | `field-notes/anti-patterns.md` + checklist in `SKILL.md` + `visual-examples/README.md` (compare screenshots with Apple's ✗/✓ images) | HIG pages for every component on screen |
 | Visual proportions in doubt | `screenshots-described/` | — |
 
@@ -64,7 +64,7 @@ on every ingestion. `—` = not yet ingested.
 | Accessibility `accessibility` | `hig/foundations/accessibility.md` | 2026-09-28 |
 | App icons `app-icons` | `hig/foundations/app-icons.md` | 2026-09-28 |
 | Branding `branding` | `hig/foundations/branding.md` | 2026-09-28 |
-| Color `color` | — | — |
+| Color `color` ⚠️ CRITICAL | `hig/foundations/color.md` | 2026-09-28 |
 | Dark Mode `dark-mode` | — | — |
 | Icons `icons` | — | — |
 | Images `images` | — | — |

@@ -44,6 +44,9 @@ skills/apple-ui/
     hig/                   one note per Apple design page
     field-notes/           principles, tokens, components, anti-patterns, gotchas, landing/motion
     screenshots-described/ text descriptions of visual references
+skills/apple-ui/tokens/    exact Apple system colours (CSS + JSON, 4 modes)
+tools/check-colors.mjs     colour gate: palette + outdated-value + contrast checks
+tools/fetch-visual-examples.mjs  downloads Apple's do/don't images locally
 tools/hig-fetch.mjs        reads a HIG page's full content (DocC JSON → text) for ingestion
 MAINTAINING.md             how pages are ingested (template, copyright rule)
 ```

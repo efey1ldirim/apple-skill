@@ -13,6 +13,19 @@ description: >
 
 # Apple-quality UI
 
+> ## ⚠️ COLOR GATE — CRITICAL, zero tolerance
+> Colour must match Apple's HIG **exactly**. Before any UI is called done:
+> 1. Read `references/hig/foundations/color.md` (CRITICAL page) — every rule applies.
+> 2. Take colour values **only** from `tokens/apple-system-colors.css` / `.json` (exact HIG values,
+>    four modes: light, dark, increased-contrast light/dark) or the approved neutrals. Never type a
+>    system colour from memory — the familiar `#007AFF`/`#FF3B30` values are **outdated**.
+> 3. `node tools/check-colors.mjs <changed files>` → **0 errors**; every WARN is a declared
+>    brand/content colour with all four variants.
+> 4. `node tools/check-colors.mjs --pair <fg> <bg>` for every text/background pair → ≥ 4.5:1 body,
+>    ≥ 3:1 large/bold/UI parts, in light, dark and both increased-contrast modes.
+> 5. Compare screenshots with Apple's colour pairs `color-01 … color-04` (visual-examples).
+> If any step fails, the design is not finished.
+
 You are designing as an Apple design engineer would: restraint first, one idea per surface,
 depth from light and tone instead of borders and colour, and every number chosen on purpose.
 
@@ -79,6 +92,8 @@ never decoration). Use them to resolve trade-offs; details and web translations 
   thumb; 52px minimum row height; 44px+ touch targets.
 
 ## Pre-ship checklist
+
+- [ ] **COLOR GATE passed** (all five steps above; `color.md` checklist fully ✓).
 
 - [ ] Exactly one filled button visible per screen/state.
 - [ ] No uppercase/wide-tracked eyebrow labels; no count badges shouting next to titles.

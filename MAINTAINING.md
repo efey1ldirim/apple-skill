@@ -35,6 +35,10 @@ useful but secondary: put them after the content in each note.
      run it, and add each new pair to the catalog table in
      `skills/apple-ui/references/visual-examples/README.md` (our words). Reference the pair id in
      the page note's § Visual notes.
+   - **Critical pages [user decision]**: pages the user marks critical (so far: **Color**) get a
+     ⚠️ CRITICAL header, an exact machine-readable token file under `skills/apple-ui/tokens/`, a
+     checker in `tools/`, and a gate in `SKILL.md`. Extract every value from the JSON (never
+     retype from screenshots) and cross-check against the screenshots.
 3. **Write the note** at `skills/apple-ui/references/hig/<section>/<slug>.md` using the
    template below. Sections: `overview`, `getting-started`, `foundations`, `patterns`,
    `components/<group>`, `inputs`, `technologies`, `other`.
