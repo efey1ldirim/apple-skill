@@ -13,8 +13,8 @@ ingested so far.
 | Tablet / large-screen / resizable layouts (split view, popovers, pointer vs touch density, keyboard shortcuts) | + `hig/getting-started/designing-for-ipados.md` | HIG: Multitasking, Pointing devices, Keyboards, Split views |
 | Desktop web app / dashboard / SaaS (flat hierarchy, panes, command palette, shortcuts, personalisation) | + `hig/getting-started/designing-for-macos.md` | HIG: Windows, The menu bar, Keyboards, Toolbars |
 | TV / kiosk / 10-foot UI, keyboard focus styling, multi-user profiles | + `hig/getting-started/designing-for-tvos.md` | HIG: Focus and selection, Remotes, Managing accounts |
-| Immersive / 3D / WebXR, hover-free (gaze) input, motion comfort | + `hig/getting-started/designing-for-visionos.md` + `hig/foundations/immersive-experiences.md` + `hig/foundations/motion.md` § visionOS (peripheral motion, 0.2 Hz, frame of reference) | HIG: Spatial layout, Eyes |
-| Focus mode, fullscreen, lightbox, presentation mode (enter/exit, backdrop dim) | + `hig/foundations/immersive-experiences.md` (web translation), `hig/foundations/motion.md` | HIG: Sheets |
+| Immersive / 3D / WebXR, hover-free (gaze) input, motion comfort | + `hig/getting-started/designing-for-visionos.md` + `hig/foundations/immersive-experiences.md` + `hig/foundations/motion.md` § visionOS (peripheral motion, 0.2 Hz, frame of reference) + `hig/foundations/spatial-layout.md` (field of view, head-anchoring, depth, dynamic/fixed scale, 60 pt spacing) | HIG: Eyes, Windows |
+| Focus mode, fullscreen, lightbox, presentation mode (enter/exit, backdrop dim) | + `hig/foundations/immersive-experiences.md` (web translation), `hig/foundations/motion.md`, `hig/foundations/spatial-layout.md` (receding page behind sheets, depth levels) | HIG: Sheets |
 | Animation, transitions, micro-interactions, gesture/swipe UI, loading & success feedback, scroll effects, animated icons, WebGL/canvas motion | + `hig/foundations/motion.md`, `hig/foundations/accessibility.md` § Motion (Reduce Motion fallback), `field-notes/tokens.md` § Motion, `field-notes/landing-and-motion.md` § Motion rules | HIG: Feedback, SF Symbols § Animations, Playing haptics |
 | Glanceable surfaces: notifications/web push, widgets, badges, at-a-glance mobile summaries | + `hig/getting-started/designing-for-watchos.md` | HIG: Notifications, Widgets, Complications |
 | Website header / mega-menu / docs site / section nav | + `apple-web/site-patterns.md` (Apple's own measured web patterns) | HIG: Menus, Sidebars, Tab bars |
@@ -86,7 +86,7 @@ on every ingestion. `—` = not yet ingested.
 | Privacy `privacy` | `hig/foundations/privacy.md` | 2026-09-28 |
 | Right to left `right-to-left` | `hig/foundations/right-to-left.md` | 2026-09-28 |
 | SF Symbols `sf-symbols` | `hig/foundations/sf-symbols.md` (+ measured animation kit `symbol-effects.md`) | 2026-09-28 |
-| Spatial layout `spatial-layout` | — | — |
+| Spatial layout `spatial-layout` (visionOS only) | `hig/foundations/spatial-layout.md` | 2026-09-28 |
 | Typography `typography` | — | — |
 | Writing `writing` | — | — |
 

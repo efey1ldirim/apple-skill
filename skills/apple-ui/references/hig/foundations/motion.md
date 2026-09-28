@@ -227,6 +227,6 @@ Field-note cross-links:
 - [ ] Large moving surfaces are translucent or low-contrast while moving, and meaningless relocations fade instead of flying.
 
 ## Related (ingestion status)
-SF Symbols (✓ § Animations → measured kit `symbol-effects.md`). Feedback, Spatial layout, Playing haptics, Playing audio — not yet
+SF Symbols (✓ § Animations → measured kit `symbol-effects.md`). Spatial layout (✓). Feedback, Playing haptics, Playing audio — not yet
 ingested. Accessibility (✓), Immersive experiences (✓), Materials (✓ CRITICAL, § Liquid Glass),
 Icons (✓).
