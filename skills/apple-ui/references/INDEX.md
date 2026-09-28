@@ -54,7 +54,7 @@ on every ingestion. `—` = not yet ingested.
 | Designing for visionOS `designing-for-visionos` | `hig/getting-started/designing-for-visionos.md` | 2026-09-28 |
 | Designing for watchOS `designing-for-watchos` | `hig/getting-started/designing-for-watchos.md` | 2026-09-28 |
 | Designing for games `designing-for-games` | `hig/getting-started/designing-for-games.md` | 2026-09-28 |
-| Designing for iPhone Duo `designing-for-iphone-duo` | `hig/getting-started/designing-for-iphone-duo.md` | 2026-09-28 (screenshots partial) |
+| Designing for iPhone Duo `designing-for-iphone-duo` | `hig/getting-started/designing-for-iphone-duo.md` | 2026-09-28 |
 
 ### Foundations  (collection page: —)
 | Page | File | Ingested |

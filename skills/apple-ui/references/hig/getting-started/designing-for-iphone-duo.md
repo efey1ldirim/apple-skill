@@ -1,8 +1,7 @@
 # Designing for iPhone Duo
 Source: https://developer.apple.com/design/human-interface-guidelines/designing-for-iphone-duo ·
-Section: Getting started · Ingested: 2026-09-28 · Screenshots: 20 so far (text cross-checked
-up to "Vertical controls › Split View multitasking"; remaining screenshots pending — see
-§ Visual notes) · Apple change log: **September 9, 2026 — new page** (device poses, dynamic
+Section: Getting started · Ingested: 2026-09-28 · Screenshots: 28 (text cross-checked end to end: matches the fetched content)
+· Apple change log: **September 9, 2026 — new page** (device poses, dynamic
 layouts across dual displays, toolbars and tab bars on the vertical axis).
 
 ## In one line
@@ -200,8 +199,32 @@ Duo* (111463).
   Dynamic Island (camera), status bar (9:41 + Wi-Fi), toolbar (back chevron, ellipsis) in a glass
   capsule, empty middle, **tab bar at the bottom** (three items: photos, stack, search) in a glass
   capsule.
-- Pending (not yet received): Split View multitasking diagram, Calculator comparison, Mail with
-  tinted panes, toolbar-/tab-bar-compressed diagrams, video thumbnails.
+- **(from screenshot)** Split View multitasking (inner display, landscape): two apps separated by
+  the dark hinge divider; **each app's controls sit in a light-blue band on its outer edge** —
+  left app (Music-like): list and "…" at the top, tab bar (home, library, bag, headphones, search)
+  at the bottom of the **left** edge; right app (Clock-like): status (9:41, Wi-Fi) and "+" at the
+  top, tab bar (globe, alarm, stopwatch, timer) at the bottom of the **right** edge.
+- **(from screenshot)** Calculator comparison, dark UI: iPhone 16 portrait = 4 columns × 5 rows
+  (⌫ AC % ÷ / 7 8 9 × / 4 5 6 − / 1 2 3 + / ± 0 . =); iPhone Duo outer = **5 columns × 4 rows**
+  (7 8 9 ⌫ ÷ / 4 5 6 AC × / 1 2 3 % − / ± 0 . = +), buttons spanning the full width, result "0"
+  right-aligned above, only two small round icons at the top (history, mode). The operator column
+  stays on the right; clear/percent move into a 4th column — **the same controls, re-flowed to the
+  new aspect ratio rather than hidden**.
+- **(from screenshot)** Mail inner display with **tinted panes**: leading pane pink with "Leading
+  pane controls" (filter, "…") at the **top of that pane**; trailing pane lavender with "Trailing
+  pane controls" (compose, reply, reply-all, forward, trash, folder) **vertical on the trailing
+  edge**.
+- **(from screenshot)** Compression diagrams (outer display **in landscape**, where the **camera
+  moves to the bottom-right corner** yet controls stay on the right edge):
+  *Toolbar compressed* — back chevron + a single "…" (collapsed toolbar items) at the top, full tab
+  bar (home, grid, stack, search) below; *Tab bar compressed* — back, share, then a grouped pair
+  (checklist, attach) as toolbar items, and the tab bar reduced to **one control** (stack icon)
+  just above the camera.
+- **(from screenshot)** Videos (Apple Developer Tech Talks): *Design for iPhone Duo* — an open
+  iPhone Duo with a FaceTime call on both halves; *Raise the bar with iPhone Duo* — a column of
+  floating glass toolbar buttons on a grid floor; *Strike a pose with adaptive layouts* — two
+  presenters seated in a studio.
+- Change log table at the end with the single 2026-09-09 row.
 
 ## Web translation
 Browsers expose foldables and wide-short viewports too; the lessons generalise to responsive UI.
