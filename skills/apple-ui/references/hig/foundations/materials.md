@@ -303,5 +303,5 @@ Field-note cross-links:
 
 ## Related (ingestion status)
 Color (✓ CRITICAL), Accessibility (✓), Dark Mode (✓), Layout (✓ CRITICAL: Liquid Glass bars and the
-scroll edge effect), Sliders, Toggles, Alerts, Popovers, Sidebars, Tab bars, Motion (not yet
-ingested).
+scroll edge effect), Sliders, Toggles, Alerts, Popovers, Sidebars, Tab bars (not yet
+ingested), Motion (✓: Liquid Glass motion is stronger under touch, subdued under trackpad).

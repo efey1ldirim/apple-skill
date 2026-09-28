@@ -258,4 +258,4 @@ Visual pairs: `visual-examples` ids accessibility-01 … 07.
 
 ## Related (ingestion status)
 Inclusion, Typography (Dynamic Type), VoiceOver, Color, Dark Mode, Playing haptics, Keyboards,
-Siri, Motion, Spatial layout — not yet ingested.
+Siri, Spatial layout — not yet ingested. Motion (✓ `motion.md`).

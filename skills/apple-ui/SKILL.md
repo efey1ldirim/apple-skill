@@ -144,7 +144,7 @@ never decoration). Use them to resolve trade-offs; details and web translations 
 - [ ] Headlines have negative tracking; body 13–17px; secondary text ≥ 4.5:1 contrast (black/55+ light, white/50+ dark — not /40).
 - [ ] Layout works at 375px with no horizontal overflow (grid `min-w-0` trap checked).
 - [ ] Fixed-height flows use `100dvh`, not `100vh`; the primary action is always visible.
-- [ ] `prefers-reduced-motion` respected; transitions ≤ 300ms with Apple-like easing.
+- [ ] Motion per `hig/foundations/motion.md`: every animation has a job, never the only signal, never blocks input; `prefers-reduced-motion` respected; transitions ≤ 300ms (FN) with Apple-like easing; no edge motion or sustained ~0.2 Hz loops in full-view/hero surfaces.
 - [ ] Icons: one family + one stroke weight, weight-matched to text, standard metaphors (× close, trash, •••, share, filter) per `hig/foundations/icons.md`; icon-only controls have `aria-label`.
 - [ ] Touch targets ≥ 44px; focus is visible for keyboard users.
 - [ ] Rendered and looked at in both themes — screenshot, not assumption.

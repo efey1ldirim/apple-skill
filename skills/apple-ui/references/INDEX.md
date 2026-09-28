@@ -13,8 +13,9 @@ ingested so far.
 | Tablet / large-screen / resizable layouts (split view, popovers, pointer vs touch density, keyboard shortcuts) | + `hig/getting-started/designing-for-ipados.md` | HIG: Multitasking, Pointing devices, Keyboards, Split views |
 | Desktop web app / dashboard / SaaS (flat hierarchy, panes, command palette, shortcuts, personalisation) | + `hig/getting-started/designing-for-macos.md` | HIG: Windows, The menu bar, Keyboards, Toolbars |
 | TV / kiosk / 10-foot UI, keyboard focus styling, multi-user profiles | + `hig/getting-started/designing-for-tvos.md` | HIG: Focus and selection, Remotes, Managing accounts |
-| Immersive / 3D / WebXR, hover-free (gaze) input, motion comfort | + `hig/getting-started/designing-for-visionos.md` + `hig/foundations/immersive-experiences.md` | HIG: Spatial layout, Eyes, Motion |
-| Focus mode, fullscreen, lightbox, presentation mode (enter/exit, backdrop dim) | + `hig/foundations/immersive-experiences.md` (web translation) | HIG: Motion, Sheets |
+| Immersive / 3D / WebXR, hover-free (gaze) input, motion comfort | + `hig/getting-started/designing-for-visionos.md` + `hig/foundations/immersive-experiences.md` + `hig/foundations/motion.md` § visionOS (peripheral motion, 0.2 Hz, frame of reference) | HIG: Spatial layout, Eyes |
+| Focus mode, fullscreen, lightbox, presentation mode (enter/exit, backdrop dim) | + `hig/foundations/immersive-experiences.md` (web translation), `hig/foundations/motion.md` | HIG: Sheets |
+| Animation, transitions, micro-interactions, gesture/swipe UI, loading & success feedback, scroll effects, animated icons, WebGL/canvas motion | + `hig/foundations/motion.md`, `hig/foundations/accessibility.md` § Motion (Reduce Motion fallback), `field-notes/tokens.md` § Motion, `field-notes/landing-and-motion.md` § Motion rules | HIG: Feedback, SF Symbols § Animations, Playing haptics |
 | Glanceable surfaces: notifications/web push, widgets, badges, at-a-glance mobile summaries | + `hig/getting-started/designing-for-watchos.md` | HIG: Notifications, Widgets, Complications |
 | Website header / mega-menu / docs site / section nav | + `apple-web/site-patterns.md` (Apple's own measured web patterns) | HIG: Menus, Sidebars, Tab bars |
 | Minimum text & target sizes per platform | + `hig/getting-started/designing-for-games.md` (tables) | HIG: Typography, Buttons |
@@ -28,7 +29,7 @@ ingested so far.
 | Settings / list screen | + `field-notes/components.md` § Settings list | HIG: Settings, Lists and tables, Toggles |
 | Wizard / onboarding / form | + `field-notes/components.md` § Wizard | HIG: Onboarding, Entering data, Text fields, Pickers |
 | Consent / permission / connect screen | + `field-notes/components.md` § Consent screen | HIG: Privacy, Managing accounts, Alerts/Sheets |
-| Landing / marketing page | + `field-notes/landing-and-motion.md`, `hig/overview/design-landing.md` (Apple's own page: section rhythm, cards, links) | HIG: Branding, Typography, Motion, Materials |
+| Landing / marketing page | + `field-notes/landing-and-motion.md`, `hig/overview/design-landing.md` (Apple's own page: section rhythm, cards, links), `hig/foundations/motion.md` (purposeful motion, no ~0.2 Hz loops, no edge motion) | HIG: Branding, Typography, Materials |
 | Dashboard / analytics | + `field-notes/components.md` § Dashboard tiles | HIG: Charting data, Charts, Layout |
 | Dark mode | + `hig/foundations/dark-mode.md`, `field-notes/tokens.md` § Dark, `hig/foundations/color.md`, `tokens/apple-system-colors.css` | HIG: Dark Mode, Color, Materials |
 | Design review / audit | `field-notes/anti-patterns.md` + checklist in `SKILL.md` + `visual-examples/README.md` (compare screenshots with Apple's ✗/✓ images) | HIG pages for every component on screen |
@@ -77,7 +78,7 @@ on every ingestion. `—` = not yet ingested.
 | Inclusion `inclusion` | `hig/foundations/inclusion.md` | 2026-09-28 |
 | Layout `layout` ⚠️ CRITICAL | `hig/foundations/layout.md` | 2026-09-28 |
 | Materials `materials` ⚠️ CRITICAL | `hig/foundations/materials.md` | 2026-09-28 |
-| Motion `motion` | — | — |
+| Motion `motion` | `hig/foundations/motion.md` | 2026-09-28 |
 | Privacy `privacy` | — | — |
 | Right to left `right-to-left` | — | — |
 | SF Symbols `sf-symbols` | — | — |

@@ -152,5 +152,5 @@ visionOS-only, but the ideas map to any web "focus mode" (video/lightbox/present
 - [ ] Sensitive-data access requested with context?
 
 ## Related (ingestion status)
-Spatial layout, Motion, Privacy, Digital Crown, Playing audio, Accessibility (✓), Designing for
+Spatial layout, Motion (✓), Privacy, Digital Crown, Playing audio, Accessibility (✓), Designing for
 visionOS (✓) — not yet ingested (except ✓).

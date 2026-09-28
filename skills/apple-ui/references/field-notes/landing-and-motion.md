@@ -42,3 +42,7 @@ Validated on two product landing pages (a dark-only one and a theme-aware one).
 - Press feedback is scale (0.97–0.99), not colour flashes.
 - Motion shows **where something went** (sliding thumb) instead of blinking state changes.
 - Respect `prefers-reduced-motion`: disable scale/translate/scroll choreography.
+- HIG cross-check (`hig/foundations/motion.md`): Apple confirms purposeful, brief, gesture-following
+  motion and gives no durations — the values above are ours (FN). Apple adds: no motion as the only
+  signal, never block input on an animation, no custom motion on frequent interactions, no motion at
+  the viewport edges, no sustained ~0.2 Hz (≈ 5 s) oscillation, no rotating/fly-through scenes.
