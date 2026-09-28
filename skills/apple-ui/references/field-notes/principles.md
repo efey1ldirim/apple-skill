@@ -86,8 +86,10 @@ cheap". Almost every rule below exists to remove one specific source of that fee
 - **Big number + small label** pairing (tabular numerals, grey label).
 - Titles are **nouns** ("Channels"), not questions ("Which channel brings business?"); the
   answer goes in the headline itself.
-- Secondary text by opacity tones: `black/45` sub-line, `black/40` description, `black/30`
-  footnote (and `white/…` equivalents).
+- Secondary text by opacity tones — **accessibility-corrected**: `black/60` sub-line,
+  `black/55` description and footnote (dark: `white/60`, `white/55`, `white/50`). The originally
+  approved `/45`, `/40`, `/30` look softer but fail WCAG AA 4.5:1 for small text (see tokens.md
+  and `../hig/foundations/accessibility.md`).
 
 ## 8. No uppercase eyebrows **[user decision, rejected twice]**
 - Small (~11px) + UPPERCASE + wide tracking (.14em) + grey section labels are banned.
