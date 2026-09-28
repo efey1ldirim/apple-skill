@@ -47,6 +47,32 @@ SF Symbols is Apple's icon system built to sit on the San Francisco type grid.
   - The measured motion kit in `symbol-effects.md`, which gives these icons SF-style behaviour.
 - Verify the current wording in the licence shipped with the SF Symbols app before any Apple-platform use.
 
+### Which icon set to recommend [user decision]
+Whenever the person will use symbols/icons, first establish the target platform, then recommend:
+- **Native Apple app** (SwiftUI, UIKit, AppKit, watchOS, tvOS, visionOS) → **SF Symbols**.
+  - Recommend installing the **SF Symbols app** from developer.apple.com/sf-symbols. The person downloads it
+    and accepts its licence; the assistant never does.
+  - Use it to search names, check availability per OS version, preview rendering modes, weights and scales,
+    and export templates for custom symbols.
+  - In code, reference symbols by name through the system (`Image(systemName:)`, `UIImage(systemName:)`,
+    `NSImage(systemSymbolName:)`). Don't ship exported copies.
+  - Not allowed in the app icon, logo or any trademark use. Apple-product symbols stay unmodified.
+- **Cross-platform app** (React Native, Expo, Flutter, Capacitor):
+  - iOS: SF Symbols through a native bridge (e.g. `expo-symbols`).
+  - Android and web: **Lucide / Phosphor / Ionicons** through a single SF name → open-set name map.
+  - Never bundle exported SF Symbols SVGs in shared code (they would ship on Android and the web).
+- **Web and everything non-Apple-native** (sites, web apps, PWAs, WebView wrappers, Electron/Tauri,
+  Android):
+  - **Lucide (ISC)** is the default: clean outline set, 24 px grid, adjustable stroke, already in most
+    React/shadcn stacks.
+  - **Phosphor (MIT)** when you need SF-like **weight matching** (thin, light, regular, bold) or
+    **fill/duotone** variants (duotone ≈ hierarchical rendering).
+  - **Ionicons (MIT)** for an **iOS-flavoured** mobile web or Ionic app (outline, filled and sharp variants).
+  - Pick **one** set per product.
+  - Screenshots of the person's own iOS app on a website or the App Store page are fine. Standalone SF
+    Symbols glyphs on the web are not.
+- In every case, SF-style motion comes from `references/symbol-effects.md`.
+
 ### Rendering modes
 - There are four modes: **monochrome, hierarchical, palette, multicolor**. They are options for applying
   colour; for example, several opacities of the accent colour for depth, or a contrasting palette for a

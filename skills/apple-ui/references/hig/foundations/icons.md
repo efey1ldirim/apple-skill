@@ -185,7 +185,7 @@ balance), icons-02 (optical centring), icons-03 (toolbar selected state).
 | HIG | Web |
 |---|---|
 | Glyphs are single-colour masks | Inline SVG with `fill="currentColor"` / `stroke="currentColor"`; colour from the parent text colour or a token (`var(--apple-blue)` etc. — COLOR GATE applies). Never multi-colour or baked hex in interface icons. |
-| One icon family, one stroke weight | Use **one** icon set per product (e.g. SF Symbols on Apple platforms; on the web a single outline set such as Lucide) at **one** `strokeWidth` (1.5 for 15–17px text, 2 for bolder/semibold contexts). Never mix sets (Heroicons + Lucide + emoji). No emoji as icons (see anti-patterns). |
+| One icon family, one stroke weight | Use **one** icon set per product, chosen by platform (`SKILL.md` § Icon source / `sf-symbols.md` § Which icon set): SF Symbols (via the SF Symbols app + system API) for native Apple apps; on the web Lucide (default), Phosphor (weights/duotone) or Ionicons (iOS-flavoured) at **one** `strokeWidth` (1.5 for 15–17px text, 2 for bolder/semibold contexts). Never mix sets (Heroicons + Lucide + emoji). No emoji as icons (see anti-patterns). |
 | Weight-match text | 17px regular text → icon ~17–20px, stroke 1.5; 13px semibold label → icon ~14px, stroke 2. Icon size ≈ text cap-height to 1.2× the font size; align with `inline-flex items-center gap-1.5`. |
 | Optical size balance | Allow per-icon size tweaks (±1–2px) for light/open shapes (clock, circle-based) vs heavy ones (camera, envelope). |
 | Optical centring | For asymmetric glyphs in circles/pills (download, play ▶, share), nudge with `translate-y-[-1px]` / `translate-x-[1px]` (play triangles go right), or add padding inside the SVG viewBox. Check visually, not by the box model. |

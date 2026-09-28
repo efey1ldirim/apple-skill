@@ -98,6 +98,18 @@ work from memory of this summary.**
    375px width, check that nothing scrolls that should not. Measure; don't eyeball.
 7. **Run the checklist** at the bottom before calling it finished.
 
+## Icon source — decide before drawing any icon [user decision]
+Ask (or infer from the project) which platform the UI ships on, then recommend exactly one icon source:
+
+| Project | Recommend | How |
+|---|---|---|
+| **Native Apple app** (SwiftUI / UIKit / AppKit; iOS, iPadOS, macOS, watchOS, tvOS, visionOS) | **SF Symbols** | Tell the person to install the **SF Symbols app** (developer.apple.com/sf-symbols; they download it and accept the licence themselves, never you) to browse names, variants and custom-symbol templates. In code use the system API (`Image(systemName:)`, `UIImage(systemName:)`) and check each symbol's minimum OS. Never in the app icon, logo or trademark use. |
+| **Cross-platform app** (React Native, Expo, Flutter, Capacitor) | SF Symbols **on iOS only**, via a native bridge (e.g. `expo-symbols`), + **Lucide / Phosphor / Ionicons** for Android and web | Keep one name map (SF name → open-set name). Never export SF Symbols SVGs into shared code. |
+| **Everything else** (websites, web apps, PWAs, Electron/Tauri, Android, landing pages) | **Lucide** (ISC) by default · **Phosphor** (MIT) when you need SF-like weights (thin→bold) or fill/duotone variants · **Ionicons** (MIT) for an iOS-flavoured mobile web / Ionic | One set per product, one stroke weight per context. SF Symbols are **not allowed** here (licence: Apple-platform apps only, no redistribution). Screenshots of the person's own iOS app in marketing are fine. |
+
+Animate any of them with the measured kit (`references/symbol-effects.md`). Details and licence notes:
+`references/hig/foundations/sf-symbols.md` § Which icon set to recommend.
+
 ## Apple's eight design principles (HIG, reintroduced June 2026)
 Purpose (make something meaningful) · Agency (let people do things their own way) ·
 Responsibility (act in people's best interest) · Familiarity (build on what people know) ·
@@ -146,7 +158,8 @@ never decoration). Use them to resolve trade-offs; details and web translations 
 - [ ] Layout works at 375px with no horizontal overflow (grid `min-w-0` trap checked).
 - [ ] Fixed-height flows use `100dvh`, not `100vh`; the primary action is always visible.
 - [ ] Motion per `hig/foundations/motion.md`: every animation has a job, never the only signal, never blocks input; `prefers-reduced-motion` respected; transitions ≤ 300ms (FN) with Apple-like easing; no edge motion or sustained ~0.2 Hz loops in full-view/hero surfaces.
-- [ ] Icon motion only via the measured kit (`references/symbol-effects.md`), one purposeful effect per moment; no SF Symbols artwork on the web (licence).
+- [ ] Icon source matches the platform (§ Icon source): SF Symbols (SF Symbols app + system API) only for native Apple apps / the iOS side of cross-platform apps; Lucide · Phosphor · Ionicons everywhere else — never SF Symbols artwork on the web.
+- [ ] Icon motion only via the measured kit (`references/symbol-effects.md`), one purposeful effect per moment.
 - [ ] Icons: one family + one stroke weight, weight-matched to text, standard metaphors (× close, trash, •••, share, filter) per `hig/foundations/icons.md`; icon-only controls have `aria-label`.
 - [ ] RTL-ready per `hig/foundations/right-to-left.md`: logical CSS only (`check-layout.mjs --strict` clean), numbers via `Intl` and never reversed, direction icons mirror, logos/photos/checkmarks never do.
 - [ ] Touch targets ≥ 44px; focus is visible for keyboard users.
