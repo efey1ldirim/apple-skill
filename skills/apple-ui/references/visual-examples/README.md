@@ -117,10 +117,11 @@ File names: `images/<id>-<dont|do|neutral|single|tab>-<n>-<light|dark>.png`.
 | typography-02 | compare | Reflow meaningfully at the largest accessibility size | compact Mail header, avatar, subject and several body paragraphs | sender/recipient/date stack; subject wraps; body scrolls | Fixed-height rows, one-line labels and layouts that cannot grow with Dynamic Type |
 | typography-03 | do/don't | Keep important visionOS text flat and legible | extruded letters overlap and blur together | flat white serif text on a translucent panel | Decorative 3D text used for content people must read |
 | writing-01 | compare | Match tone to the situation | serious moment: short plain fall-detection text, one red SOS control, one "I'm OK" pill | celebratory moment: bold title + friendly sentence with the number and one exclamation mark | The same cheerful tone used for errors, security or payments; or a flat tone for a personal best |
+| charting-data-01 | compare | Show data from several levels or perspectives | Stocks: price and change first, range selector, one line/area chart with axis values, then a key-statistics grid | Activity: summary numbers, three stacked bar charts (one colour per metric, shared time axis, value line above each), then an explanatory card | Charts with no headline number, no range control, no per-point values or no words explaining the data |
 
 ## Pages scanned
 design-principles, designing-for-{ios, ipados, macos, tvos, visionos, watchos, games, iphone-duo}
-(no image pairs), accessibility, app-icons, branding, color, dark-mode, icons, images, immersive-experiences, inclusion, layout, materials, privacy, right-to-left, sf-symbols, typography, writing (iPhone Duo pairs found once tab support was added).
+(no image pairs), accessibility, app-icons, branding, color, dark-mode, icons, images, immersive-experiences, inclusion, layout, materials, privacy, right-to-left, sf-symbols, typography, writing, charting-data (iPhone Duo pairs found once tab support was added).
 
 Kind **tabs**: images shown behind tabs on Apple's page (one image per tab) — detected automatically.
 Animations are not in this catalog: the SF Symbols videos were measured into numbers instead — see
