@@ -47,11 +47,12 @@ File names: `images/<id>-<dont|do|neutral|single>-<n>-<light|dark>.png`.
 | icons-07 | compare | Expressive background fill only | Xcode project | TextEdit rich-text | File-type tiles relying on one strong image |
 | icons-08 | compare (3) | Simplify small sizes | 32 px: fewer grid lines, thicker line | 16 px @2x: no grid | 16 px @1x: heart only | Favicons / tiny tiles carrying too much detail |
 | icons-09 | single | ~10% margin, image ≈ 80% of canvas | heart inside a pink 10% margin band, side lobes slightly into it | — | Glyph/illustration padding inside tiles |
+| images-01 | compare (3) | Resolution = pixels per point | circle at 1x (10×10 px) — blocky edge | 2x (20×20 px) and 3x (30×30 px) — progressively smooth | Raster images/icons served without 2x/3x variants (blurry on retina) |
 | branding-01 | do/don't | Brand colour judiciously; put it in content | brand blue on every control (close, locate, filled search bar) | brand blue in the map content; controls neutral glass | Brand colour on nav, inputs, secondary buttons; colour that should live in content |
 
 ## Pages scanned
 design-principles, designing-for-{ios, ipados, macos, tvos, visionos, watchos, games, iphone-duo}
-(no image pairs), accessibility, app-icons, branding, color, dark-mode, icons.
+(no image pairs), accessibility, app-icons, branding, color, dark-mode, icons, images.
 
 Kind **single**: a stand-alone image that is itself a comparison (before/after drawn inside one
 image, or a sequence under one rule). These are listed per page in `SINGLES` in the script.
