@@ -134,5 +134,5 @@ Field-note cross-links:
 
 ## Related
 - Ingested: Privacy (✓), Entering data (✓), Feedback (✓ CRITICAL), Writing (✓), Launching (✓), Designing for tvOS (✓).
-- Ingested since: Managing notifications (✓). Onboarding (✓ ingested). Not yet ingested: **Sign in with Apple**, Apple In-App Purchase, Settings, Alerts, Text fields, Remotes.
+- Ingested since: Managing notifications (✓). Onboarding (✓ ingested). Not yet ingested: **Sign in with Apple**, Apple In-App Purchase, Settings (✓ ingested), Alerts, Text fields, Remotes.
 - Developer docs: listed in Specs & values. Videos: *What's new in passkeys* (WWDC25 279), *What's new in device management* (WWDC24 10143).

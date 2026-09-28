@@ -70,7 +70,7 @@ Notifications are a privilege people grant and can withdraw. Get permission firs
 | watchOS per-notification options | Mute 1 Hour · Turn off Time Sensitive (swipe left) |
 | Delivery timing | a Focus may delay the *alert*, never the notification itself |
 | Developer docs | *User Notifications* · `INSendMessageIntent` · `UNNotificationContentProviding` · `UNNotificationInterruptionLevel` |
-| Related HIG pages | Privacy ✓ · Settings (not yet ingested) |
+| Related HIG pages | Privacy ✓ · Settings ✓ |
 | Videos | *Send communication and Time Sensitive notifications* (WWDC21 10091) · *The Push Notifications primer* (WWDC20 10095) |
 
 ## Visual notes (from screenshots)
@@ -124,5 +124,5 @@ Field-note cross-links:
 
 ## Related
 - Ingested: Privacy (✓), Feedback (✓ CRITICAL), Managing accounts (✓), Writing (✓), Collaboration and sharing (✓), Live-viewing apps (✓).
-- Ingested since: Modality (✓), Multitasking (✓). Not yet ingested: **Settings**, **Notifications** (component), **Alerts**. Onboarding ✓.
+- Ingested since: Modality (✓), Multitasking (✓). Settings ✓. Not yet ingested: **Notifications** (component), **Alerts**. Onboarding ✓.
 - Developer docs: *User Notifications*. Videos: *Send communication and Time Sensitive notifications* (WWDC21 10091), *The Push Notifications primer* (WWDC20 10095).

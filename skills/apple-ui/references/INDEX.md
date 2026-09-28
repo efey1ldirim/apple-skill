@@ -49,7 +49,7 @@ ingested so far.
 | Printing, PDF export, print stylesheets, print options | + `hig/patterns/printing.md` (menu placement, only when possible, custom options panel, advanced options), `hig/patterns/file-management.md` | HIG: The menu bar (File menu), Action sheets |
 | Asking for reviews/ratings/NPS/feedback, review prompts, app-store rating requests | + `hig/patterns/ratings-and-reviews.md` (after engagement, never mid-task, cool-down, system prompt), `hig/patterns/onboarding.md`, `hig/patterns/modality.md` | HIG: Alerts |
 | Search: site/app search box, search tab, suggestions/recent searches, scope and filters, search history privacy, command palette, discoverability (Spotlight-like) | + `hig/patterns/searching.md`, `hig/patterns/entering-data.md`, `hig/foundations/privacy.md` | HIG: Search fields, Toolbars, Tab bars |
-| Settings / list screen | + `field-notes/components.md` § Settings list | HIG: Settings, Lists and tables, Toggles |
+| Settings / list screen | + `field-notes/components.md` § Settings list, `hig/patterns/settings.md` (few settings, good defaults, in-context options, respect system settings) | HIG: Settings, Lists and tables, Toggles |
 | Wizard / onboarding / form | + `field-notes/components.md` § Wizard, `hig/patterns/onboarding.md` (optional, interactive, tips over tours, postpone setup, permissions/ratings timing), `hig/patterns/entering-data.md` (pre-gather, defaults, choices over typing, live validation, Continue only when required data is in), `hig/foundations/privacy.md` (no permission requests up front; ask only for needed data) | HIG: Onboarding, Entering data, Text fields, Pickers |
 | Consent / permission / connect screen | + `field-notes/components.md` § Consent screen, `hig/foundations/privacy.md` (grant dialog vs pre-alert screen) | HIG: Managing accounts, Alerts/Sheets |
 | Asking for location/camera/mic/notifications/contacts, pre-permission ("soft ask") screens, cookie/tracking consent, purpose/reason copy, sign-in & password/passkey flows, storing tokens | + `hig/foundations/privacy.md` (visuals `privacy-01 … 04`) | HIG: Managing accounts, Sign in with Apple, Entering data, Onboarding |
@@ -110,7 +110,7 @@ on every ingestion. `—` = not yet ingested.
 | Typography `typography` ⚠️ CRITICAL | `hig/foundations/typography.md` (+ exact tables `tokens/apple-typography.json`, CSS web preview) | 2026-09-28 |
 | Writing `writing` | `hig/foundations/writing.md` | 2026-09-28 |
 
-### Patterns  (collection page: —; 22 of 25 ingested)
+### Patterns  (collection page: —; 23 of 25 ingested)
 | Page | File | Ingested |
 |---|---|---|
 | Charting data `charting-data` | `hig/patterns/charting-data.md` | 2026-09-28 |
@@ -135,7 +135,7 @@ on every ingestion. `—` = not yet ingested.
 | Printing `printing` | `hig/patterns/printing.md` | 2026-09-29 |
 | Ratings and reviews `ratings-and-reviews` | `hig/patterns/ratings-and-reviews.md` | 2026-09-29 |
 | Searching `searching` | `hig/patterns/searching.md` | 2026-09-29 |
-| Settings `settings` | — | — |
+| Settings `settings` | `hig/patterns/settings.md` | 2026-09-29 |
 | Undo and redo `undo-and-redo` | — | — |
 | Workouts `workouts` | — | — |
 

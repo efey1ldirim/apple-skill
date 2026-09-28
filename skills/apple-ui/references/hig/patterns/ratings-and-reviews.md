@@ -89,5 +89,5 @@ Field-note cross-links:
 
 ## Related
 - Ingested: Onboarding (✓), Modality (✓), Feedback (✓ CRITICAL), Managing notifications (✓), Launching (✓), Writing (✓).
-- Not yet ingested: Alerts, Settings.
+- Ingested since: Settings (✓). Not yet ingested: Alerts.
 - Developer docs: `RequestReviewAction`. Store resource: App Store *Ratings, reviews, and responses*.
