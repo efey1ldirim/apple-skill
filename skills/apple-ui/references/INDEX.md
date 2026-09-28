@@ -25,7 +25,7 @@ ingested so far.
 | Consent / permission / connect screen | + `field-notes/components.md` § Consent screen | HIG: Privacy, Managing accounts, Alerts/Sheets |
 | Landing / marketing page | + `field-notes/landing-and-motion.md`, `hig/overview/design-landing.md` (Apple's own page: section rhythm, cards, links) | HIG: Branding, Typography, Motion, Materials |
 | Dashboard / analytics | + `field-notes/components.md` § Dashboard tiles | HIG: Charting data, Charts, Layout |
-| Dark mode | + `field-notes/tokens.md` § Dark, `hig/foundations/color.md`, `tokens/apple-system-colors.css` | HIG: Dark Mode, Color, Materials |
+| Dark mode | + `hig/foundations/dark-mode.md`, `field-notes/tokens.md` § Dark, `hig/foundations/color.md`, `tokens/apple-system-colors.css` | HIG: Dark Mode, Color, Materials |
 | Design review / audit | `field-notes/anti-patterns.md` + checklist in `SKILL.md` + `visual-examples/README.md` (compare screenshots with Apple's ✗/✓ images) | HIG pages for every component on screen |
 | Visual proportions in doubt | `screenshots-described/` | — |
 
@@ -65,7 +65,7 @@ on every ingestion. `—` = not yet ingested.
 | App icons `app-icons` | `hig/foundations/app-icons.md` | 2026-09-28 |
 | Branding `branding` | `hig/foundations/branding.md` | 2026-09-28 |
 | Color `color` ⚠️ CRITICAL | `hig/foundations/color.md` | 2026-09-28 |
-| Dark Mode `dark-mode` | — | — |
+| Dark Mode `dark-mode` (part of COLOR GATE) | `hig/foundations/dark-mode.md` | 2026-09-28 |
 | Icons `icons` | — | — |
 | Images `images` | — | — |
 | Immersive experiences `immersive-experiences` | — | — |

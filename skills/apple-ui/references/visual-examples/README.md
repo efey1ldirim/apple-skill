@@ -33,8 +33,13 @@ File names: `images/<id>-<dont|do|compare>-<n>-<light|dark>.png`.
 | color-02 | compare | Colour meaning differs by culture | Stocks rising = green (English) | rising = red (Chinese) | Finance/status colours in localised UIs |
 | color-03 | compare (3 images) | Colour on Liquid Glass | primary button with tinted glass background | selected tab item with coloured symbol+label | glass picking up colour from a photo behind it — default untinted glass |
 | color-04 | do/don't | Tint only one control background | every toolbar button blue | only Done blue, others neutral | Toolbars/headers where several buttons are filled/tinted |
+| dark-mode-01 | compare | Colours adapt per appearance (not inverted) | four system colours on light | same colours, subtly shifted, on dark | Hard-coded colours that don't change in dark |
+| dark-mode-02 | compare | Icon variants per appearance | black drop on light, no border | drop on dark with a white outline | Dark glyphs that vanish on dark backgrounds |
+| dark-mode-03 | compare (3) | Illustrations must work in both | line art on light | same art on dark — details lost | adjusted art on dark — contrast restored | Illustrations/empty-state art in dark mode |
+| dark-mode-04 | compare | System label colours adapt | primary label, light | secondary label, dark | Text tones in both themes |
+| dark-mode-05 | compare (3) | Base vs elevated backgrounds | 4 label levels on base (black) | on elevated (near-black) | on light | Modals/sheets/menus not lighter than the page in dark |
 | branding-01 | do/don't | Brand colour judiciously; put it in content | brand blue on every control (close, locate, filled search bar) | brand blue in the map content; controls neutral glass | Brand colour on nav, inputs, secondary buttons; colour that should live in content |
 
 ## Pages scanned
 design-principles, designing-for-{ios, ipados, macos, tvos, visionos, watchos, games, iphone-duo}
-(no image pairs), accessibility, app-icons, branding, color.
+(no image pairs), accessibility, app-icons, branding, color, dark-mode.

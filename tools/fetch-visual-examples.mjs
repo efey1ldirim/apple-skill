@@ -27,7 +27,7 @@ const ASSET = "https://developer.apple.com/tutorials";
 const PAGES = [
   "design-principles", "designing-for-ios", "designing-for-ipados", "designing-for-macos",
   "designing-for-tvos", "designing-for-visionos", "designing-for-watchos", "designing-for-games",
-  "designing-for-iphone-duo", "accessibility", "app-icons", "branding", "color",
+  "designing-for-iphone-duo", "accessibility", "app-icons", "branding", "color", "dark-mode",
 ];
 const slugs = [...new Set([...PAGES, ...process.argv.slice(2)])];
 

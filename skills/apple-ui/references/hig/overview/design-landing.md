@@ -168,6 +168,9 @@ optical tracking), body gets negative (−0.374px at 17px). Links underline on h
   title `text-[24px] font-semibold leading-[28px]` · desc `mt-[14px] text-[17px] leading-[25px] tracking-[-0.022em]` ·
   link `text-[17px] text-[#0066CC] hover:underline`.
 
+Note: HIG Dark Mode advises against app-specific appearance settings; for websites the
+Light/Dark/Auto control is acceptable only defaulting to Auto — see `../foundations/dark-mode.md`.
+
 ## Checklist
 - [ ] Does the design feel like it belongs to the platform (conventions first, style second)?
 - [ ] Structure and navigation settled before visual polish?

@@ -23,7 +23,9 @@ description: >
 >    brand/content colour with all four variants.
 > 4. `node tools/check-colors.mjs --pair <fg> <bg>` for every text/background pair → ≥ 4.5:1 body,
 >    ≥ 3:1 large/bold/UI parts, in light, dark and both increased-contrast modes.
-> 5. Compare screenshots with Apple's colour pairs `color-01 … color-04` (visual-examples).
+> 5. Compare screenshots with Apple's colour pairs `color-01 … 04`, `dark-mode-01 … 05`.
+> 6. Dark Mode (`references/hig/foundations/dark-mode.md`): follow system appearance live; custom
+>    small-text pairs aim for 7:1; overlays elevated (lighter) over the dark base.
 > If any step fails, the design is not finished.
 
 You are designing as an Apple design engineer would: restraint first, one idea per surface,

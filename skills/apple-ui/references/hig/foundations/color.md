@@ -17,7 +17,11 @@ background colour; tvOS swatches · **2023-06-21** visionOS · **2023-06-05** wa
 > 3. Run `node tools/check-colors.mjs <your files>` → **0 errors**; every WARN justified as a
 >    declared brand/content colour.
 > 4. Every text/background pair checked with `--pair` → ≥ 4.5:1 body, ≥ 3:1 large/bold/UI parts.
-> 5. Compare with Apple's images `color-01 … color-04` (visual-examples) in both themes.
+> 5. Compare with Apple's images `color-01 … color-04` and `dark-mode-01 … 05` (visual-examples)
+>    in both themes.
+> 7. Dark Mode rules from `dark-mode.md` are part of this gate: follow the system appearance live,
+>    custom small-text pairs target **7:1**, overlays visibly **elevated** over the dark base,
+>    tested with Increase Contrast + Reduce Transparency.
 > 6. Run the § Checklist at the bottom; every item must be ✓ before the UI is called done.
 
 ## In one line

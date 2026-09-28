@@ -12,7 +12,8 @@ cheap". Almost every rule below exists to remove one specific source of that fee
 
 ## 1. Canvas: binary, no mid-tones
 - Light canvas `#F5F5F7` (Apple's own off-white; `#EFEFEF` / warm off-white also appear in refs).
-- Dark canvas `#08080A` (near-black; refs range `#000`–`#0A0A0A`).
+- Dark canvas `#08080A` (near-black; refs range `#000`–`#0A0A0A`). Layers above it (modals,
+  sheets, popovers, menus) must be **elevated** — lighter (`#1C1C1E`, `#2C2C2E`) — per HIG Dark Mode.
 - **Never a mid-grey page background.** Not one reference uses it.
 - The page paints its own canvas (`min-h-screen bg-[#F5F5F7] dark:bg-[#08080A]`) so embedded
   screens look identical inside or outside an app shell.
