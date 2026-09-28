@@ -17,6 +17,7 @@ ingested so far.
 | Glanceable surfaces: notifications/web push, widgets, badges, at-a-glance mobile summaries | + `hig/getting-started/designing-for-watchos.md` | HIG: Notifications, Widgets, Complications |
 | Website header / mega-menu / docs site / section nav | + `apple-web/site-patterns.md` (Apple's own measured web patterns) | HIG: Menus, Sidebars, Tab bars |
 | Minimum text & target sizes per platform | + `hig/getting-started/designing-for-games.md` (tables) | HIG: Typography, Buttons |
+| Foldable / dual-pane / wide-short layouts, toolbar overflow priority, navigation rail | + `hig/getting-started/designing-for-iphone-duo.md` | HIG: Layout, Split views, Toolbars, Tab bars |
 | Settings / list screen | + `field-notes/components.md` § Settings list | HIG: Settings, Lists and tables, Toggles |
 | Wizard / onboarding / form | + `field-notes/components.md` § Wizard | HIG: Onboarding, Entering data, Text fields, Pickers |
 | Consent / permission / connect screen | + `field-notes/components.md` § Consent screen | HIG: Privacy, Managing accounts, Alerts/Sheets |
@@ -53,7 +54,7 @@ on every ingestion. `—` = not yet ingested.
 | Designing for visionOS `designing-for-visionos` | `hig/getting-started/designing-for-visionos.md` | 2026-09-28 |
 | Designing for watchOS `designing-for-watchos` | `hig/getting-started/designing-for-watchos.md` | 2026-09-28 |
 | Designing for games `designing-for-games` | `hig/getting-started/designing-for-games.md` | 2026-09-28 |
-| Designing for iPhone Duo `designing-for-iphone-duo` | — | — |
+| Designing for iPhone Duo `designing-for-iphone-duo` | `hig/getting-started/designing-for-iphone-duo.md` | 2026-09-28 (screenshots partial) |
 
 ### Foundations  (collection page: —)
 | Page | File | Ingested |
