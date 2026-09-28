@@ -4,7 +4,8 @@
 //
 // Usage:
 //   node tools/check-layout.mjs <file|dir> [...]   # CSS/SCSS/TSX/JSX/TS/JS/HTML/Vue/Svelte/MDX
-//   node tools/check-layout.mjs --strict <files>   # also RTL (physical sides) + grid min-w-0 hints
+//   node tools/check-layout.mjs --strict <files>   # also RTL (physical sides/alignment, unflipped
+//                                                  # directional icons) + grid min-w-0 hints
 // Run it on the files you changed (the gate is per change, not a legacy-codebase audit).
 // Opt out on one line only with a reason:  // layout-ok: <why>
 //
@@ -34,6 +35,10 @@ const RULES = [
     "Fixed/sticky bottom bar without env(safe-area-inset-bottom) padding (use --bar-pad-bottom)."],
   ["STRICT", "physical-side", /\b(ml|mr|pl|pr|left|right)-(?!0\b)[\w[\].-]+/,
     "Physical left/right spacing — prefer logical ms/me/ps/pe/start/end so layouts flip in RTL."],
+  ["STRICT", "physical-align", /^(?!.*safe-area).*(?:\b(text-(left|right)|float-(left|right)|border-[lr](-\d+)?|rounded-([lr]|tl|tr|bl|br)(-[\w[\].]+)?)(?![\w-])|text-align:\s*(left|right)\b|\b(margin|padding|border)-(left|right)\s*:|\bfloat:\s*(left|right)\b)/,
+    "Physical alignment/edge (text-left, border-l, rounded-r, margin-left…) won't mirror in RTL — use text-start/end, border-s/e, rounded-s/e, *-inline-start (HIG Right to left)."],
+  ["STRICT", "directional-icon", /^(?!.*(\brtl:|scaleX\(-1\)|\bflip-rtl\b)).*(<(Chevron|Arrow|Caret)(Left|Right)\w*\b|["'` ]chevron[-_](left|right)\b|["'` ]arrow[-_](left|right)\b)/,
+    "Back/forward/next/previous glyph — flip it in RTL (rtl:-scale-x-100 or a mirrored variant) unless it points to a real physical direction."],
   ["WARN", "wide-fixed-width", /\b(w|min-w)-\[(4[0-9]{2}|[5-9][0-9]{2}|[1-9][0-9]{3,})px\]|\bwidth:\s*(4[0-9]{2}|[5-9][0-9]{2}|[1-9][0-9]{3,})px/,
     "Fixed width ≥ 400px can overflow compact widths (320–375). Use max-w-* + w-full."],
   ["STRICT", "grid-no-min-w-0", /\bgrid-cols-(?!1\b)\d+\b(?![^"'`\n]*\bmin-w-0\b)/,

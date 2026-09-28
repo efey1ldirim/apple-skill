@@ -136,5 +136,5 @@ two presenters at a table (WWDC25), a grid of diverse Memoji faces, a hand-lette
 - [ ] Onboarding optional/skippable?
 
 ## Related (ingestion status)
-Accessibility (✓), Color (✓ CRITICAL), Icons (✓), Right to left, SF Symbols, Onboarding, Writing —
+Accessibility (✓), Color (✓ CRITICAL), Icons (✓), Right to left (✓), SF Symbols, Onboarding, Writing —
 not yet ingested (except ✓).

@@ -140,6 +140,11 @@ Real `disabled` (not just faded) when a precondition is unmet (e.g. agreement no
   edge — no box in a box. Pass it via context, not a prop on every group.
 - Final screen: giant headline (`lg:104px`) + one button. Nothing else.
 
+## RTL readiness (HIG cross-check, `hig/foundations/right-to-left.md`)
+- The recipes here were validated on an LTR product and use physical `text-left` and "tick on the
+  left". For any product that may ship an RTL locale, write `text-start` and place marks on the
+  **leading** side (`ps-*`/`ms-*`); `node tools/check-layout.mjs --strict` flags the physical forms.
+
 ## Consent / connect screen (the reference implementation — "exactly what I wanted")
 - HIG cross-check (`hig/foundations/privacy.md`): this screen **is the grant dialog** (the system
   alert's counterpart), so Allow + Cancel is correct here. A *pre-permission* screen shown before a

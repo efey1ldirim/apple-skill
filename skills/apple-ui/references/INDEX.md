@@ -22,6 +22,7 @@ ingested so far.
 | Foldable / dual-pane / wide-short layouts, toolbar overflow priority, navigation rail | + `hig/getting-started/designing-for-iphone-duo.md` | HIG: Layout, Split views, Toolbars, Tab bars |
 | App icon, favicon, PWA/maskable icons, brand mark tiles | + `hig/foundations/app-icons.md` | HIG: Icons, Branding |
 | Images, photos, srcset/retina assets, image formats, hover-lift/parallax cards, media viewers | + `hig/foundations/images.md` | HIG: Layout, Materials |
+| RTL / Arabic / Hebrew / i18n-ready layouts, bidirectional text, numbers & phone numbers in other scripts, mirroring icons, sliders, ratings, carousels | + `hig/foundations/right-to-left.md` (flip / don't-flip table; visuals `right-to-left-01 … 21`), `node tools/check-layout.mjs --strict` | HIG: Layout, Inclusion, SF Symbols, Typography |
 | UI copy tone, forms asking personal data (gender, family, names), imagery of people, localisation | + `hig/foundations/inclusion.md` | HIG: Writing, Right to left |
 | Interface icons / glyphs, icon buttons, toolbars, choosing an icon for an action | + `hig/foundations/icons.md` (standard action → symbol table + web mapping) | HIG: SF Symbols, Toolbars, Buttons |
 | Brand colour, brand font, logo placement, voice & tone | + `hig/foundations/branding.md` | HIG: Color, Typography, Writing |
@@ -81,7 +82,7 @@ on every ingestion. `—` = not yet ingested.
 | Materials `materials` ⚠️ CRITICAL | `hig/foundations/materials.md` | 2026-09-28 |
 | Motion `motion` | `hig/foundations/motion.md` | 2026-09-28 |
 | Privacy `privacy` | `hig/foundations/privacy.md` | 2026-09-28 |
-| Right to left `right-to-left` | — | — |
+| Right to left `right-to-left` | `hig/foundations/right-to-left.md` | 2026-09-28 |
 | SF Symbols `sf-symbols` | — | — |
 | Spatial layout `spatial-layout` | — | — |
 | Typography `typography` | — | — |

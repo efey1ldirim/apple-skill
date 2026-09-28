@@ -217,5 +217,5 @@ SwiftUI* (WWDC22 10056), *Essential Design Principles* (WWDC17 802).
 - [ ] `node tools/check-layout.mjs` → 0 errors; `node tools/run-layout-probe.mjs <url>` → PASS at every viewport?
 
 ## Related (ingestion status)
-Right to left, Spatial layout, Scroll views, Windows, Multitasking, Tab bars, Sidebars, Typography,
+Right to left (✓ flip/don't-flip rules; `check-layout.mjs --strict` flags physical sides, alignment and unflipped directional icons), Spatial layout, Scroll views, Windows, Multitasking, Tab bars, Sidebars, Typography,
 Accessibility (✓), Designing for iOS/iPadOS/macOS/tvOS/visionOS/watchOS (✓) — not yet ingested (except ✓).

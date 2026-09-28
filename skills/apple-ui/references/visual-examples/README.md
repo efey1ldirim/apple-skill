@@ -81,10 +81,31 @@ File names: `images/<id>-<dont|do|neutral|single|tab>-<n>-<light|dark>.png`.
 | privacy-02 | do | Pre-alert screen: one button that opens the real prompt | headline + three benefit rows + "change later in Settings" note + one neutral capsule **Next** | — | Pre-permission screens with "Allow"/"Enable" buttons or brand-blue approval styling |
 | privacy-03 | don't | No extra actions on a pre-alert screen | same screen with a second **Cancel** capsule under Next | same screen with a glass **×** close at top-leading | "Not now" / Cancel / × on a soft-ask screen before a browser permission prompt |
 | privacy-04 | tabs (all ✗) | Tracking pre-screens that get rejected | incentive ($100 credit) · imitation ("Allow Tracking" button over a bar chart) | alert image with Allow circled · arrow + "choose Allow" hint under the real alert | Cookie/consent flows with rewards, cookie walls, fake prompts, or arrows pointing at Accept |
+| right-to-left-01 | compare | Mirror text alignment with the layout | LTR screen: text bars + caption bar on the left edge | RTL screen: same bars on the right edge, placeholder image **not** flipped | Physical `text-left` / `ml-*` that stays put in RTL |
+| right-to-left-02 | do/don't | Paragraphs (≥ 3 lines) align by their own language | ✓ RTL context: Arabic paragraph right-aligned, English paragraph left-aligned | ✗ both paragraphs right-aligned | Long mixed-language text without `dir="auto"` |
+| right-to-left-03 | do/don't | One alignment for every list item | ✓ all rows right-aligned | ✗ one (other-script) row left-aligned | Per-row `dir="auto"` in lists; use `<bdi>` instead |
+| right-to-left-04 | compare | Western vs Eastern Arabic digits | "123" | the same number in Eastern Arabic digits | Hard-coded digit strings instead of `Intl.NumberFormat(locale)` |
+| right-to-left-05 | compare | Never reverse digits inside a number (Latin/Hebrew) | Latin: label then 123456 | Hebrew: label moves right, digits still 1-2-3-4-5 | Reversed phone/order/card numbers; missing LTR isolation |
+| right-to-left-06 | compare | Never reverse digits inside a number (Arabic) | Arabic label + Western digits | Arabic label + Eastern digits — same digit order | Same as above |
+| right-to-left-07 | compare | Reverse counting order, not glyphs (ratings) | Latin: stars 1→5 from the left, 3½ filled | Arabic (Eastern digits): 1 at the right, fill from the right | Star ratings / steppers that fill from the left in RTL |
+| right-to-left-08 | compare | Same, Western digits in RTL | Hebrew: 1 at the right | Arabic (Western digits): 1 at the right | Mirrored digit glyphs (scaleX on a digit row) |
+| right-to-left-09 | compare | Flip progress controls and their end glyphs | LTR volume slider: quiet left, loud right, fill from left | RTL: loud left, quiet right, fill from the right edge | Custom sliders/progress that ignore direction; end icons not swapped |
+| right-to-left-10 | single | Balance Arabic/Hebrew next to all-caps Latin | same size: Arabic/Hebrew labels look small against caps | RTL labels ~2 pt larger fill the cap band | All-caps Latin buttons beside Arabic/Hebrew at equal size |
+| right-to-left-11 | do/don't | Don't flip photos/illustrations | ✓ normal globe | ✗ mirrored globe (Africa right, Australia left) | `scaleX(-1)` on images in RTL |
+| right-to-left-12 | compare | Reverse meaningful image order | LTR: selected photo tile and icon row start at the left | RTL: they start at the right, glyphs unmirrored | Galleries/rankings whose order doesn't follow direction |
+| right-to-left-13 | single | Directional symbols have RTL variants | five LTR symbols (list, book, pencil field, window bar, battery) | their RTL variants (bullets, spine, dots, cap move sides) | Direction-implying icons left unmirrored |
+| right-to-left-14 | compare | Flip icons that represent text | document with left-aligned lines | document with right-aligned lines | Text/list/indent icons that don't mirror |
+| right-to-left-15 | single | Localise icons that contain letters | Latin: signature, "A" badge, "A" + I-beam | Hebrew (Alef) and Arabic (Ain/Dad) versions | Mirrored letters; Latin letters in RTL UI icons |
+| right-to-left-16 | compare | Flip forward/backward-motion icons | speaker waves to the right | speaker waves to the left | Speaker/reply/forward icons not mirrored |
+| right-to-left-17 | compare | Never flip logos or universal marks | Apple TV logo | checkmark | Logos or ✓ mirrored by a blanket `rtl:` transform |
+| right-to-left-18 | compare | Don't flip real-world objects | clock | pencil · game controller | Clocks/tools mirrored by an icon-set-wide flip |
+| right-to-left-19 | compare | Keep design-language components (slash) | speaker.slash LTR | RTL: speaker mirrored, slash still a backslash | CSS-mirrored slashed icons ("\\" turning into "/") |
+| right-to-left-20 | do/don't | Move badges with the base when balance needs it | ✓ LTR cart, badge top-right · ✗ RTL cart, badge still top-right | ✓ RTL cart, badge top-left | Badges stuck in the physical corner |
+| right-to-left-21 | compare | Keep tool orientation while mirroring the base | LTR mail+text with magnifier | RTL: base mirrored, magnifier keeps its slant | Handed tools mirrored with the rest |
 
 ## Pages scanned
 design-principles, designing-for-{ios, ipados, macos, tvos, visionos, watchos, games, iphone-duo}
-(no image pairs), accessibility, app-icons, branding, color, dark-mode, icons, images, immersive-experiences, inclusion, layout, materials, privacy (iPhone Duo pairs found once tab support was added).
+(no image pairs), accessibility, app-icons, branding, color, dark-mode, icons, images, immersive-experiences, inclusion, layout, materials, privacy, right-to-left (iPhone Duo pairs found once tab support was added).
 
 Kind **tabs**: images shown behind tabs on Apple's page (one image per tab) — detected automatically.
 Kind **do** / **don't** alone: a row that carries only ✓ or only ✗ (Apple sometimes splits one

@@ -146,6 +146,7 @@ never decoration). Use them to resolve trade-offs; details and web translations 
 - [ ] Fixed-height flows use `100dvh`, not `100vh`; the primary action is always visible.
 - [ ] Motion per `hig/foundations/motion.md`: every animation has a job, never the only signal, never blocks input; `prefers-reduced-motion` respected; transitions ≤ 300ms (FN) with Apple-like easing; no edge motion or sustained ~0.2 Hz loops in full-view/hero surfaces.
 - [ ] Icons: one family + one stroke weight, weight-matched to text, standard metaphors (× close, trash, •••, share, filter) per `hig/foundations/icons.md`; icon-only controls have `aria-label`.
+- [ ] RTL-ready per `hig/foundations/right-to-left.md`: logical CSS only (`check-layout.mjs --strict` clean), numbers via `Intl` and never reversed, direction icons mirror, logos/photos/checkmarks never do.
 - [ ] Touch targets ≥ 44px; focus is visible for keyboard users.
 - [ ] Privacy per `hig/foundations/privacy.md`: permissions asked only from the feature's own trigger with a one-sentence active reason; any pre-permission screen has one "Continue" button (no Allow wording, no Cancel/×); no consent incentives, cookie walls or fake prompts; no secrets in web storage.
 - [ ] Rendered and looked at in both themes — screenshot, not assumption.

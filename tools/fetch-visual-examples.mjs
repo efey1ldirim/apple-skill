@@ -28,7 +28,7 @@ const PAGES = [
   "design-principles", "designing-for-ios", "designing-for-ipados", "designing-for-macos",
   "designing-for-tvos", "designing-for-visionos", "designing-for-watchos", "designing-for-games",
   "designing-for-iphone-duo", "accessibility", "app-icons", "branding", "color", "dark-mode", "icons", "images", "immersive-experiences", "inclusion", "layout",
-  "materials", "privacy",
+  "materials", "privacy", "right-to-left",
 ];
 // Stand-alone images that are comparisons on their own (before/after drawn inside one image, or
 // a sequence of single images under one rule). Consecutive singles under the same rule are grouped.
@@ -42,6 +42,11 @@ const SINGLES = {
   materials: [
     "materials-ios-liquid-glass-clear", "materials-tvos-media-player.png",
     "visionos-materials-window-example.png", "watchos-modal-view-material-background.png",
+  ],
+  "right-to-left": [
+    "download-uneven-vertical-height.png", "download-even-vertical-height.png",
+    "directional-symbols-ltr.png", "directional-symbols-rtl.png",
+    "text-icon-localized-latin.png", "text-icon-localized-hebrew.png", "text-icon-localized-arabic.png",
   ],
 };
 const slugs = [...new Set([...PAGES, ...process.argv.slice(2)])];
