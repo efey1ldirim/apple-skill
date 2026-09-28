@@ -50,6 +50,7 @@ ingested so far.
 | Asking for reviews/ratings/NPS/feedback, review prompts, app-store rating requests | + `hig/patterns/ratings-and-reviews.md` (after engagement, never mid-task, cool-down, system prompt), `hig/patterns/onboarding.md`, `hig/patterns/modality.md` | HIG: Alerts |
 | Search: site/app search box, search tab, suggestions/recent searches, scope and filters, search history privacy, command palette, discoverability (Spotlight-like) | + `hig/patterns/searching.md`, `hig/patterns/entering-data.md`, `hig/foundations/privacy.md` | HIG: Search fields, Toolbars, Tab bars |
 | Undo/redo, history, revert, undo toasts instead of confirmations, soft delete, shortcuts | + `hig/patterns/undo-and-redo.md`, `hig/patterns/feedback.md` (undo instead of "are you sure" for recoverable actions), `hig/patterns/drag-and-drop.md` | HIG: Pointing devices, Keyboards, The menu bar (Edit menu) |
+| Workout / fitness / stopwatch / tracker / "session in progress" screens: live metrics, big controls, pause/resume/end, sensor-unavailable states, session summary, courier/driver mode | + `hig/patterns/workouts.md` (3 screens: controls · metrics · media; timer from timestamp; wake lock; `--` not 0; summary; discard micro-sessions; legible in motion), `hig/patterns/feedback.md`, `hig/patterns/playing-haptics.md`, `hig/patterns/going-full-screen.md`, `hig/foundations/typography.md` + `color.md` (legibility gates); visual `workouts-01` | HIG: Activity rings, Charting data |
 | Settings / list screen | + `field-notes/components.md` § Settings list, `hig/patterns/settings.md` (few settings, good defaults, in-context options, respect system settings) | HIG: Settings, Lists and tables, Toggles |
 | Wizard / onboarding / form | + `field-notes/components.md` § Wizard, `hig/patterns/onboarding.md` (optional, interactive, tips over tours, postpone setup, permissions/ratings timing), `hig/patterns/entering-data.md` (pre-gather, defaults, choices over typing, live validation, Continue only when required data is in), `hig/foundations/privacy.md` (no permission requests up front; ask only for needed data) | HIG: Onboarding, Entering data, Text fields, Pickers |
 | Consent / permission / connect screen | + `field-notes/components.md` § Consent screen, `hig/foundations/privacy.md` (grant dialog vs pre-alert screen) | HIG: Managing accounts, Alerts/Sheets |
@@ -111,7 +112,7 @@ on every ingestion. `—` = not yet ingested.
 | Typography `typography` ⚠️ CRITICAL | `hig/foundations/typography.md` (+ exact tables `tokens/apple-typography.json`, CSS web preview) | 2026-09-28 |
 | Writing `writing` | `hig/foundations/writing.md` | 2026-09-28 |
 
-### Patterns  (collection page: —; 24 of 25 ingested)
+### Patterns  (collection page: —; **25 of 25 ingested — Patterns complete**)
 | Page | File | Ingested |
 |---|---|---|
 | Charting data `charting-data` | `hig/patterns/charting-data.md` | 2026-09-28 |
@@ -138,7 +139,7 @@ on every ingestion. `—` = not yet ingested.
 | Searching `searching` | `hig/patterns/searching.md` | 2026-09-29 |
 | Settings `settings` | `hig/patterns/settings.md` | 2026-09-29 |
 | Undo and redo `undo-and-redo` | `hig/patterns/undo-and-redo.md` | 2026-09-29 |
-| Workouts `workouts` | — | — |
+| Workouts `workouts` | `hig/patterns/workouts.md` | 2026-09-29 |
 
 ### Components  (collection page: —)
 | Page | File | Ingested |
