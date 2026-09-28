@@ -107,5 +107,6 @@ never decoration). Use them to resolve trade-offs; details and web translations 
 - [ ] Layout works at 375px with no horizontal overflow (grid `min-w-0` trap checked).
 - [ ] Fixed-height flows use `100dvh`, not `100vh`; the primary action is always visible.
 - [ ] `prefers-reduced-motion` respected; transitions ≤ 300ms with Apple-like easing.
+- [ ] Icons: one family + one stroke weight, weight-matched to text, standard metaphors (× close, trash, •••, share, filter) per `hig/foundations/icons.md`; icon-only controls have `aria-label`.
 - [ ] Touch targets ≥ 44px; focus is visible for keyboard users.
 - [ ] Rendered and looked at in both themes — screenshot, not assumption.

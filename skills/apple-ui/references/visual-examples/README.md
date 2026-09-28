@@ -16,7 +16,7 @@ screenshot of the UI it just built. Text rules say *what*; these images show *ho
    new pairs to the table below.
 
 ## Catalog (our words)
-File names: `images/<id>-<dont|do|compare>-<n>-<light|dark>.png`.
+File names: `images/<id>-<dont|do|neutral|single>-<n>-<light|dark>.png`.
 
 | id | Kind | Rule it illustrates | ✗ / first image | ✓ / second image | Check your UI for |
 |---|---|---|---|---|---|
@@ -38,8 +38,20 @@ File names: `images/<id>-<dont|do|compare>-<n>-<light|dark>.png`.
 | dark-mode-03 | compare (3) | Illustrations must work in both | line art on light | same art on dark — details lost | adjusted art on dark — contrast restored | Illustrations/empty-state art in dark mode |
 | dark-mode-04 | compare | System label colours adapt | primary label, light | secondary label, dark | Text tones in both themes |
 | dark-mode-05 | compare (3) | Base vs elevated backgrounds | 4 label levels on base (black) | on elevated (near-black) | on light | Modals/sheets/menus not lighter than the page in dark |
+| icons-01 | single (2) | Consistent icon size and stroke weight | camera, heart, envelope, alarm clock between guide lines — the light alarm clock is drawn taller to balance | same four with all interior lines at one weight | Mixed icon sets, mixed stroke widths, icons that look different sizes at the same box size |
+| icons-02 | single (3) | Optical centring of asymmetric glyphs | download glyph geometrically centred in a black disk — looks low | nudged up a few px / correction baked in as padding; final before-vs-after pair | Play/download/share glyphs inside round or pill buttons |
+| icons-03 | single | Selected state comes from the component | — | toolbar pair on one glass background: selected Filter on a blue accent circle, More (•••) default | Hand-made filled/outline icon pairs; selection shown only by swapping icon art |
+| icons-04 | compare | Characters localised, text-direction icons flipped | `character` "A" symbol with its script variants | `text.page` symbol with LTR/RTL variants | Letter-based icons in localised UIs; text/arrow icons in RTL |
+| icons-05 | compare (3) | macOS document icon sets | Xcode project doc icon | AR object doc icon | Swift file doc icon — one family, distinct types |
+| icons-06 | compare (3) | Document icon parts | background fill (pink grid + EKG) | center image (heart) | text "HEART" — composited by the system |
+| icons-07 | compare | Expressive background fill only | Xcode project | TextEdit rich-text | File-type tiles relying on one strong image |
+| icons-08 | compare (3) | Simplify small sizes | 32 px: fewer grid lines, thicker line | 16 px @2x: no grid | 16 px @1x: heart only | Favicons / tiny tiles carrying too much detail |
+| icons-09 | single | ~10% margin, image ≈ 80% of canvas | heart inside a pink 10% margin band, side lobes slightly into it | — | Glyph/illustration padding inside tiles |
 | branding-01 | do/don't | Brand colour judiciously; put it in content | brand blue on every control (close, locate, filled search bar) | brand blue in the map content; controls neutral glass | Brand colour on nav, inputs, secondary buttons; colour that should live in content |
 
 ## Pages scanned
 design-principles, designing-for-{ios, ipados, macos, tvos, visionos, watchos, games, iphone-duo}
-(no image pairs), accessibility, app-icons, branding, color, dark-mode.
+(no image pairs), accessibility, app-icons, branding, color, dark-mode, icons.
+
+Kind **single**: a stand-alone image that is itself a comparison (before/after drawn inside one
+image, or a sequence under one rule). These are listed per page in `SINGLES` in the script.

@@ -27,8 +27,17 @@ const ASSET = "https://developer.apple.com/tutorials";
 const PAGES = [
   "design-principles", "designing-for-ios", "designing-for-ipados", "designing-for-macos",
   "designing-for-tvos", "designing-for-visionos", "designing-for-watchos", "designing-for-games",
-  "designing-for-iphone-duo", "accessibility", "app-icons", "branding", "color", "dark-mode",
+  "designing-for-iphone-duo", "accessibility", "app-icons", "branding", "color", "dark-mode", "icons",
 ];
+// Stand-alone images that are comparisons on their own (before/after drawn inside one image, or
+// a sequence of single images under one rule). Consecutive singles under the same rule are grouped.
+const SINGLES = {
+  icons: [
+    "custom-icon-sizes.png", "custom-icon-line-weights.png", "asymmetric-glyph.png",
+    "asymmetric-glyph-optically-centered.png", "asymmetric-glyph-before-and-after.png",
+    "icons-selection-correct", "doc-icon-parts-margins.png",
+  ],
+};
 const slugs = [...new Set([...PAGES, ...process.argv.slice(2)])];
 
 const inline = (items = [], refs) =>
@@ -76,15 +85,33 @@ for (const slug of slugs) {
   if (!res.ok) { console.error(`skip ${slug}: HTTP ${res.status}`); continue; }
   const doc = await res.json();
   const refs = doc.references ?? {};
-  let section = "", rule = "", n = 0;
+  let section = "", rule = "", n = 0, last = null;
 
   const scan = async (blocks) => {
     for (const b of blocks ?? []) {
-      if (b.type === "heading") section = b.text;
+      if (b.type === "heading") { section = b.text; rule = ""; last = null; }
       if (b.type === "paragraph") {
         const first = b.inlineContent?.[0];
         // Only the bold lead-in (short) — the full Apple paragraph is not copied.
-        if (first?.type === "strong") rule = inline(first.inlineContent, refs).trim();
+        if (first?.type === "strong") { rule = inline(first.inlineContent, refs).trim(); last = null; }
+        const single = (b.inlineContent ?? []).find((it) => it.type === "image" && SINGLES[slug]?.includes(it.identifier));
+        if (single) {
+          if (!last || last.rule !== rule || last.section !== section) {
+            n++;
+            last = { id: `${slug}-${String(n).padStart(2, "0")}`, page: slug, section, rule, kind: "single", items: [] };
+            manifest.push(last);
+          }
+          const i = last.items.length;
+          const r = refs[single.identifier] ?? {};
+          const item = { verdict: "neutral", caption: "", alt: r.alt ?? "", files: {} };
+          for (const v of r.variants ?? []) {
+            const mode = v.traits?.includes("dark") ? "dark" : "light";
+            const file = `${last.id}-single-${i + 1}-${mode}.png`;
+            const ok = await download(ASSET + v.url, join(IMG, file));
+            item.files[mode] = { local: `images/${file}`, url: ASSET + v.url, downloaded: ok };
+          }
+          last.items.push(item);
+        }
       }
       if (b.type === "row" && b.columns?.length >= 2) {
         const cols = b.columns.map((c) => ({ imgs: imagesIn(c.content), caption: captionIn(c.content, refs) }));
@@ -96,7 +123,7 @@ for (const slug of slugs) {
         const marked = cols.some(isDont) && cols.some(isDo);
         const compare = !cols.some(isDont) && !cols.some(isDo) && cols.filter(art).length >= 2;
         if (marked || compare) {
-          n++;
+          n++; last = null;
           const id = `${slug}-${String(n).padStart(2, "0")}`;
           const entry = { id, page: slug, section, rule, kind: marked ? "do-dont" : "compare", items: [] };
           for (const [i, c] of cols.entries()) {

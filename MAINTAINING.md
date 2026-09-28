@@ -35,6 +35,8 @@ useful but secondary: put them after the content in each note.
      run it, and add each new pair to the catalog table in
      `skills/apple-ui/references/visual-examples/README.md` (our words). Reference the pair id in
      the page note's § Visual notes.
+     Stand-alone images that are comparisons by themselves (before/after inside one image, e.g.
+     optical centring) are not in rows — add their image names to `SINGLES` in the script.
    - **Critical pages [user decision]**: pages the user marks critical (so far: **Color**) get a
      ⚠️ CRITICAL header, an exact machine-readable token file under `skills/apple-ui/tokens/`, a
      checker in `tools/`, and a gate in `SKILL.md`. Extract every value from the JSON (never

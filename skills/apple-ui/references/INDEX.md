@@ -19,6 +19,7 @@ ingested so far.
 | Minimum text & target sizes per platform | + `hig/getting-started/designing-for-games.md` (tables) | HIG: Typography, Buttons |
 | Foldable / dual-pane / wide-short layouts, toolbar overflow priority, navigation rail | + `hig/getting-started/designing-for-iphone-duo.md` | HIG: Layout, Split views, Toolbars, Tab bars |
 | App icon, favicon, PWA/maskable icons, brand mark tiles | + `hig/foundations/app-icons.md` | HIG: Icons, Branding |
+| Interface icons / glyphs, icon buttons, toolbars, choosing an icon for an action | + `hig/foundations/icons.md` (standard action → symbol table + web mapping) | HIG: SF Symbols, Toolbars, Buttons |
 | Brand colour, brand font, logo placement, voice & tone | + `hig/foundations/branding.md` | HIG: Color, Typography, Writing |
 | Settings / list screen | + `field-notes/components.md` § Settings list | HIG: Settings, Lists and tables, Toggles |
 | Wizard / onboarding / form | + `field-notes/components.md` § Wizard | HIG: Onboarding, Entering data, Text fields, Pickers |
@@ -66,7 +67,7 @@ on every ingestion. `—` = not yet ingested.
 | Branding `branding` | `hig/foundations/branding.md` | 2026-09-28 |
 | Color `color` ⚠️ CRITICAL | `hig/foundations/color.md` | 2026-09-28 |
 | Dark Mode `dark-mode` (part of COLOR GATE) | `hig/foundations/dark-mode.md` | 2026-09-28 |
-| Icons `icons` | — | — |
+| Icons `icons` | `hig/foundations/icons.md` | 2026-09-28 |
 | Images `images` | — | — |
 | Immersive experiences `immersive-experiences` | — | — |
 | Inclusion `inclusion` | — | — |
