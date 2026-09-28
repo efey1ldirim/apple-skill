@@ -73,7 +73,7 @@ The page has **no sizes, timings or colours**. Its concrete facts:
 | tvOS | PiP (where supported) |
 | visionOS | one active window; inactive = more translucent, recedes on z; closing = background, not quit; Now Playing: closing pauses audio (resume from Control Center); feathered mask: don't change edge appearance; don't pause video on look-away; audio may duck |
 | Developer docs | UIKit *Responding to the launch of your app* · *Multitasking on iPad, Mac, and Apple Vision Pro* |
-| Related HIG pages | Layout ✓ · Windows · Playing video (last two not yet ingested) |
+| Related HIG pages | Layout ✓ · Windows (not yet ingested) · Playing video ✓ |
 | Videos | *Elevate the design of your iPad app* (WWDC25 208) · *Make your UIKit app more flexible* (WWDC25 282) |
 
 ## Visual notes (from screenshots)
@@ -131,5 +131,5 @@ Field-note cross-links:
 
 ## Related
 - Ingested: Launching (✓), File management (✓), Loading (✓), Managing notifications (✓), Live-viewing apps (✓), Going full screen (✓), Layout (✓ CRITICAL), Feedback (✓ CRITICAL), Spatial layout (✓), Designing for iPadOS (✓), Designing for visionOS (✓).
-- Ingested since: Offering help (✓). Not yet ingested: **Windows**, **Playing video**, Split views, Sidebars.
+- Ingested since: Offering help (✓). Not yet ingested: **Windows**, Split views, Sidebars.
 - Developer docs and videos: listed in Specs & values.

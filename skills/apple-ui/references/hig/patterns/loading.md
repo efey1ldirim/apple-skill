@@ -97,5 +97,5 @@ Field-note cross-links:
 
 ## Related
 - Ingested: Launching (✓), Feedback (✓ CRITICAL), Live-viewing apps (✓), File management (✓), Drag and drop (✓), Motion (✓), Accessibility (✓), Writing (✓).
-- Not yet ingested: **Progress indicators**, Playing video. Onboarding ✓ (`hig/patterns/onboarding.md`).
+- Not yet ingested: **Progress indicators**. Playing video ✓, Onboarding ✓ (`hig/patterns/onboarding.md`).
 - Developer docs: *Background Assets*. Video: *Discover Apple-Hosted Background Assets* (WWDC25 325).

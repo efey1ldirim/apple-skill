@@ -134,5 +134,5 @@ Field-note cross-links:
 
 ## Related
 - Ingested: Multitasking (✓), Feedback (✓ CRITICAL), Accessibility (✓), Live-viewing apps (✓), Managing notifications (✓), Privacy (✓), Motion (✓).
-- Ingested since: Playing haptics (✓). Not yet ingested: **Playing video**.
+- Ingested since: Playing haptics (✓). Playing video (✓).
 - Developer docs and videos: listed in Specs & values.

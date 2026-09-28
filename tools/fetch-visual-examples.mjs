@@ -34,7 +34,7 @@ const PAGES = [
   "launching", "live-viewing-apps", "loading",
   "managing-accounts", "managing-notifications", "modality",
   "multitasking", "offering-help", "onboarding",
-  "playing-audio", "playing-haptics",
+  "playing-audio", "playing-haptics", "playing-video",
 ];
 // Stand-alone images that are comparisons on their own (before/after drawn inside one image, or
 // a sequence of single images under one rule). Consecutive singles under the same rule are grouped.
@@ -174,7 +174,10 @@ for (const slug of slugs) {
         }
       }
       // Tabbed image sets (e.g. "Without / With dimmed passthrough") are comparisons too.
-      if (b.type === "tabNavigator" && b.tabs?.length >= 2) {
+      // Tabs whose content is itself a ✗/✓ row (e.g. Playing video: one pair per aspect ratio) are scanned
+      // tab by tab below, so each tab yields a do/don't entry; plain image tabs stay "tabs" comparisons.
+      const tabHasVerdict = (t) => (t.content ?? []).some((r) => r.type === "row" && r.columns?.some((c) => imagesIn(c.content).some((x) => x === "crossout.png" || x === "checkmark.png")));
+      if (b.type === "tabNavigator" && b.tabs?.length >= 2 && !b.tabs.some(tabHasVerdict)) {
         const tabs = b.tabs.map((t) => ({ title: t.title, imgs: imagesIn(t.content) })).filter((t) => t.imgs.length);
         if (tabs.length >= 2) {
           n++; last = null;
