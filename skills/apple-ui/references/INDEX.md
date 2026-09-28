@@ -18,6 +18,7 @@ ingested so far.
 | Website header / mega-menu / docs site / section nav | + `apple-web/site-patterns.md` (Apple's own measured web patterns) | HIG: Menus, Sidebars, Tab bars |
 | Minimum text & target sizes per platform | + `hig/getting-started/designing-for-games.md` (tables) | HIG: Typography, Buttons |
 | Foldable / dual-pane / wide-short layouts, toolbar overflow priority, navigation rail | + `hig/getting-started/designing-for-iphone-duo.md` | HIG: Layout, Split views, Toolbars, Tab bars |
+| App icon, favicon, PWA/maskable icons, brand mark tiles | + `hig/foundations/app-icons.md` | HIG: Icons, Branding |
 | Settings / list screen | + `field-notes/components.md` § Settings list | HIG: Settings, Lists and tables, Toggles |
 | Wizard / onboarding / form | + `field-notes/components.md` § Wizard | HIG: Onboarding, Entering data, Text fields, Pickers |
 | Consent / permission / connect screen | + `field-notes/components.md` § Consent screen | HIG: Privacy, Managing accounts, Alerts/Sheets |
@@ -60,7 +61,7 @@ on every ingestion. `—` = not yet ingested.
 | Page | File | Ingested |
 |---|---|---|
 | Accessibility `accessibility` | `hig/foundations/accessibility.md` | 2026-09-28 |
-| App icons `app-icons` | — | — |
+| App icons `app-icons` | `hig/foundations/app-icons.md` | 2026-09-28 |
 | Branding `branding` | — | — |
 | Color `color` | — | — |
 | Dark Mode `dark-mode` | — | — |
