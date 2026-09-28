@@ -12,6 +12,8 @@ ingested so far.
 | Mobile web / phone layouts (reach zone, swipe-back, Dynamic Type, autofill) | + `hig/getting-started/designing-for-ios.md` | HIG: Layout, Gestures, Virtual keyboards |
 | Tablet / large-screen / resizable layouts (split view, popovers, pointer vs touch density, keyboard shortcuts) | + `hig/getting-started/designing-for-ipados.md` | HIG: Multitasking, Pointing devices, Keyboards, Split views |
 | Desktop web app / dashboard / SaaS (flat hierarchy, panes, command palette, shortcuts, personalisation) | + `hig/getting-started/designing-for-macos.md` | HIG: Windows, The menu bar, Keyboards, Toolbars |
+| TV / kiosk / 10-foot UI, keyboard focus styling, multi-user profiles | + `hig/getting-started/designing-for-tvos.md` | HIG: Focus and selection, Remotes, Managing accounts |
+| Immersive / 3D / WebXR, hover-free (gaze) input, motion comfort | + `hig/getting-started/designing-for-visionos.md` | HIG: Immersive experiences, Spatial layout, Eyes, Motion |
 | Settings / list screen | + `field-notes/components.md` § Settings list | HIG: Settings, Lists and tables, Toggles |
 | Wizard / onboarding / form | + `field-notes/components.md` § Wizard | HIG: Onboarding, Entering data, Text fields, Pickers |
 | Consent / permission / connect screen | + `field-notes/components.md` § Consent screen | HIG: Privacy, Managing accounts, Alerts/Sheets |
@@ -44,8 +46,8 @@ on every ingestion. `—` = not yet ingested.
 | Designing for iOS `designing-for-ios` | `hig/getting-started/designing-for-ios.md` | 2026-09-28 |
 | Designing for iPadOS `designing-for-ipados` | `hig/getting-started/designing-for-ipados.md` | 2026-09-28 |
 | Designing for macOS `designing-for-macos` | `hig/getting-started/designing-for-macos.md` | 2026-09-28 |
-| Designing for tvOS `designing-for-tvos` | — | — |
-| Designing for visionOS `designing-for-visionos` | — | — |
+| Designing for tvOS `designing-for-tvos` | `hig/getting-started/designing-for-tvos.md` | 2026-09-28 |
+| Designing for visionOS `designing-for-visionos` | `hig/getting-started/designing-for-visionos.md` | 2026-09-28 |
 | Designing for watchOS `designing-for-watchos` | — | — |
 | Designing for games `designing-for-games` | — | — |
 | Designing for iPhone Duo `designing-for-iphone-duo` | — | — |
