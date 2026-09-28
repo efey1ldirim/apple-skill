@@ -9,6 +9,7 @@ ingested so far.
 |---|---|---|
 | Any UI work | `hig/getting-started/design-principles.md` (Apple's 8 principles — the decision lens), `field-notes/principles.md`, `field-notes/anti-patterns.md` | — |
 | Web UI (React/Tailwind/CSS) | + `field-notes/tokens.md`, `field-notes/components.md`, `field-notes/engineering-gotchas.md` | HIG pages for the components you use |
+| Mobile web / phone layouts (reach zone, swipe-back, Dynamic Type, autofill) | + `hig/getting-started/designing-for-ios.md` | HIG: Layout, Gestures, Virtual keyboards |
 | Settings / list screen | + `field-notes/components.md` § Settings list | HIG: Settings, Lists and tables, Toggles |
 | Wizard / onboarding / form | + `field-notes/components.md` § Wizard | HIG: Onboarding, Entering data, Text fields, Pickers |
 | Consent / permission / connect screen | + `field-notes/components.md` § Consent screen | HIG: Privacy, Managing accounts, Alerts/Sheets |
@@ -38,7 +39,7 @@ on every ingestion. `—` = not yet ingested.
 | Page | File | Ingested |
 |---|---|---|
 | Design principles `design-principles` | `hig/getting-started/design-principles.md` | 2026-09-28 |
-| Designing for iOS `designing-for-ios` | — | — |
+| Designing for iOS `designing-for-ios` | `hig/getting-started/designing-for-ios.md` | 2026-09-28 |
 | Designing for iPadOS `designing-for-ipados` | — | — |
 | Designing for macOS `designing-for-macos` | — | — |
 | Designing for tvOS `designing-for-tvos` | — | — |
