@@ -25,6 +25,11 @@ useful but secondary: put them after the content in each note.
 2. **Read every screenshot** the user sends. Describe what the text cannot tell: proportions,
    spacing, visual hierarchy, colours, how the example UI is composed. Screenshot descriptions
    go into the page note (§ Visual notes) — screenshots themselves are not committed.
+   - **Cross-check screenshot text against the fetched text [user decision].** Read every
+     word visible in the screenshots and compare it line by line with the fetch output. Some
+     text never reaches the fetch (text baked into images, UI kits in illustrations, nav/menus,
+     footers, dynamic widgets, content rendered by scripts). Anything found only in a
+     screenshot is recorded in the note with the marker **(from screenshot)**.
 3. **Write the note** at `skills/apple-ui/references/hig/<section>/<slug>.md` using the
    template below. Sections: `overview`, `getting-started`, `foundations`, `patterns`,
    `components/<group>`, `inputs`, `technologies`, `other`.
