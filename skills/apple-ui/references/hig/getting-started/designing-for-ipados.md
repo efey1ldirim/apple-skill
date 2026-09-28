@@ -97,5 +97,5 @@ productivity work**, and **creating** things. Start from the device characterist
 - [ ] Orientation, Dark Mode, large text all handled?
 
 ## Related (ingestion status)
-Multitasking, Widgets, Drag and drop, Gestures, Virtual keyboards, Keyboards, Pointing devices,
+Multitasking, Widgets, Drag and drop (✓ `hig/patterns/drag-and-drop.md`), Gestures, Virtual keyboards, Keyboards, Pointing devices,
 Apple Pencil and Scribble, Siri, Windows, Sidebars, Split views, Popovers — not yet ingested.
