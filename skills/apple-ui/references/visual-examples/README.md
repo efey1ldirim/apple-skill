@@ -118,10 +118,11 @@ File names: `images/<id>-<dont|do|neutral|single|tab>-<n>-<light|dark>.png`.
 | typography-03 | do/don't | Keep important visionOS text flat and legible | extruded letters overlap and blur together | flat white serif text on a translucent panel | Decorative 3D text used for content people must read |
 | writing-01 | compare | Match tone to the situation | serious moment: short plain fall-detection text, one red SOS control, one "I'm OK" pill | celebratory moment: bold title + friendly sentence with the number and one exclamation mark | The same cheerful tone used for errors, security or payments; or a flat tone for a personal best |
 | charting-data-01 | compare | Show data from several levels or perspectives | Stocks: price and change first, range selector, one line/area chart with axis values, then a key-statistics grid | Activity: summary numbers, three stacked bar charts (one colour per metric, shared time axis, value line above each), then an explanatory card | Charts with no headline number, no range control, no per-point values or no words explaining the data |
+| collaboration-and-sharing-01 | compare | Summarise sharing permissions in one short phrase | share sheet with "Only invited people can edit." under the Collaborate pill | identical sheet with "Everyone can make changes." (only the summary line changes) | Sharing surfaces with no visible current-permission line, or a long settings paragraph in its place |
 
 ## Pages scanned
 design-principles, designing-for-{ios, ipados, macos, tvos, visionos, watchos, games, iphone-duo}
-(no image pairs), accessibility, app-icons, branding, color, dark-mode, icons, images, immersive-experiences, inclusion, layout, materials, privacy, right-to-left, sf-symbols, typography, writing, charting-data (iPhone Duo pairs found once tab support was added).
+(no image pairs), accessibility, app-icons, branding, color, dark-mode, icons, images, immersive-experiences, inclusion, layout, materials, privacy, right-to-left, sf-symbols, typography, writing, charting-data, collaboration-and-sharing (iPhone Duo pairs found once tab support was added).
 
 Kind **tabs**: images shown behind tabs on Apple's page (one image per tab) — detected automatically.
 Animations are not in this catalog: the SF Symbols videos were measured into numbers instead — see

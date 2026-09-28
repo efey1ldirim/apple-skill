@@ -31,6 +31,7 @@ ingested so far.
 | Animated icons / symbol effects (bounce, pulse, replace, wiggle, breathe, rotate, variable colour, draw) | + `references/symbol-effects.md` (measured Apple timings + how-to), `tokens/apple-symbol-effects.css` / `.js`, demo `examples/symbol-effects/index.html`, `hig/foundations/motion.md` | HIG: Motion, Feedback |
 | Brand colour, brand font, logo placement, voice & tone | + `hig/foundations/branding.md`, `hig/foundations/writing.md` (voice vs tone, term list) | HIG: Color, Typography |
 | Glass / blur / translucency: nav bars, tab bars, toolbars, sidebars, popovers, sheets, overlays, controls over photos/video, frosted panels | + `hig/foundations/materials.md` (MATERIALS GATE), `tokens/apple-materials.css`, `apple-web/site-patterns.md` (frosted bar + veil) | HIG: Color § Liquid Glass color, Sliders, Toggles, Popovers, Sheets |
+| Share button, share sheet/popover, permissions ("who can edit"), presence/collaborator lists, collaboration notifications with deep links | + `hig/patterns/collaboration-and-sharing.md`, `hig/foundations/writing.md` (permission phrases), `hig/foundations/materials.md` | HIG: Activity views, Sheets, Popovers, Toolbars, Notifications |
 | Settings / list screen | + `field-notes/components.md` § Settings list | HIG: Settings, Lists and tables, Toggles |
 | Wizard / onboarding / form | + `field-notes/components.md` § Wizard, `hig/foundations/privacy.md` (no permission requests up front; ask only for needed data) | HIG: Onboarding, Entering data, Text fields, Pickers |
 | Consent / permission / connect screen | + `field-notes/components.md` § Consent screen, `hig/foundations/privacy.md` (grant dialog vs pre-alert screen) | HIG: Managing accounts, Alerts/Sheets |
@@ -92,11 +93,11 @@ on every ingestion. `—` = not yet ingested.
 | Typography `typography` ⚠️ CRITICAL | `hig/foundations/typography.md` (+ exact tables `tokens/apple-typography.json`, CSS web preview) | 2026-09-28 |
 | Writing `writing` | `hig/foundations/writing.md` | 2026-09-28 |
 
-### Patterns  (collection page: —; 1 of 25 ingested)
+### Patterns  (collection page: —; 2 of 25 ingested)
 | Page | File | Ingested |
 |---|---|---|
 | Charting data `charting-data` | `hig/patterns/charting-data.md` | 2026-09-28 |
-| Collaboration and sharing `collaboration-and-sharing` | — | — |
+| Collaboration and sharing `collaboration-and-sharing` | `hig/patterns/collaboration-and-sharing.md` | 2026-09-28 |
 | Drag and drop `drag-and-drop` | — | — |
 | Entering data `entering-data` | — | — |
 | Feedback `feedback` | — | — |
