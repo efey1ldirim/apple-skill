@@ -102,6 +102,6 @@ This page *is* the iOS platform summary. iPadOS/macOS/etc. have their own pages.
 
 ## Related (ingestion status)
 Gestures, Virtual keyboards, Siri, Privacy (✓ `hig/foundations/privacy.md`), Gyroscope and accelerometer, Widgets, Home Screen
-quick actions, Searching, Activity views, Layout, Dark Mode, Typography — not yet ingested.
+quick actions, Activity views — not yet ingested; Searching (✓), Layout (✓ CRITICAL), Dark Mode (✓), Typography (✓ CRITICAL) are ingested.
 Note: the page links "spatial interactions" (`/spatial-interactions`), which is not in the
 current HIG navigator tree.

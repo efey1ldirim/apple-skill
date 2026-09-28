@@ -35,7 +35,7 @@ const PAGES = [
   "managing-accounts", "managing-notifications", "modality",
   "multitasking", "offering-help", "onboarding",
   "playing-audio", "playing-haptics", "playing-video",
-  "printing", "ratings-and-reviews",
+  "printing", "ratings-and-reviews", "searching",
 ];
 // Stand-alone images that are comparisons on their own (before/after drawn inside one image, or
 // a sequence of single images under one rule). Consecutive singles under the same rule are grouped.
