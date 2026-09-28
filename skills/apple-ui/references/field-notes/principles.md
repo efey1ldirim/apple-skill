@@ -54,7 +54,9 @@ cheap". Almost every rule below exists to remove one specific source of that fee
 ## 5. Colour belongs to content, not chrome
 - The skeleton stays neutral. Colour comes from photos, album art, gradient imagery, brand
   logos, or a single tinted icon tile.
-- Brand colour never floods the background; it lives in one element.
+- Brand colour never floods the background; it lives in one element. HIG Branding (2026-09)
+  agrees: minimise brand colour on controls, reserve it for the primary action or status, and
+  put it in the **content layer** (imagery, maps, charts) under neutral controls.
 - iOS Settings pattern: **28px coloured squircle icon tiles** in system colours
   (`#007AFF` blue, `#5856D6` indigo, `#34C759` green, `#FF3B30` red, `#AF52DE` purple,
   `#FF9500` orange, `#8E8E93` grey). Colour lives only in the tile; the row stays neutral.
