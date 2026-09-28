@@ -11,6 +11,7 @@ ingested so far.
 | Web UI (React/Tailwind/CSS) | + `field-notes/tokens.md`, `field-notes/components.md`, `field-notes/engineering-gotchas.md` | HIG pages for the components you use |
 | Mobile web / phone layouts (reach zone, swipe-back, Dynamic Type, autofill) | + `hig/getting-started/designing-for-ios.md` | HIG: Layout, Gestures, Virtual keyboards |
 | Tablet / large-screen / resizable layouts (split view, popovers, pointer vs touch density, keyboard shortcuts) | + `hig/getting-started/designing-for-ipados.md` | HIG: Multitasking, Pointing devices, Keyboards, Split views |
+| Desktop web app / dashboard / SaaS (flat hierarchy, panes, command palette, shortcuts, personalisation) | + `hig/getting-started/designing-for-macos.md` | HIG: Windows, The menu bar, Keyboards, Toolbars |
 | Settings / list screen | + `field-notes/components.md` § Settings list | HIG: Settings, Lists and tables, Toggles |
 | Wizard / onboarding / form | + `field-notes/components.md` § Wizard | HIG: Onboarding, Entering data, Text fields, Pickers |
 | Consent / permission / connect screen | + `field-notes/components.md` § Consent screen | HIG: Privacy, Managing accounts, Alerts/Sheets |
@@ -42,7 +43,7 @@ on every ingestion. `—` = not yet ingested.
 | Design principles `design-principles` | `hig/getting-started/design-principles.md` | 2026-09-28 |
 | Designing for iOS `designing-for-ios` | `hig/getting-started/designing-for-ios.md` | 2026-09-28 |
 | Designing for iPadOS `designing-for-ipados` | `hig/getting-started/designing-for-ipados.md` | 2026-09-28 |
-| Designing for macOS `designing-for-macos` | — | — |
+| Designing for macOS `designing-for-macos` | `hig/getting-started/designing-for-macos.md` | 2026-09-28 |
 | Designing for tvOS `designing-for-tvos` | — | — |
 | Designing for visionOS `designing-for-visionos` | — | — |
 | Designing for watchOS `designing-for-watchos` | — | — |
