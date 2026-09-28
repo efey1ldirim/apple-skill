@@ -293,7 +293,7 @@ Whenever the person will use symbols/icons, first establish the target platform,
 - No additional considerations for iOS, iPadOS, macOS, tvOS, visionOS or watchOS.
 
 ## Resources listed
-- Related: Download SF Symbols; Typography (not yet ingested); Icons (✓).
+- Related: Download SF Symbols; Typography (✓ CRITICAL); Icons (✓).
 - Developer docs: *Symbols* (framework); *Configuring and displaying symbol images in your UI* (UIKit);
   *Creating custom symbol images for your app* (UIKit).
 - Video: *What's new in SF Symbols 7* (WWDC25 337).

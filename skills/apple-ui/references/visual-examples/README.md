@@ -113,10 +113,13 @@ File names: `images/<id>-<dont|do|neutral|single|tab>-<n>-<light|dark>.png`.
 | sf-symbols-09 | single | 9 weights × 3 scales | folder.badge.plus from ultralight to black, small to large | — | Icon stroke weight that doesn't match the adjacent text |
 | sf-symbols-10 | compare | Scale relative to cap height | small ⊕ spans cap band | medium slightly beyond · large plus spans the band | Icons sized in fixed px unrelated to the text beside them |
 | sf-symbols-11 | single | Design variants + localised scripts | heart outline/fill × plain/slash/circle/square/rectangle | 12 text symbols in 8 scripts | Outline icons in a selected tab; unavailable state without a slash; Latin letters in icons for other scripts |
+| typography-01 | single (2) | Increase game-label size and provide a backing shape | tiny plant names float on bright scenery | larger names sit on dark translucent lozenges; progress text grows | Game HUD labels and status text that blend into moving scenery |
+| typography-02 | compare | Reflow meaningfully at the largest accessibility size | compact Mail header, avatar, subject and several body paragraphs | sender/recipient/date stack; subject wraps; body scrolls | Fixed-height rows, one-line labels and layouts that cannot grow with Dynamic Type |
+| typography-03 | do/don't | Keep important visionOS text flat and legible | extruded letters overlap and blur together | flat white serif text on a translucent panel | Decorative 3D text used for content people must read |
 
 ## Pages scanned
 design-principles, designing-for-{ios, ipados, macos, tvos, visionos, watchos, games, iphone-duo}
-(no image pairs), accessibility, app-icons, branding, color, dark-mode, icons, images, immersive-experiences, inclusion, layout, materials, privacy, right-to-left, sf-symbols (iPhone Duo pairs found once tab support was added).
+(no image pairs), accessibility, app-icons, branding, color, dark-mode, icons, images, immersive-experiences, inclusion, layout, materials, privacy, right-to-left, sf-symbols, typography (iPhone Duo pairs found once tab support was added).
 
 Kind **tabs**: images shown behind tabs on Apple's page (one image per tab) — detected automatically.
 Animations are not in this catalog: the SF Symbols videos were measured into numbers instead — see

@@ -28,6 +28,27 @@ description: >
 >    small-text pairs aim for 7:1; overlays elevated (lighter) over the dark base.
 > If any step fails, the design is not finished.
 
+> ## ⚠️ TYPOGRAPHY GATE — CRITICAL, zero tolerance
+> Readable type and Dynamic Type behaviour must follow Apple's HIG Typography page:
+> 1. Read `references/hig/foundations/typography.md` and select the target platform's exact
+>    category/style rows from `tokens/apple-typography.json`. Use the platform's semantic text
+>    styles and system font APIs; never guess size, leading, weight or tracking from memory.
+> 2. Match the platform's ordinary default reading size and respect its minimum as a floor,
+>    including custom fonts. Avoid thin weights for small text. Keep hierarchy and reading order
+>    when the person's text size changes.
+> 3. For web mockups, `tokens/apple-typography.css` is an opt-in **CONV** point-to-CSS mapping,
+>    not native rendering. Use rem/semantic HTML and browser zoom; never bundle SF/NY font files
+>    simply to imitate the OS. Tracking tables are for mockups; native system fonts adjust it.
+> 4. `node tools/check-typography.mjs <changed files>` → **0 errors**; review every warning,
+>    or justify a specific line with `// typography-ok: <reason>`.
+> 5. Run `node tools/run-layout-probe.mjs <url>` with its 200% text-scale checks, then inspect
+>    the largest standard and accessibility size on the target platform. Important labels wrap;
+>    row height grows; inline metadata stacks; icons scale; no useful text vanishes into ellipsis
+>    without a full-text route. Use comfortable leading for passages of three or more lines.
+> 6. Compare the design with Apple's `typography-01 … 03` examples, including the game labels,
+>    the largest Mail text size and flat versus extruded visionOS text.
+> If any step fails, the design is not finished.
+
 > ## ⚠️ LAYOUT GATE — CRITICAL, zero tolerance
 > Layout must follow Apple's HIG Layout page **exactly**. Before any UI is called done:
 > 1. Read `references/hig/foundations/layout.md` (CRITICAL page) — every rule and its web translation apply.
@@ -145,6 +166,7 @@ never decoration). Use them to resolve trade-offs; details and web translations 
 ## Pre-ship checklist
 
 - [ ] **COLOR GATE passed** (all steps above; `color.md` checklist fully ✓).
+- [ ] **TYPOGRAPHY GATE passed** (exact platform tables used; checker 0 errors; 200% and largest accessibility text verified).
 - [ ] **LAYOUT GATE passed** (all steps above; `layout.md` checklist fully ✓; probe PASS at every viewport).
 - [ ] **MATERIALS GATE passed** (all steps above; `materials.md` checklist fully ✓; probe PASS in every mode).
 

@@ -7,7 +7,7 @@ ingested so far.
 
 | Task | Always read | Then read |
 |---|---|---|
-| Any UI work | **`hig/foundations/color.md` (CRITICAL — colour gate)**, `tokens/apple-system-colors.css`, **`hig/foundations/layout.md` (CRITICAL — layout gate)**, `tokens/apple-layout.css`, **`hig/foundations/materials.md` (CRITICAL — materials gate, whenever anything is translucent/blurred/overlaid)**, `tokens/apple-materials.css`, `hig/foundations/accessibility.md` (contrast/size/motion minimums), `hig/getting-started/design-principles.md` (Apple's 8 principles — the decision lens), `field-notes/principles.md`, `field-notes/anti-patterns.md` | — |
+| Any UI work | **`hig/foundations/color.md` (CRITICAL — colour gate)**, `tokens/apple-system-colors.css`, **`hig/foundations/layout.md` (CRITICAL — layout gate)**, `tokens/apple-layout.css`, **`hig/foundations/typography.md` (CRITICAL — typography gate)**, `tokens/apple-typography.json`, **`hig/foundations/materials.md` (CRITICAL — materials gate, whenever anything is translucent/blurred/overlaid)**, `tokens/apple-materials.css`, `hig/foundations/accessibility.md` (contrast/size/motion minimums), `hig/getting-started/design-principles.md` (Apple's 8 principles — the decision lens), `field-notes/principles.md`, `field-notes/anti-patterns.md` | — |
 | Web UI (React/Tailwind/CSS) | + `field-notes/tokens.md`, `field-notes/components.md`, `field-notes/engineering-gotchas.md` | HIG pages for the components you use |
 | Mobile web / phone layouts (reach zone, swipe-back, Dynamic Type, autofill) | + `hig/getting-started/designing-for-ios.md` | HIG: Layout, Gestures, Virtual keyboards |
 | Tablet / large-screen / resizable layouts (split view, popovers, pointer vs touch density, keyboard shortcuts) | + `hig/getting-started/designing-for-ipados.md` | HIG: Multitasking, Pointing devices, Keyboards, Split views |
@@ -18,7 +18,8 @@ ingested so far.
 | Animation, transitions, micro-interactions, gesture/swipe UI, loading & success feedback, scroll effects, animated icons, WebGL/canvas motion | + `hig/foundations/motion.md`, `hig/foundations/accessibility.md` § Motion (Reduce Motion fallback), `field-notes/tokens.md` § Motion, `field-notes/landing-and-motion.md` § Motion rules | HIG: Feedback, SF Symbols § Animations, Playing haptics |
 | Glanceable surfaces: notifications/web push, widgets, badges, at-a-glance mobile summaries | + `hig/getting-started/designing-for-watchos.md` | HIG: Notifications, Widgets, Complications |
 | Website header / mega-menu / docs site / section nav | + `apple-web/site-patterns.md` (Apple's own measured web patterns) | HIG: Menus, Sidebars, Tab bars |
-| Minimum text & target sizes per platform | + `hig/getting-started/designing-for-games.md` (tables) | HIG: Typography, Buttons |
+| Minimum text & target sizes per platform | + `hig/foundations/typography.md`, `tokens/apple-typography.json`, `hig/getting-started/designing-for-games.md` (game targets) | HIG: Buttons |
+| Text styles, Dynamic Type, line height, tracking, custom fonts, readable copy | + `hig/foundations/typography.md` (TYPOGRAPHY GATE), `tokens/apple-typography.json` (exact platform tables), `tokens/apple-typography.css` (web preview), `node tools/check-typography.mjs <changed files>` | HIG: Accessibility, Writing |
 | Foldable / dual-pane / wide-short layouts, toolbar overflow priority, navigation rail | + `hig/getting-started/designing-for-iphone-duo.md` | HIG: Layout, Split views, Toolbars, Tab bars |
 | App icon, favicon, PWA/maskable icons, brand mark tiles | + `hig/foundations/app-icons.md` | HIG: Icons, Branding |
 | Images, photos, srcset/retina assets, image formats, hover-lift/parallax cards, media viewers | + `hig/foundations/images.md` | HIG: Layout, Materials |
@@ -87,7 +88,7 @@ on every ingestion. `—` = not yet ingested.
 | Right to left `right-to-left` | `hig/foundations/right-to-left.md` | 2026-09-28 |
 | SF Symbols `sf-symbols` | `hig/foundations/sf-symbols.md` (+ measured animation kit `symbol-effects.md`) | 2026-09-28 |
 | Spatial layout `spatial-layout` (visionOS only) | `hig/foundations/spatial-layout.md` | 2026-09-28 |
-| Typography `typography` | — | — |
+| Typography `typography` ⚠️ CRITICAL | `hig/foundations/typography.md` (+ exact tables `tokens/apple-typography.json`, CSS web preview) | 2026-09-28 |
 | Writing `writing` | — | — |
 
 ### Patterns  (collection page: —)

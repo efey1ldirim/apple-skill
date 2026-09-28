@@ -91,5 +91,4 @@ Visual pair: `visual-examples` id branding-01.
 - [ ] No Apple trademarks in names or images?
 
 ## Related (ingestion status)
-App icons (✓), Color, Typography, Launching, Onboarding, Materials (Liquid Glass) — not yet
-ingested (except ✓).
+App icons (✓), Color (✓ CRITICAL), Typography (✓ CRITICAL), Materials (✓ CRITICAL); Launching and Onboarding — not yet ingested.

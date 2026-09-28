@@ -97,6 +97,9 @@ Current HIG values (updated by Apple 2025-06-09). **Never use the pre-2025 value
 | Coloured CTA glow (upgrade only) | `0 8px 22px -12px rgba(37,99,235,0.9)` | same |
 
 ## Type scale (px / weight / tracking / leading)
+These are approved web product values (**FN**), not native HIG text-style metrics. For Apple-platform
+defaults, Dynamic Type categories, emphasized weights and exact tracking, use the **TYPOGRAPHY GATE**
+in `hig/foundations/typography.md` and `tokens/apple-typography.json`; test this web scale at 200%.
 | Role | Spec |
 |---|---|
 | Hero ending | `lg:104px` semibold |

@@ -1,0 +1,46 @@
+/* TYPOGRAPHY GATE — web preview tokens. HIG values are in apple-typography.json.
+ * HIG: native point sizes and leading. CONV: 1 pt -> 1 CSS px at a 16px root for
+ * a visual mockup; native apps must use platform text styles and Dynamic Type APIs.
+ * rem units keep browser zoom and user font-size preferences effective. */
+
+:root {
+  --apple-type-family-ui: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", sans-serif; /* CONV */
+  --apple-type-family-serif: "New York", ui-serif, Georgia, serif; /* CONV */
+  --apple-type-ios-default: 1.0625rem; /* HIG 17 pt; CONV px mapping */
+  --apple-type-ios-minimum: 0.6875rem; /* HIG 11 pt; a floor, not a target */
+  --apple-type-macos-default: 0.8125rem; /* HIG 13 pt */
+  --apple-type-macos-minimum: 0.625rem; /* HIG 10 pt */
+  --apple-type-tvos-default: 1.8125rem; /* HIG 29 pt */
+  --apple-type-tvos-minimum: 1.4375rem; /* HIG 23 pt */
+  --apple-type-visionos-default: 1.0625rem; /* HIG 17 pt */
+  --apple-type-visionos-minimum: 0.75rem; /* HIG 12 pt */
+  --apple-type-watchos-default: 1rem; /* HIG 16 pt */
+  --apple-type-watchos-minimum: 0.75rem; /* HIG 12 pt */
+
+  /* iOS/iPadOS Large (default) text styles. Exact native tables and all AX sizes: JSON. */
+  --apple-type-large-title: 2.125rem; --apple-leading-large-title: 2.5625rem; /* 34/41 pt */
+  --apple-type-title-1: 1.75rem; --apple-leading-title-1: 2.125rem; /* 28/34 pt */
+  --apple-type-title-2: 1.375rem; --apple-leading-title-2: 1.75rem; /* 22/28 pt */
+  --apple-type-title-3: 1.25rem; --apple-leading-title-3: 1.5625rem; /* 20/25 pt */
+  --apple-type-headline: 1.0625rem; --apple-leading-headline: 1.375rem; /* 17/22 pt */
+  --apple-type-body: 1.0625rem; --apple-leading-body: 1.375rem; /* 17/22 pt */
+  --apple-type-callout: 1rem; --apple-leading-callout: 1.3125rem; /* 16/21 pt */
+  --apple-type-subhead: 0.9375rem; --apple-leading-subhead: 1.25rem; /* 15/20 pt */
+  --apple-type-footnote: 0.8125rem; --apple-leading-footnote: 1.125rem; /* 13/18 pt */
+  --apple-type-caption-1: 0.75rem; --apple-leading-caption-1: 1rem; /* 12/16 pt */
+  --apple-type-caption-2: 0.6875rem; --apple-leading-caption-2: 0.8125rem; /* 11/13 pt */
+}
+
+/* Opt-in web examples. Native Apple code uses semantic .largeTitle/.body/etc and lets
+ * the OS scale it. On web, browser zoom still scales these rem values. */
+.apple-type-large-title { font: 400 var(--apple-type-large-title)/var(--apple-leading-large-title) var(--apple-type-family-ui); }
+.apple-type-title-1 { font: 400 var(--apple-type-title-1)/var(--apple-leading-title-1) var(--apple-type-family-ui); }
+.apple-type-title-2 { font: 400 var(--apple-type-title-2)/var(--apple-leading-title-2) var(--apple-type-family-ui); }
+.apple-type-title-3 { font: 400 var(--apple-type-title-3)/var(--apple-leading-title-3) var(--apple-type-family-ui); }
+.apple-type-headline { font: 600 var(--apple-type-headline)/var(--apple-leading-headline) var(--apple-type-family-ui); }
+.apple-type-body { font: 400 var(--apple-type-body)/var(--apple-leading-body) var(--apple-type-family-ui); }
+.apple-type-callout { font: 400 var(--apple-type-callout)/var(--apple-leading-callout) var(--apple-type-family-ui); }
+.apple-type-subhead { font: 400 var(--apple-type-subhead)/var(--apple-leading-subhead) var(--apple-type-family-ui); }
+.apple-type-footnote { font: 400 var(--apple-type-footnote)/var(--apple-leading-footnote) var(--apple-type-family-ui); }
+.apple-type-caption-1 { font: 400 var(--apple-type-caption-1)/var(--apple-leading-caption-1) var(--apple-type-family-ui); }
+.apple-type-caption-2 { font: 400 var(--apple-type-caption-2)/var(--apple-leading-caption-2) var(--apple-type-family-ui); }
