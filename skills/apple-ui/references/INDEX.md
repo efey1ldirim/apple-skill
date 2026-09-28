@@ -39,6 +39,7 @@ ingested so far.
 | Live video / streaming / TV-style apps: live badges, channel switching, EPG/guide grid, content footer, PiP, cloud DVR/recording | + `hig/patterns/live-viewing-apps.md`, `hig/patterns/launching.md` (auto-start), `hig/patterns/going-full-screen.md`, `hig/patterns/feedback.md`, `hig/getting-started/designing-for-tvos.md` | HIG: Playing video, Remotes, Focus and selection |
 | Loading states: skeletons, placeholders, spinners/progress, prefetch, background downloads, long waits, offline/stalled loads | + `hig/patterns/loading.md`, `hig/patterns/feedback.md` (FEEDBACK GATE: named spinners, watchOS rule), `hig/patterns/launching.md` | HIG: Progress indicators |
 | Accounts: sign-in/sign-up, guest mode, passkeys/SSO, auth button wording, account deletion, subscriptions on deletion, device/TV sign-in | + `hig/patterns/managing-accounts.md`, `hig/foundations/privacy.md`, `hig/patterns/entering-data.md`, `hig/patterns/feedback.md` (deletion confirm) | HIG: Sign in with Apple, Onboarding, Apple In-App Purchase |
+| Push/email/SMS notifications: permission timing, urgency levels, time-sensitive alerts, marketing opt-in, quiet hours/digest, notification settings | + `hig/patterns/managing-notifications.md`, `hig/foundations/privacy.md`, `hig/patterns/feedback.md` | HIG: Notifications, Settings, Alerts |
 | Settings / list screen | + `field-notes/components.md` § Settings list | HIG: Settings, Lists and tables, Toggles |
 | Wizard / onboarding / form | + `field-notes/components.md` § Wizard, `hig/patterns/entering-data.md` (pre-gather, defaults, choices over typing, live validation, Continue only when required data is in), `hig/foundations/privacy.md` (no permission requests up front; ask only for needed data) | HIG: Onboarding, Entering data, Text fields, Pickers |
 | Consent / permission / connect screen | + `field-notes/components.md` § Consent screen, `hig/foundations/privacy.md` (grant dialog vs pre-alert screen) | HIG: Managing accounts, Alerts/Sheets |
@@ -100,7 +101,7 @@ on every ingestion. `—` = not yet ingested.
 | Typography `typography` ⚠️ CRITICAL | `hig/foundations/typography.md` (+ exact tables `tokens/apple-typography.json`, CSS web preview) | 2026-09-28 |
 | Writing `writing` | `hig/foundations/writing.md` | 2026-09-28 |
 
-### Patterns  (collection page: —; 11 of 25 ingested)
+### Patterns  (collection page: —; 12 of 25 ingested)
 | Page | File | Ingested |
 |---|---|---|
 | Charting data `charting-data` | `hig/patterns/charting-data.md` | 2026-09-28 |
@@ -114,7 +115,7 @@ on every ingestion. `—` = not yet ingested.
 | Live-viewing apps `live-viewing-apps` | `hig/patterns/live-viewing-apps.md` | 2026-09-28 |
 | Loading `loading` | `hig/patterns/loading.md` | 2026-09-28 |
 | Managing accounts `managing-accounts` | `hig/patterns/managing-accounts.md` | 2026-09-28 |
-| Managing notifications `managing-notifications` | — | — |
+| Managing notifications `managing-notifications` | `hig/patterns/managing-notifications.md` | 2026-09-28 |
 | Modality `modality` | — | — |
 | Multitasking `multitasking` | — | — |
 | Offering help `offering-help` | — | — |

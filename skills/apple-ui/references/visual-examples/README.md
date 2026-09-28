@@ -122,7 +122,7 @@ File names: `images/<id>-<dont|do|neutral|single|tab>-<n>-<light|dark>.png`.
 
 ## Pages scanned
 design-principles, designing-for-{ios, ipados, macos, tvos, visionos, watchos, games, iphone-duo}
-(no image pairs), accessibility, app-icons, branding, color, dark-mode, icons, images, immersive-experiences, inclusion, layout, materials, privacy, right-to-left, sf-symbols, typography, writing, charting-data, collaboration-and-sharing, drag-and-drop, entering-data, feedback, file-management, going-full-screen, launching, live-viewing-apps, loading, managing-accounts (the last nine have no pairs) (iPhone Duo pairs found once tab support was added).
+(no image pairs), accessibility, app-icons, branding, color, dark-mode, icons, images, immersive-experiences, inclusion, layout, materials, privacy, right-to-left, sf-symbols, typography, writing, charting-data, collaboration-and-sharing, drag-and-drop, entering-data, feedback, file-management, going-full-screen, launching, live-viewing-apps, loading, managing-accounts, managing-notifications (the last ten have no pairs) (iPhone Duo pairs found once tab support was added).
 
 Kind **tabs**: images shown behind tabs on Apple's page (one image per tab) — detected automatically.
 Animations are not in this catalog: the SF Symbols videos were measured into numbers instead — see
