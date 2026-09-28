@@ -251,7 +251,7 @@ System alert examples (tabs **privacy-01**):
     replace them with **importing content** (*Making your existing app compatible with visionOS*).
 
 ## Resources listed
-- Related: Entering data, Onboarding (not yet ingested).
+- Related: Entering data (✓), Onboarding (✓).
 - Developer documentation: *Requesting access to protected resources* (UIKit), *Security*,
   *Requesting authorization to use location services* (Core Location), *App Tracking Transparency*.
 - Videos: *Meet Trust Insights* (WWDC26 379), *Integrate privacy into your development process*

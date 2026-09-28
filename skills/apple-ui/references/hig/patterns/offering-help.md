@@ -70,7 +70,7 @@ The best interface needs no help; when it does, give **small, contextual, dismis
 | Tooltip variants | context-sensitive by control state |
 | Help fits context | no game-controller imagery for Siri Remote; "click" vs "tap" by platform |
 | Developer docs | TipKit · `help(_:)` (SwiftUI) · `NSHelpManager` (AppKit) |
-| Related HIG pages | Onboarding · Help menu (The menu bar) (not yet ingested) · Feedback ✓ · Writing ✓ |
+| Related HIG pages | Onboarding ✓ · Help menu (The menu bar) (not yet ingested) · Feedback ✓ · Writing ✓ |
 | Video | *Make features discoverable with TipKit* (WWDC23 10229) |
 
 ## Visual notes (from screenshots)
@@ -127,5 +127,5 @@ Field-note cross-links:
 
 ## Related
 - Ingested: Writing (✓), Feedback (✓ CRITICAL), Modality (✓), Entering data (✓), Inclusion (✓), Icons (✓), SF Symbols (✓), Launching (✓).
-- Not yet ingested: **Onboarding**, **The menu bar** (§ Help menu), Toolbars.
+- Ingested since: Onboarding (✓). Not yet ingested: **The menu bar** (§ Help menu), Toolbars.
 - Developer docs: TipKit, `help(_:)`, `NSHelpManager`. Video: *Make features discoverable with TipKit* (WWDC23 10229).

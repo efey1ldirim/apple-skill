@@ -73,7 +73,7 @@ The page has **no sizes, colours or numeric values**. Its concrete facts:
 | tvOS | minimum info; other-device sign-in via associated domains; shared-account per-user profiles (tvOS 16+); email keyboard screen with recent addresses |
 | watchOS | iCloud Keychain sync for autofill and settings |
 | Developer docs | *Supporting passkeys* · *Securing Logins with iCloud Keychain Verification Codes* · `LABiometryType` · Token revocation · *Configuring an associated domain* · `kSecUseUserIndependentKeychain` · *User Management Entitlement* |
-| Related HIG pages | Onboarding · Sign in with Apple (not yet ingested) |
+| Related HIG pages | Onboarding ✓ · Sign in with Apple (not yet ingested) |
 | Videos | *What's new in passkeys* (WWDC25 279) · *What's new in device management* (WWDC24 10143) |
 
 ## Visual notes (from screenshots)
@@ -134,5 +134,5 @@ Field-note cross-links:
 
 ## Related
 - Ingested: Privacy (✓), Entering data (✓), Feedback (✓ CRITICAL), Writing (✓), Launching (✓), Designing for tvOS (✓).
-- Ingested since: Managing notifications (✓). Not yet ingested: **Onboarding**, **Sign in with Apple**, Apple In-App Purchase, Settings, Alerts, Text fields, Remotes.
+- Ingested since: Managing notifications (✓). Onboarding (✓ ingested). Not yet ingested: **Sign in with Apple**, Apple In-App Purchase, Settings, Alerts, Text fields, Remotes.
 - Developer docs: listed in Specs & values. Videos: *What's new in passkeys* (WWDC25 279), *What's new in device management* (WWDC24 10143).

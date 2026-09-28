@@ -8,7 +8,7 @@ Launching is the time from "open" to "first screen is ready". Make it feel insta
 
 ### Framing (intro)
 - Launching **begins** when someone opens the app or game, **includes an initial download**, and **ends** when the first screen is ready.
-- After launching completes you may offer **onboarding**, which gives people a high-level view of the app or game (Onboarding page, not yet ingested).
+- After launching completes you may offer **onboarding**, which gives people a high-level view of the app or game (Onboarding ✓: `hig/patterns/onboarding.md`).
 
 ### Best practices
 - **must** **Launch instantly.** People want to start right away and sometimes won't wait more than **a couple of seconds**.
@@ -61,7 +61,7 @@ The page has **no sizes or colours**. Its numbers are vague durations, recorded 
 | tvOS live-viewing autoplay | after "a few seconds of inactivity" |
 | visionOS | start in the Shared Space, offer a control to enter the immersive Full Space |
 | Developer docs | Xcode *Specifying your app's launch screen* · UIKit *Responding to the launch of your app* |
-| Related HIG pages | Onboarding · Loading (not yet ingested) |
+| Related HIG pages | Onboarding ✓ · Loading ✓ |
 | Videos | *Optimizing App Launch* (WWDC19 423) · *Love at First Launch* (WWDC17 816) |
 
 ## Visual notes (from screenshots)
@@ -113,5 +113,5 @@ Field-note cross-links:
 
 ## Related
 - Ingested: Branding (✓), Layout (✓ CRITICAL), Feedback (✓ CRITICAL), Immersive experiences (✓), Dark Mode (✓), Color (✓ CRITICAL), File management (✓), Going full screen (✓), Designing for visionOS (✓).
-- Ingested: also Images (✓, covers layered images). Ingested since: Loading (✓), Multitasking (✓). Not yet ingested: **Onboarding**, Playing video. Live-viewing apps ✓ (`hig/patterns/live-viewing-apps.md`).
+- Ingested: also Images (✓, covers layered images). Ingested since: Loading (✓), Multitasking (✓). Onboarding (✓). Not yet ingested: Playing video. Live-viewing apps ✓ (`hig/patterns/live-viewing-apps.md`).
 - Developer docs: Xcode *Specifying your app's launch screen*; UIKit *Responding to the launch of your app*. Videos: *Optimizing App Launch* (WWDC19 423), *Love at First Launch* (WWDC17 816).

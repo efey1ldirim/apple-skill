@@ -44,7 +44,7 @@ ingested so far.
 | Multitasking: tabs/windows, resizing, split screen, background tabs, PiP, media that keeps playing, save/restore state, background uploads | + `hig/patterns/multitasking.md`, `hig/patterns/launching.md`, `hig/foundations/layout.md` (any window size) | HIG: Windows, Playing video, Playing audio |
 | Help, tips, coach marks, tooltips, help text, tutorials, first-use hints | + `hig/patterns/offering-help.md` (tip types + eligibility, tooltip copy 60–75 chars), `hig/foundations/writing.md`, `hig/patterns/feedback.md`; visuals `offering-help-01 … 03` | HIG: Onboarding, Help menu |
 | Settings / list screen | + `field-notes/components.md` § Settings list | HIG: Settings, Lists and tables, Toggles |
-| Wizard / onboarding / form | + `field-notes/components.md` § Wizard, `hig/patterns/entering-data.md` (pre-gather, defaults, choices over typing, live validation, Continue only when required data is in), `hig/foundations/privacy.md` (no permission requests up front; ask only for needed data) | HIG: Onboarding, Entering data, Text fields, Pickers |
+| Wizard / onboarding / form | + `field-notes/components.md` § Wizard, `hig/patterns/onboarding.md` (optional, interactive, tips over tours, postpone setup, permissions/ratings timing), `hig/patterns/entering-data.md` (pre-gather, defaults, choices over typing, live validation, Continue only when required data is in), `hig/foundations/privacy.md` (no permission requests up front; ask only for needed data) | HIG: Onboarding, Entering data, Text fields, Pickers |
 | Consent / permission / connect screen | + `field-notes/components.md` § Consent screen, `hig/foundations/privacy.md` (grant dialog vs pre-alert screen) | HIG: Managing accounts, Alerts/Sheets |
 | Asking for location/camera/mic/notifications/contacts, pre-permission ("soft ask") screens, cookie/tracking consent, purpose/reason copy, sign-in & password/passkey flows, storing tokens | + `hig/foundations/privacy.md` (visuals `privacy-01 … 04`) | HIG: Managing accounts, Sign in with Apple, Entering data, Onboarding |
 | Landing / marketing page | + `field-notes/landing-and-motion.md`, `hig/overview/design-landing.md` (Apple's own page: section rhythm, cards, links), `hig/foundations/motion.md` (purposeful motion, no ~0.2 Hz loops, no edge motion) | HIG: Branding, Typography, Materials |
@@ -104,7 +104,7 @@ on every ingestion. `—` = not yet ingested.
 | Typography `typography` ⚠️ CRITICAL | `hig/foundations/typography.md` (+ exact tables `tokens/apple-typography.json`, CSS web preview) | 2026-09-28 |
 | Writing `writing` | `hig/foundations/writing.md` | 2026-09-28 |
 
-### Patterns  (collection page: —; 15 of 25 ingested)
+### Patterns  (collection page: —; 16 of 25 ingested)
 | Page | File | Ingested |
 |---|---|---|
 | Charting data `charting-data` | `hig/patterns/charting-data.md` | 2026-09-28 |
@@ -122,7 +122,7 @@ on every ingestion. `—` = not yet ingested.
 | Modality `modality` | `hig/patterns/modality.md` | 2026-09-28 |
 | Multitasking `multitasking` | `hig/patterns/multitasking.md` | 2026-09-28 |
 | Offering help `offering-help` | `hig/patterns/offering-help.md` | 2026-09-28 |
-| Onboarding `onboarding` | — | — |
+| Onboarding `onboarding` | `hig/patterns/onboarding.md` | 2026-09-28 |
 | Playing audio `playing-audio` | — | — |
 | Playing haptics `playing-haptics` | — | — |
 | Playing video `playing-video` | — | — |
