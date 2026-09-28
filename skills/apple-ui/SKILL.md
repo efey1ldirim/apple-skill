@@ -96,7 +96,7 @@ description: >
 > 3. `node tools/check-feedback.mjs <changed files>` → **0 errors** (WARNs fixed or justified with `// feedback-ok: <reason>`).
 > 4. `node tools/run-feedback-probe.mjs <url>` (add `--click "<selector>"` / `--fill "<selector>=<value>"` to put toasts, errors and
 >    alerts on screen first) → **PASS** in light, dark and reduced motion at 375 and 1440: all messages announced, none colour-only,
->    invalid controls explained, text ≥ 4.5:1, no alertdialog at first paint, ≤ 1 modal, spinners named, disabled primaries explained.
+>    invalid controls explained, text ≥ 4.5:1, no alertdialog at first paint, ≤ 1 modal + at most one alert on top, spinners named, disabled primaries explained.
 > 5. Walk the failure path (network error, invalid input, denied, empty) and the destructive path of every flow; no `alert()` for routine
 >    success; no warning for expected removals (give Undo); every unavailable command says why.
 > If any step fails, the design is not finished.

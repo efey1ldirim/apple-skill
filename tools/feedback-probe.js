@@ -15,7 +15,8 @@
 //   invalid-without-message  aria-invalid / :user-invalid control with no associated message (HIG: help people correct; WCAG 3.3.1)
 //   color-only-status        a bare coloured dot/chip with no text alternative (WCAG 1.4.1)
 //   status-text-contrast     text in a feedback surface below 4.5:1 (3:1 large) — WCAG 1.4.3
-//   interruptions            alertdialog open at first paint = FAIL, more than one modal at once = FAIL (HIG: alerts lose impact)
+//   interruptions            alertdialog open at first paint = FAIL; more than one alert, or more than one non-alert modal, at once = FAIL
+//                            (HIG Feedback: alerts lose impact; HIG Modality: one modal at a time, only an alert may sit on top of one)
 //   spinner-unnamed          endless spinner with no name or status text (HIG: reach people not watching the screen)   [WARN]
 //   disabled-no-reason       disabled/aria-disabled primary control with no associated reason (HIG: show why)         [WARN]
 //   feedback-motion          infinite animation in a feedback surface under reduced motion                           [WARN]
@@ -145,7 +146,9 @@
     const modals = [...document.querySelectorAll(MODAL)].filter((m) => visible(m));
     const alertdialogs = modals.filter((m) => m.matches("[role=alertdialog]"));
     if (!opts.afterInteraction && alertdialogs.length) failures.push({ rule: "interruptions", detail: `${alertdialogs.length} alertdialog(s) open at first paint — an unprompted interruption`, els: alertdialogs.map(label) });
-    if (modals.length > 1) failures.push({ rule: "interruptions", detail: `${modals.length} modal surfaces visible at once (> 1)`, els: modals.map(label) });
+    const plainModals = modals.filter((m) => !m.matches("[role=alertdialog]"));
+    if (alertdialogs.length > 1) failures.push({ rule: "interruptions", detail: `${alertdialogs.length} alerts visible at once (> 1)`, els: alertdialogs.map(label) });
+    if (plainModals.length > 1) failures.push({ rule: "interruptions", detail: `${plainModals.length} non-alert modal views visible at once (> 1); only an alert may appear on top of a modal`, els: plainModals.map(label) });
     if (!opts.afterInteraction && modals.length && !alertdialogs.length) warnings.push({ rule: "interruptions", detail: "a modal dialog is open at first paint — justify (e.g. consent) or open it after an action", els: modals.map(label) });
 
     // 7. Endless spinners need a name (HIG: feedback must reach people who are not watching).

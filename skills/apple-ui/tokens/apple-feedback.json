@@ -74,7 +74,7 @@
     "cost": "Alerts disrupt the current context by design; overuse or unimportant content makes them lose their impact.",
     "webConv": {
       "src": "CONV",
-      "maxInterruptingSurfacesAtOnce": 1,
+      "maxInterruptingSurfacesAtOnce": "1 non-alert modal + at most 1 alert on top of it (HIG Modality: never more than one alert; other modals dismissed first)",
       "noneOnLoad": "no alertdialog/modal is open on first paint without a user action",
       "neverNativeDialogsForSuccess": "window.alert() / confirm() are not used to report routine success"
     }

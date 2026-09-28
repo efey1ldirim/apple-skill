@@ -32,7 +32,7 @@ const PAGES = [
   "charting-data", "collaboration-and-sharing", "drag-and-drop",
   "entering-data", "feedback", "file-management", "going-full-screen",
   "launching", "live-viewing-apps", "loading",
-  "managing-accounts", "managing-notifications",
+  "managing-accounts", "managing-notifications", "modality",
 ];
 // Stand-alone images that are comparisons on their own (before/after drawn inside one image, or
 // a sequence of single images under one rule). Consecutive singles under the same rule are grouped.

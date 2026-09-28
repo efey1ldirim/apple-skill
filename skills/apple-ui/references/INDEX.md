@@ -40,6 +40,7 @@ ingested so far.
 | Loading states: skeletons, placeholders, spinners/progress, prefetch, background downloads, long waits, offline/stalled loads | + `hig/patterns/loading.md`, `hig/patterns/feedback.md` (FEEDBACK GATE: named spinners, watchOS rule), `hig/patterns/launching.md` | HIG: Progress indicators |
 | Accounts: sign-in/sign-up, guest mode, passkeys/SSO, auth button wording, account deletion, subscriptions on deletion, device/TV sign-in | + `hig/patterns/managing-accounts.md`, `hig/foundations/privacy.md`, `hig/patterns/entering-data.md`, `hig/patterns/feedback.md` (deletion confirm) | HIG: Sign in with Apple, Onboarding, Apple In-App Purchase |
 | Push/email/SMS notifications: permission timing, urgency levels, time-sensitive alerts, marketing opt-in, quiet hours/digest, notification settings | + `hig/patterns/managing-notifications.md`, `hig/foundations/privacy.md`, `hig/patterns/feedback.md` | HIG: Notifications, Settings, Alerts |
+| Modals, dialogs, sheets, drawers, confirmations, popups, "are you sure" prompts, unsaved-changes dialogs, full-screen viewers | + `hig/patterns/modality.md` (only when beneficial, one at a time, obvious dismissal, data-loss guard), `hig/patterns/feedback.md` (FEEDBACK GATE: alertdialog rules), `hig/foundations/materials.md` | HIG: Sheets, Alerts, Popovers, Action sheets |
 | Settings / list screen | + `field-notes/components.md` § Settings list | HIG: Settings, Lists and tables, Toggles |
 | Wizard / onboarding / form | + `field-notes/components.md` § Wizard, `hig/patterns/entering-data.md` (pre-gather, defaults, choices over typing, live validation, Continue only when required data is in), `hig/foundations/privacy.md` (no permission requests up front; ask only for needed data) | HIG: Onboarding, Entering data, Text fields, Pickers |
 | Consent / permission / connect screen | + `field-notes/components.md` § Consent screen, `hig/foundations/privacy.md` (grant dialog vs pre-alert screen) | HIG: Managing accounts, Alerts/Sheets |
@@ -101,7 +102,7 @@ on every ingestion. `—` = not yet ingested.
 | Typography `typography` ⚠️ CRITICAL | `hig/foundations/typography.md` (+ exact tables `tokens/apple-typography.json`, CSS web preview) | 2026-09-28 |
 | Writing `writing` | `hig/foundations/writing.md` | 2026-09-28 |
 
-### Patterns  (collection page: —; 12 of 25 ingested)
+### Patterns  (collection page: —; 13 of 25 ingested)
 | Page | File | Ingested |
 |---|---|---|
 | Charting data `charting-data` | `hig/patterns/charting-data.md` | 2026-09-28 |
@@ -116,7 +117,7 @@ on every ingestion. `—` = not yet ingested.
 | Loading `loading` | `hig/patterns/loading.md` | 2026-09-28 |
 | Managing accounts `managing-accounts` | `hig/patterns/managing-accounts.md` | 2026-09-28 |
 | Managing notifications `managing-notifications` | `hig/patterns/managing-notifications.md` | 2026-09-28 |
-| Modality `modality` | — | — |
+| Modality `modality` | `hig/patterns/modality.md` | 2026-09-28 |
 | Multitasking `multitasking` | — | — |
 | Offering help `offering-help` | — | — |
 | Onboarding `onboarding` | — | — |

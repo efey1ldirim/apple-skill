@@ -57,7 +57,7 @@ The page has **no numbers**: no durations, sizes, counts or colours. Everything 
 | Examples named | Mail unread count in the toolbar · Finder trash without a warning · Apple Pay confirmation · Maps same-location message |
 | Related HIG pages | Playing audio · Playing haptics · Motion (Motion ✓; the other two not yet ingested) |
 | Developer docs / videos | UIKit *Animation and haptics* · *Designing Fluid Interfaces* (WWDC18 803) · *Essential Design Principles* (WWDC17 802) |
-| Web tokens added (CONV/WCAG) | transient message ≥ max(5 s, 60 ms × characters), errors and warnings not auto-dismissed, ≤ 1 interrupting surface, ≥ 2 channels per message |
+| Web tokens added (CONV/WCAG) | transient message ≥ max(5 s, 60 ms × characters), errors and warnings not auto-dismissed, ≤ 1 modal (+ one alert on top of it), ≥ 2 channels per message |
 
 ## Platform considerations
 See § Platform considerations above (only watchOS differs). The web mapping of the watchOS rule is in § Web translation.
@@ -92,11 +92,13 @@ Every message a web UI shows falls into one row of the delivery ladder in `token
 1. Read this page and `tokens/apple-feedback.json`. Classify every message in the design with the delivery ladder; write the row name next to it in the handoff.
 2. Use the tokens/classes (`.fb-status`, `.fb-inline`, `.fb-toast`, `.fb-alert`, `.fb-reason`, `.sr-only`) or reproduce their contract: text + icon, hue on the icon, roles from the ladder.
 3. `node tools/check-feedback.mjs <changed files>` → **0 errors** (WARNs fixed or justified with `// feedback-ok: <reason>`).
-4. `node tools/run-feedback-probe.mjs <url>` (add `--click "<selector>"` / `--fill "<selector>=<value>"` to put toasts, errors and alerts on screen first) → **PASS** in light, dark and reduced motion at 375 and 1440 px: every visible message announced, none colour-only, invalid controls have messages, text ≥ 4.5:1, no unprompted alertdialog, ≤ 1 modal, spinners named, disabled primaries explained.
+4. `node tools/run-feedback-probe.mjs <url>` (add `--click "<selector>"` / `--fill "<selector>=<value>"` to put toasts, errors and alerts on screen first) → **PASS** in light, dark and reduced motion at 375 and 1440 px: every visible message announced, none colour-only, invalid controls have messages, text ≥ 4.5:1, no unprompted alertdialog, ≤ 1 non-alert modal (a single alert may sit on top of it, never two alerts), spinners named, disabled primaries explained.
 5. Manually walk the failure path of every flow (network error, invalid input, permission denied, empty result) and the destructive path (delete/overwrite) and confirm each shows the right ladder row; run with a screen reader once.
 If any step fails, the design is not finished.
 
 Checker/probe rules: static `alert-for-routine-success` (ERROR), `toast-not-announced` (ERROR), `native-alert`, `error-colour-only`, `spinner-unnamed`, `disabled-no-reason`, `error-autodismiss`, `dialog-open-on-load`, `interjection-copy`, `we-in-error`, `alert-overuse` (WARN). Live `feedback-not-announced`, `feedback-no-text`, `invalid-without-message`, `color-only-status`, `status-text-contrast`, `interruptions` (FAIL) and `spinner-unnamed`, `disabled-no-reason`, `feedback-motion` (WARN).
+
+Refinement (2026-09-28, after ingesting Modality): the probe first failed on any two modal surfaces; Modality allows one alert on top of another modal but never two alerts, and asks for other modals to be dismissed first, so the rule is now: FAIL on more than one alert, or more than one non-alert modal. Checked with temporary pages (modal + alert = PASS; two plain modals = FAIL).
 
 Validation record (2026-09-28): `bad.html` → static 2 errors + 7 warnings, live FAIL in 6/6 runs (9 failures); `good.html` → static clean, live PASS in 6/6 runs (also after `--click "#del"` opens its alert). Noise test on the Nonplo client (`client/src`, 467 files, read-only, nothing modified): first pass **0 errors, 144 warnings**; a spot check of the hits showed false positives (spinners inside labelled buttons, a config map `iconClassName: 'animate-spin'`, hover-only red classes, controlled `open={state}` dialogs, a sidebar's `defaultOpen`), which were tuned out. Final: **0 errors, 60 warnings** = 48 spinners with no name or label nearby (mostly a button that shows only a spinner while pending, or a bare page loader), 11 red-tone classes on error-like lines, 1 "Oops! Page not found". A five-hit spot check of the earlier spinner list found three genuine and two false positives; both false-positive shapes were then fixed.
 
@@ -116,7 +118,7 @@ Field-note cross-links:
 - [ ] Each message has **text plus an icon/shape**; the hue is on the icon only; no message relies on colour, sound or vibration alone.
 - [ ] Every dynamic message is announced (`role=status` / `alert` / `aria-live`, or `aria-describedby` / `aria-errormessage` on the field); live regions exist before their text changes.
 - [ ] Status sits next to the item it describes, quietly; no page-wide coloured banners for routine state.
-- [ ] Alerts (`alertdialog`) only for critical, actionable news; ≤ 1 at a time; none at first paint; no native `alert()`/`confirm()` for routine success.
+- [ ] Alerts (`alertdialog`) only for critical, actionable news; never two at once (an alert may appear over one modal); none at first paint; no native `alert()`/`confirm()` for routine success.
 - [ ] Warnings appear only for unexpected, irreversible loss; expected removals give Undo, not a prompt.
 - [ ] Only significant completions are confirmed; transient messages last ≥ max(5 s, 60 ms × characters) with pause/dismiss; errors and warnings persist.
 - [ ] Every unavailable command says why (associated reason, or enabled + explains on press).
