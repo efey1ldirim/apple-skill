@@ -37,6 +37,7 @@ ingested so far.
 | Documents/files: create-open-save flows, autosave, unsaved changes, file pickers, upload/export/import, previews, drive/library start screens | + `hig/patterns/file-management.md` (autosave, extensions, Quick Look, document launcher), `hig/patterns/feedback.md` (save status, unsaved dot), `hig/patterns/drag-and-drop.md` | HIG: Toolbars, The menu bar (File menu), Printing, Sheets |
 | First load / app start: launch or splash screens, app shell + skeletons, PWA startup, restoring last state, orientation at start | + `hig/patterns/launching.md` (near-identical first screen, no text/branding, restore state), `hig/foundations/branding.md`, `hig/foundations/layout.md` | HIG: Onboarding, Loading |
 | Live video / streaming / TV-style apps: live badges, channel switching, EPG/guide grid, content footer, PiP, cloud DVR/recording | + `hig/patterns/live-viewing-apps.md`, `hig/patterns/launching.md` (auto-start), `hig/patterns/going-full-screen.md`, `hig/patterns/feedback.md`, `hig/getting-started/designing-for-tvos.md` | HIG: Playing video, Remotes, Focus and selection |
+| Loading states: skeletons, placeholders, spinners/progress, prefetch, background downloads, long waits, offline/stalled loads | + `hig/patterns/loading.md`, `hig/patterns/feedback.md` (FEEDBACK GATE: named spinners, watchOS rule), `hig/patterns/launching.md` | HIG: Progress indicators |
 | Settings / list screen | + `field-notes/components.md` § Settings list | HIG: Settings, Lists and tables, Toggles |
 | Wizard / onboarding / form | + `field-notes/components.md` § Wizard, `hig/patterns/entering-data.md` (pre-gather, defaults, choices over typing, live validation, Continue only when required data is in), `hig/foundations/privacy.md` (no permission requests up front; ask only for needed data) | HIG: Onboarding, Entering data, Text fields, Pickers |
 | Consent / permission / connect screen | + `field-notes/components.md` § Consent screen, `hig/foundations/privacy.md` (grant dialog vs pre-alert screen) | HIG: Managing accounts, Alerts/Sheets |
@@ -98,7 +99,7 @@ on every ingestion. `—` = not yet ingested.
 | Typography `typography` ⚠️ CRITICAL | `hig/foundations/typography.md` (+ exact tables `tokens/apple-typography.json`, CSS web preview) | 2026-09-28 |
 | Writing `writing` | `hig/foundations/writing.md` | 2026-09-28 |
 
-### Patterns  (collection page: —; 9 of 25 ingested)
+### Patterns  (collection page: —; 10 of 25 ingested)
 | Page | File | Ingested |
 |---|---|---|
 | Charting data `charting-data` | `hig/patterns/charting-data.md` | 2026-09-28 |
@@ -110,7 +111,7 @@ on every ingestion. `—` = not yet ingested.
 | Going full screen `going-full-screen` | `hig/patterns/going-full-screen.md` | 2026-09-28 |
 | Launching `launching` | `hig/patterns/launching.md` | 2026-09-28 |
 | Live-viewing apps `live-viewing-apps` | `hig/patterns/live-viewing-apps.md` | 2026-09-28 |
-| Loading `loading` | — | — |
+| Loading `loading` | `hig/patterns/loading.md` | 2026-09-28 |
 | Managing accounts `managing-accounts` | — | — |
 | Managing notifications `managing-notifications` | — | — |
 | Modality `modality` | — | — |

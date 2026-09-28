@@ -6,51 +6,68 @@
     "CONV": "apple-skill web convention (not stated by Apple)"
   },
   "note": "The HIG Feedback page gives NO numbers: no durations, sizes, counts or colours. Everything below tagged HIG is a rule or a named example from the page; every number is tagged CONV or WCAG.",
-
   "principle": {
     "src": "HIG",
     "match": "The most effective feedback matches the significance of the information to the way it is delivered.",
     "passive": "Status information is often best shown passively, so people can look at it when they need it.",
     "interrupting": "A warning about possible data loss should interrupt, so people get a chance to avoid the problem.",
-    "kinds": ["current status", "success or failure of an important task or action", "warning about an action with negative consequences", "opportunity to correct a mistake or problematic situation"]
+    "kinds": [
+      "current status",
+      "success or failure of an important task or action",
+      "warning about an action with negative consequences",
+      "opportunity to correct a mistake or problematic situation"
+    ]
   },
-
   "deliveryLadder": {
     "src": "HIG (levels: passive → interrupting) + ARIA/CONV (web roles)",
     "status": {
       "kind": "current status of something",
       "delivery": "passive, integrated next to the item it describes (HIG example: Mail shows the latest update and the unread count in the mailbox toolbar)",
       "interrupts": false,
-      "role": "status", "ariaLive": "polite", "persistence": "stays as long as the state is true", "src": "HIG + ARIA"
+      "role": "status",
+      "ariaLive": "polite",
+      "persistence": "stays as long as the state is true",
+      "src": "HIG + ARIA"
     },
     "successRoutine": {
       "kind": "an ordinary action worked",
       "delivery": "no separate confirmation; the interface simply reflects the new state (people expect success)",
-      "interrupts": false, "src": "HIG (confirm only significant tasks)"
+      "interrupts": false,
+      "src": "HIG (confirm only significant tasks)"
     },
     "successSignificant": {
       "kind": "a significant action or task completed (HIG example: a successful Apple Pay transaction)",
       "delivery": "a brief, non-blocking confirmation near the action",
-      "interrupts": false, "role": "status", "ariaLive": "polite", "src": "HIG + ARIA"
+      "interrupts": false,
+      "role": "status",
+      "ariaLive": "polite",
+      "src": "HIG + ARIA"
     },
     "cannotCarryOut": {
       "kind": "a command can't be carried out",
       "delivery": "tell people it can't be done AND why, at the control or in the place they asked (HIG example: Maps says it can't route from and to the same location)",
-      "interrupts": false, "role": "alert", "ariaLive": "assertive", "mustExplainWhy": true, "src": "HIG + ARIA"
+      "interrupts": false,
+      "role": "alert",
+      "ariaLive": "assertive",
+      "mustExplainWhy": true,
+      "src": "HIG + ARIA"
     },
     "correction": {
       "kind": "an opportunity to correct a mistake or problematic situation",
       "delivery": "inline, right next to the problem, at the moment it is detected",
-      "interrupts": false, "role": "alert (or aria-describedby on the invalid field)", "src": "HIG + WCAG 3.3.1/3.3.3"
+      "interrupts": false,
+      "role": "alert (or aria-describedby on the invalid field)",
+      "src": "HIG + WCAG 3.3.1/3.3.3"
     },
     "warningDataLoss": {
       "kind": "an action that can cause data loss that is unexpected AND irreversible",
       "delivery": "interrupt: an alert that names the consequence and offers the safe choice (HIG: alerts deliver critical, ideally actionable, information)",
-      "interrupts": true, "role": "alertdialog", "src": "HIG + ARIA",
+      "interrupts": true,
+      "role": "alertdialog",
+      "src": "HIG + ARIA",
       "doNotWarn": "when the data loss is the expected result of the action (HIG example: the Finder does not warn on every file thrown away)"
     }
   },
-
   "alerts": {
     "src": "HIG",
     "useFor": "critical and, ideally, actionable information",
@@ -62,7 +79,6 @@
       "neverNativeDialogsForSuccess": "window.alert() / confirm() are not used to report routine success"
     }
   },
-
   "accessibility": {
     "src": "HIG (multiple channels) + WCAG",
     "rule": "Provide feedback through more than one channel so people receive it however they use the device.",
@@ -70,13 +86,18 @@
     "webConv": {
       "src": "WCAG 1.4.1 + ARIA 4.1.3 + CONV",
       "minChannelsPerMessage": 2,
-      "channels": ["text", "icon or shape", "colour", "sound (optional, never alone)", "haptics via navigator.vibrate (optional, never alone)"],
+      "channels": [
+        "text",
+        "icon or shape",
+        "colour",
+        "sound (optional, never alone)",
+        "haptics via navigator.vibrate (optional, never alone)"
+      ],
       "neverColourAlone": true,
       "announce": "every dynamically shown message is exposed to assistive tech (role=status / role=alert / aria-live / aria-describedby on the field)",
       "spinnerNeedsName": "an indeterminate spinner has an accessible name or a live status text"
     }
   },
-
   "timing": {
     "src": "CONV / WCAG 2.2.1 — the HIG gives no durations",
     "transientMessageMinMs": 5000,
@@ -85,22 +106,43 @@
     "errorsAndWarnings": "do not auto-dismiss; they stay until resolved or dismissed by the person",
     "toastQueue": "one transient message at a time; the newest replaces or queues, never stacks more than 3"
   },
-
   "controls": {
     "src": "HIG (show when a command can't be carried out and why) + CONV",
     "disabledNeedsReason": "a disabled primary control has a visible or programmatically associated reason (aria-describedby), or stays enabled and explains on press",
     "requiredBeforeContinue": "Next/Continue is available only after required data is provided (HIG Entering data) and the missing item is named"
   },
-
   "watchOS": {
     "src": "HIG",
     "avoidIndeterminateProgress": "Don't show an indeterminate progress indicator in a watchOS app; an animated indicator implies people must keep watching. Tell people they will be notified when the process completes.",
     "webConv": "On glanceable, small or background surfaces (widgets, wearables, PWAs, long-running jobs) prefer a determinate progress value or 'we will notify you' over an endless spinner."
   },
-
   "wording": {
     "src": "Writing page (hig/foundations/writing.md) — applies to feedback copy",
-    "avoid": ["oops", "uh-oh", "whoops", "we're having trouble"],
+    "avoid": [
+      "oops",
+      "uh-oh",
+      "whoops",
+      "we're having trouble"
+    ],
     "state": "say what happened and what to do next; no blame"
+  },
+  "loading": {
+    "src": "HIG Loading page (rules) + CONV (numbers)",
+    "hig": {
+      "showSomethingImmediately": true,
+      "indicatorWhen": "loading takes more than a moment or two",
+      "determinateWhenDurationKnown": true,
+      "indeterminateWhenUnknown": true,
+      "watchOS": "avoid; an indicator beats a blank screen for a second or two"
+    },
+    "conv": {
+      "src": "CONV (Apple gives no numbers)",
+      "instantBelowMs": 100,
+      "skeletonImmediately": true,
+      "spinnerAfterMs": 300,
+      "spinnerMinVisibleMs": 500,
+      "determinateNeverStallsAt": "99%",
+      "announce": "role=status once; aria-busy on the updating region"
+    }
   }
 }
