@@ -76,6 +76,7 @@ work from memory of this summary.**
 | Field notes | `references/field-notes/` | Patterns validated on a production web app, with exact Tailwind/CSS values, components, rejected ideas and engineering traps. |
 | Apple's web patterns | `references/apple-web/` | Apple's own websites measured live (mega-menu, nav, cards, docs layout) — the closest reference for web work. |
 | Apple's visual do/don't | `references/visual-examples/` | Apple's ✗/✓ example images (fetched locally by a script) with a catalog of which rule each pair illustrates — for visual self-checks. |
+| Symbol effects kit | `references/symbol-effects.md`, `tokens/apple-symbol-effects.*` | SF Symbols animation presets measured frame-by-frame from Apple's videos, rebuilt for any icon set (CSS + JS), with a how-to per effect. |
 | Visual references | `references/screenshots-described/` | Text descriptions of screenshots (Apple pages and curated reference shots) so proportions can be recalled without the images. |
 
 ## Workflow
@@ -145,6 +146,7 @@ never decoration). Use them to resolve trade-offs; details and web translations 
 - [ ] Layout works at 375px with no horizontal overflow (grid `min-w-0` trap checked).
 - [ ] Fixed-height flows use `100dvh`, not `100vh`; the primary action is always visible.
 - [ ] Motion per `hig/foundations/motion.md`: every animation has a job, never the only signal, never blocks input; `prefers-reduced-motion` respected; transitions ≤ 300ms (FN) with Apple-like easing; no edge motion or sustained ~0.2 Hz loops in full-view/hero surfaces.
+- [ ] Icon motion only via the measured kit (`references/symbol-effects.md`), one purposeful effect per moment; no SF Symbols artwork on the web (licence).
 - [ ] Icons: one family + one stroke weight, weight-matched to text, standard metaphors (× close, trash, •••, share, filter) per `hig/foundations/icons.md`; icon-only controls have `aria-label`.
 - [ ] RTL-ready per `hig/foundations/right-to-left.md`: logical CSS only (`check-layout.mjs --strict` clean), numbers via `Intl` and never reversed, direction icons mirror, logos/photos/checkmarks never do.
 - [ ] Touch targets ≥ 44px; focus is visible for keyboard users.

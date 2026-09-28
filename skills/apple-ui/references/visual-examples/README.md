@@ -102,12 +102,25 @@ File names: `images/<id>-<dont|do|neutral|single|tab>-<n>-<light|dark>.png`.
 | right-to-left-19 | compare | Keep design-language components (slash) | speaker.slash LTR | RTL: speaker mirrored, slash still a backslash | CSS-mirrored slashed icons ("\\" turning into "/") |
 | right-to-left-20 | do/don't | Move badges with the base when balance needs it | ✓ LTR cart, badge top-right · ✗ RTL cart, badge still top-right | ✓ RTL cart, badge top-left | Badges stuck in the physical corner |
 | right-to-left-21 | compare | Keep tool orientation while mirroring the base | LTR mail+text with magnifier | RTL: base mirrored, magnifier keeps its slant | Handed tools mirrored with the rest |
+| sf-symbols-01 | compare | Symbol layers (primary / secondary / tertiary) | cloud.sun.rain with the cloud layer highlighted | same with the sun, then the drops highlighted | Icons you want to animate or colour per layer drawn as one merged path |
+| sf-symbols-02 | single | Hierarchical = one colour, stepped opacity | cloud 100 %, sun ~50 %, drops ~25 % in system blue | — | Secondary icon parts in a different hue instead of lower opacity |
+| sf-symbols-03 | single | Monochrome | eight symbols in one flat blue | — | Mixed colours in one icon for no reason |
+| sf-symbols-04 | single | Hierarchical | same eight, accents solid, bodies pale | — | Depth faked with extra outlines instead of opacity steps |
+| sf-symbols-05 | single | Palette | accents blue, bodies light grey | — | More than 2–3 colours per icon |
+| sf-symbols-06 | single | Multicolor = intrinsic meaning colours | green add badge, red trash/dots, yellow Mac | — | Brand colours on icons where colour should mean something (red = destructive) |
+| sf-symbols-07 | compare | Gradient fill (SF Symbols 7) | solid yellow sun | same sun with a subtle one-hue gradient | Gradients on small UI icons; multi-hue rainbow gradients |
+| sf-symbols-08 | single | Variable color = quantity | speaker with 0 / 1 / 2 / 3 waves coloured | — | Signal/volume icons that don't reflect the value; variable colour used for depth |
+| sf-symbols-09 | single | 9 weights × 3 scales | folder.badge.plus from ultralight to black, small to large | — | Icon stroke weight that doesn't match the adjacent text |
+| sf-symbols-10 | compare | Scale relative to cap height | small ⊕ spans cap band | medium slightly beyond · large plus spans the band | Icons sized in fixed px unrelated to the text beside them |
+| sf-symbols-11 | single | Design variants + localised scripts | heart outline/fill × plain/slash/circle/square/rectangle | 12 text symbols in 8 scripts | Outline icons in a selected tab; unavailable state without a slash; Latin letters in icons for other scripts |
 
 ## Pages scanned
 design-principles, designing-for-{ios, ipados, macos, tvos, visionos, watchos, games, iphone-duo}
-(no image pairs), accessibility, app-icons, branding, color, dark-mode, icons, images, immersive-experiences, inclusion, layout, materials, privacy, right-to-left (iPhone Duo pairs found once tab support was added).
+(no image pairs), accessibility, app-icons, branding, color, dark-mode, icons, images, immersive-experiences, inclusion, layout, materials, privacy, right-to-left, sf-symbols (iPhone Duo pairs found once tab support was added).
 
 Kind **tabs**: images shown behind tabs on Apple's page (one image per tab) — detected automatically.
+Animations are not in this catalog: the SF Symbols videos were measured into numbers instead — see
+`references/symbol-effects.md` and `tokens/apple-symbol-effects.json`.
 Kind **do** / **don't** alone: a row that carries only ✓ or only ✗ (Apple sometimes splits one
 comparison across two rules, e.g. Privacy's pre-alert ✓ and its two ✗ variants) — detected automatically.
 Kind **single**: a stand-alone image that is itself a comparison (before/after drawn inside one

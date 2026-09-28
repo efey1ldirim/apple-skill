@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Symbol effects</title>
+<!-- Demo of the SF-Symbols-style effect kit (tokens/apple-symbol-effects.*). Icons: Lucide (ISC).
+     Each row mirrors one of Apple's HIG demo videos with analogous open-licence icons. -->
+<link rel="stylesheet" href="../../tokens/apple-symbol-effects.css">
+<style>
+  :root { --bg:#F5F5F7; --group:#FFFFFF; --text:#1D1D1F; --text2:rgb(0 0 0 / 55%); --tint:#0088FF; --hair:rgb(0 0 0 / 8%); color-scheme: light dark; }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --bg:#08080A; --group:#1C1C1E; --text:#F5F5F7; --text2:rgb(255 255 255 / 55%); --tint:#0091FF; --hair:rgb(255 255 255 / 10%); } }
+  :root[data-theme="dark"] { --bg:#08080A; --group:#1C1C1E; --text:#F5F5F7; --text2:rgb(255 255 255 / 55%); --tint:#0091FF; --hair:rgb(255 255 255 / 10%); }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--text); font: 17px/1.47 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Inter", system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
+  main { max-width: 52rem; margin: 0 auto; padding: 48px 16px 96px; }
+  h1 { font-size: 40px; line-height: 1.1; letter-spacing: -0.022em; font-weight: 600; margin: 0 0 8px; }
+  .lede { color: var(--text2); margin: 0 0 40px; max-width: 34em; }
+  section { background: var(--group); border-radius: 20px; padding: 20px 20px 16px; margin-bottom: 20px; box-shadow: 0 1px 2px rgb(0 0 0 / 4%), 0 8px 24px rgb(0 0 0 / 4%); }
+  h2 { font-size: 20px; font-weight: 600; letter-spacing: -0.01em; margin: 0; }
+  .desc { color: var(--text2); font-size: 15px; margin: 2px 0 12px; }
+  .row { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); align-items: center; justify-items: center; min-height: 128px; }
+  .cell { display: inline-grid; place-items: center; width: 96px; height: 96px; color: var(--text); }
+  .cell > svg { grid-area: 1 / 1; width: 72px; height: 72px; overflow: visible; }
+  .bar { display:flex; justify-content:center; gap: 8px; flex-wrap: wrap; }
+  button { font: inherit; font-size: 15px; font-weight: 500; color: var(--tint); background: transparent; border: 0; padding: 10px 14px; min-height: 44px; border-radius: 999px; cursor: pointer; }
+  button:hover { background: var(--hair); }
+  button:focus-visible { outline: 2px solid var(--tint); outline-offset: 2px; }
+  .tag { font-size: 13px; color: var(--text2); }
+  .hier > :nth-child(n+2) { opacity: .5; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Symbol effects</h1>
+  <p class="lede">SF Symbols’ animation presets, re-created for the web from frame-by-frame measurements of Apple’s HIG demos. Icons are Lucide (ISC) — the timing is the point.</p>
+  <div id="rows"></div>
+  <p class="tag">Respects Reduce Motion: with it on, motion effects become fades or static states.</p>
+</main>
+<script src="lucide-icons.js"></script>
+<script src="../../tokens/apple-symbol-effects.global.js"></script>
+<script>
+const NS = "http://www.w3.org/2000/svg";
+function icon(name, { layers, extra = [] } = {}) {
+  const svg = document.createElementNS(NS, "svg");
+  svg.setAttribute("viewBox", "0 0 24 24"); svg.setAttribute("fill", "none"); svg.setAttribute("stroke", "currentColor");
+  svg.setAttribute("stroke-width", "2"); svg.setAttribute("stroke-linecap", "round"); svg.setAttribute("stroke-linejoin", "round");
+  svg.setAttribute("aria-hidden", "true");
+  for (const [tag, attrs] of [...(window.LUCIDE_ICONS[name] || []), ...extra]) {
+    const el = document.createElementNS(NS, tag); for (const [k, v] of Object.entries(attrs)) el.setAttribute(k, v); svg.append(el);
+  }
+  if (layers) [...svg.children].forEach((el, i) => layers[i] != null && (el.dataset.sfxLayer = layers[i]));
+  return svg;
+}
+const badge = (tag, attrs) => [["g", { "data-sfx-badge": "", transform: "translate(13 13) scale(.45)" }], tag, attrs];
+const SE = window.SymbolEffects;
+const rows = [
+  { title: "Appear", desc: "Layers emerge one after another — 0.2 s in total.", icons: ["radio", "images", "audio-lines"],
+    play: async (s) => { s.forEach((x) => (x.style.opacity = 0)); await new Promise((r) => setTimeout(r, 300)); s.forEach((x) => (x.style.opacity = "")); return Promise.all(s.map((x) => SE.appear(x))); } },
+  { title: "Disappear", desc: "Layers recede — faster than appear (~0.13 s).", icons: ["folder-plus", "lightbulb", "messages-square"],
+    play: async (s) => { await Promise.all(s.map((x) => SE.disappear(x))); await new Promise((r) => setTimeout(r, 700)); s.forEach((x) => x.getAnimations().forEach((a) => a.cancel()));
+      layersAll(s).forEach((l) => l.getAnimations().forEach((a) => a.cancel())); } },
+  { title: "Bounce", desc: "Up: 1.25× → 0.91× → rest in 0.57 s. Down: 0.75× → 1.11× → rest in 0.67 s.", icons: ["music", "smile", "aperture"], buttons: ["up", "down"],
+    play: (s, dir) => Promise.all(s.map((x) => SE.bounce(x, { direction: dir }))) },
+  { title: "Scale", desc: "Persists until removed: down to 0.5×, up to 1.25× (0.27 s); restore 0.23 s.", icons: ["picture-in-picture-2", "layers", "speaker"], buttons: ["down", "up", "restore"],
+    play: (s, dir) => Promise.all(s.map((x) => dir === "restore" ? SE.unscale(x) : SE.scale(x, { direction: dir }))) },
+  { title: "Pulse", desc: "The marked layer’s opacity: 1 → 0.5 → 1 every 2.0 s.", icons: [["airplay", { layers: null }], "message-square-text", "monitor-smartphone"], toggle: true,
+    setup: (s) => { s[0].children[0].dataset.sfxPulse = ""; s[1].children[1].dataset.sfxPulse = ""; s[1].children[2].dataset.sfxPulse = ""; s[2].children[0].dataset.sfxPulse = ""; },
+    play: (s) => s.flatMap((x) => SE.pulse(x)) },
+  { title: "Variable color", desc: "One layer at a time, 0.33 s apart; inactive layers at 30 %.", icons: [["volume-2"], ["wifi", { layers: [0, 3, 2, 1] }], "signal"], toggle: true,
+    play: (s) => [...SE.variableColor(s[0], { layers: [...s[0].children].slice(1) }), ...SE.variableColor(s[1], { reversing: true }), ...SE.variableColor(s[2], { mode: "cumulative" })] },
+  { title: "Replace", desc: "Down-up · up-up · off-up. The new symbol starts at 0.5×.", icons: ["layout-grid", "cloud-rain", "mic"],
+    play: (s, _, cells) => { const to = [["list", "downUp"], ["cloud-sun", "upUp"], ["circle-x", "offUp"]];
+      return Promise.all(s.map((x, i) => SE.replace(x, icon(to[i][0]), { style: to[i][1] }))).then((n) => new Promise((r) => setTimeout(r, 900)).then(() => Promise.all(n.map((x, i) => SE.replace(x, icon(rowsDef[6].icons[i]), { style: to[i][1] }))))); } },
+  { title: "Magic Replace", desc: "Badges spring in, slashes draw on — then revert.", icons: [["credit-card", { extra: [["circle", { cx: 19, cy: 17, r: 4.5, "data-sfx-badge": "", fill: "var(--group, #fff)" }], ["path", { d: "M19 15v2.5M19 19.4h.01", "data-sfx-badge": "" }]] }], ["mic", { extra: [["line", { x1: 2, y1: 2, x2: 22, y2: 22, "data-sfx-slash": "", style: "stroke-dasharray:31.2;stroke-dashoffset:31.2" }]] }], ["user-round", { extra: [["circle", { cx: 18.5, cy: 18.5, r: 4.5, "data-sfx-badge": "", fill: "var(--group, #fff)" }], ["path", { d: "m16.6 18.6 1.3 1.3 2.5-2.6", "data-sfx-badge": "" }]] }]],
+    setup: (s) => s.forEach((x) => x.querySelectorAll("[data-sfx-badge]").forEach((b) => (b.style.opacity = 0))),
+    play: async (s) => { await Promise.all([magicBadges(s[0], true), SE.magicSlash(s[1], { on: true }), magicBadges(s[2], true)]); await new Promise((r) => setTimeout(r, 900));
+      await Promise.all([magicBadges(s[0], false), SE.magicSlash(s[1], { on: false }), magicBadges(s[2], false)]); } },
+  { title: "Wiggle", desc: "Damped: 5 % of the icon → 3.5 % → 2.5 %, settles in 0.9 s. Rotational: ±9°.", icons: ["arrow-down-to-line", "images", "car-front"],
+    play: (s) => Promise.all([SE.wiggle(s[0], { direction: "down" }), SE.wiggle(s[1], { direction: "clockwise" }), SE.wiggle(s[2], { direction: "right" })]) },
+  { title: "Breathe", desc: "1 → 1.2× while fading to ~30 %, every 3.0 s.", icons: ["audio-lines", "languages", "target"], toggle: true,
+    play: (s) => s.map((x) => SE.breathe(x)) },
+  { title: "Rotate", desc: "One clockwise turn in 2.0 s — fast start, long ease-out.", icons: ["settings", "fan", "orbit"],
+    play: (s) => Promise.all(s.map((x) => SE.rotate(x)).flat().map((a) => a && a.finished)) },
+  { title: "Draw On / Off", desc: "Stroke draws along its path (our convention — no Apple video).", icons: ["arrow-right", "signature", "rotate-cw"], buttons: ["on", "off"],
+    play: (s, dir) => Promise.all(s.map((x) => dir === "off" ? SE.drawOff(x) : SE.drawOn(x))) },
+];
+const rowsDef = rows.map((r) => ({ icons: r.icons.map((i) => (Array.isArray(i) ? i[0] : i)) }));
+function layersAll(s) { return s.flatMap((x) => SE.layersOf(x)); }
+function magicBadges(svg, on) { return Promise.all([...svg.querySelectorAll("[data-sfx-badge]")].map((b) => { b.style.opacity = ""; const tmp = document.createElementNS(NS, "svg"); return SE.magicBadge({ querySelector: () => b }, { on }); })); }
+const host = document.getElementById("rows");
+rows.forEach((r) => {
+  const sec = document.createElement("section");
+  sec.innerHTML = `<h2>${r.title}</h2><p class="desc">${r.desc}</p><div class="row"></div><div class="bar"></div>`;
+  const row = sec.querySelector(".row"), bar = sec.querySelector(".bar"), cells = [];
+  let svgs = r.icons.map((i) => { const [name, opts] = Array.isArray(i) ? i : [i, {}]; const c = document.createElement("span"); c.className = "cell"; const s = icon(name, opts || {}); c.append(s); row.append(c); cells.push(c); return s; });
+  r.setup && r.setup(svgs);
+  const current = () => cells.map((c) => c.lastElementChild);
+  let running = null;
+  (r.buttons || ["play"]).forEach((b) => {
+    const btn = document.createElement("button"); btn.type = "button"; btn.textContent = r.toggle ? "Play" : b === "play" ? "Play" : b[0].toUpperCase() + b.slice(1);
+    btn.addEventListener("click", () => {
+      if (r.toggle) { if (running) { running.forEach((a) => a && a.cancel()); running = null; btn.textContent = "Play"; return; } running = r.play(current()); btn.textContent = "Pause"; return; }
+      r.play(current(), b, cells);
+    });
+    bar.append(btn);
+  });
+  host.append(sec);
+});
+window.__rows = rows;
+</script>
+</body>
+</html>

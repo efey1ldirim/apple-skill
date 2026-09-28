@@ -192,7 +192,7 @@ Align each **paragraph by its own language**, and keep **lists** consistently al
 - **No additional considerations** for iOS, iPadOS, macOS, tvOS, visionOS or watchOS.
 
 ## Resources listed
-- Related: Layout (✓ CRITICAL), Inclusion (✓), SF Symbols (not yet ingested).
+- Related: Layout (✓ CRITICAL), Inclusion (✓), SF Symbols (✓).
 - Developer documentation: *Localization*; *Preparing views for localization* (SwiftUI).
 - Videos: *Enhance your app's multilingual experience* (WWDC25 222); *Design for Arabic* (WWDC22
   10034).
@@ -276,5 +276,5 @@ Field-note cross-links:
 - [ ] Checked in an RTL locale with real text, and compared with `right-to-left-01 … 21`.
 
 ## Related (ingestion status)
-Layout (✓ CRITICAL), Inclusion (✓), Icons (✓), Images (✓), SF Symbols, Typography, Writing, Sliders,
+Layout (✓ CRITICAL), Inclusion (✓), Icons (✓), Images (✓), SF Symbols (✓), Typography, Writing, Sliders,
 Progress indicators, Rating indicators — not yet ingested (except ✓).

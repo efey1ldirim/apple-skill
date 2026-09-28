@@ -66,7 +66,8 @@ oscillation around 0.2 Hz).
   - This matters most for animations they will see **more than once**.
 - **may — Use animated symbols where they make sense.**
   - With **SF Symbols 5 or later**, animations can be applied to SF Symbols and to custom symbols.
-  - Guidance lives on SF Symbols § Animations (not yet ingested).
+  - Guidance lives on SF Symbols § Animations (✓ `sf-symbols.md`); the presets are measured and rebuilt
+    for the web in `references/symbol-effects.md` (`tokens/apple-symbol-effects.*`).
 
 ### Leveraging platform capabilities (games)
 - **should — Make the game's motion look great by default on every supported platform.**
@@ -187,7 +188,7 @@ as such.
 | Brief and precise | UI transitions **150–300 ms** (FN); sliding selection and sheets `cubic-bezier(0.32,0.72,0,1)` (FN, Apple's sheet curve); menus **~320 ms in / ~160 ms out**, staggered 20 ms (APPLE-WEB, `site-patterns.md`); larger enter/exit of full-view media 250–400 ms (FN, `immersive-experiences.md`). Exits are faster than entrances. Success feedback is one short, precise beat (check draws, row settles), never a celebration sequence. |
 | No motion on frequent interactions | No custom animation on actions people repeat constantly: typing, list-row taps, tab switches, checkbox/toggle flips beyond the control's own thumb slide, pagination, table sorting. Use an instant update or at most a ≤ 150 ms colour/opacity transition. |
 | Let people cancel motion | Animations never block input: no `pointer-events: none` or disabled buttons for the length of an animation, and no awaiting `animation.finished` before accepting the next action. CSS transitions and the Web Animations API retarget mid-flight, so use them rather than chained `setTimeout`s. Intros, splash screens and onboarding animations are **skippable** and shown **once** (remember that they were seen). Route changes don't wait for exit animations. |
-| Animated symbols | Icon animations (bounce, pulse, draw-on, variable-fill) only where they confirm an action or show live state (e.g. a mic pulsing while recording). One run, not a loop, unless the state is ongoing. Disabled under reduced motion. See `icons.md`. |
+| Animated symbols | Use the measured SF-style kit (`references/symbol-effects.md`, `tokens/apple-symbol-effects.*`): bounce/replace/wiggle to confirm an action, pulse/breathe/variable colour only while a state is live (e.g. a mic pulsing while recording). One run, not a loop, unless the state is ongoing. Reduced motion handled by the kit. See `icons.md`. |
 | Games: 30–60 fps, good defaults | Web: target a steady **60 fps**. Animate **only `transform` and `opacity`**; use `requestAnimationFrame` for JS-driven motion; no layout reads/writes inside animation frames. Canvas/WebGL picks defaults from the device (`devicePixelRatio` cap, quality tier) and never makes people open settings first. |
 | Performance / battery options | Offer a "reduce effects" setting for heavy scenes (WebGL heroes, particle fields). Pause animation when off-screen (`IntersectionObserver`) and when the tab is hidden (`visibilitychange`). `navigator.getBattery()` is Chromium-only, so treat it as a hint and never as a requirement. |
 | visionOS: no peripheral motion | Nothing animates along the **viewport edges** in fullscreen or immersive views (ambient edge glows, marquee tickers, drifting particles near the edges). Unavoidable edge motion keeps the **same brightness** as surrounding content, with no bright flashes. |
@@ -226,6 +227,6 @@ Field-note cross-links:
 - [ ] Large moving surfaces are translucent or low-contrast while moving, and meaningless relocations fade instead of flying.
 
 ## Related (ingestion status)
-Feedback, Spatial layout, SF Symbols (§ Animations), Playing haptics, Playing audio — not yet
+SF Symbols (✓ § Animations → measured kit `symbol-effects.md`). Feedback, Spatial layout, Playing haptics, Playing audio — not yet
 ingested. Accessibility (✓), Immersive experiences (✓), Materials (✓ CRITICAL, § Liquid Glass),
 Icons (✓).

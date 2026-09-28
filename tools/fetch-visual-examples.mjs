@@ -28,7 +28,7 @@ const PAGES = [
   "design-principles", "designing-for-ios", "designing-for-ipados", "designing-for-macos",
   "designing-for-tvos", "designing-for-visionos", "designing-for-watchos", "designing-for-games",
   "designing-for-iphone-duo", "accessibility", "app-icons", "branding", "color", "dark-mode", "icons", "images", "immersive-experiences", "inclusion", "layout",
-  "materials", "privacy", "right-to-left",
+  "materials", "privacy", "right-to-left", "sf-symbols",
 ];
 // Stand-alone images that are comparisons on their own (before/after drawn inside one image, or
 // a sequence of single images under one rule). Consecutive singles under the same rule are grouped.
@@ -47,6 +47,10 @@ const SINGLES = {
     "download-uneven-vertical-height.png", "download-even-vertical-height.png",
     "directional-symbols-ltr.png", "directional-symbols-rtl.png",
     "text-icon-localized-latin.png", "text-icon-localized-hebrew.png", "text-icon-localized-arabic.png",
+  ],
+  "sf-symbols": [
+    "sf-three-layers-color.png", "sf-monochrome.png", "sf-hierarchical.png", "sf-palette.png", "sf-multicolor.png",
+    "sf-variable-color.png", "sf-scales-weights.png", "sf-variants.png", "sf-localized.png",
   ],
 };
 const slugs = [...new Set([...PAGES, ...process.argv.slice(2)])];

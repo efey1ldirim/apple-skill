@@ -21,7 +21,13 @@ useful but secondary: put them after the content in each note.
      paragraph, list, table, aside, image alt text and related-page link.
      It also prints each image's visible **caption** (`CAPTION="…"`, from the image's
      `metadata.abstract` in the JSON — added 2026-09-28; before that, captions were only read from
-     screenshots). Captions are page text, not "(from screenshot)".
+     screenshots). Captions are page text, not "(from screenshot)". Videos print as
+     `[VIDEO id] alt="…" CAPTION="…" light: url | dark: url` (added 2026-09-28).
+   - **Pages with demo videos [user decision]**: when motion is the point (e.g. SF Symbols animations),
+     measure the videos frame by frame in the browser (same-origin canvas on developer.apple.com) and
+     store only the **numbers** (durations, scales, curves) as a token JSON tagged `MEASURED`; rebuild
+     the effect for the web and verify it with a checker. Never commit Apple's videos or frames. Method:
+     `references/symbol-effects.md` § provenance.
    - Other `/design/...` pages (landing, resources, whats-new, videos, awards…): WebFetch or the
      browser's `get_page_text`.
    - Read the **entire** output. Do not sample.

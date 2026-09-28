@@ -24,7 +24,8 @@ ingested so far.
 | Images, photos, srcset/retina assets, image formats, hover-lift/parallax cards, media viewers | + `hig/foundations/images.md` | HIG: Layout, Materials |
 | RTL / Arabic / Hebrew / i18n-ready layouts, bidirectional text, numbers & phone numbers in other scripts, mirroring icons, sliders, ratings, carousels | + `hig/foundations/right-to-left.md` (flip / don't-flip table; visuals `right-to-left-01 … 21`), `node tools/check-layout.mjs --strict` | HIG: Layout, Inclusion, SF Symbols, Typography |
 | UI copy tone, forms asking personal data (gender, family, names), imagery of people, localisation | + `hig/foundations/inclusion.md` | HIG: Writing, Right to left |
-| Interface icons / glyphs, icon buttons, toolbars, choosing an icon for an action | + `hig/foundations/icons.md` (standard action → symbol table + web mapping) | HIG: SF Symbols, Toolbars, Buttons |
+| Interface icons / glyphs, icon buttons, toolbars, choosing an icon for an action | + `hig/foundations/icons.md` (standard action → symbol table + web mapping), `hig/foundations/sf-symbols.md` (weights/scales/variants/rendering modes; licence: no SF Symbols on the web) | HIG: Toolbars, Buttons |
+| Animated icons / symbol effects (bounce, pulse, replace, wiggle, breathe, rotate, variable colour, draw) | + `references/symbol-effects.md` (measured Apple timings + how-to), `tokens/apple-symbol-effects.css` / `.js`, demo `examples/symbol-effects/index.html`, `hig/foundations/motion.md` | HIG: Motion, Feedback |
 | Brand colour, brand font, logo placement, voice & tone | + `hig/foundations/branding.md` | HIG: Color, Typography, Writing |
 | Glass / blur / translucency: nav bars, tab bars, toolbars, sidebars, popovers, sheets, overlays, controls over photos/video, frosted panels | + `hig/foundations/materials.md` (MATERIALS GATE), `tokens/apple-materials.css`, `apple-web/site-patterns.md` (frosted bar + veil) | HIG: Color § Liquid Glass color, Sliders, Toggles, Popovers, Sheets |
 | Settings / list screen | + `field-notes/components.md` § Settings list | HIG: Settings, Lists and tables, Toggles |
@@ -83,7 +84,7 @@ on every ingestion. `—` = not yet ingested.
 | Motion `motion` | `hig/foundations/motion.md` | 2026-09-28 |
 | Privacy `privacy` | `hig/foundations/privacy.md` | 2026-09-28 |
 | Right to left `right-to-left` | `hig/foundations/right-to-left.md` | 2026-09-28 |
-| SF Symbols `sf-symbols` | — | — |
+| SF Symbols `sf-symbols` | `hig/foundations/sf-symbols.md` (+ measured animation kit `symbol-effects.md`) | 2026-09-28 |
 | Spatial layout `spatial-layout` | — | — |
 | Typography `typography` | — | — |
 | Writing `writing` | — | — |
@@ -256,5 +257,6 @@ on every ingestion. `—` = not yet ingested.
 | `field-notes/anti-patterns.md` | Ideas that were tried and rejected, and why |
 | `field-notes/engineering-gotchas.md` | Layout/CSS traps that break these designs in real browsers |
 | `field-notes/landing-and-motion.md` | Marketing-page language: masked headlines, glass, per-section palettes, scroll choreography |
+| `references/symbol-effects.md` | SF Symbols animation presets measured frame by frame from Apple's videos → web kit (`tokens/apple-symbol-effects.*`), usage + how to adapt to any icon; verified by `tools/check-symbol-effects.mjs` |
 | `apple-web/site-patterns.md` | Apple's own website patterns measured live: global mega-menu, local nav, cards, docs layout, section colour coding |
 | `screenshots-described/curated-references.md` | 20 curated reference shots behind the field notes, described |

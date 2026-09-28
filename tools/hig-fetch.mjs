@@ -123,7 +123,15 @@ function blocks(items = [], depth = 0) {
         break;
       case "small": out.push(pad + inline(b.inlineContent)); break;
       case "thematicBreak": out.push("---"); break;
-      case "video": out.push(`${pad}[VIDEO ${b.identifier}]`); break;
+      case "video": {
+        // Videos carry alt text in references and a visible caption in metadata.abstract (added
+        // 2026-09-28 — before that, video captions such as Replace's "down-up, up-up, off-up" were missed).
+        const r = refs[b.identifier] ?? {};
+        const cap = b.metadata?.abstract ? ` CAPTION="${inline(b.metadata.abstract)}"` : "";
+        const src = (r.variants ?? []).map((v) => `${v.traits?.join("+") ?? ""}: ${v.url}`).join(" | ");
+        out.push(`${pad}[VIDEO ${b.identifier}]${r.alt ? ` alt="${r.alt}"` : ""}${cap}${src ? " " + src : ""}`);
+        break;
+      }
       default:
         if (b.inlineContent) out.push(pad + inline(b.inlineContent));
         else if (b.content) blocks(b.content, depth);
