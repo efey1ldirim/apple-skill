@@ -13,7 +13,8 @@ ingested so far.
 | Tablet / large-screen / resizable layouts (split view, popovers, pointer vs touch density, keyboard shortcuts) | + `hig/getting-started/designing-for-ipados.md` | HIG: Multitasking, Pointing devices, Keyboards, Split views |
 | Desktop web app / dashboard / SaaS (flat hierarchy, panes, command palette, shortcuts, personalisation) | + `hig/getting-started/designing-for-macos.md` | HIG: Windows, The menu bar, Keyboards, Toolbars |
 | TV / kiosk / 10-foot UI, keyboard focus styling, multi-user profiles | + `hig/getting-started/designing-for-tvos.md` | HIG: Focus and selection, Remotes, Managing accounts |
-| Immersive / 3D / WebXR, hover-free (gaze) input, motion comfort | + `hig/getting-started/designing-for-visionos.md` | HIG: Immersive experiences, Spatial layout, Eyes, Motion |
+| Immersive / 3D / WebXR, hover-free (gaze) input, motion comfort | + `hig/getting-started/designing-for-visionos.md` + `hig/foundations/immersive-experiences.md` | HIG: Spatial layout, Eyes, Motion |
+| Focus mode, fullscreen, lightbox, presentation mode (enter/exit, backdrop dim) | + `hig/foundations/immersive-experiences.md` (web translation) | HIG: Motion, Sheets |
 | Glanceable surfaces: notifications/web push, widgets, badges, at-a-glance mobile summaries | + `hig/getting-started/designing-for-watchos.md` | HIG: Notifications, Widgets, Complications |
 | Website header / mega-menu / docs site / section nav | + `apple-web/site-patterns.md` (Apple's own measured web patterns) | HIG: Menus, Sidebars, Tab bars |
 | Minimum text & target sizes per platform | + `hig/getting-started/designing-for-games.md` (tables) | HIG: Typography, Buttons |
@@ -70,7 +71,7 @@ on every ingestion. `—` = not yet ingested.
 | Dark Mode `dark-mode` (part of COLOR GATE) | `hig/foundations/dark-mode.md` | 2026-09-28 |
 | Icons `icons` | `hig/foundations/icons.md` | 2026-09-28 |
 | Images `images` | `hig/foundations/images.md` | 2026-09-28 |
-| Immersive experiences `immersive-experiences` | — | — |
+| Immersive experiences `immersive-experiences` | `hig/foundations/immersive-experiences.md` | 2026-09-28 |
 | Inclusion `inclusion` | — | — |
 | Layout `layout` | — | — |
 | Materials `materials` | — | — |

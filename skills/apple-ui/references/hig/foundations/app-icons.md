@@ -141,7 +141,7 @@ and **consistent across platforms and appearances**.
 - **(from screenshot)** Note callout style: grey rounded box with a thin grey border, grey "Note"
   title (vs amber for "Important").
 
-Visual pairs: `visual-examples` ids app-icons-01, app-icons-02.
+Visual pairs: `visual-examples` ids app-icons-01 (shape per platform, tabs), app-icons-02, app-icons-03.
 
 ## Web translation
 | Guidance | Web equivalent |

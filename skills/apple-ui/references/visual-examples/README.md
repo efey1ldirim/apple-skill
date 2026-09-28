@@ -16,7 +16,7 @@ screenshot of the UI it just built. Text rules say *what*; these images show *ho
    new pairs to the table below.
 
 ## Catalog (our words)
-File names: `images/<id>-<dont|do|neutral|single>-<n>-<light|dark>.png`.
+File names: `images/<id>-<dont|do|neutral|single|tab>-<n>-<light|dark>.png`.
 
 | id | Kind | Rule it illustrates | ✗ / first image | ✓ / second image | Check your UI for |
 |---|---|---|---|---|---|
@@ -27,8 +27,9 @@ File names: `images/<id>-<dont|do|neutral|single>-<n>-<light|dark>.png`.
 | accessibility-05 | do/don't | Spacing is as important as size | rewind/play/forward touching | same controls with clear padding (pink boxes show ~12 pt zones) | Icon-button clusters, toolbars, row actions |
 | accessibility-06 | compare | Offer alternatives to gestures | list in edit mode with red delete buttons | swipe-to-delete revealing red Delete | Swipe/drag-only actions without a visible button |
 | accessibility-07 | compare | Assistive Access: one interaction per screen | Camera home: two huge tiles (Photo, Video) + Back | Photo mode: preview + one huge "Take Photo" + Back | Simplified/first-run flows: big labelled buttons, one decision per screen |
-| app-icons-01 | compare | Simple icon concept, minimal shapes | Podcasts icon (purple, concentric rings) | Home icon (orange house on white) | Brand marks, icon tiles, favicons |
-| app-icons-02 | do/don't | Filled overlapping shapes give depth | outlined ring around a solid dot | translucent filled disc under a solid dot | Outline-only glyphs in tiles; flat marks lacking depth |
+| app-icons-01 | tabs (3) | App icon shape per platform | rounded square (iOS, iPadOS, macOS) | rounded rectangle (tvOS) | circle (visionOS, watchOS) | Favicon/PWA/brand-tile masks on the wrong shape |
+| app-icons-02 | compare | Simple icon concept, minimal shapes | Podcasts icon (purple, concentric rings) | Home icon (orange house on white) | Brand marks, icon tiles, favicons |
+| app-icons-03 | do/don't | Filled overlapping shapes give depth | outlined ring around a solid dot | translucent filled disc under a solid dot | Outline-only glyphs in tiles; flat marks lacking depth |
 | color-01 | compare (4 images) | Colours must work in light, dark and increased contrast | Notes Done button: yellow + white check (default light/dark) | darker yellow + **black** check (increased contrast light/dark) | Filled buttons/badges in all four modes; label colour flips when contrast needs it |
 | color-02 | compare | Colour meaning differs by culture | Stocks rising = green (English) | rising = red (Chinese) | Finance/status colours in localised UIs |
 | color-03 | compare (3 images) | Colour on Liquid Glass | primary button with tinted glass background | selected tab item with coloured symbol+label | glass picking up colour from a photo behind it — default untinted glass |
@@ -48,11 +49,21 @@ File names: `images/<id>-<dont|do|neutral|single>-<n>-<light|dark>.png`.
 | icons-08 | compare (3) | Simplify small sizes | 32 px: fewer grid lines, thicker line | 16 px @2x: no grid | 16 px @1x: heart only | Favicons / tiny tiles carrying too much detail |
 | icons-09 | single | ~10% margin, image ≈ 80% of canvas | heart inside a pink 10% margin band, side lobes slightly into it | — | Glyph/illustration padding inside tiles |
 | images-01 | compare (3) | Resolution = pixels per point | circle at 1x (10×10 px) — blocky edge | 2x (20×20 px) and 3x (30×30 px) — progressively smooth | Raster images/icons served without 2x/3x variants (blurry on retina) |
+| designing-for-iphone-duo-01 | tabs | Same Home Screen on both displays | outer display | inner display | Layouts that only work at one width |
+| designing-for-iphone-duo-02 | tabs | Hinge + camera locations per display | outer display diagram | inner display diagram | — (reference) |
+| designing-for-iphone-duo-03 | tabs | Consistent experience across displays | outer display | inner display | Same content/state kept when the viewport changes |
+| designing-for-iphone-duo-04 | tabs | Reserved regions | outer display | inner display | Content under hinge/system regions |
+| designing-for-iphone-duo-05 | tabs | Adapt layout when the device folds | fully open | partially folded | Layouts that ignore a changed posture / viewport split |
+| designing-for-iphone-duo-06 | tabs | Arrangement views | split arrangement | overlay arrangement | Split vs overlay panels on wide screens |
+| designing-for-iphone-duo-07 | tabs | When space is short keep toolbar **or** tab bar | toolbar compressed | tab bar compressed | Two full bars stacked on short viewports |
+| immersive-experiences-01 | tabs | Dim the surroundings to focus attention | window in the room, no dimming | same room dimmed, window stays bright | Focus modes: subtle backdrop dim, focused element full brightness |
+| immersive-experiences-02 | tabs (3) | Immersion styles | mixed: virtual objects in the real room | progressive: custom environment as a soft portal | full: 360° environment replaces the room | Choosing how much of the page a focus/fullscreen mode takes over |
 | branding-01 | do/don't | Brand colour judiciously; put it in content | brand blue on every control (close, locate, filled search bar) | brand blue in the map content; controls neutral glass | Brand colour on nav, inputs, secondary buttons; colour that should live in content |
 
 ## Pages scanned
 design-principles, designing-for-{ios, ipados, macos, tvos, visionos, watchos, games, iphone-duo}
-(no image pairs), accessibility, app-icons, branding, color, dark-mode, icons, images.
+(no image pairs), accessibility, app-icons, branding, color, dark-mode, icons, images, immersive-experiences (iPhone Duo pairs found once tab support was added).
 
+Kind **tabs**: images shown behind tabs on Apple's page (one image per tab) — detected automatically.
 Kind **single**: a stand-alone image that is itself a comparison (before/after drawn inside one
 image, or a sequence under one rule). These are listed per page in `SINGLES` in the script.

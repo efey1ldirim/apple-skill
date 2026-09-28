@@ -27,7 +27,7 @@ const ASSET = "https://developer.apple.com/tutorials";
 const PAGES = [
   "design-principles", "designing-for-ios", "designing-for-ipados", "designing-for-macos",
   "designing-for-tvos", "designing-for-visionos", "designing-for-watchos", "designing-for-games",
-  "designing-for-iphone-duo", "accessibility", "app-icons", "branding", "color", "dark-mode", "icons", "images",
+  "designing-for-iphone-duo", "accessibility", "app-icons", "branding", "color", "dark-mode", "icons", "images", "immersive-experiences",
 ];
 // Stand-alone images that are comparisons on their own (before/after drawn inside one image, or
 // a sequence of single images under one rule). Consecutive singles under the same rule are grouped.
@@ -141,6 +141,28 @@ for (const slug of slugs) {
             entry.items.push(item);
           }
           manifest.push(entry);
+        }
+      }
+      // Tabbed image sets (e.g. "Without / With dimmed passthrough") are comparisons too.
+      if (b.type === "tabNavigator" && b.tabs?.length >= 2) {
+        const tabs = b.tabs.map((t) => ({ title: t.title, imgs: imagesIn(t.content) })).filter((t) => t.imgs.length);
+        if (tabs.length >= 2) {
+          n++; last = null;
+          const id = `${slug}-${String(n).padStart(2, "0")}`;
+          const entry = { id, page: slug, section, rule, kind: "tabs", items: [] };
+          for (const [i, t] of tabs.entries()) {
+            const r = refs[t.imgs[0]] ?? {};
+            const item = { verdict: "neutral", caption: t.title, alt: r.alt ?? "", files: {} };
+            for (const v of r.variants ?? []) {
+              const mode = v.traits?.includes("dark") ? "dark" : "light";
+              const file = `${id}-tab-${i + 1}-${mode}.png`;
+              const ok = await download(ASSET + v.url, join(IMG, file));
+              item.files[mode] = { local: `images/${file}`, url: ASSET + v.url, downloaded: ok };
+            }
+            entry.items.push(item);
+          }
+          manifest.push(entry);
+          continue;
         }
       }
       if (b.content) await scan(b.content);
