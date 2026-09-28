@@ -19,16 +19,17 @@ ingested so far.
 | Glanceable surfaces: notifications/web push, widgets, badges, at-a-glance mobile summaries | + `hig/getting-started/designing-for-watchos.md` | HIG: Notifications, Widgets, Complications |
 | Website header / mega-menu / docs site / section nav | + `apple-web/site-patterns.md` (Apple's own measured web patterns) | HIG: Menus, Sidebars, Tab bars |
 | Minimum text & target sizes per platform | + `hig/foundations/typography.md`, `tokens/apple-typography.json`, `hig/getting-started/designing-for-games.md` (game targets) | HIG: Buttons |
-| Text styles, Dynamic Type, line height, tracking, custom fonts, readable copy | + `hig/foundations/typography.md` (TYPOGRAPHY GATE), `tokens/apple-typography.json` (exact platform tables), `tokens/apple-typography.css` (web preview), `node tools/check-typography.mjs <changed files>` | HIG: Accessibility, Writing |
+| Text styles, Dynamic Type, line height, tracking, custom fonts, readable copy | + `hig/foundations/typography.md` (TYPOGRAPHY GATE), `tokens/apple-typography.json` (exact platform tables), `tokens/apple-typography.css` (web preview), `node tools/check-typography.mjs <changed files>` | HIG: Accessibility, Writing (✓ `hig/foundations/writing.md`) |
 | Foldable / dual-pane / wide-short layouts, toolbar overflow priority, navigation rail | + `hig/getting-started/designing-for-iphone-duo.md` | HIG: Layout, Split views, Toolbars, Tab bars |
 | App icon, favicon, PWA/maskable icons, brand mark tiles | + `hig/foundations/app-icons.md` | HIG: Icons, Branding |
 | Images, photos, srcset/retina assets, image formats, hover-lift/parallax cards, media viewers | + `hig/foundations/images.md` | HIG: Layout, Materials |
 | RTL / Arabic / Hebrew / i18n-ready layouts, bidirectional text, numbers & phone numbers in other scripts, mirroring icons, sliders, ratings, carousels | + `hig/foundations/right-to-left.md` (flip / don't-flip table; visuals `right-to-left-01 … 21`), `node tools/check-layout.mjs --strict` | HIG: Layout, Inclusion, SF Symbols, Typography |
-| UI copy tone, forms asking personal data (gender, family, names), imagery of people, localisation | + `hig/foundations/inclusion.md` | HIG: Writing, Right to left |
+| UI copy: button/link labels, error messages, empty states, settings descriptions, field hints, step-flow wording, capitalisation, tone | + `hig/foundations/writing.md` (verb-led labels, no "we", consistent terms, error/empty-state rules), `field-notes/principles.md` §16 | HIG: Inclusion, Accessibility, Alerts, Text fields |
+| Forms asking personal data (gender, family, names), imagery of people, localisation, inclusive language | + `hig/foundations/inclusion.md`, `hig/foundations/writing.md` | HIG: Right to left |
 | Interface icons / glyphs, icon buttons, toolbars, choosing an icon for an action | + `hig/foundations/icons.md` (standard action → symbol table + web mapping), `hig/foundations/sf-symbols.md` (weights/scales/variants/rendering modes; licence: no SF Symbols on the web) | HIG: Toolbars, Buttons |
 | Choosing an icon set (SF Symbols vs Lucide / Phosphor / Ionicons) | `SKILL.md` § Icon source + `hig/foundations/sf-symbols.md` § Which icon set to recommend | — |
 | Animated icons / symbol effects (bounce, pulse, replace, wiggle, breathe, rotate, variable colour, draw) | + `references/symbol-effects.md` (measured Apple timings + how-to), `tokens/apple-symbol-effects.css` / `.js`, demo `examples/symbol-effects/index.html`, `hig/foundations/motion.md` | HIG: Motion, Feedback |
-| Brand colour, brand font, logo placement, voice & tone | + `hig/foundations/branding.md` | HIG: Color, Typography, Writing |
+| Brand colour, brand font, logo placement, voice & tone | + `hig/foundations/branding.md`, `hig/foundations/writing.md` (voice vs tone, term list) | HIG: Color, Typography |
 | Glass / blur / translucency: nav bars, tab bars, toolbars, sidebars, popovers, sheets, overlays, controls over photos/video, frosted panels | + `hig/foundations/materials.md` (MATERIALS GATE), `tokens/apple-materials.css`, `apple-web/site-patterns.md` (frosted bar + veil) | HIG: Color § Liquid Glass color, Sliders, Toggles, Popovers, Sheets |
 | Settings / list screen | + `field-notes/components.md` § Settings list | HIG: Settings, Lists and tables, Toggles |
 | Wizard / onboarding / form | + `field-notes/components.md` § Wizard, `hig/foundations/privacy.md` (no permission requests up front; ask only for needed data) | HIG: Onboarding, Entering data, Text fields, Pickers |
@@ -69,7 +70,7 @@ on every ingestion. `—` = not yet ingested.
 | Designing for games `designing-for-games` | `hig/getting-started/designing-for-games.md` | 2026-09-28 |
 | Designing for iPhone Duo `designing-for-iphone-duo` | `hig/getting-started/designing-for-iphone-duo.md` | 2026-09-28 |
 
-### Foundations  (collection page: —)
+### Foundations  (collection page: —; **all 18 pages ingested**)
 | Page | File | Ingested |
 |---|---|---|
 | Accessibility `accessibility` | `hig/foundations/accessibility.md` | 2026-09-28 |
@@ -89,7 +90,7 @@ on every ingestion. `—` = not yet ingested.
 | SF Symbols `sf-symbols` | `hig/foundations/sf-symbols.md` (+ measured animation kit `symbol-effects.md`) | 2026-09-28 |
 | Spatial layout `spatial-layout` (visionOS only) | `hig/foundations/spatial-layout.md` | 2026-09-28 |
 | Typography `typography` ⚠️ CRITICAL | `hig/foundations/typography.md` (+ exact tables `tokens/apple-typography.json`, CSS web preview) | 2026-09-28 |
-| Writing `writing` | — | — |
+| Writing `writing` | `hig/foundations/writing.md` | 2026-09-28 |
 
 ### Patterns  (collection page: —)
 | Page | File | Ingested |

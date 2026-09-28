@@ -127,5 +127,5 @@ The iOS/iPadOS/visionOS, macOS and tvOS tables cite 144 ppi @2x and 216 ppi @3x 
 - Materials (✓ CRITICAL): vibrancy and visionOS text contrast.
 - Layout (✓ CRITICAL): reflow, size classes, 200% text scale.
 - Branding (✓ ingested): branded typography without loss of readability.
-- Writing (next, not yet ingested): labels and content hierarchy.
+- Writing (✓ ingested): labels, content hierarchy, brevity on small and large-distance screens.
 - Resources: Fonts for Apple platforms; SF Symbols; SwiftUI Text input and output; UIKit Text display and fonts; AppKit Fonts; videos on Dynamic Type (WWDC24), expanded SF (WWDC22), UI typography (WWDC20).

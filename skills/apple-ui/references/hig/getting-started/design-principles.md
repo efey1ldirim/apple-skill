@@ -170,5 +170,5 @@ equal care per platform.
 - Getting started collection → `hig/getting-started/_index.md`
 - Platform pages (Designing for iOS/iPadOS/macOS/tvOS/visionOS/watchOS/games/iPhone Duo) —
   not yet ingested.
-- Accessibility (✓), Inclusion (✓), Privacy (✓), Writing, Feedback, Undo and redo, Onboarding — each
+- Accessibility (✓), Inclusion (✓), Privacy (✓), Writing (✓), Feedback, Undo and redo, Onboarding — each
   expands one of these principles; the rest not yet ingested.
