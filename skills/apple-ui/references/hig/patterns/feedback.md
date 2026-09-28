@@ -21,7 +21,7 @@ Tell people what is happening, what they can do next, what their action did, and
 ### Best practices
 - **must** **Make all feedback accessible.**
   - Give feedback in several ways so it reaches more people and works in the way each person prefers.
-  - Example: colour + text + sound + haptics means people get it even if they silence the device, look away, or use **VoiceOver**. (Haptics: Playing haptics page, not yet ingested.)
+  - Example: colour + text + sound + haptics means people get it even if they silence the device, look away, or use **VoiceOver**. (Haptics: Playing haptics ✓ `hig/patterns/playing-haptics.md`.)
 - **should** **Integrate status feedback into the interface, near the items it describes.**
   - Then people see important information without acting or leaving their context.
   - Example: Mail (iOS/iPadOS) states the latest update and the unread count in the mailbox toolbar: unobtrusive, easy to check.
@@ -55,7 +55,7 @@ The page has **no numbers**: no durations, sizes, counts or colours. Everything 
 | "Can't do it" | say it can't be done **and why** |
 | watchOS | no indeterminate progress indicator; promise a notification instead |
 | Examples named | Mail unread count in the toolbar · Finder trash without a warning · Apple Pay confirmation · Maps same-location message |
-| Related HIG pages | Playing audio ✓ · Playing haptics · Motion ✓ (Playing haptics not yet ingested) |
+| Related HIG pages | Playing audio ✓ · Playing haptics ✓ · Motion ✓ |
 | Developer docs / videos | UIKit *Animation and haptics* · *Designing Fluid Interfaces* (WWDC18 803) · *Essential Design Principles* (WWDC17 802) |
 | Web tokens added (CONV/WCAG) | transient message ≥ max(5 s, 60 ms × characters), errors and warnings not auto-dismissed, ≤ 1 modal (+ one alert on top of it), ≥ 2 channels per message |
 
@@ -86,7 +86,7 @@ Every message a web UI shows falls into one row of the delivery ladder in `token
 | Indeterminate progress (watchOS rule) | On glanceable/small/background surfaces (widgets, PWAs on wearables, long jobs, tab in the background) avoid an endless spinner: show a determinate value or say "You'll get a notification when it's done." Every spinner that remains has a name/status text (`role="status"` + "Saving…" or `aria-label`), and stops under `prefers-reduced-motion` or becomes static. |
 | Wording | Feedback copy follows `writing.md`: state what happened and what to do next; no blame; no "Oops!"/"uh-oh"; no "We're having trouble…"; write the case in the string. |
 | Motion | Feedback animations (a toast sliding in, a shake on error) are short, purposeful, and respect `prefers-reduced-motion` (`motion.md`); never an endless pulse on an error. |
-| Haptics | `navigator.vibrate` only from a user gesture, only where supported, only as a supplement; the Playing haptics page is not yet ingested. |
+| Haptics | `navigator.vibrate` only from a user gesture, only where supported, only as a supplement; see `hig/patterns/playing-haptics.md` for the pattern vocabulary and derived vibrate timings. |
 
 ## The FEEDBACK GATE (steps 1–5 are mirrored in `SKILL.md`)
 1. Read this page and `tokens/apple-feedback.json`. Classify every message in the design with the delivery ladder; write the row name next to it in the handoff.
@@ -128,5 +128,5 @@ Field-note cross-links:
 
 ## Related
 - Ingested: Accessibility (✓), Writing (✓), Motion (✓), Entering data (✓), Drag and drop (✓), Color (✓ CRITICAL), Materials (✓ CRITICAL), Layout (✓ CRITICAL), Typography (✓ CRITICAL).
-- Ingested since: Loading (✓). Not yet ingested: **Alerts**, **Playing haptics**, Notifications, Managing notifications, Progress indicators, Undo and redo, Action sheets, Modality.
+- Ingested since: Loading (✓). Not yet ingested: **Alerts**, Notifications, Managing notifications, Progress indicators, Undo and redo, Action sheets, Modality.
 - Developer docs: UIKit *Animation and haptics*. Videos: *Designing Fluid Interfaces* (WWDC18 803), *Essential Design Principles* (WWDC17 802).

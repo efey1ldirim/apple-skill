@@ -1,0 +1,489 @@
+{
+  "name": "apple-haptics",
+  "version": "2026-09-28",
+  "about": "Timings, relative levels and pitches MEASURED from the demo videos on Apple's HIG 'Playing haptics' page (ffmpeg-decoded audio at 48 kHz, 60 fps video frames). IMPORTANT: the videos are ILLUSTRATIONS. Apple says they show bars 'and playing audio tones of different pitches' (iOS) and 'thin vertical lines that symbolize sound waves' (watchOS). The audio is a stand-in for the haptic, not the Taptic Engine waveform, so absolute Hz and dB are properties of the illustration; timings, ordering, crescendo/decrescendo and relative strength are the useful facts. No Apple video, audio or frame is committed.",
+  "tags": {
+    "HIG": "stated in the page text (names and meanings)",
+    "MEASURED": "measured from the page's demo audio/video (this repo, 2026-09-28)",
+    "MEASURED-APPROX": "measured, coarse (frame or window quantised): ±17 ms video timing, ±25 Hz pitch (iOS 20 ms tones), ±30 Hz (watch 24 ms window)",
+    "CONV": "apple-skill convention, not stated or measured from Apple"
+  },
+  "method": {
+    "audio": "ffmpeg → mono f32 48 kHz; 1–4 ms RMS envelope; events found by threshold and rise detection; pitch = FFT peak of each event (iOS) or STFT peak (watch, 24 ms Hann, 3 ms hop)",
+    "video": "ffmpeg raw frames; frame 0 shows every event as a bar: bar HEIGHT = relative strength (5 steps 0.6–1.0), bar WIDTH = a duration/sharpness cue; a playhead flashes each bar when its sound plays",
+    "checks": "flash times agree with audio onsets within one frame (≤ 17 ms); the light and dark video variants carry identical audio (same MD5); bar x-spacing is layout only (the playhead is non-linear), so event times come from the audio",
+    "limits": "the illustration audio is not the actuator waveform; do not derive motor frequencies from it"
+  },
+  "ios": {
+    "src": "HIG (names, meanings) + MEASURED (numbers)",
+    "note": "UIKit feedback generators: notification, impact, selection. relStrength = bar height / tallest bar (heavy impact = 1.0). peakAmp = linear peak of the illustration audio (full scale 1.0). t = ms from the first event.",
+    "notification": {
+      "success": {
+        "src": "HIG",
+        "meaning": "a task or action has completed",
+        "events": 2,
+        "t": [
+          0,
+          116
+        ],
+        "relStrength": [
+          0.7,
+          1.0
+        ],
+        "peakAmp": [
+          0.6,
+          0.69
+        ],
+        "pitchHz": [
+          141,
+          158
+        ],
+        "shape": "two taps, second stronger and slightly higher (crescendo, rising)",
+        "tag": "MEASURED-APPROX"
+      },
+      "warning": {
+        "src": "HIG",
+        "meaning": "a task or action produced a warning",
+        "events": 2,
+        "t": [
+          0,
+          134
+        ],
+        "relStrength": [
+          0.9,
+          0.7
+        ],
+        "peakAmp": [
+          0.69,
+          0.6
+        ],
+        "pitchHz": [
+          158,
+          147
+        ],
+        "shape": "two taps, second weaker and slightly lower (decrescendo, falling); slower than success",
+        "tag": "MEASURED-APPROX"
+      },
+      "error": {
+        "src": "HIG",
+        "meaning": "an error occurred",
+        "events": 4,
+        "t": [
+          0,
+          50,
+          135,
+          236
+        ],
+        "relStrength": [
+          0.8,
+          0.8,
+          1.0,
+          0.6
+        ],
+        "peakAmp": [
+          0.39,
+          0.38,
+          0.69,
+          0.59
+        ],
+        "pitchHz": [
+          164,
+          164,
+          164,
+          123
+        ],
+        "shape": "two quick equal taps, then a strong hit, then a weaker longer low one; intervals widen 50 → 85 → 101 ms (ritardando)",
+        "tag": "MEASURED-APPROX"
+      }
+    },
+    "impact": {
+      "light": {
+        "src": "HIG",
+        "meaning": "collision between small or lightweight UI objects",
+        "relStrength": 0.6,
+        "peakAmp": 0.185,
+        "durMs": 19,
+        "timeToPeakMs": 6.6,
+        "pitchHz": 188,
+        "barWidthPx": 60,
+        "tag": "MEASURED-APPROX"
+      },
+      "medium": {
+        "src": "HIG",
+        "meaning": "collision between medium-sized or medium-weight UI objects",
+        "relStrength": 0.8,
+        "peakAmp": 0.387,
+        "durMs": 17,
+        "timeToPeakMs": 3.5,
+        "pitchHz": 166,
+        "barWidthPx": 61,
+        "tag": "MEASURED-APPROX"
+      },
+      "heavy": {
+        "src": "HIG",
+        "meaning": "collision between large or heavyweight UI objects",
+        "relStrength": 1.0,
+        "peakAmp": 0.692,
+        "durMs": 23,
+        "timeToPeakMs": 3.9,
+        "pitchHz": 162,
+        "barWidthPx": 61,
+        "tag": "MEASURED-APPROX"
+      },
+      "rigid": {
+        "src": "HIG",
+        "meaning": "collision between hard or inflexible UI objects",
+        "relStrength": 0.9,
+        "peakAmp": 1.096,
+        "durMs": 3.3,
+        "timeToPeakMs": 1.4,
+        "pitchHz": null,
+        "barWidthPx": 38,
+        "shape": "a broadband click (3 ms), the loudest and shortest of all iOS patterns, narrowest bar",
+        "tag": "MEASURED-APPROX"
+      },
+      "soft": {
+        "src": "HIG",
+        "meaning": "collision between soft or flexible UI objects",
+        "relStrength": 0.7,
+        "peakAmp": 0.678,
+        "durMs": 23,
+        "timeToPeakMs": 14.5,
+        "pitchHz": 508,
+        "barWidthPx": 92,
+        "shape": "slowest attack (≈ 4× the others), higher pitch, widest bar",
+        "tag": "MEASURED-APPROX"
+      }
+    },
+    "selection": {
+      "selection": {
+        "src": "HIG",
+        "meaning": "a UI element's values are changing",
+        "relStrength": 0.6,
+        "peakAmp": 0.303,
+        "durMs": 12,
+        "timeToPeakMs": 4.5,
+        "pitchHz": 220,
+        "barWidthPx": 46,
+        "shape": "the shortest tonal event, second-lightest after light impact",
+        "tag": "MEASURED-APPROX"
+      }
+    },
+    "observations": {
+      "tag": "MEASURED",
+      "strengthScale": "bar heights use five steps: 0.6, 0.7, 0.8, 0.9, 1.0",
+      "massOrdering": "light < medium < heavy: peak amplitude 0.185 → 0.387 → 0.692 and pitch 188 → 166 → 162 Hz (heavier = louder and lower)",
+      "widthVsAttack": "bar width tracks how soft the event feels: rigid 38 px (time-to-peak 1.4 ms) < selection 46 < light/medium/heavy 60 < soft 92 px (14.5 ms)",
+      "multiEvent": "success rises and grows, warning falls and shrinks, error is four events with a widening rhythm; direction and rhythm, not just count, carry the meaning",
+      "flashVsAudio": "flash and audio agree within 17 ms in every pattern"
+    }
+  },
+  "watchOS": {
+    "src": "HIG (names, meanings) + MEASURED (numbers)",
+    "note": "t = ms from the first audible sample; carrier = pitch of the illustration tone; attacks = new onsets; to10pctMs = time until the envelope falls under 10 % of its peak.",
+    "notification": {
+      "src": "HIG",
+      "meaning": "something significant or out of the ordinary needs attention; played when a local or remote notification arrives",
+      "audibleMs": 777,
+      "to10pctMs": 520,
+      "attacksMs": [
+        0
+      ],
+      "carrierHz": [
+        [
+          0,
+          786,
+          1520
+        ]
+      ],
+      "shape": "one strong onset with a long decaying tail (the longest pattern)",
+      "tag": "MEASURED-APPROX"
+    },
+    "up": {
+      "src": "HIG",
+      "meaning": "an important value rose above a significant threshold",
+      "audibleMs": 239,
+      "to10pctMs": 206,
+      "attacksMs": [
+        0,
+        50
+      ],
+      "carrierHz": [
+        [
+          0,
+          48,
+          1520
+        ],
+        [
+          51,
+          249,
+          1810
+        ]
+      ],
+      "shape": "two onsets; pitch steps UP 1.52 → 1.81 kHz",
+      "tag": "MEASURED-APPROX"
+    },
+    "down": {
+      "src": "HIG",
+      "meaning": "an important value fell below a significant threshold",
+      "audibleMs": 261,
+      "to10pctMs": 216,
+      "attacksMs": [
+        0,
+        56
+      ],
+      "carrierHz": [
+        [
+          0,
+          54,
+          1810
+        ],
+        [
+          57,
+          270,
+          1520
+        ]
+      ],
+      "shape": "mirror of Up: pitch steps DOWN 1.81 → 1.52 kHz",
+      "tag": "MEASURED-APPROX"
+    },
+    "success": {
+      "src": "HIG",
+      "meaning": "an action completed successfully",
+      "audibleMs": 453,
+      "to10pctMs": 395,
+      "attacksMs": [
+        0,
+        87,
+        172
+      ],
+      "attackLevels": [
+        1.0,
+        0.95,
+        0.88
+      ],
+      "carrierHz": [
+        [
+          0,
+          84,
+          1520
+        ],
+        [
+          87,
+          168,
+          1810
+        ],
+        [
+          171,
+          462,
+          2420
+        ]
+      ],
+      "shape": "three onsets ~87 ms apart, pitch climbing 1.52 → 1.81 → 2.42 kHz",
+      "tag": "MEASURED-APPROX"
+    },
+    "failure": {
+      "src": "HIG",
+      "meaning": "an action failed",
+      "audibleMs": 463,
+      "to10pctMs": 424,
+      "attacksMs": [
+        0,
+        87,
+        185
+      ],
+      "attackLevels": [
+        0.69,
+        0.65,
+        1.0
+      ],
+      "carrierHz": [
+        [
+          0,
+          180,
+          2420
+        ],
+        [
+          183,
+          474,
+          1210
+        ]
+      ],
+      "shape": "two light high taps (2.42 kHz), then one strong, sustained low hit (1.21 kHz, plateau ≈ 100 ms): pitch falls by an octave",
+      "tag": "MEASURED-APPROX"
+    },
+    "retry": {
+      "src": "HIG",
+      "meaning": "an action failed but can be retried",
+      "audibleMs": 388,
+      "to10pctMs": 356,
+      "attacksMs": [
+        0,
+        91,
+        180
+      ],
+      "attackLevels": [
+        1.0,
+        0.91,
+        0.87
+      ],
+      "carrierHz": [
+        [
+          0,
+          399,
+          1520
+        ]
+      ],
+      "shape": "three onsets ~90 ms apart at ONE pitch (1.52 kHz): a rhythm with no rise or fall",
+      "tag": "MEASURED-APPROX"
+    },
+    "start": {
+      "src": "HIG",
+      "meaning": "an activity started (a timer, anything the person can start and stop); Stop usually follows",
+      "audibleMs": 231,
+      "to10pctMs": 192,
+      "attacksMs": [
+        0
+      ],
+      "carrierHz": [
+        [
+          0,
+          243,
+          1520
+        ]
+      ],
+      "shape": "one onset, short tail",
+      "tag": "MEASURED-APPROX"
+    },
+    "stop": {
+      "src": "HIG",
+      "meaning": "an activity the person started has stopped",
+      "audibleMs": 598,
+      "to10pctMs": 498,
+      "attacksMs": [
+        0,
+        294
+      ],
+      "attackLevels": [
+        1.0,
+        0.95
+      ],
+      "carrierHz": [
+        [
+          0,
+          609,
+          1520
+        ]
+      ],
+      "shape": "two identical Start-shaped onsets 294 ms apart, i.e. a doubled Start",
+      "tag": "MEASURED-APPROX"
+    },
+    "click": {
+      "src": "HIG",
+      "meaning": "a dial click: progress at predefined increments; overuse dilutes it and overlapping clicks confuse",
+      "audibleMs": 9,
+      "attacksMs": [
+        2
+      ],
+      "carrierHz": null,
+      "shape": "a single 9 ms broadband click, the shortest pattern; the illustration pitch is ≈ 4.9 kHz",
+      "tag": "MEASURED-APPROX"
+    },
+    "observations": {
+      "tag": "MEASURED",
+      "pitchVocabulary": "the illustration uses ~1.2, 1.52, 1.81 and 2.42 kHz; rising pitch = positive/up/success, falling pitch = negative/down/failure, one flat pitch = neutral or repeat (retry, start, stop, notification)",
+      "count": "one onset = state or notice (notification, start, click); two = change of level (up, down) or end (stop); three = outcome or retry (success, failure, retry)",
+      "carrierIntervals": "1.52 → 1.81 is a minor third, 1.81 → 2.42 a perfect fourth, 2.42 → 1.21 exactly one octave down (frequency ratios 1.19, 1.34, 0.5)",
+      "duration": "click 9 ms < start 231 < up 239 < down 261 < retry 388 < success 453 < failure 463 < stop 598 < notification 777 ms (audible)"
+    }
+  },
+  "macOS": {
+    "src": "HIG",
+    "patterns": {
+      "alignment": "the dragged item aligns with something, or reaches the start/end or min/max of a scrubber",
+      "levelChange": "movement between discrete levels of pressure (e.g. fast-forward pressure levels)",
+      "generic": "general feedback when the others don't apply"
+    },
+    "hardware": "Magic Trackpad / Force Touch trackpad; API NSHapticFeedbackPerformer"
+  },
+  "custom": {
+    "src": "HIG",
+    "eventTypes": [
+      "transient: brief, compact, tap-like (Flashlight button)",
+      "continuous: sustained vibration (the lasers message effect)"
+    ],
+    "parameters": [
+      "sharpness: soft/rounded/organic … crisp/precise/mechanical",
+      "intensity: strength"
+    ],
+    "optionalAudio": true,
+    "api": "Core Haptics"
+  },
+  "principles": {
+    "src": "HIG",
+    "rules": [
+      "use system patterns only for their documented meanings",
+      "one clear cause-and-effect between an event and its haptic; never reuse a negative pattern for a positive outcome",
+      "complement visual and audio feedback; match intensity and sharpness to the animation it accompanies",
+      "don't overuse; the best haptic is one people miss when it is off",
+      "prefer short haptics for discrete events; long-running ones mostly suit gameplay flow (and are unpleasant on Apple Pencil Pro)",
+      "make haptics optional",
+      "make sure vibration doesn't disturb camera, gyroscope or microphone experiences"
+    ]
+  },
+  "webConv": {
+    "src": "CONV (not Apple; navigator.vibrate is supported on Android Chrome and similar, not on iOS Safari)",
+    "note": "Vibration patterns are [on, off, on, …] milliseconds, DERIVED directly from the measured onsets and tone durations above (illustration audio durations, so they are not actuator times). Phone motors need a longer pulse than these to be felt: clamp every 'on' to at least minOnMs and re-tune on a real device.",
+    "patterns": {
+      "selection": [
+        12
+      ],
+      "impactLight": [
+        19
+      ],
+      "impactMedium": [
+        17
+      ],
+      "impactHeavy": [
+        23
+      ],
+      "impactRigid": [
+        3
+      ],
+      "impactSoft": [
+        23
+      ],
+      "success": [
+        22,
+        94,
+        21
+      ],
+      "warning": [
+        21,
+        113,
+        23
+      ],
+      "error": [
+        14,
+        36,
+        14,
+        71,
+        21,
+        80,
+        19
+      ],
+      "click": [
+        9
+      ],
+      "retry": [
+        22,
+        68,
+        22,
+        68,
+        22
+      ]
+    },
+    "minOnMs": 10,
+    "retryNote": "retry is the watchOS pattern: three onsets ~90 ms apart; 'on' times are not measured separately, 22 ms is a CONV guess"
+  }
+}

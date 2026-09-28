@@ -44,6 +44,7 @@ ingested so far.
 | Multitasking: tabs/windows, resizing, split screen, background tabs, PiP, media that keeps playing, save/restore state, background uploads | + `hig/patterns/multitasking.md`, `hig/patterns/launching.md`, `hig/foundations/layout.md` (any window size) | HIG: Windows, Playing video, Playing audio |
 | Help, tips, coach marks, tooltips, help text, tutorials, first-use hints | + `hig/patterns/offering-help.md` (tip types + eligibility, tooltip copy 60–75 chars), `hig/foundations/writing.md`, `hig/patterns/feedback.md`; visuals `offering-help-01 … 03` | HIG: Onboarding, Help menu |
 | Sound: audio playback, sound effects, UI sounds, mute/silent, volume, headphones/output routing, interruptions, media keys, spatial audio | + `hig/patterns/playing-audio.md` (categories, interruptions, silent switch), `hig/patterns/multitasking.md`, `hig/patterns/feedback.md`, `hig/foundations/accessibility.md` | HIG: Playing video, Playing haptics |
+| Haptics / vibration / tactile feedback in mobile apps (which pattern for which event, custom haptics, Expo/RN/Android/web mapping) | + `hig/patterns/playing-haptics.md` (vocabulary + measured timings + mobile recommendation), `tokens/apple-haptics.json`, `hig/patterns/feedback.md` | HIG: Gestures, Sliders, Toggles |
 | Settings / list screen | + `field-notes/components.md` § Settings list | HIG: Settings, Lists and tables, Toggles |
 | Wizard / onboarding / form | + `field-notes/components.md` § Wizard, `hig/patterns/onboarding.md` (optional, interactive, tips over tours, postpone setup, permissions/ratings timing), `hig/patterns/entering-data.md` (pre-gather, defaults, choices over typing, live validation, Continue only when required data is in), `hig/foundations/privacy.md` (no permission requests up front; ask only for needed data) | HIG: Onboarding, Entering data, Text fields, Pickers |
 | Consent / permission / connect screen | + `field-notes/components.md` § Consent screen, `hig/foundations/privacy.md` (grant dialog vs pre-alert screen) | HIG: Managing accounts, Alerts/Sheets |
@@ -105,7 +106,7 @@ on every ingestion. `—` = not yet ingested.
 | Typography `typography` ⚠️ CRITICAL | `hig/foundations/typography.md` (+ exact tables `tokens/apple-typography.json`, CSS web preview) | 2026-09-28 |
 | Writing `writing` | `hig/foundations/writing.md` | 2026-09-28 |
 
-### Patterns  (collection page: —; 17 of 25 ingested)
+### Patterns  (collection page: —; 18 of 25 ingested)
 | Page | File | Ingested |
 |---|---|---|
 | Charting data `charting-data` | `hig/patterns/charting-data.md` | 2026-09-28 |
@@ -125,7 +126,7 @@ on every ingestion. `—` = not yet ingested.
 | Offering help `offering-help` | `hig/patterns/offering-help.md` | 2026-09-28 |
 | Onboarding `onboarding` | `hig/patterns/onboarding.md` | 2026-09-28 |
 | Playing audio `playing-audio` | `hig/patterns/playing-audio.md` | 2026-09-28 |
-| Playing haptics `playing-haptics` | — | — |
+| Playing haptics `playing-haptics` (recommended for mobile, not a gate) | `hig/patterns/playing-haptics.md` (+ `tokens/apple-haptics.json`, MEASURED from the demo audio/video) | 2026-09-28 |
 | Playing video `playing-video` | — | — |
 | Printing `printing` | — | — |
 | Ratings and reviews `ratings-and-reviews` | — | — |
