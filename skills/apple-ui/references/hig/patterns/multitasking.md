@@ -16,7 +16,7 @@ People expect every app to survive being switched away from, split, windowed and
 - **should** **Respond smoothly to audio interruptions** (another app or the system may interrupt: an incoming call, a music playlist started by Siri):
   - **primary** audio interruptions (music, podcasts, audiobooks): **pause indefinitely**;
   - **shorter** interruptions (e.g. GPS directions): **temporarily lower the volume or pause**, then **resume the original volume or playback** when it ends.
-  - (Apple links Playing audio, not yet ingested.)
+  - (Apple links Playing audio ✓: `hig/patterns/playing-audio.md`.)
 - **should** **Finish user-initiated tasks in the background.** When someone starts a download or processes a video file, they expect it to **finish even after they switch away**. If a task needs no more input, **complete it in the background before suspending**.
 - **should** **Use notifications sparingly.**
   - The app can notify while suspended or in the background.
@@ -131,5 +131,5 @@ Field-note cross-links:
 
 ## Related
 - Ingested: Launching (✓), File management (✓), Loading (✓), Managing notifications (✓), Live-viewing apps (✓), Going full screen (✓), Layout (✓ CRITICAL), Feedback (✓ CRITICAL), Spatial layout (✓), Designing for iPadOS (✓), Designing for visionOS (✓).
-- Ingested since: Offering help (✓). Not yet ingested: **Windows**, **Playing video**, **Playing audio**, Split views, Sidebars.
+- Ingested since: Offering help (✓). Not yet ingested: **Windows**, **Playing video**, Split views, Sidebars.
 - Developer docs and videos: listed in Specs & values.

@@ -55,7 +55,7 @@ The page has **no numbers**: no durations, sizes, counts or colours. Everything 
 | "Can't do it" | say it can't be done **and why** |
 | watchOS | no indeterminate progress indicator; promise a notification instead |
 | Examples named | Mail unread count in the toolbar · Finder trash without a warning · Apple Pay confirmation · Maps same-location message |
-| Related HIG pages | Playing audio · Playing haptics · Motion (Motion ✓; the other two not yet ingested) |
+| Related HIG pages | Playing audio ✓ · Playing haptics · Motion ✓ (Playing haptics not yet ingested) |
 | Developer docs / videos | UIKit *Animation and haptics* · *Designing Fluid Interfaces* (WWDC18 803) · *Essential Design Principles* (WWDC17 802) |
 | Web tokens added (CONV/WCAG) | transient message ≥ max(5 s, 60 ms × characters), errors and warnings not auto-dismissed, ≤ 1 modal (+ one alert on top of it), ≥ 2 channels per message |
 
@@ -128,5 +128,5 @@ Field-note cross-links:
 
 ## Related
 - Ingested: Accessibility (✓), Writing (✓), Motion (✓), Entering data (✓), Drag and drop (✓), Color (✓ CRITICAL), Materials (✓ CRITICAL), Layout (✓ CRITICAL), Typography (✓ CRITICAL).
-- Ingested since: Loading (✓). Not yet ingested: **Alerts**, **Playing haptics**, **Playing audio**, Notifications, Managing notifications, Progress indicators, Undo and redo, Action sheets, Modality.
+- Ingested since: Loading (✓). Not yet ingested: **Alerts**, **Playing haptics**, Notifications, Managing notifications, Progress indicators, Undo and redo, Action sheets, Modality.
 - Developer docs: UIKit *Animation and haptics*. Videos: *Designing Fluid Interfaces* (WWDC18 803), *Essential Design Principles* (WWDC17 802).

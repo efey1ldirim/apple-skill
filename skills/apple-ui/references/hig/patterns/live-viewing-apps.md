@@ -119,4 +119,4 @@ Field-note cross-links:
 
 ## Related
 - Ingested: Launching (✓), Feedback (✓ CRITICAL), Going full screen (✓), Materials (✓ CRITICAL), Layout (✓ CRITICAL), Motion (✓), Designing for tvOS (✓), Accessibility (✓), Writing (✓).
-- Not yet ingested: **Remotes**, **Playing video**, Playing audio, Sliders/Progress indicators, Collections.
+- Not yet ingested: **Remotes**, **Playing video**, Sliders/Progress indicators, Collections.
