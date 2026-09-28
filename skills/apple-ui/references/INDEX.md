@@ -27,8 +27,9 @@ ingested so far.
 | Brand colour, brand font, logo placement, voice & tone | + `hig/foundations/branding.md` | HIG: Color, Typography, Writing |
 | Glass / blur / translucency: nav bars, tab bars, toolbars, sidebars, popovers, sheets, overlays, controls over photos/video, frosted panels | + `hig/foundations/materials.md` (MATERIALS GATE), `tokens/apple-materials.css`, `apple-web/site-patterns.md` (frosted bar + veil) | HIG: Color § Liquid Glass color, Sliders, Toggles, Popovers, Sheets |
 | Settings / list screen | + `field-notes/components.md` § Settings list | HIG: Settings, Lists and tables, Toggles |
-| Wizard / onboarding / form | + `field-notes/components.md` § Wizard | HIG: Onboarding, Entering data, Text fields, Pickers |
-| Consent / permission / connect screen | + `field-notes/components.md` § Consent screen | HIG: Privacy, Managing accounts, Alerts/Sheets |
+| Wizard / onboarding / form | + `field-notes/components.md` § Wizard, `hig/foundations/privacy.md` (no permission requests up front; ask only for needed data) | HIG: Onboarding, Entering data, Text fields, Pickers |
+| Consent / permission / connect screen | + `field-notes/components.md` § Consent screen, `hig/foundations/privacy.md` (grant dialog vs pre-alert screen) | HIG: Managing accounts, Alerts/Sheets |
+| Asking for location/camera/mic/notifications/contacts, pre-permission ("soft ask") screens, cookie/tracking consent, purpose/reason copy, sign-in & password/passkey flows, storing tokens | + `hig/foundations/privacy.md` (visuals `privacy-01 … 04`) | HIG: Managing accounts, Sign in with Apple, Entering data, Onboarding |
 | Landing / marketing page | + `field-notes/landing-and-motion.md`, `hig/overview/design-landing.md` (Apple's own page: section rhythm, cards, links), `hig/foundations/motion.md` (purposeful motion, no ~0.2 Hz loops, no edge motion) | HIG: Branding, Typography, Materials |
 | Dashboard / analytics | + `field-notes/components.md` § Dashboard tiles | HIG: Charting data, Charts, Layout |
 | Dark mode | + `hig/foundations/dark-mode.md`, `field-notes/tokens.md` § Dark, `hig/foundations/color.md`, `tokens/apple-system-colors.css` | HIG: Dark Mode, Color, Materials |
@@ -79,7 +80,7 @@ on every ingestion. `—` = not yet ingested.
 | Layout `layout` ⚠️ CRITICAL | `hig/foundations/layout.md` | 2026-09-28 |
 | Materials `materials` ⚠️ CRITICAL | `hig/foundations/materials.md` | 2026-09-28 |
 | Motion `motion` | `hig/foundations/motion.md` | 2026-09-28 |
-| Privacy `privacy` | — | — |
+| Privacy `privacy` | `hig/foundations/privacy.md` | 2026-09-28 |
 | Right to left `right-to-left` | — | — |
 | SF Symbols `sf-symbols` | — | — |
 | Spatial layout `spatial-layout` | — | — |

@@ -188,7 +188,7 @@ with Reality Composer Pro 3* (WWDC26 252), *Level up your games* (WWDC25 209).
 - [ ] State resumes across devices?
 
 ## Related (ingestion status)
-Loading, Settings, Onboarding, Privacy, Ratings and reviews, Launching, Typography, Buttons,
+Loading, Settings, Onboarding, Privacy (✓ `hig/foundations/privacy.md`), Ratings and reviews, Launching, Typography, Buttons,
 Images, Layout, Menus (in-game menus), Going full screen, Game controls, Gestures, Pointing
 devices, Accessibility, Inclusion, Game Center, iCloud, Apple In-App Purchase, Playing haptics,
 Playing audio, Technologies — not yet ingested.

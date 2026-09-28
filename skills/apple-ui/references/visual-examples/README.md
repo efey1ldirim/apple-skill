@@ -77,11 +77,17 @@ File names: `images/<id>-<dont|do|neutral|single|tab>-<n>-<light|dark>.png`.
 | materials-08 | single | Choose materials by role | window: Regular sidebar, Thick text field, Thin button (callout labels) | — | One material for every region; thickness chosen by look |
 | materials-09 | compare | Vibrancy levels (visionOS) | `label` crisp · `secondaryLabel` softer | `tertiaryLabel` faint — inactive only | Tertiary-level text for content people must read |
 | materials-10 | single | Keep modal material backgrounds (watchOS) | full-screen translucent modal: title, description, one pill Action button on a thinner material | — | Replacing a modal's material backdrop with a solid colour |
+| privacy-01 | tabs | System permission alerts: purpose string between title and buttons | location alert (map, Precise: On, Allow Once / While Using / Don't Allow) · photos alert (Select Photos / All Photos / Don't Allow) | contacts alert (Don't Allow + filled blue Allow side by side) | Reason copy that is vague, passive or missing; asking without an in-context trigger |
+| privacy-02 | do | Pre-alert screen: one button that opens the real prompt | headline + three benefit rows + "change later in Settings" note + one neutral capsule **Next** | — | Pre-permission screens with "Allow"/"Enable" buttons or brand-blue approval styling |
+| privacy-03 | don't | No extra actions on a pre-alert screen | same screen with a second **Cancel** capsule under Next | same screen with a glass **×** close at top-leading | "Not now" / Cancel / × on a soft-ask screen before a browser permission prompt |
+| privacy-04 | tabs (all ✗) | Tracking pre-screens that get rejected | incentive ($100 credit) · imitation ("Allow Tracking" button over a bar chart) | alert image with Allow circled · arrow + "choose Allow" hint under the real alert | Cookie/consent flows with rewards, cookie walls, fake prompts, or arrows pointing at Accept |
 
 ## Pages scanned
 design-principles, designing-for-{ios, ipados, macos, tvos, visionos, watchos, games, iphone-duo}
-(no image pairs), accessibility, app-icons, branding, color, dark-mode, icons, images, immersive-experiences, inclusion, layout, materials (iPhone Duo pairs found once tab support was added).
+(no image pairs), accessibility, app-icons, branding, color, dark-mode, icons, images, immersive-experiences, inclusion, layout, materials, privacy (iPhone Duo pairs found once tab support was added).
 
 Kind **tabs**: images shown behind tabs on Apple's page (one image per tab) — detected automatically.
+Kind **do** / **don't** alone: a row that carries only ✓ or only ✗ (Apple sometimes splits one
+comparison across two rules, e.g. Privacy's pre-alert ✓ and its two ✗ variants) — detected automatically.
 Kind **single**: a stand-alone image that is itself a comparison (before/after drawn inside one
 image, or a sequence under one rule). These are listed per page in `SINGLES` in the script.

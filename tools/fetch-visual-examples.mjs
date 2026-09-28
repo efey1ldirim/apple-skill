@@ -28,7 +28,7 @@ const PAGES = [
   "design-principles", "designing-for-ios", "designing-for-ipados", "designing-for-macos",
   "designing-for-tvos", "designing-for-visionos", "designing-for-watchos", "designing-for-games",
   "designing-for-iphone-duo", "accessibility", "app-icons", "branding", "color", "dark-mode", "icons", "images", "immersive-experiences", "inclusion", "layout",
-  "materials",
+  "materials", "privacy",
 ];
 // Stand-alone images that are comparisons on their own (before/after drawn inside one image, or
 // a sequence of single images under one rule). Consecutive singles under the same rule are grouped.
@@ -123,14 +123,18 @@ for (const slug of slugs) {
           last.items.push(item);
         }
       }
-      if (b.type === "row" && b.columns?.length >= 2) {
+      // A row is a comparison when it has ≥2 columns, or when a single column carries its own
+      // ✗/✓ verdict (Privacy shows its ✓ pre-alert screen alone and its two ✗ variants in a
+      // separate row, each under a different rule).
+      const verdictIn = (c) => imagesIn(c.content).some((x) => x === "crossout.png" || x === "checkmark.png");
+      if (b.type === "row" && (b.columns?.length >= 2 || b.columns?.some(verdictIn))) {
         const cols = b.columns.map((c) => ({ imgs: imagesIn(c.content), caption: captionIn(c.content, refs) }));
         const isDont = (c) => c.imgs.includes("crossout.png");
         const isDo = (c) => c.imgs.includes("checkmark.png");
         // Decorative glyph grids (e.g. the eight principle symbols) are not comparisons.
         const DECORATIVE = /icon-padding/;
         const art = (c) => c.imgs.some((x) => x !== "crossout.png" && x !== "checkmark.png" && !DECORATIVE.test(x));
-        const marked = cols.some(isDont) && cols.some(isDo);
+        const marked = cols.some(isDont) || cols.some(isDo);
         const compare = !cols.some(isDont) && !cols.some(isDo) && cols.filter(art).length >= 2;
         if (marked || compare) {
           n++; last = null;

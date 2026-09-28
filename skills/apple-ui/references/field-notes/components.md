@@ -141,6 +141,9 @@ Real `disabled` (not just faded) when a precondition is unmet (e.g. agreement no
 - Final screen: giant headline (`lg:104px`) + one button. Nothing else.
 
 ## Consent / connect screen (the reference implementation — "exactly what I wanted")
+- HIG cross-check (`hig/foundations/privacy.md`): this screen **is the grant dialog** (the system
+  alert's counterpart), so Allow + Cancel is correct here. A *pre-permission* screen shown before a
+  browser prompt follows the other rule: one "Continue" button, no Allow wording, no Cancel/×.
 - Stage: `flex min-h-[100dvh] items-center justify-center bg-[#F5F5F7] dark:bg-[#08080A]`.
 - Column: `flex max-h-[100dvh] w-full max-w-[25rem] flex-col px-6 py-6`; header and actions
   `shrink-0`; list `min-h-0 flex-1 overflow-y-auto overscroll-contain` with hidden scrollbar.

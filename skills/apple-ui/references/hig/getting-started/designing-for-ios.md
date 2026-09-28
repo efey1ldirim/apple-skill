@@ -101,7 +101,7 @@ This page *is* the iOS platform summary. iPadOS/macOS/etc. have their own pages.
 - [ ] Share uses the system share sheet?
 
 ## Related (ingestion status)
-Gestures, Virtual keyboards, Siri, Privacy, Gyroscope and accelerometer, Widgets, Home Screen
+Gestures, Virtual keyboards, Siri, Privacy (✓ `hig/foundations/privacy.md`), Gyroscope and accelerometer, Widgets, Home Screen
 quick actions, Searching, Activity views, Layout, Dark Mode, Typography — not yet ingested.
 Note: the page links "spatial interactions" (`/spatial-interactions`), which is not in the
 current HIG navigator tree.
