@@ -85,6 +85,22 @@ description: >
 > 6. Compare screenshots with Apple's material pairs `materials-01 … 10` (ours must not resemble ✗ 03 / 07).
 > If any step fails, the design is not finished.
 
+> ## ⚠️ FEEDBACK GATE — CRITICAL, zero tolerance
+> Every message the UI shows (status, success, failure, warning, correction) must follow Apple's HIG Feedback page:
+> 1. Read `references/hig/patterns/feedback.md` (CRITICAL page) and `tokens/apple-feedback.json`. Classify each message on the
+>    **delivery ladder** — status · routine success · significant success · cannot-do/correction · unexpected irreversible loss —
+>    and deliver it that way: quiet and next to the item for status, an interruption **only** for unexpected, irreversible loss.
+> 2. Every message is **text + an icon/shape**; the hue lives on the icon, the text stays in the label colour; never colour, sound or
+>    vibration alone. Every dynamic message is announced (`role=status`/`alert`/`aria-live`, or `aria-describedby` on the field).
+>    Use `tokens/apple-feedback.css` (`.fb-status`, `.fb-inline`, `.fb-toast` on `.glass`, `.fb-alert`, `.fb-reason`, `.sr-only`).
+> 3. `node tools/check-feedback.mjs <changed files>` → **0 errors** (WARNs fixed or justified with `// feedback-ok: <reason>`).
+> 4. `node tools/run-feedback-probe.mjs <url>` (add `--click "<selector>"` / `--fill "<selector>=<value>"` to put toasts, errors and
+>    alerts on screen first) → **PASS** in light, dark and reduced motion at 375 and 1440: all messages announced, none colour-only,
+>    invalid controls explained, text ≥ 4.5:1, no alertdialog at first paint, ≤ 1 modal, spinners named, disabled primaries explained.
+> 5. Walk the failure path (network error, invalid input, denied, empty) and the destructive path of every flow; no `alert()` for routine
+>    success; no warning for expected removals (give Undo); every unavailable command says why.
+> If any step fails, the design is not finished.
+
 You are designing as an Apple design engineer would: restraint first, one idea per surface,
 depth from light and tone instead of borders and colour, and every number chosen on purpose.
 
@@ -169,6 +185,7 @@ never decoration). Use them to resolve trade-offs; details and web translations 
 - [ ] **TYPOGRAPHY GATE passed** (exact platform tables used; checker 0 errors; 200% and largest accessibility text verified).
 - [ ] **LAYOUT GATE passed** (all steps above; `layout.md` checklist fully ✓; probe PASS at every viewport).
 - [ ] **MATERIALS GATE passed** (all steps above; `materials.md` checklist fully ✓; probe PASS in every mode).
+- [ ] **FEEDBACK GATE passed** (all steps above; `feedback.md` checklist fully ✓; checker 0 errors; probe PASS in every mode; failure and destructive paths walked).
 
 - [ ] Exactly one filled button visible per screen/state.
 - [ ] No uppercase/wide-tracked eyebrow labels; no count badges shouting next to titles.

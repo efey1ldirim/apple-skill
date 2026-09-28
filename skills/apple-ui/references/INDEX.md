@@ -7,7 +7,7 @@ ingested so far.
 
 | Task | Always read | Then read |
 |---|---|---|
-| Any UI work | **`hig/foundations/color.md` (CRITICAL — colour gate)**, `tokens/apple-system-colors.css`, **`hig/foundations/layout.md` (CRITICAL — layout gate)**, `tokens/apple-layout.css`, **`hig/foundations/typography.md` (CRITICAL — typography gate)**, `tokens/apple-typography.json`, **`hig/foundations/materials.md` (CRITICAL — materials gate, whenever anything is translucent/blurred/overlaid)**, `tokens/apple-materials.css`, `hig/foundations/accessibility.md` (contrast/size/motion minimums), `hig/getting-started/design-principles.md` (Apple's 8 principles — the decision lens), `field-notes/principles.md`, `field-notes/anti-patterns.md` | — |
+| Any UI work | **`hig/foundations/color.md` (CRITICAL — colour gate)**, `tokens/apple-system-colors.css`, **`hig/foundations/layout.md` (CRITICAL — layout gate)**, `tokens/apple-layout.css`, **`hig/foundations/typography.md` (CRITICAL — typography gate)**, `tokens/apple-typography.json`, **`hig/foundations/materials.md` (CRITICAL — materials gate, whenever anything is translucent/blurred/overlaid)**, `tokens/apple-materials.css`, **`hig/patterns/feedback.md` (CRITICAL — feedback gate, for every message, error, toast, alert, status, spinner or disabled state)**, `tokens/apple-feedback.css`, `hig/foundations/accessibility.md` (contrast/size/motion minimums), `hig/getting-started/design-principles.md` (Apple's 8 principles — the decision lens), `field-notes/principles.md`, `field-notes/anti-patterns.md` | — |
 | Web UI (React/Tailwind/CSS) | + `field-notes/tokens.md`, `field-notes/components.md`, `field-notes/engineering-gotchas.md` | HIG pages for the components you use |
 | Mobile web / phone layouts (reach zone, swipe-back, Dynamic Type, autofill) | + `hig/getting-started/designing-for-ios.md` | HIG: Layout, Gestures, Virtual keyboards |
 | Tablet / large-screen / resizable layouts (split view, popovers, pointer vs touch density, keyboard shortcuts) | + `hig/getting-started/designing-for-ipados.md` | HIG: Multitasking, Pointing devices, Keyboards, Split views |
@@ -15,7 +15,7 @@ ingested so far.
 | TV / kiosk / 10-foot UI, keyboard focus styling, multi-user profiles | + `hig/getting-started/designing-for-tvos.md` | HIG: Focus and selection, Remotes, Managing accounts |
 | Immersive / 3D / WebXR, hover-free (gaze) input, motion comfort | + `hig/getting-started/designing-for-visionos.md` + `hig/foundations/immersive-experiences.md` + `hig/foundations/motion.md` § visionOS (peripheral motion, 0.2 Hz, frame of reference) + `hig/foundations/spatial-layout.md` (field of view, head-anchoring, depth, dynamic/fixed scale, 60 pt spacing) | HIG: Eyes, Windows |
 | Focus mode, fullscreen, lightbox, presentation mode (enter/exit, backdrop dim) | + `hig/foundations/immersive-experiences.md` (web translation), `hig/foundations/motion.md`, `hig/foundations/spatial-layout.md` (receding page behind sheets, depth levels) | HIG: Sheets |
-| Animation, transitions, micro-interactions, gesture/swipe UI, loading & success feedback, scroll effects, animated icons, WebGL/canvas motion | + `hig/foundations/motion.md`, `hig/foundations/accessibility.md` § Motion (Reduce Motion fallback), `field-notes/tokens.md` § Motion, `field-notes/landing-and-motion.md` § Motion rules | HIG: Feedback, SF Symbols § Animations, Playing haptics |
+| Animation, transitions, micro-interactions, gesture/swipe UI, loading & success feedback, scroll effects, animated icons, WebGL/canvas motion | + `hig/foundations/motion.md`, `hig/patterns/feedback.md` (FEEDBACK GATE: how loud a message may be), `hig/foundations/accessibility.md` § Motion (Reduce Motion fallback), `field-notes/tokens.md` § Motion, `field-notes/landing-and-motion.md` § Motion rules | HIG: Feedback, SF Symbols § Animations, Playing haptics |
 | Glanceable surfaces: notifications/web push, widgets, badges, at-a-glance mobile summaries | + `hig/getting-started/designing-for-watchos.md` | HIG: Notifications, Widgets, Complications |
 | Website header / mega-menu / docs site / section nav | + `apple-web/site-patterns.md` (Apple's own measured web patterns) | HIG: Menus, Sidebars, Tab bars |
 | Minimum text & target sizes per platform | + `hig/foundations/typography.md`, `tokens/apple-typography.json`, `hig/getting-started/designing-for-games.md` (game targets) | HIG: Buttons |
@@ -33,6 +33,7 @@ ingested so far.
 | Glass / blur / translucency: nav bars, tab bars, toolbars, sidebars, popovers, sheets, overlays, controls over photos/video, frosted panels | + `hig/foundations/materials.md` (MATERIALS GATE), `tokens/apple-materials.css`, `apple-web/site-patterns.md` (frosted bar + veil) | HIG: Color § Liquid Glass color, Sliders, Toggles, Popovers, Sheets |
 | Share button, share sheet/popover, permissions ("who can edit"), presence/collaborator lists, collaboration notifications with deep links | + `hig/patterns/collaboration-and-sharing.md`, `hig/foundations/writing.md` (permission phrases), `hig/foundations/materials.md` | HIG: Activity views, Sheets, Popovers, Toolbars, Notifications |
 | Drag and drop, reordering lists/boards, file upload drop zones, moving items between containers, multi-select drag | + `hig/patterns/drag-and-drop.md` (move vs copy, drag image, target feedback, undo, alternatives), `hig/foundations/accessibility.md` (dragging alternatives), `field-notes/anti-patterns.md` (no dashed drop frame at rest) | HIG: Pointing devices, Undo and redo, Feedback, Loading, Keyboards |
+| Toasts, alerts, error/success/status messages, validation, spinners, disabled buttons, confirmations, destructive-action prompts | **`hig/patterns/feedback.md` (FEEDBACK GATE)**, `tokens/apple-feedback.json` / `.css`, `node tools/check-feedback.mjs`, `node tools/run-feedback-probe.mjs <url>`, `hig/foundations/writing.md`, `hig/foundations/accessibility.md` | HIG: Alerts, Playing haptics, Undo and redo, Loading, Notifications |
 | Settings / list screen | + `field-notes/components.md` § Settings list | HIG: Settings, Lists and tables, Toggles |
 | Wizard / onboarding / form | + `field-notes/components.md` § Wizard, `hig/patterns/entering-data.md` (pre-gather, defaults, choices over typing, live validation, Continue only when required data is in), `hig/foundations/privacy.md` (no permission requests up front; ask only for needed data) | HIG: Onboarding, Entering data, Text fields, Pickers |
 | Consent / permission / connect screen | + `field-notes/components.md` § Consent screen, `hig/foundations/privacy.md` (grant dialog vs pre-alert screen) | HIG: Managing accounts, Alerts/Sheets |
@@ -94,14 +95,14 @@ on every ingestion. `—` = not yet ingested.
 | Typography `typography` ⚠️ CRITICAL | `hig/foundations/typography.md` (+ exact tables `tokens/apple-typography.json`, CSS web preview) | 2026-09-28 |
 | Writing `writing` | `hig/foundations/writing.md` | 2026-09-28 |
 
-### Patterns  (collection page: —; 4 of 25 ingested)
+### Patterns  (collection page: —; 5 of 25 ingested)
 | Page | File | Ingested |
 |---|---|---|
 | Charting data `charting-data` | `hig/patterns/charting-data.md` | 2026-09-28 |
 | Collaboration and sharing `collaboration-and-sharing` | `hig/patterns/collaboration-and-sharing.md` | 2026-09-28 |
 | Drag and drop `drag-and-drop` | `hig/patterns/drag-and-drop.md` | 2026-09-28 |
 | Entering data `entering-data` | `hig/patterns/entering-data.md` | 2026-09-28 |
-| Feedback `feedback` | — | — |
+| Feedback `feedback` ⚠️ CRITICAL | `hig/patterns/feedback.md` (+ `tokens/apple-feedback.{css,json}`, `tools/check-feedback.mjs`, `tools/feedback-probe.js`) | 2026-09-28 |
 | File management `file-management` | — | — |
 | Going full screen `going-full-screen` | — | — |
 | Launching `launching` | — | — |

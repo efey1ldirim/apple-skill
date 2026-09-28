@@ -137,7 +137,7 @@ APIs named: SwiftUI (*Animating views and transitions* tutorial), WatchKit `WKIn
   it can't be disabled or customised.
 
 ## Resources listed
-- Related: Feedback (pattern, not yet ingested); **Accessibility** — note this link goes to
+- Related: Feedback (✓ CRITICAL, `hig/patterns/feedback.md`); **Accessibility** — note this link goes to
   **apple.com/accessibility**, not the HIG page (our HIG Accessibility note ✓ covers Reduce Motion);
   Spatial layout (not yet); Immersive experiences (✓).
 - Developer documentation: *Animating views and transitions* — SwiftUI.

@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Feedback gate — GOOD fixture (must PASS)</title>
+<link rel="stylesheet" href="../../../skills/apple-ui/tokens/apple-system-colors.css">
+<link rel="stylesheet" href="../../../skills/apple-ui/tokens/apple-materials.css">
+<link rel="stylesheet" href="../../../skills/apple-ui/tokens/apple-feedback.css">
+<style>
+  body { font: 16px/1.4 system-ui; margin: 0; padding: 1.5rem; background: #fff; color: #1d1d1f; }
+  @media (prefers-color-scheme: dark) { body { background: #000; color: #f5f5f7; } }
+  .dot { display: inline-block; width: 10px; height: 10px; border-radius: 50%; vertical-align: middle; }
+  .spin { display: inline-block; width: 16px; height: 16px; border: 2px solid currentColor; border-top-color: transparent; border-radius: 50%; }
+  @media (prefers-reduced-motion: no-preference) { .spin { animation: spin 1s linear infinite; } @keyframes spin { to { transform: rotate(360deg); } } }
+  .row { margin-block: 1rem; }
+</style>
+</head>
+<body>
+  <h1>Settings</h1>
+
+  <!-- 1. Passive status next to the item it describes (HIG: integrate status feedback) -->
+  <p class="fb-status" role="status" data-kind="info"><span class="fb-icon" aria-hidden="true">●</span><span>Last synced 2 minutes ago. 3 unread.</span></p>
+
+  <!-- 2. Status dots always have text -->
+  <table>
+    <tr><td>Server A</td><td><span class="dot" style="background:var(--fb-hue-success)" aria-hidden="true"></span> Online</td></tr>
+    <tr><td>Server B</td><td><span class="dot" style="background:var(--fb-hue-error)" aria-hidden="true"></span> Offline since 09:41</td></tr>
+  </table>
+
+  <!-- 3. Invalid field: message next to it, associated, hue only on the icon -->
+  <div class="row">
+    <label for="email">Email</label><br>
+    <input id="email" type="email" value="not-an-email" aria-invalid="true" aria-describedby="email-err">
+    <p id="email-err" class="fb-inline" data-kind="error"><span class="fb-icon" aria-hidden="true">⚠</span><span>Enter an address like name@example.com.</span></p>
+  </div>
+
+  <!-- 4. Spinner with a status text -->
+  <p role="status"><span class="spin" aria-hidden="true"></span> Saving…</p>
+
+  <!-- 5. Disabled primary with its reason associated -->
+  <form class="row">
+    <label for="n">Name</label> <input id="n" name="n" aria-describedby="why">
+    <button type="submit" disabled aria-describedby="why">Continue</button>
+    <p id="why" class="fb-reason">Enter a name to continue.</p>
+  </form>
+
+  <!-- 6. One quiet, announced confirmation for a significant task (glass: functional layer) -->
+  <div class="fb-toast glass" role="status" data-kind="success"><span class="fb-icon" aria-hidden="true">✓</span><span>Payment received.</span></div>
+
+  <!-- 7. Nothing interrupts at first paint; the alert appears only after an action -->
+  <button id="del" type="button" onclick="document.getElementById('d').showModal()">Delete account…</button>
+  <dialog id="d" role="alertdialog" aria-labelledby="dt" aria-describedby="dd" class="fb-alert">
+    <h2 id="dt">Delete your account?</h2>
+    <p id="dd">All projects are removed and this can't be undone.</p>
+    <div class="fb-alert-actions"><button>Delete account</button><button onclick="this.closest('dialog').close()">Cancel</button></div>
+  </dialog>
+</body>
+</html>

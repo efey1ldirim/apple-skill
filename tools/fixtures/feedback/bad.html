@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Feedback gate — BAD fixture (must FAIL)</title>
+<style>
+  body { font: 16px/1.4 system-ui; margin: 0; padding: 1.5rem; background: #fff; color: #1d1d1f; }
+  .toast { position: fixed; bottom: 1rem; left: 1rem; padding: .6rem .9rem; border-radius: 12px; background: #34C759; color: #fff; }
+  .field-error { color: #FF383C; font-size: 13px; }             /* system red as small text on white: < 4.5:1 */
+  .dot { display: inline-block; width: 10px; height: 10px; border-radius: 50%; }
+  .ok { background: #34C759; } .bad { background: #FF383C; }
+  input.err { border: 2px solid #FF383C; }
+  .spin { width: 18px; height: 18px; border: 3px solid #ccc; border-top-color: #333; border-radius: 50%; animation: spin 1s linear infinite; }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  dialog { padding: 1rem; border-radius: 16px; }
+</style>
+</head>
+<body>
+  <h1>Settings</h1>
+
+  <!-- 1. Custom toast, no role/aria-live: never announced -->
+  <div class="toast">Profile saved</div>
+
+  <!-- 2. Colour is the only channel: two dots in a table, no text -->
+  <table><tr><td>Server A</td><td><span class="dot ok"></span></td></tr>
+         <tr><td>Server B</td><td><span class="dot bad"></span></td></tr></table>
+
+  <!-- 3. Invalid field: red border only, no message, no aria-describedby -->
+  <label>Email <input class="err" aria-invalid="true" value="not-an-email"></label>
+
+  <!-- 4. Error copy with "oops", red small text -->
+  <p class="field-error">Oops! Something went wrong.</p>
+
+  <!-- 5. Unnamed endless spinner -->
+  <div class="spin"></div>
+
+  <!-- 6. Disabled primary with no reason -->
+  <form><input name="n"> <button type="submit" disabled>Continue</button></form>
+
+  <!-- 7. Two alert dialogs open at first paint -->
+  <dialog open role="alertdialog" aria-label="Delete?"><p>Delete this?</p><button>Delete</button></dialog>
+  <dialog open role="alertdialog" aria-label="Sure?"><p>Really?</p><button>OK</button></dialog>
+
+  <script>
+    // 8. Native alert() for routine success + error that disappears in 2 s
+    function save() { alert("Saved successfully!"); }
+    function showError(setError) { setError("We're having trouble saving."); setTimeout(() => setError(null), 2000); /* error */ }
+  </script>
+</body>
+</html>
