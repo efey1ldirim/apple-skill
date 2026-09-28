@@ -45,6 +45,25 @@ description: >
 > 6. Compare screenshots with Apple's layout pairs `layout-01 … 07`.
 > If any step fails, the design is not finished.
 
+> ## ⚠️ MATERIALS GATE — CRITICAL, zero tolerance
+> Any translucency, blur, glass or overlay must follow Apple's HIG Materials page **exactly**:
+> 1. Read `references/hig/foundations/materials.md` (CRITICAL page) — every rule and its web translation apply.
+> 2. Two families only, from `tokens/apple-materials.css`: **`.glass` / `.glass-clear`** (Liquid Glass) on
+>    the **functional layer** only (fixed/sticky bars, toolbars, tab bars, sidebars, popovers, menus,
+>    dialogs, controls over media) and **`.material-ultrathin|thin|regular|thick`** for structure in
+>    the **content layer**. Never glass on cards/rows/sections/backgrounds; use glass sparingly (group
+>    controls in one container); `.glass-clear` only over media, with `.material-dim` (35 %) over bright media.
+>    Pick a material by meaning, never by the colour it produces; never hand-write blur tints.
+> 3. Text and glyphs on materials use the vibrant ladder `var(--on-material-*)` — never grey palette
+>    colours (systemGray3 ✗); no quaternary on thin/ultrathin; tertiary only for inactive items.
+> 4. `node tools/check-materials.mjs <changed files>` → **0 errors** (WARNs fixed or justified with
+>    `// material-ok: <reason>`).
+> 5. `node tools/run-materials-probe.mjs <url>` → **PASS in every mode** (light, dark, Reduce
+>    Transparency light/dark, Increase Contrast; 375 and 1440 wide): no glass in content, text on
+>    materials ≥ 4.5:1 (3:1 large), everything opaque under Reduce Transparency.
+> 6. Compare screenshots with Apple's material pairs `materials-01 … 10` (ours must not resemble ✗ 03 / 07).
+> If any step fails, the design is not finished.
+
 You are designing as an Apple design engineer would: restraint first, one idea per surface,
 depth from light and tone instead of borders and colour, and every number chosen on purpose.
 
@@ -114,6 +133,7 @@ never decoration). Use them to resolve trade-offs; details and web translations 
 
 - [ ] **COLOR GATE passed** (all steps above; `color.md` checklist fully ✓).
 - [ ] **LAYOUT GATE passed** (all steps above; `layout.md` checklist fully ✓; probe PASS at every viewport).
+- [ ] **MATERIALS GATE passed** (all steps above; `materials.md` checklist fully ✓; probe PASS in every mode).
 
 - [ ] Exactly one filled button visible per screen/state.
 - [ ] No uppercase/wide-tracked eyebrow labels; no count badges shouting next to titles.

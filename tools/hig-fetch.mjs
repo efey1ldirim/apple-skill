@@ -70,11 +70,13 @@ function inline(items = []) {
     .join("");
 }
 
-function imageInfo(id) {
+function imageInfo(id, item = {}) {
   const r = refs[id];
-  if (!r) return `[image ${id}]`;
+  // The visible caption under an image lives on the inline item (metadata.abstract), not in refs.
+  const cap = item.metadata?.abstract ? ` CAPTION="${inline(item.metadata.abstract)}"` : "";
+  if (!r) return `[image ${id}]${cap}`;
   const variants = (r.variants ?? []).map((v) => `${(v.traits ?? []).join("+")}: ${v.url}`).join(" | ");
-  return `[IMAGE ${id}] alt="${r.alt ?? ""}" ${variants}`;
+  return `[IMAGE ${id}] alt="${r.alt ?? ""}"${cap} ${variants}`;
 }
 
 function blocks(items = [], depth = 0) {
@@ -128,7 +130,7 @@ function blocks(items = [], depth = 0) {
         else out.push(`${pad}[unhandled block: ${b.type}]`);
     }
     // Standalone images inside paragraphs
-    for (const it of b.inlineContent ?? []) if (it.type === "image") out.push(pad + imageInfo(it.identifier));
+    for (const it of b.inlineContent ?? []) if (it.type === "image") out.push(pad + imageInfo(it.identifier, it));
   }
 }
 

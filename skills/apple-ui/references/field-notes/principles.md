@@ -127,6 +127,8 @@ cheap". Almost every rule below exists to remove one specific source of that fee
 
 ## 12. Glass only on the floating layer
 - `backdrop-filter: blur` + low-opacity white/black + a 1px light top edge.
+- Confirmed by the HIG Materials page (CRITICAL — MATERIALS GATE): use `.glass` for this floating
+  layer and `.material-*` for translucent structure inside content (`tokens/apple-materials.css`).
 - For nav bars, sticky footers, panels, overlays — never for the base layer.
 - A sticky footer melts into content with a gradient fade above it, not a hard top border
   (a border makes it look like a second screen).

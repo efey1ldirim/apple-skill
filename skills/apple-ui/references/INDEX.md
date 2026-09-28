@@ -7,7 +7,7 @@ ingested so far.
 
 | Task | Always read | Then read |
 |---|---|---|
-| Any UI work | **`hig/foundations/color.md` (CRITICAL — colour gate)**, `tokens/apple-system-colors.css`, **`hig/foundations/layout.md` (CRITICAL — layout gate)**, `tokens/apple-layout.css`, `hig/foundations/accessibility.md` (contrast/size/motion minimums), `hig/getting-started/design-principles.md` (Apple's 8 principles — the decision lens), `field-notes/principles.md`, `field-notes/anti-patterns.md` | — |
+| Any UI work | **`hig/foundations/color.md` (CRITICAL — colour gate)**, `tokens/apple-system-colors.css`, **`hig/foundations/layout.md` (CRITICAL — layout gate)**, `tokens/apple-layout.css`, **`hig/foundations/materials.md` (CRITICAL — materials gate, whenever anything is translucent/blurred/overlaid)**, `tokens/apple-materials.css`, `hig/foundations/accessibility.md` (contrast/size/motion minimums), `hig/getting-started/design-principles.md` (Apple's 8 principles — the decision lens), `field-notes/principles.md`, `field-notes/anti-patterns.md` | — |
 | Web UI (React/Tailwind/CSS) | + `field-notes/tokens.md`, `field-notes/components.md`, `field-notes/engineering-gotchas.md` | HIG pages for the components you use |
 | Mobile web / phone layouts (reach zone, swipe-back, Dynamic Type, autofill) | + `hig/getting-started/designing-for-ios.md` | HIG: Layout, Gestures, Virtual keyboards |
 | Tablet / large-screen / resizable layouts (split view, popovers, pointer vs touch density, keyboard shortcuts) | + `hig/getting-started/designing-for-ipados.md` | HIG: Multitasking, Pointing devices, Keyboards, Split views |
@@ -24,6 +24,7 @@ ingested so far.
 | UI copy tone, forms asking personal data (gender, family, names), imagery of people, localisation | + `hig/foundations/inclusion.md` | HIG: Writing, Right to left |
 | Interface icons / glyphs, icon buttons, toolbars, choosing an icon for an action | + `hig/foundations/icons.md` (standard action → symbol table + web mapping) | HIG: SF Symbols, Toolbars, Buttons |
 | Brand colour, brand font, logo placement, voice & tone | + `hig/foundations/branding.md` | HIG: Color, Typography, Writing |
+| Glass / blur / translucency: nav bars, tab bars, toolbars, sidebars, popovers, sheets, overlays, controls over photos/video, frosted panels | + `hig/foundations/materials.md` (MATERIALS GATE), `tokens/apple-materials.css`, `apple-web/site-patterns.md` (frosted bar + veil) | HIG: Color § Liquid Glass color, Sliders, Toggles, Popovers, Sheets |
 | Settings / list screen | + `field-notes/components.md` § Settings list | HIG: Settings, Lists and tables, Toggles |
 | Wizard / onboarding / form | + `field-notes/components.md` § Wizard | HIG: Onboarding, Entering data, Text fields, Pickers |
 | Consent / permission / connect screen | + `field-notes/components.md` § Consent screen | HIG: Privacy, Managing accounts, Alerts/Sheets |
@@ -75,7 +76,7 @@ on every ingestion. `—` = not yet ingested.
 | Immersive experiences `immersive-experiences` | `hig/foundations/immersive-experiences.md` | 2026-09-28 |
 | Inclusion `inclusion` | `hig/foundations/inclusion.md` | 2026-09-28 |
 | Layout `layout` ⚠️ CRITICAL | `hig/foundations/layout.md` | 2026-09-28 |
-| Materials `materials` | — | — |
+| Materials `materials` ⚠️ CRITICAL | `hig/foundations/materials.md` | 2026-09-28 |
 | Motion `motion` | — | — |
 | Privacy `privacy` | — | — |
 | Right to left `right-to-left` | — | — |

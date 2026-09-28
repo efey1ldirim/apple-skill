@@ -123,4 +123,4 @@ Mode on iOS* (WWDC19 214).
 - [ ] No app-level theme override in native apps; on web, override defaults to Auto?
 
 ## Related (ingestion status)
-Color (✓ CRITICAL), Materials, Typography, SF Symbols, Accessibility (✓) — not yet ingested (except ✓).
+Color (✓ CRITICAL), Materials (✓ CRITICAL), Typography, SF Symbols, Accessibility (✓) — not yet ingested (except ✓).

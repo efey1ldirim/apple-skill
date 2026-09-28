@@ -33,7 +33,7 @@ use the **standard symbol** everyone already knows.
   - Diagram (**icons-01**): camera, heart, envelope, alarm clock between two dashed guide lines and a
     red midline; the alarm clock is lighter in mass so it extends **above** the top guide to balance
     optically. Second diagram: all four with interior lines of **identical stroke weight**.
-    Captions (from screenshot): adjust individual sizes as needed … and use the same stroke weight in
+    Captions: adjust individual sizes as needed … and use the same stroke weight in
     every icon.
 - **should — Match icon weight to adjacent text weight** (unless you intentionally emphasise one of
   them). Same weight → consistent appearance and level of emphasis.
@@ -48,7 +48,7 @@ use the **standard symbol** everyone already knows.
   (**toolbars, tab bars, buttons**) get their selected appearance from the system automatically.
   (**icons-03**: two toolbar buttons sharing one glass background; the selected **Filter** icon
   sits on a **blue accent-filled** circle with a white glyph, the unselected **More** (•••) stays
-  default.) Caption (from screenshot): in a toolbar, a selected icon receives the app's accent colour.
+  default.) Caption: in a toolbar, a selected icon receives the app's accent colour.
 - **should — Use inclusive images.** Prefer **gender-neutral human figures**; avoid images that are
   hard to recognise across cultures or languages (see Inclusion).
 - **should — Include text only when essential to the meaning.** A character can be the most direct
@@ -60,7 +60,7 @@ use the **standard symbol** everyone already knows.
     Latin, Arabic, Bengali, Gujarati, Hebrew, Hindi, Japanese, Kannada, … (scrolls further).
   - `text.page` symbol (three left-aligned lines in a rounded rectangle) — Left-to-Right and
     Right-to-Left variants.
-  - Captions (from screenshot): localise icons that show individual characters; flip icons that
+  - Captions: localise icons that show individual characters; flip icons that
     suggest reading direction.
 - **must — Custom icons in a vector format (PDF or SVG).** Vectors scale automatically for
   high-resolution displays. **PNG** (used for app icons and effect-rich images) doesn't scale → you'd
@@ -138,7 +138,7 @@ Calendar (filled header band). Filled = meaning, not decoration.
     colours**; icons can render as small as **16×16 px** — recognisable at every size.
   - **may — One expressive background image** with no center image (Xcode, TextEdit rich text).
   - **should — Reduce complexity at small sizes**: fewer, thicker lines aligned to the pixel grid at
-    intermediate sizes; drop them entirely at 16×16. **(from screenshot)** captions: 32×32 → fewer
+    intermediate sizes; drop them entirely at 16×16. captions: 32×32 → fewer
     grid lines, thicker EKG line; 16×16 @2x → EKG kept, no grid; 16×16 @1x → no EKG, no grid.
   - **must not — Important content in the top-right corner** of the background fill: the system
     masks the image and draws the white folded corner on top.

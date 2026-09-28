@@ -28,6 +28,7 @@ const PAGES = [
   "design-principles", "designing-for-ios", "designing-for-ipados", "designing-for-macos",
   "designing-for-tvos", "designing-for-visionos", "designing-for-watchos", "designing-for-games",
   "designing-for-iphone-duo", "accessibility", "app-icons", "branding", "color", "dark-mode", "icons", "images", "immersive-experiences", "inclusion", "layout",
+  "materials",
 ];
 // Stand-alone images that are comparisons on their own (before/after drawn inside one image, or
 // a sequence of single images under one rule). Consecutive singles under the same rule are grouped.
@@ -38,6 +39,10 @@ const SINGLES = {
     "icons-selection-correct", "doc-icon-parts-margins.png",
   ],
   layout: ["layout-background-extention-view.png", "visual-design-safe-zone.png", "visual-design-padding.png", "layout-controls.png"],
+  materials: [
+    "materials-ios-liquid-glass-clear", "materials-tvos-media-player.png",
+    "visionos-materials-window-example.png", "watchos-modal-view-material-background.png",
+  ],
 };
 const slugs = [...new Set([...PAGES, ...process.argv.slice(2)])];
 
@@ -62,11 +67,15 @@ const imagesIn = (blocks = []) => {
   walk(blocks);
   return found;
 };
+// Visible caption: a text paragraph in the column, or the image's own caption (metadata.abstract).
 const captionIn = (blocks = [], refs) => {
   for (const b of blocks) if (b.type === "paragraph") {
     const t = inline(b.inlineContent, refs).trim();
     if (t && !(b.inlineContent ?? []).every((i) => i.type === "image")) return t;
   }
+  for (const b of blocks) for (const it of b.inlineContent ?? [])
+    if (it.type === "image" && it.metadata?.abstract && !/^(crossout|checkmark)\.png$/.test(it.identifier))
+      return inline(it.metadata.abstract, refs).trim();
   return "";
 };
 
@@ -104,7 +113,7 @@ for (const slug of slugs) {
           }
           const i = last.items.length;
           const r = refs[single.identifier] ?? {};
-          const item = { verdict: "neutral", caption: "", alt: r.alt ?? "", files: {} };
+          const item = { verdict: "neutral", caption: inline(single.metadata?.abstract ?? [], refs).trim(), alt: r.alt ?? "", files: {} };
           for (const v of r.variants ?? []) {
             const mode = v.traits?.includes("dark") ? "dark" : "light";
             const file = `${last.id}-single-${i + 1}-${mode}.png`;

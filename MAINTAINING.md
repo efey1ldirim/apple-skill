@@ -19,6 +19,9 @@ useful but secondary: put them after the content in each note.
    - HIG pages (`/design/human-interface-guidelines/...`): `node tools/hig-fetch.mjs <url>` —
      the HTML is an empty JS shell; this reads the DocC JSON and prints every heading,
      paragraph, list, table, aside, image alt text and related-page link.
+     It also prints each image's visible **caption** (`CAPTION="…"`, from the image's
+     `metadata.abstract` in the JSON — added 2026-09-28; before that, captions were only read from
+     screenshots). Captions are page text, not "(from screenshot)".
    - Other `/design/...` pages (landing, resources, whats-new, videos, awards…): WebFetch or the
      browser's `get_page_text`.
    - Read the **entire** output. Do not sample.
@@ -37,7 +40,7 @@ useful but secondary: put them after the content in each note.
      the page note's § Visual notes.
      Stand-alone images that are comparisons by themselves (before/after inside one image, e.g.
      optical centring) are not in rows — add their image names to `SINGLES` in the script.
-   - **Critical pages [user decision]**: pages the user marks critical (so far: **Color**, **Layout**) get a
+   - **Critical pages [user decision]**: pages the user marks critical (so far: **Color**, **Layout**, **Materials**) get a
      ⚠️ CRITICAL header, an exact machine-readable token file under `skills/apple-ui/tokens/`, a
      checker in `tools/`, and a gate in `SKILL.md`. Extract every value from the JSON (never
      retype from screenshots) and cross-check against the screenshots.

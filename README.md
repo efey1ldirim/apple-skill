@@ -44,11 +44,14 @@ skills/apple-ui/
     hig/                   one note per Apple design page
     field-notes/           principles, tokens, components, anti-patterns, gotchas, landing/motion
     screenshots-described/ text descriptions of visual references
-skills/apple-ui/tokens/    exact Apple system colours (CSS + JSON, 4 modes) + layout tokens
+skills/apple-ui/tokens/    exact Apple system colours (CSS + JSON, 4 modes) + layout tokens + material/glass tokens
 tools/check-colors.mjs     colour gate: palette + outdated-value + contrast checks
 tools/check-layout.mjs     layout gate (static): dvh, zoom, device/orientation logic, safe areas…
 tools/layout-probe.js      layout gate (live): overflow, clipped text at 200%, target size/spacing
 tools/run-layout-probe.mjs runs the probe at 6 viewports via Playwright
+tools/check-materials.mjs  materials gate (static): glass vs content layer, grey text on materials, fallbacks
+tools/materials-probe.js   materials gate (live): layer discipline, text contrast on materials, glass count
+tools/run-materials-probe.mjs runs it in light, dark, Reduce Transparency and Increase Contrast
 tools/fetch-visual-examples.mjs  downloads Apple's do/don't images locally
 tools/hig-fetch.mjs        reads a HIG page's full content (DocC JSON → text) for ingestion
 MAINTAINING.md             how pages are ingested (template, copyright rule)

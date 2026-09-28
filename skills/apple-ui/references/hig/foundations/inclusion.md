@@ -53,7 +53,7 @@ what colours mean in each culture.
   pronouns, localises better.
 - **should — Avoid gendered avatars / emoji / glyphs / characters**; give people tools to customise.
 - **should — Generic person = nongendered human image.** SF Symbols offers many.
-  **(from screenshot)** examples shown: `person.crop.circle`, `person.3.fill`, `figure.wave`.
+  examples shown (image captions): `person.crop.circle`, `person.3.fill`, `figure.wave`.
 - **should — Don't ask for gender unless needed** (health, legal). If needed, offer inclusive options
   (**nonbinary, self-identify, decline to state**) and optionally let people specify **pronouns**.
 

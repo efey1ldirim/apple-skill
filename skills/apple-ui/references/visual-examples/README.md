@@ -67,10 +67,20 @@ File names: `images/<id>-<dont|do|neutral|single|tab>-<n>-<light|dark>.png`.
 | layout-06 | tabs (8) | tvOS grids 2–9 columns | 2-column … 9-column grid, focused item with title, edge items peeking | — | Grid gaps too small for focus/hover growth; asymmetric peeking |
 | layout-07 | single | ≤ 2 text buttons per row on watch | full-width capsule "Text Button" under content | — | Tiny screens with 3+ side-by-side text buttons |
 | branding-01 | do/don't | Brand colour judiciously; put it in content | brand blue on every control (close, locate, filled search bar) | brand blue in the map content; controls neutral glass | Brand colour on nav, inputs, secondary buttons; colour that should live in content |
+| materials-01 | compare | Regular Liquid Glass takes the backdrop's tone | circle of regular glass over a starfield → smoky dark | same over a sunny beach → milky light, heavy blur | Glass with a fixed tint that ignores what is behind it |
+| materials-02 | single | Clear glass only over rich media | brick wall still readable through a softly blurred circle with a thin bright rim | — | Clear glass over plain UI or text (illegible); clear glass without a dim over bright media |
+| materials-03 | do/don't | Vibrant colours on materials | Share glyph in systemGray3 on a translucent tile — nearly invisible | same glyph in a vibrant label colour — crisp | Grey palette text/icons (gray-300/400, #C7C7CC) on frosted surfaces |
+| materials-04 | compare | iOS standard materials (thin end) | `ultraThin` — backdrop colours brightened, diffuse | `thin` — paler, more tint | Picking thickness by the colour it produces instead of by role |
+| materials-05 | compare | iOS standard materials (thick end) | `regular` — mostly tint | `thick` — near-opaque | Long text on thin/ultraThin; quaternary text on thin |
+| materials-06 | single | tvOS: glass on navigation and focused elements | Destination Video: glass capsule tabs + glass info card floating over a full-bleed scene | — | Opaque panels over hero media; glass everywhere instead of on controls |
+| materials-07 | do/don't | Prefer translucency to opaque windows (visionOS) | flat navy window blocking the room | frosted window, room visible through it | Opaque full-screen overlays/modals that remove all context |
+| materials-08 | single | Choose materials by role | window: Regular sidebar, Thick text field, Thin button (callout labels) | — | One material for every region; thickness chosen by look |
+| materials-09 | compare | Vibrancy levels (visionOS) | `label` crisp · `secondaryLabel` softer | `tertiaryLabel` faint — inactive only | Tertiary-level text for content people must read |
+| materials-10 | single | Keep modal material backgrounds (watchOS) | full-screen translucent modal: title, description, one pill Action button on a thinner material | — | Replacing a modal's material backdrop with a solid colour |
 
 ## Pages scanned
 design-principles, designing-for-{ios, ipados, macos, tvos, visionos, watchos, games, iphone-duo}
-(no image pairs), accessibility, app-icons, branding, color, dark-mode, icons, images, immersive-experiences, inclusion, layout (iPhone Duo pairs found once tab support was added).
+(no image pairs), accessibility, app-icons, branding, color, dark-mode, icons, images, immersive-experiences, inclusion, layout, materials (iPhone Duo pairs found once tab support was added).
 
 Kind **tabs**: images shown behind tabs on Apple's page (one image per tab) — detected automatically.
 Kind **single**: a stand-alone image that is itself a comparison (before/after drawn inside one

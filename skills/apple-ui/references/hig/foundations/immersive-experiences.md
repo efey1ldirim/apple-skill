@@ -48,7 +48,7 @@ gentle, labelled transitions, keep people comfortable and grounded, and use the 
     immersion level — a lake scene opening as a portal within real surroundings.)
   - **`full`**: 360° custom environment that **completely replaces** passthrough; ≈1.5 m boundary.
   - (Visual **immersive-02**, tabs: Full Space Mixed / Progressive / Immersive.)
-    **(from screenshot)** tab captions: *Mixed* — in-app objects blended with real-world surroundings
+    tab captions: *Mixed* — in-app objects blended with real-world surroundings
     (director's chair and film camera in a real living room); *Progressive* — the app's custom
     environment blended with the room, the environment appearing as a soft-edged portal behind the
     window; *Immersive* — a 360° custom environment (a gallery with paintings) replacing the room.

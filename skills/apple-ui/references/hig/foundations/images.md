@@ -178,5 +178,5 @@ Images (SwiftUI); `UIImageView` (UIKit); `NSImageView` (AppKit).
 - [ ] Media viewers minimal: one item, caption, one exit control?
 
 ## Related (ingestion status)
-Layout, App icons (✓), Color (✓ CRITICAL), Dark Mode (✓), Materials, Spatial layout — not yet
+Layout, App icons (✓), Color (✓ CRITICAL), Dark Mode (✓), Materials (✓ CRITICAL), Spatial layout — not yet
 ingested (except ✓).

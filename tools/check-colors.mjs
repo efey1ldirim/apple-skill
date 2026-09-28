@@ -33,6 +33,9 @@ const NEUTRAL = new Map(Object.entries({
   "#FAFAFC": "Apple web flyout (light)", "#161617": "Apple web flyout (dark)",
   "#333336": "Apple web nav link text", "#48484A": "segmented thumb dark (field notes)",
   "#0040DD": "deep blue for white labels (7.6:1)",
+  "#3C3C43": "UIKit label base (light) — tertiary/quaternary/separator on materials",
+  "#EBEBF5": "UIKit label base (dark) — secondary/tertiary/quaternary on materials",
+  "#545458": "UIKit separator base (dark)",
 }));
 
 // Pre-2025 Apple values that must be replaced (HIG updated system colours 2025-06-09)
