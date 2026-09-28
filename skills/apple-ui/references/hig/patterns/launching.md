@@ -113,5 +113,5 @@ Field-note cross-links:
 
 ## Related
 - Ingested: Branding (✓), Layout (✓ CRITICAL), Feedback (✓ CRITICAL), Immersive experiences (✓), Dark Mode (✓), Color (✓ CRITICAL), File management (✓), Going full screen (✓), Designing for visionOS (✓).
-- Ingested: also Images (✓, covers layered images). Ingested since: Loading (✓). Not yet ingested: **Onboarding**, Playing video. Live-viewing apps ✓ (`hig/patterns/live-viewing-apps.md`).
+- Ingested: also Images (✓, covers layered images). Ingested since: Loading (✓), Multitasking (✓). Not yet ingested: **Onboarding**, Playing video. Live-viewing apps ✓ (`hig/patterns/live-viewing-apps.md`).
 - Developer docs: Xcode *Specifying your app's launch screen*; UIKit *Responding to the launch of your app*. Videos: *Optimizing App Launch* (WWDC19 423), *Love at First Launch* (WWDC17 816).
