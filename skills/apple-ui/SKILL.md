@@ -40,7 +40,15 @@ work from memory of this summary.**
    375px width, check that nothing scrolls that should not. Measure; don't eyeball.
 6. **Run the checklist** at the bottom before calling it finished.
 
-## Core principles (short form — details live in the references)
+## Apple's eight design principles (HIG, reintroduced June 2026)
+Purpose (make something meaningful) · Agency (let people do things their own way) ·
+Responsibility (act in people's best interest) · Familiarity (build on what people know) ·
+Flexibility (adapt to diverse contexts and needs) · Simplicity (be clear and direct —
+simplicity is *not* minimalism) · Craft (care about every detail) · Delight (make it human —
+never decoration). Use them to resolve trade-offs; details and web translations in
+`references/hig/getting-started/design-principles.md`.
+
+## Visual language (short form — details live in the references)
 
 - **Clarity, deference, depth.** Content leads; chrome recedes; hierarchy comes from layering,
   tone and motion — not ornaments. (Expanded in `hig/` as pages are ingested.)
