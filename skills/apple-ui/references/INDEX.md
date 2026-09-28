@@ -34,6 +34,7 @@ ingested so far.
 | Share button, share sheet/popover, permissions ("who can edit"), presence/collaborator lists, collaboration notifications with deep links | + `hig/patterns/collaboration-and-sharing.md`, `hig/foundations/writing.md` (permission phrases), `hig/foundations/materials.md` | HIG: Activity views, Sheets, Popovers, Toolbars, Notifications |
 | Drag and drop, reordering lists/boards, file upload drop zones, moving items between containers, multi-select drag | + `hig/patterns/drag-and-drop.md` (move vs copy, drag image, target feedback, undo, alternatives), `hig/foundations/accessibility.md` (dragging alternatives), `field-notes/anti-patterns.md` (no dashed drop frame at rest) | HIG: Pointing devices, Undo and redo, Feedback, Loading, Keyboards |
 | Toasts, alerts, error/success/status messages, validation, spinners, disabled buttons, confirmations, destructive-action prompts | **`hig/patterns/feedback.md` (FEEDBACK GATE)**, `tokens/apple-feedback.json` / `.css`, `node tools/check-feedback.mjs`, `node tools/run-feedback-probe.mjs <url>`, `hig/foundations/writing.md`, `hig/foundations/accessibility.md` | HIG: Alerts, Playing haptics, Undo and redo, Loading, Notifications |
+| Documents/files: create-open-save flows, autosave, unsaved changes, file pickers, upload/export/import, previews, drive/library start screens | + `hig/patterns/file-management.md` (autosave, extensions, Quick Look, document launcher), `hig/patterns/feedback.md` (save status, unsaved dot), `hig/patterns/drag-and-drop.md` | HIG: Toolbars, The menu bar (File menu), Printing, Sheets |
 | Settings / list screen | + `field-notes/components.md` § Settings list | HIG: Settings, Lists and tables, Toggles |
 | Wizard / onboarding / form | + `field-notes/components.md` § Wizard, `hig/patterns/entering-data.md` (pre-gather, defaults, choices over typing, live validation, Continue only when required data is in), `hig/foundations/privacy.md` (no permission requests up front; ask only for needed data) | HIG: Onboarding, Entering data, Text fields, Pickers |
 | Consent / permission / connect screen | + `field-notes/components.md` § Consent screen, `hig/foundations/privacy.md` (grant dialog vs pre-alert screen) | HIG: Managing accounts, Alerts/Sheets |
@@ -95,7 +96,7 @@ on every ingestion. `—` = not yet ingested.
 | Typography `typography` ⚠️ CRITICAL | `hig/foundations/typography.md` (+ exact tables `tokens/apple-typography.json`, CSS web preview) | 2026-09-28 |
 | Writing `writing` | `hig/foundations/writing.md` | 2026-09-28 |
 
-### Patterns  (collection page: —; 5 of 25 ingested)
+### Patterns  (collection page: —; 6 of 25 ingested)
 | Page | File | Ingested |
 |---|---|---|
 | Charting data `charting-data` | `hig/patterns/charting-data.md` | 2026-09-28 |
@@ -103,7 +104,7 @@ on every ingestion. `—` = not yet ingested.
 | Drag and drop `drag-and-drop` | `hig/patterns/drag-and-drop.md` | 2026-09-28 |
 | Entering data `entering-data` | `hig/patterns/entering-data.md` | 2026-09-28 |
 | Feedback `feedback` ⚠️ CRITICAL | `hig/patterns/feedback.md` (+ `tokens/apple-feedback.{css,json}`, `tools/check-feedback.mjs`, `tools/feedback-probe.js`) | 2026-09-28 |
-| File management `file-management` | — | — |
+| File management `file-management` | `hig/patterns/file-management.md` | 2026-09-28 |
 | Going full screen `going-full-screen` | — | — |
 | Launching `launching` | — | — |
 | Live-viewing apps `live-viewing-apps` | — | — |
