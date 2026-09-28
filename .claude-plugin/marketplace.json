@@ -1,0 +1,13 @@
+{
+  "name": "apple-skill",
+  "owner": {
+    "name": "Efe Yıldırım"
+  },
+  "plugins": [
+    {
+      "name": "apple-skill",
+      "source": "./",
+      "description": "Apple-quality UI/UX: HIG distilled + field-proven web patterns."
+    }
+  ]
+}
