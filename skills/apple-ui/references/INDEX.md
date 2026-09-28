@@ -15,6 +15,8 @@ ingested so far.
 | TV / kiosk / 10-foot UI, keyboard focus styling, multi-user profiles | + `hig/getting-started/designing-for-tvos.md` | HIG: Focus and selection, Remotes, Managing accounts |
 | Immersive / 3D / WebXR, hover-free (gaze) input, motion comfort | + `hig/getting-started/designing-for-visionos.md` | HIG: Immersive experiences, Spatial layout, Eyes, Motion |
 | Glanceable surfaces: notifications/web push, widgets, badges, at-a-glance mobile summaries | + `hig/getting-started/designing-for-watchos.md` | HIG: Notifications, Widgets, Complications |
+| Website header / mega-menu / docs site / section nav | + `apple-web/site-patterns.md` (Apple's own measured web patterns) | HIG: Menus, Sidebars, Tab bars |
+| Minimum text & target sizes per platform | + `hig/getting-started/designing-for-games.md` (tables) | HIG: Typography, Buttons |
 | Settings / list screen | + `field-notes/components.md` § Settings list | HIG: Settings, Lists and tables, Toggles |
 | Wizard / onboarding / form | + `field-notes/components.md` § Wizard | HIG: Onboarding, Entering data, Text fields, Pickers |
 | Consent / permission / connect screen | + `field-notes/components.md` § Consent screen | HIG: Privacy, Managing accounts, Alerts/Sheets |
@@ -50,7 +52,7 @@ on every ingestion. `—` = not yet ingested.
 | Designing for tvOS `designing-for-tvos` | `hig/getting-started/designing-for-tvos.md` | 2026-09-28 |
 | Designing for visionOS `designing-for-visionos` | `hig/getting-started/designing-for-visionos.md` | 2026-09-28 |
 | Designing for watchOS `designing-for-watchos` | `hig/getting-started/designing-for-watchos.md` | 2026-09-28 |
-| Designing for games `designing-for-games` | — | — |
+| Designing for games `designing-for-games` | `hig/getting-started/designing-for-games.md` | 2026-09-28 |
 | Designing for iPhone Duo `designing-for-iphone-duo` | — | — |
 
 ### Foundations  (collection page: —)
@@ -243,4 +245,5 @@ on every ingestion. `—` = not yet ingested.
 | `field-notes/anti-patterns.md` | Ideas that were tried and rejected, and why |
 | `field-notes/engineering-gotchas.md` | Layout/CSS traps that break these designs in real browsers |
 | `field-notes/landing-and-motion.md` | Marketing-page language: masked headlines, glass, per-section palettes, scroll choreography |
+| `apple-web/site-patterns.md` | Apple's own website patterns measured live: global mega-menu, local nav, cards, docs layout, section colour coding |
 | `screenshots-described/curated-references.md` | 20 curated reference shots behind the field notes, described |
