@@ -81,7 +81,7 @@ never decoration). Use them to resolve trade-offs; details and web translations 
 - [ ] Background is `#F5F5F7` / `#08080A` (or the host project's equivalent pair).
 - [ ] Every light-mode colour has its dark pair; hairlines/shadows adapted for dark.
 - [ ] Status colour is a dot or a short tinted word — no coloured banners/boxes.
-- [ ] Headlines have negative tracking; body 13–17px; secondary text uses opacity tones.
+- [ ] Headlines have negative tracking; body 13–17px; secondary text ≥ 4.5:1 contrast (black/55+ light, white/50+ dark — not /40).
 - [ ] Layout works at 375px with no horizontal overflow (grid `min-w-0` trap checked).
 - [ ] Fixed-height flows use `100dvh`, not `100vh`; the primary action is always visible.
 - [ ] `prefers-reduced-motion` respected; transitions ≤ 300ms with Apple-like easing.

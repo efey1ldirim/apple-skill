@@ -66,6 +66,8 @@ cheap". Almost every rule below exists to remove one specific source of that fee
 
 ## 6. Status is dot-sized
 - Status colour lives in a 5–8px dot or a short tinted word — never a coloured banner/box.
+  **The dot is never alone**: always paired with a word or an icon shape (HIG Accessibility:
+  never convey information by colour alone).
 - Verification line example: `✓ recognised` (green check) · `• not recognised` (amber dot),
   one line, grey text.
 - A healthy item: small green dot at the tile's top-left. A broken item: red "!" badge in the

@@ -21,18 +21,30 @@ secondary caption `#666666` · link `#0066CC` (on dark `#2997FF`) · card radius
 border, no shadow · section padding 68px · column 980px · grid gap 24px · body 17/25
 −0.374px · beginner-CTA gradient `#0055C7 → #0071E3`. See `../hig/overview/design-landing.md`.
 
-## Ink (text) — tones by opacity
-| Role | Light | Dark |
-|---|---|---|
-| Primary | `#000` | `#FFF` |
-| Sub-line under a headline | `black/45` | `white/45` |
-| Row description / field label | `black/40`–`/45` | `white/40`–`/45` |
-| Footnote / hint / min-max labels | `black/30`–`/35` | `white/30`–`/35` |
-| Placeholder | `black/25`–`/30` | `white/25` |
-| Chevron / dots | `black/20`–`/25` | `white/25` |
+## Ink (text) — tones by opacity (accessibility-corrected)
+The tones originally approved on the production app were `/45` sub-line, `/40` description,
+`/30` footnote. **They fail WCAG AA (4.5:1) for small text** (computed: `black/40` = 2.8:1,
+`black/45` = 3.3:1, `black/30` = 2.1:1 on `#F5F5F7`; see `../hig/foundations/accessibility.md`).
+Use the accessible scale below by default; keep the lighter tones only for decorative,
+disabled or ≥ 18 pt text.
 
-(Tailwind `text-gray-500` / `dark:text-zinc-400` is an acceptable equivalent for "secondary"
-in codebases that use the gray scale.)
+| Role | Light (accessible) | Dark (accessible) | Contrast | Original (visual-only) |
+|---|---|---|---|---|
+| Primary | `#000` or `#1D1D1F` | `#FFF` | 15–21:1 | same |
+| Sub-line under a headline (15–17px) | `black/60` | `white/60` | ≥ 5.6:1 | `/45` |
+| Row description / field label (13px) | `black/55` or `#6E6E73` | `white/55` | ≥ 4.7:1 | `/40`–`/45` |
+| Footnote / hint (12.5px) | `black/55` | `white/50` | ≥ 4.7 / 5.3:1 | `/30`–`/35` |
+| Large secondary (≥ 18 pt, or ≥ 14 pt bold) | `black/45` allowed | `white/45` | ≥ 3:1 | — |
+| Placeholder | `black/45` (+ always a visible label) | `white/45` | ~3.3:1 | `/25`–`/30` |
+| Disabled text | `black/30` (exempt from contrast) | `white/30` | — | same |
+| Chevron / decorative dots | `black/25` | `white/25` | decorative | same |
+| UI component boundaries (inputs, toggles) | ≥ 3:1 against adjacent colour | ≥ 3:1 | WCAG 1.4.11 | hairlines are separators, not boundaries |
+
+Filled-button colours: white on `#007AFF` is only 4.0:1 → for body-size labels use a deeper
+blue (`#0040DD`, 7.6:1) or black/white pills (21:1). Never white text on system green
+`#34C759` (2.2:1) or `#FF3B30` red for small labels (3.6:1; use `#D70015`, 5.4:1).
+
+(Tailwind `text-gray-500` = `#6B7280` ≈ 4.8:1 on white → acceptable secondary; `text-gray-400` ✗.)
 
 ## System colours (Apple)
 | Name | Light | Dark |

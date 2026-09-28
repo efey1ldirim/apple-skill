@@ -7,7 +7,7 @@ ingested so far.
 
 | Task | Always read | Then read |
 |---|---|---|
-| Any UI work | `hig/getting-started/design-principles.md` (Apple's 8 principles — the decision lens), `field-notes/principles.md`, `field-notes/anti-patterns.md` | — |
+| Any UI work | `hig/foundations/accessibility.md` (contrast/size/motion minimums), `hig/getting-started/design-principles.md` (Apple's 8 principles — the decision lens), `field-notes/principles.md`, `field-notes/anti-patterns.md` | — |
 | Web UI (React/Tailwind/CSS) | + `field-notes/tokens.md`, `field-notes/components.md`, `field-notes/engineering-gotchas.md` | HIG pages for the components you use |
 | Mobile web / phone layouts (reach zone, swipe-back, Dynamic Type, autofill) | + `hig/getting-started/designing-for-ios.md` | HIG: Layout, Gestures, Virtual keyboards |
 | Tablet / large-screen / resizable layouts (split view, popovers, pointer vs touch density, keyboard shortcuts) | + `hig/getting-started/designing-for-ipados.md` | HIG: Multitasking, Pointing devices, Keyboards, Split views |
@@ -59,7 +59,7 @@ on every ingestion. `—` = not yet ingested.
 ### Foundations  (collection page: —)
 | Page | File | Ingested |
 |---|---|---|
-| Accessibility `accessibility` | — | — |
+| Accessibility `accessibility` | `hig/foundations/accessibility.md` | 2026-09-28 |
 | App icons `app-icons` | — | — |
 | Branding `branding` | — | — |
 | Color `color` | — | — |
