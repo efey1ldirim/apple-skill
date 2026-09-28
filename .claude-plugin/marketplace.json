@@ -1,5 +1,6 @@
 {
   "name": "apple-skill",
+  "description": "Apple-quality UI/UX for Claude: HIG distilled page by page + field-proven web design patterns.",
   "owner": {
     "name": "Efe Yıldırım"
   },
