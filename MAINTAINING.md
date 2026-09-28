@@ -30,6 +30,11 @@ useful but secondary: put them after the content in each note.
      text never reaches the fetch (text baked into images, UI kits in illustrations, nav/menus,
      footers, dynamic widgets, content rendered by scripts). Anything found only in a
      screenshot is recorded in the note with the marker **(from screenshot)**.
+   - **Visual examples [user decision]**: if the page has don't/do image pairs (✗/✓) or
+     side-by-side comparison images, add the slug to `PAGES` in `tools/fetch-visual-examples.mjs`,
+     run it, and add each new pair to the catalog table in
+     `skills/apple-ui/references/visual-examples/README.md` (our words). Reference the pair id in
+     the page note's § Visual notes.
 3. **Write the note** at `skills/apple-ui/references/hig/<section>/<slug>.md` using the
    template below. Sections: `overview`, `getting-started`, `foundations`, `patterns`,
    `components/<group>`, `inputs`, `technologies`, `other`.

@@ -24,6 +24,7 @@ work from memory of this summary.**
 | Apple HIG, distilled | `references/hig/` | One file per developer.apple.com/design page: every rule, value, do/don't, platform difference. Start at `references/INDEX.md`. |
 | Field notes | `references/field-notes/` | Patterns validated on a production web app, with exact Tailwind/CSS values, components, rejected ideas and engineering traps. |
 | Apple's web patterns | `references/apple-web/` | Apple's own websites measured live (mega-menu, nav, cards, docs layout) — the closest reference for web work. |
+| Apple's visual do/don't | `references/visual-examples/` | Apple's ✗/✓ example images (fetched locally by a script) with a catalog of which rule each pair illustrates — for visual self-checks. |
 | Visual references | `references/screenshots-described/` | Text descriptions of screenshots (Apple pages and curated reference shots) so proportions can be recalled without the images. |
 
 ## Workflow
@@ -37,9 +38,13 @@ work from memory of this summary.**
    same page. Match its tokens exactly.
 4. **Compose, then justify.** For each surface state its one idea, its single filled action,
    and where colour lives. If you cannot name them, the design is not done.
-5. **Verify visually.** Render it (browser preview / simulator), check light AND dark, check
+5. **Compare against Apple's examples.** For every rule your screen touches that has a pair in
+   `references/visual-examples/README.md`, `Read` Apple's ✗ and ✓ images (run
+   `node tools/fetch-visual-examples.mjs` once if `images/` is missing) and compare them with a
+   screenshot of your UI. Say which one yours resembles and fix it if it's the ✗.
+6. **Verify visually.** Render it (browser preview / simulator), check light AND dark, check
    375px width, check that nothing scrolls that should not. Measure; don't eyeball.
-6. **Run the checklist** at the bottom before calling it finished.
+7. **Run the checklist** at the bottom before calling it finished.
 
 ## Apple's eight design principles (HIG, reintroduced June 2026)
 Purpose (make something meaningful) · Agency (let people do things their own way) ·

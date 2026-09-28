@@ -26,7 +26,7 @@ ingested so far.
 | Landing / marketing page | + `field-notes/landing-and-motion.md`, `hig/overview/design-landing.md` (Apple's own page: section rhythm, cards, links) | HIG: Branding, Typography, Motion, Materials |
 | Dashboard / analytics | + `field-notes/components.md` § Dashboard tiles | HIG: Charting data, Charts, Layout |
 | Dark mode | + `field-notes/tokens.md` § Dark | HIG: Dark Mode, Color, Materials |
-| Design review / audit | `field-notes/anti-patterns.md` + checklist in `SKILL.md` | HIG pages for every component on screen |
+| Design review / audit | `field-notes/anti-patterns.md` + checklist in `SKILL.md` + `visual-examples/README.md` (compare screenshots with Apple's ✗/✓ images) | HIG pages for every component on screen |
 | Visual proportions in doubt | `screenshots-described/` | — |
 
 When a HIG page and a field note disagree: the **field note wins for the web** when it records

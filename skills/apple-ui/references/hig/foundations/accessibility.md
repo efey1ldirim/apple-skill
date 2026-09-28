@@ -199,6 +199,8 @@ spatial experiences* (WWDC23 10034), *Design considerations for vision and motio
   bottom; a **blue "Play ⊙"** link under each video. Zoom tab shows a rounded lens magnifying a
   handwritten recipe.
 
+Visual pairs: `visual-examples` ids accessibility-01 … 07.
+
 ## Web translation (WCAG mapping)
 | HIG guidance | Web implementation |
 |---|---|

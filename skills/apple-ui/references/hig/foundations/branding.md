@@ -66,6 +66,8 @@ Video: *Communicate your brand identity on iOS* (WWDC26 251).
   shapes and blue gate/info markers in the content, neutral white glass close/location/search
   controls. Grey ✗ under the first, green ✓ under the second.
 
+Visual pair: `visual-examples` id branding-01.
+
 ## Web translation
 | Guidance | Web equivalent — and how it fits our field notes |
 |---|---|
