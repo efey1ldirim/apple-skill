@@ -109,7 +109,7 @@ Field-note cross-links:
 - `hig/patterns/managing-notifications.md`, `live-viewing-apps.md` (✓): live/long tasks; `hig/patterns/drag-and-drop.md` (✓): progress while copying dropped files; `hig/components/selection-and-input/image-wells.md` (✓): upload progress states.
 - `hig/foundations/color.md` (✓ CRITICAL) and **Color gate**: track/fill contrast; `hig/foundations/right-to-left.md` (✓): fill direction; `hig/foundations/motion.md` (✓): reduced motion; `hig/foundations/layout.md` (✓ CRITICAL): no layout shift.
 - `field-notes/*` (tokens: progress bar 3 px × 64 px per phase, fill `duration-500 ease-out`; components: wizard phase progress, loading spinner `/25`; engineering-gotchas: "a black progress bar disappears on dark: theme it via variables"): **compatible**; the notes above record the two scoping points (step indicator vs task progress; spinner contrast).
-- Not yet ingested: Rating indicators (the last page of the Status group).
+- Rating indicators (✓ `rating-indicators.md`).
 
 ## Checklist
 - [ ] Known-length work uses **`<progress>`/`role="progressbar"` with real values**; unknown-length work uses an **indeterminate** one; **no fake progress**.
@@ -124,5 +124,5 @@ Field-note cross-links:
 
 ## Related
 - Ingested: Loading (✓), Feedback (✓ CRITICAL), Alerts (✓), Gauges (✓), Activity rings (✓), Drag and drop (✓), Image wells (✓), Live viewing apps (✓), Color (✓ CRITICAL), Right to left (✓), Motion (✓), Layout (✓ CRITICAL), Writing (✓).
-- Not yet ingested: Rating indicators.
+- Rating indicators (✓ `rating-indicators.md`).
 - Developer docs: SwiftUI `ProgressView`; UIKit `UIProgressView`, `UIActivityIndicatorView`, `UIRefreshControl`; AppKit `NSProgressIndicator`.

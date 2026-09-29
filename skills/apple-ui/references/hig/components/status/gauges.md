@@ -85,7 +85,7 @@ Field-note cross-links:
 - `hig/foundations/color.md` (✓ CRITICAL) and **Color gate**: contrast of fill vs track, state not by colour alone; `hig/foundations/accessibility.md` (✓): VoiceOver-visible labels; `hig/foundations/right-to-left.md` (✓): min at inline-start; `hig/foundations/writing.md` (✓): concise value and unit text.
 - `hig/components/selection-and-input/sliders.md` (✓): a slider is an **input**, a gauge is **read-only**; don't make a gauge draggable.
 - `field-notes/*`: no gauge/meter recipe (only slider fills and "black fill vanishes on dark: theme via variables" in `engineering-gotchas.md`, which applies to track/fill colours); **no conflict**.
-- Progress indicators (✓ `progress-indicators.md`). Not yet ingested: Rating indicators, Widgets.
+- Progress indicators (✓ `progress-indicators.md`). Rating indicators (✓ `rating-indicators.md`). Not yet ingested: Widgets.
 
 ## Checklist
 - [ ] A **read-only value in a range** uses **`<meter>`/`role="meter"`** (not `<progress>` and not a slider), with **min, max, value** and an **accessible name**.
@@ -100,5 +100,5 @@ Field-note cross-links:
 
 ## Related
 - Ingested: Activity rings (✓), Charts (✓), Charting data (✓), Ratings and reviews (✓), Sliders (✓), Color (✓ CRITICAL), Accessibility (✓), Right to left (✓), Writing (✓).
-- Progress indicators (✓ `progress-indicators.md`). Not yet ingested: Rating indicators, Widgets.
+- Progress indicators (✓ `progress-indicators.md`). Rating indicators (✓ `rating-indicators.md`). Not yet ingested: Widgets.
 - Developer docs: SwiftUI `Gauge`; AppKit `NSLevelIndicator`.
