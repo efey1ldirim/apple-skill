@@ -95,7 +95,7 @@ Field-note cross-links:
 - `hig/foundations/materials.md` (✓ CRITICAL): glass layer vs content layer, text on materials, fallbacks; `hig/foundations/color.md` (✓ CRITICAL): accent colour, contrast.
 - `hig/components/menus/toolbars.md` (✓): the sidebar toggle button lives in the toolbar; `the-menu-bar.md` (✓): View ▸ Show/Hide Sidebar.
 - `hig/components/layout/disclosure-controls.md`, `outline-views.md`, `lists-and-tables.md`, `tab-views.md` (✓).
-- Ingested since: Tab bars (✓ `tab-bars.md`). Not yet ingested: Windows.
+- Ingested since: Tab bars (✓ `tab-bars.md`). Windows (✓ `components/presentation/windows.md`).
 - No conflict with a field note.
 
 ## Checklist

@@ -52,7 +52,7 @@ The page has **no numbers, sizes or timings**. Concrete facts:
 | Other platforms | modal view instead |
 | Not supported | iOS, iPadOS, tvOS, visionOS, watchOS |
 | Developer docs | AppKit `NSPanel`, `hudWindow` (`NSWindow.StyleMask`) |
-| Related HIG pages | Windows (not yet ingested) · Modality ✓ |
+| Related HIG pages | Windows ✓ · Modality ✓ |
 
 ## Visual notes (from screenshots)
 - **Hero:** a red-to-orange card. A **dark maroon translucent rounded panel** floats in the centre with a **small round red close button (✕) at the top-left** and a **thin separator under a title strip**; behind and below it, a **lighter pink window** whose corner peeks out at the bottom; a **vertical double arrow** at the panel's right (its height) and a **horizontal double arrow** below it (its width): a **compact panel floating over a larger window**; no numbers **(from screenshot)**.
@@ -87,7 +87,7 @@ Field-note cross-links:
 - `hig/components/menus/the-menu-bar.md` (✓): **Window menu** rules (list only documents; show/hide commands) and **View**-menu toggles.
 - `hig/components/layout/disclosure-controls.md` (✓): the **only control that fits a HUD**; `hig/foundations/dark-mode.md` (✓), `materials.md`, `color.md` (✓ CRITICAL): dark translucent surfaces, contrast, fallbacks.
 - `hig/patterns/undo-and-redo.md` (✓): immediate-apply adjustments need Undo; `hig/foundations/writing.md` (✓): Title Case titles, "Show X" menu wording.
-- Not yet ingested: **Windows**, Sliders, Steppers.
+- Windows (✓ `components/presentation/windows.md`: main / key / inactive states). Not yet ingested: Sliders, Steppers.
 - No conflict with a field note.
 
 ## Checklist
@@ -103,5 +103,5 @@ Field-note cross-links:
 
 ## Related
 - Ingested: Modality (✓), Split views (✓), The menu bar (✓), Disclosure controls (✓), Dark mode (✓), Color (✓ CRITICAL), Materials (✓ CRITICAL), Undo and redo (✓), Writing (✓).
-- Not yet ingested: **Windows**.
+- Windows (✓ `components/presentation/windows.md`: key-window behaviour, panels key only on title-bar/text-field click).
 - Developer docs: AppKit `NSPanel`, `hudWindow`.

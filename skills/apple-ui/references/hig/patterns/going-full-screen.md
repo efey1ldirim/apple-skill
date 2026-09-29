@@ -61,7 +61,7 @@ The page has **no sizes, timings or colours**. Its concrete facts:
 | Games (macOS) | don't change the display mode on going full screen |
 | Camera housing | handled by the system's full-screen support |
 | Developer docs | `fullScreenCover(item:onDismiss:content:)` · `NSScreen` · `NSWindow.CollectionBehavior` · `toggleFullScreen(_:)` · `preferredScreenEdgesDeferringSystemGestures` · `hideDock` · *Managing your game window for Metal in macOS* |
-| Related HIG pages | Layout ✓ · Multitasking · Windows · The menu bar ✓ (first two not yet ingested) |
+| Related HIG pages | Layout ✓ · Multitasking ✓ · Windows ✓ · The menu bar ✓ |
 | Video | *Elevate the design of your iPad app* (WWDC25 208) |
 
 ## Visual notes (from screenshots)
@@ -111,5 +111,5 @@ Field-note cross-links:
 
 ## Related
 - Ingested: Immersive experiences (✓), Layout (✓ CRITICAL), Feedback (✓ CRITICAL), Motion (✓), File management (✓), Designing for macOS (✓), Designing for iPadOS (✓).
-- Ingested since: Modality (✓). Not yet ingested: **Multitasking**, **Windows**, Toggles. Ingested since: Toolbars (✓). Playing video ✓, Launching ✓.
+- Ingested since: Modality (✓). Windows (✓ `components/presentation/windows.md`: iPadOS full screen vs windowed, macOS window states), Multitasking (✓). Not yet ingested: Toggles. Ingested since: Toolbars (✓). Playing video ✓, Launching ✓.
 - Developer docs: listed in Specs & values. Video: *Elevate the design of your iPad app* (WWDC25 208).

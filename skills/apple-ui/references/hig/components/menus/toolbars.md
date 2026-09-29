@@ -173,6 +173,6 @@ Field-note cross-links:
 
 ## Related
 - Ingested: Buttons (✓ CRITICAL), Layout (✓ CRITICAL), Materials (✓ CRITICAL), Color (✓ CRITICAL), Menus (✓), Pull-down buttons (✓), Ornaments (✓), The menu bar (✓), Tab views (✓), Split views (✓), Going full screen (✓), Icons (✓), SF Symbols (✓).
-- Ingested since: **Search fields** (✓ `hig/components/navigation/search-fields.md`: trailing-side toolbar search, bottom vs top search). Sidebars (✓ `hig/components/navigation/sidebars.md`). Tab bars (✓ `hig/components/navigation/tab-bars.md`: navigation not actions). Not yet ingested: Windows, Immersive experiences.
+- Ingested since: **Search fields** (✓ `hig/components/navigation/search-fields.md`: trailing-side toolbar search, bottom vs top search). Sidebars (✓ `hig/components/navigation/sidebars.md`). Tab bars (✓ `hig/components/navigation/tab-bars.md`: navigation not actions). Windows (✓ `components/presentation/windows.md`: window controls vs leading toolbar items). Not yet ingested: Immersive experiences.
 - Developer docs: SwiftUI `Toolbars`, UIKit `UIToolbar`, AppKit `NSToolbar`, `ScrollEdgeEffectStyle`, `UIBarButtonItem.SystemItem.fixedSpace`, `prefersLargeTitles`.
 - Video: "Get to know the new design system" (WWDC25).

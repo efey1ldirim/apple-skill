@@ -52,7 +52,7 @@ The page has **no numbers, sizes or timings**. Concrete facts:
 | visionOS | 2D, stereoscopic and spatial photos in windows; RealityKit for images beside 3D content or a spatial scene from a 2D image |
 | watchOS | SwiftUI animation first; WatchKit image-sequence animation if needed |
 | Developer docs | SwiftUI `Image` · UIKit `UIImageView` · AppKit `NSImageView` · `ImagePresentationComponent` (RealityKit) · `WKImageAnimatable` (WatchKit) |
-| Related HIG pages | Images ✓ · Image wells (not yet ingested) · Buttons › Image buttons ✓ CRITICAL · SF Symbols ✓ · Windows (not yet ingested) |
+| Related HIG pages | Images ✓ · Image wells (not yet ingested) · Buttons › Image buttons ✓ CRITICAL · SF Symbols ✓ · Windows ✓ |
 | Videos | *Support HDR images in your app* (WWDC23 10181) · *Add rich graphics to your SwiftUI app* (WWDC21 10021) |
 
 ## Visual notes (from screenshots)
@@ -102,5 +102,5 @@ Field-note cross-links:
 
 ## Related
 - Ingested: Images (✓), Icons (✓), SF Symbols (✓), Color (✓ CRITICAL), Materials (✓ CRITICAL), Charts (✓), Drag and drop (✓), Undo and redo (✓), Loading (✓), Motion (✓).
-- Ingested since: Collections (✓ `components/layout/collections.md`). Not yet ingested: **Image wells**, Windows (§ visionOS).
+- Ingested since: Collections (✓ `components/layout/collections.md`). Windows (✓ `components/presentation/windows.md`: visionOS glass, depth). Not yet ingested: **Image wells**.
 - Developer docs and videos: see Specs & values.
