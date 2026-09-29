@@ -44,7 +44,7 @@ The page has **no numbers, sizes or timings**. Concrete facts:
 | Advanced options | behind a disclosure control, labelled "Advanced Options" |
 | Persistence | keep print settings at least until the document closes |
 | Developer docs | `UIPrintInteractionController` (UIKit) · `NSDocument` (AppKit) |
-| Related HIG pages | File management ✓ · File menu (The menu bar, not yet ingested) |
+| Related HIG pages | File management ✓ · File menu (The menu bar ✓) |
 
 ## Visual notes (from screenshots)
 - **Hero:** an orange grid card with a printer glyph (a paper tray on top, a body with a small round button at its top trailing corner, and a sheet with two text lines coming out below), over construction circles.
@@ -88,5 +88,5 @@ Field-note cross-links:
 
 ## Related
 - Ingested: File management (✓), Modality (✓), Feedback (✓ CRITICAL), Accessibility (✓), Entering data (✓).
-- Ingested since: Disclosure controls (✓, the "Advanced Options" pattern). Not yet ingested: **The menu bar** (§ File menu), **Action sheets**, Toolbars.
+- Ingested since: Disclosure controls (✓, the "Advanced Options" pattern). Ingested since: The menu bar (✓ § File menu). Not yet ingested: **Action sheets**, Toolbars.
 - Developer docs: `UIPrintInteractionController`, `NSDocument`.

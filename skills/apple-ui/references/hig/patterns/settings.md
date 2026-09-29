@@ -55,7 +55,7 @@ The page has **no numbers**. Concrete facts:
 | macOS window | minimise/maximise dimmed · window sizes to the pane · noncustomizable toolbar with active button highlighted · title = pane name (or "App Name Settings") · restore last pane |
 | watchOS | no custom Settings entries; essentials at the bottom of the main view or a More menu |
 | Developer docs | SwiftUI `Settings` · Foundation `UserDefaults` · *Preference Panes* · *Improving your game's graphics performance and settings* |
-| Related HIG pages | Onboarding ✓ · App menu, File menu (The menu bar, not yet ingested) |
+| Related HIG pages | Onboarding ✓ · App menu, File menu (The menu bar ✓) |
 
 ## Visual notes (from screenshots)
 - **Hero:** an orange grid card with a large gear (many teeth, a hollow hub with spokes), over construction circles.
@@ -109,5 +109,5 @@ Field-note cross-links:
 
 ## Related
 - Ingested: Onboarding (✓), Entering data (✓), Managing notifications (✓), Managing accounts (✓), Accessibility (✓), Dark Mode (✓), Feedback (✓ CRITICAL), Searching (✓), File management (✓).
-- Ingested since: Disclosure controls (✓ `components/layout/disclosure-controls.md`). Not yet ingested: **The menu bar** (App menu, File menu), Toggles, Toolbars, Sidebars, Pickers.
+- Ingested since: Disclosure controls (✓ `components/layout/disclosure-controls.md`). Ingested since: The menu bar (✓ `components/menus/the-menu-bar.md`). Not yet ingested: Toggles, Toolbars, Sidebars, Pickers.
 - Developer docs: SwiftUI `Settings`, `UserDefaults`, *Preference Panes*.

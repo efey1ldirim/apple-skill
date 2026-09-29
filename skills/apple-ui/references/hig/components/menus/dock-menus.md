@@ -74,5 +74,5 @@ Field-note cross-links:
 
 ## Related
 - Ingested: Context menus (✓), Launching (✓), Multitasking (✓), Managing notifications (✓), Managing accounts (✓), App icons (✓), Icons (✓), Writing (✓), Buttons (✓ CRITICAL), Activity views (✓).
-- Ingested since: Home Screen quick actions (✓), Menus (✓).
+- Ingested since: Home Screen quick actions (✓), Menus (✓), The menu bar (✓, menu bar extras).
 - Developer docs: `applicationDockMenu(_:)` (AppKit).

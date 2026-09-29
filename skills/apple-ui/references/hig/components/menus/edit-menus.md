@@ -36,7 +36,7 @@ An edit menu lets people **act on selected content** (Cut, Copy, Paste, Select, 
 - **must** **Make the edit menu work well in both styles.** The system shows the **compact horizontal** style for **Multi-Touch reveal** and the **vertical** style for **keyboard or pointing-device reveal** (vertical layout: see *Menus › iOS, iPadOS*).
 - **may** **Adjust the placement if necessary.** By default the menu sits **above or below the insertion point or selection** depending on space, with a **visual indicator pointing to the targeted content**. You **can't change the menu's shape or pointer** but you **can move it**, e.g. so it doesn't cover **important content or parts of your interface**.
 #### macOS
-- The **order of items in the app's Edit menu** is on the *The menu bar › Edit menu* page (not yet ingested).
+- The **order of items in the app's Edit menu** is on the *The menu bar › Edit menu* page (`the-menu-bar.md` ✓).
 
 ## Specs & values
 The page gives **no sizes or timings**. Concrete facts:
@@ -58,7 +58,7 @@ The page gives **no sizes or timings**. Concrete facts:
 | Duplicates | no separate controls duplicating edit-menu functions |
 | Undo | support undo/redo (no confirmation in menus) |
 | Developer docs | UIKit `UIEditMenuInteraction`, `UIResponderStandardEditActions` · AppKit `NSMenu` |
-| Related HIG pages | Menus ✓ (§ iOS, iPadOS) · Context menus ✓ · The menu bar (not yet ingested; § Edit menu) · Undo and redo ✓ · Gestures (§ pinch and hold, not yet ingested) · Labels ✓ |
+| Related HIG pages | Menus ✓ (§ iOS, iPadOS) · Context menus ✓ · The menu bar ✓ (§ Edit menu) · Undo and redo ✓ · Gestures (§ pinch and hold, not yet ingested) · Labels ✓ |
 
 ## Visual notes (from screenshots)
 - **Hero:** a red-to-orange card with a rounded **pill-shaped horizontal menu** reading **Cut | Copy | Paste | Delete** with thin dividers and a **circular chevron button** at the trailing end; **Delete is rendered lighter than the others** (a dimmed/unavailable look), beneath it the word **"Text"** selected with two round **selection handles** (top-leading and bottom-trailing) **(from screenshot)**. It shows the **iOS compact style**, the chevron that expands to a context menu, and that **dimmed commands are allowed** in this component.
@@ -111,5 +111,5 @@ Field-note cross-links:
 
 ## Related
 - Ingested: Context menus (✓), Undo and redo (✓), Text views (✓), Labels (✓), Buttons (✓ CRITICAL), Entering data (✓), Drag and drop (✓), Feedback (✓ CRITICAL), Accessibility (✓), Writing (✓).
-- Ingested since: Menus (✓). Not yet ingested: **The menu bar** (§ Edit menu), Gestures (§ pinch and hold).
+- Ingested since: Menus (✓). Ingested since: The menu bar (✓ § Edit menu). Not yet ingested: Gestures (§ pinch and hold).
 - Developer docs: see Specs & values.
