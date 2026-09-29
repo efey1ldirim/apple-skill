@@ -11,7 +11,7 @@ Let the system's sharing surfaces do the heavy lifting: a **Share button** in th
 - After a collaboration starts, people use the app's **Collaboration button** to communicate with others, run custom actions and manage details. They also get **Messages notifications** when collaborators mention them, make changes, join or leave.
 - The Messages integration and the system sharing interfaces work whether the app implements collaboration with **CloudKit**, **iCloud Drive** or a **custom solution**.
 - **must** With a custom collaboration infrastructure, the app also supports **universal links** (developer doc: *Supporting universal links in your app*), otherwise these system features can't be offered.
-- **SharePlay** lets people take part in the app's activities together in real time from their own devices (see the SharePlay page, not yet ingested).
+- **SharePlay** lets people take part in the app's activities together in real time from their own devices (see `technologies/shareplay.md`).
 
 ### Best practices
 - **should** **Put the Share button somewhere convenient, such as a toolbar**, so starting to share or collaborate is easy.
@@ -111,7 +111,7 @@ The system share sheet, Collaboration button and Messages integration are Apple-
 | Customise the management button title | Name it after the object ("Manage shared note", "Manage board access"); default to "Manage sharing". |
 | Notifications with a universal link | Every collaboration notification (mention, edit, join, leave) links to a **deep link** (stable URL) that opens the exact view; email/push/in-app all use it. Choose event types deliberately: content changed · membership changed · you were mentioned. Respect the user's notification settings (`privacy.md`). |
 | Custom infra needs universal links | Deep links must resolve when the app is installed and when it isn't (web fallback); support `https://` links, not custom schemes only. |
-| SharePlay | Real-time co-use has no direct web equivalent in the HIG; if you build presence or live cursors, provide a toggle (Apple's popover has "Participant Cursors") and show who is present. |
+| SharePlay | Real-time co-use has no direct web equivalent in the HIG (see `technologies/shareplay.md` for a web translation); if you build presence or live cursors, provide a toggle (Apple's popover has "Participant Cursors") and show who is present. |
 | visionOS screen sharing | Sharing a window while the app moves to a Full Space pauses the stream. On the web, when a shared/streamed view goes to a mode that can't be streamed (e.g. immersive/fullscreen media), tell the viewers the stream is paused instead of freezing silently. |
 | watchOS `ShareLink` | Small-screen surfaces get a single Share action that opens the system sheet; no custom multi-step sharing UI. |
 | Accessibility / RTL | Sheet and popover have accessible names, focus trap while open, keyboard operable; avatar stacks list names to assistive tech; layout uses logical properties (`right-to-left.md`); permission phrases are localisable strings (no concatenation). |
@@ -139,5 +139,5 @@ Field-note cross-links:
 
 ## Related
 - Ingested: Immersive experiences (✓), Writing (✓), Materials (✓ CRITICAL), Privacy (✓), Layout (✓ CRITICAL), Icons (✓), SF Symbols (✓), Right to left (✓).
-- Ingested since: Activity views (✓ the share sheet component), Buttons (✓ CRITICAL). Popovers (✓ `components/presentation/popovers.md`). Sheets (✓ `components/presentation/sheets.md`). Not yet ingested: SharePlay, (Toolbars ✓ ingested)s, Notifications, Managing notifications, Managing accounts.
+- Ingested since: Activity views (✓ the share sheet component), Buttons (✓ CRITICAL). Popovers (✓ `components/presentation/popovers.md`). Sheets (✓ `components/presentation/sheets.md`). SharePlay (✓ `technologies/shareplay.md`). Not yet ingested: (Toolbars ✓ ingested)s, Notifications, Managing notifications, Managing accounts.
 - Developer docs: Supporting universal links in your app; `ShareLink` (SwiftUI); Shared with You; `SWHighlightEvent`.
