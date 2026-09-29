@@ -53,6 +53,7 @@ ingested so far.
 | Workout / fitness / stopwatch / tracker / "session in progress" screens: live metrics, big controls, pause/resume/end, sensor-unavailable states, session summary, courier/driver mode | + `hig/patterns/workouts.md` (3 screens: controls · metrics · media; timer from timestamp; wake lock; `--` not 0; summary; discard micro-sessions; legible in motion), `hig/patterns/feedback.md`, `hig/patterns/playing-haptics.md`, `hig/patterns/going-full-screen.md`, `hig/foundations/typography.md` + `color.md` (legibility gates); visual `workouts-01` | HIG: Activity rings, Charting data |
 | Settings / list screen | + `field-notes/components.md` § Settings list, `hig/patterns/settings.md` (few settings, good defaults, in-context options, respect system settings) | HIG: Settings, Lists and tables, Toggles |
 | Embedded web content: iframes, in-app browser/webview, rendering email or CMS HTML, external links from an app, embed fallbacks | + `hig/components/content/web-views.md` (sandbox + sanitise, back/forward only for multi-page, never rebuild a browser, open external in new tab/system browser, embed-refused fallback, block remote content) | HIG: Modality, Privacy |
+| Lists and data tables: settings/option lists, master-detail lists, sortable/resizable tables, zebra stripes, row selection + checkmarks, info (ⓘ) vs chevron rows, A–Z index rails, responsive tables | + `hig/components/layout/lists-and-tables.md` (`<table>` semantics + `aria-sort`, selection feedback by task, middle truncation, grouped list = field-note Settings list, info button vs disclosure indicator, no index beside trailing controls, tree/treegrid for hierarchy), `hig/components/layout/collections.md`, `field-notes/components.md` § Settings list; visual `lists-and-tables-01` | HIG: Outline views, Split views |
 | Static text roles: button/menu/list labels, form `<label>`, text colour hierarchy (primary/secondary/tertiary/quaternary), disabled/unavailable text, copyable values, dates/times/timers as text | + `hig/components/layout/labels.md` (label vs field vs text view, four text-colour roles + contrast, selectable text, `<time>` + `Intl`, timers from timestamps), `field-notes/tokens.md` § Ink, `hig/foundations/typography.md` + `color.md` gates; visual `labels-01` | HIG: Text fields, Buttons, Complications |
 | Accordions, expandable rows, "Advanced options", show more/less, collapsible sections, tree rows, expanding dialogs | + `hig/components/layout/disclosure-controls.md` (essentials visible, advanced collapsed, `aria-expanded` buttons/`<details>`, chevron direction incl. RTL, descriptive label, one expander per view, open on error/find), `hig/foundations/motion.md`, `hig/patterns/feedback.md`; visuals `disclosure-controls-01 … 02` | HIG: Outline views, Lists and tables, Buttons |
 | File/asset browsers, cascading category or taxonomy pickers, Miller columns, Finder-like explorers, deep hierarchies with preview pane | + `hig/components/layout/column-views.md` (root in first column, chevron parents, leaf preview + metadata, resizable columns with keyboard separators, arrow-key tree navigation, mobile → drill-in stack), `hig/patterns/file-management.md`, `hig/foundations/layout.md` | HIG: Lists and tables, Outline views, Split views |
@@ -148,7 +149,7 @@ on every ingestion. `—` = not yet ingested.
 | Undo and redo `undo-and-redo` | `hig/patterns/undo-and-redo.md` | 2026-09-29 |
 | Workouts `workouts` | `hig/patterns/workouts.md` | 2026-09-29 |
 
-### Components  (collection page: —; **Content group complete**: Charts, Image views, Text views, Web views · Layout and organization: Boxes, Collections, Column views, Disclosure controls, Labels)
+### Components  (collection page: —; **Content group complete**: Charts, Image views, Text views, Web views · Layout and organization: Boxes, Collections, Column views, Disclosure controls, Labels, Lists and tables)
 | Page | File | Ingested |
 |---|---|---|
 | **Content** (group) | | |
@@ -162,7 +163,7 @@ on every ingestion. `—` = not yet ingested.
 | &nbsp;&nbsp;Column views `column-views` | `hig/components/layout/column-views.md` | 2026-09-29 |
 | &nbsp;&nbsp;Disclosure controls `disclosure-controls` | `hig/components/layout/disclosure-controls.md` | 2026-09-29 |
 | &nbsp;&nbsp;Labels `labels` | `hig/components/layout/labels.md` | 2026-09-29 |
-| &nbsp;&nbsp;Lists and tables `lists-and-tables` | — | — |
+| &nbsp;&nbsp;Lists and tables `lists-and-tables` | `hig/components/layout/lists-and-tables.md` | 2026-09-29 |
 | &nbsp;&nbsp;Lockups `lockups` | — | — |
 | &nbsp;&nbsp;Outline views `outline-views` | — | — |
 | &nbsp;&nbsp;Split views `split-views` | — | — |

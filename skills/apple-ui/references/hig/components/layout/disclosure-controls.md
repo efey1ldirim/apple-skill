@@ -43,7 +43,7 @@ The page has **no numbers, sizes or timings**. Concrete facts:
 | iOS/iPadOS/visionOS | SwiftUI `DisclosureGroup` |
 | Not supported | tvOS, watchOS |
 | Developer docs | SwiftUI `DisclosureGroup` · AppKit `NSButton.BezelStyle.disclosure` and `.pushDisclosure` |
-| Related HIG pages | Outline views (not yet ingested) · Lists and tables (not yet ingested) · Buttons (not yet ingested) |
+| Related HIG pages | Outline views (not yet ingested) · Lists and tables ✓ · Buttons (not yet ingested) |
 | Video | *Stacks, Grids, and Outlines in SwiftUI* (WWDC20 10031) |
 
 ## Visual notes (from screenshots)
@@ -94,5 +94,5 @@ Field-note cross-links:
 
 ## Related
 - Ingested: Boxes (✓), Column views (✓), Collections (✓), Settings (✓), Printing (✓), Entering data (✓), Onboarding (✓), Feedback (✓ CRITICAL), Motion (✓), Right to left (✓), Accessibility (✓), Loading (✓).
-- Not yet ingested: **Outline views**, **Lists and tables**, **Buttons**.
+- Lists and tables ✓. Not yet ingested: **Outline views**, **Buttons**.
 - Developer docs: see Specs & values. Video: *Stacks, Grids, and Outlines in SwiftUI* (WWDC20 10031).

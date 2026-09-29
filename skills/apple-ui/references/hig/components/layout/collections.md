@@ -37,7 +37,7 @@ The page has **no numbers, sizes or timings**. Concrete facts:
 | iOS/iPadOS | avoid layout changes while people interact, unless the change answers an explicit action |
 | Not supported | watchOS |
 | Developer docs | UIKit `UICollectionView` · AppKit `NSCollectionView` |
-| Related HIG pages | Lists and tables (not yet ingested) · Image views ✓ · Layout ✓ |
+| Related HIG pages | Lists and tables ✓ · Image views ✓ · Layout ✓ |
 
 ## Visual notes (from screenshots)
 - **Hero:** a red-to-orange gradient card containing a dashed **content area** (the margin) around **eight photo glyphs in two rows of four**; dimension arrows show the margin at the top, bottom, leading and trailing edges and a small marker shows the **gap between two items** (horizontal between the third and fourth in the top row, vertical between the third items of the two rows): equal gaps, consistent item size, even margins. (Matches the alt text: eight image icons, two rows of four.)
@@ -83,5 +83,5 @@ Field-note cross-links:
 
 ## Related
 - Ingested: Image views (✓), Layout (✓ CRITICAL), Boxes (✓), Drag and drop (✓), Undo and redo (✓), Searching (✓), Loading (✓), Feedback (✓ CRITICAL), Motion (✓), Charts (✓).
-- Ingested since: Column views (✓ `components/layout/column-views.md`). Not yet ingested: **Lists and tables**.
+- Ingested since: Column views (✓ `components/layout/column-views.md`). Lists and tables ✓ (`lists-and-tables.md`).
 - Developer docs: `UICollectionView`, `NSCollectionView`.

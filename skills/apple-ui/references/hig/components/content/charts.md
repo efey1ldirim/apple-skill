@@ -167,5 +167,5 @@ Field-note cross-links:
 
 ## Related
 - Ingested: Charting data (✓), Color (✓ CRITICAL), Accessibility (✓), Feedback (✓ CRITICAL), Writing (✓), Motion (✓), Loading (✓), Workouts (✓), Layout (✓), Typography (✓).
-- Not yet ingested: Gauges and Progress indicators (Status), Segmented controls, Lists and tables, Activity rings.
+- Not yet ingested: Gauges and Progress indicators (Status), Segmented controls, Activity rings. Ingested since: Lists and tables ✓.
 - Developer docs: see Specs & values. Videos: see Specs & values.

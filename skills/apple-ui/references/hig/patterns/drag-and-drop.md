@@ -183,5 +183,5 @@ Field-note cross-links:
 ## Related
 - Ingested: Accessibility (✓), Motion (✓), Materials (✓ CRITICAL), Spatial layout (✓), Designing for iPadOS (✓), Designing for macOS (✓), Designing for visionOS (✓), SF Symbols (✓: `circle.slash`).
 - Ingested since: Entering data (✓), Feedback (✓ CRITICAL), File management (✓).
-- Not yet ingested: Pointing devices (§ Pointers), Keyboards, Gestures, Toolbars, Segmented controls, Progress indicators, Collections, Lists and tables.
+- Not yet ingested: Pointing devices (§ Pointers), Keyboards, Gestures, Toolbars, Segmented controls, Progress indicators. Ingested since: Collections ✓, Lists and tables ✓ (`components/layout/`).
 - External: Universal Control (support article).

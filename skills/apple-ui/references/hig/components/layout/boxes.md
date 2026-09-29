@@ -82,5 +82,5 @@ Field-note cross-links:
 
 ## Related
 - Ingested: Layout (✓ CRITICAL), Color (✓ CRITICAL), Materials (✓ CRITICAL), Writing (✓), Settings (✓), Entering data (✓), Accessibility (✓).
-- Not yet ingested: none referenced beyond the Components neighbours (Collections, Lists and tables, Disclosure controls).
+- Not yet ingested: none referenced beyond the Components neighbours (Collections ✓, Lists and tables ✓, Disclosure controls ✓).
 - Developer docs: `GroupBox`, `NSBox`.
