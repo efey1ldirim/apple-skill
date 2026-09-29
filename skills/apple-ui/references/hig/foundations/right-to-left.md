@@ -276,5 +276,5 @@ Field-note cross-links:
 - [ ] Checked in an RTL locale with real text, and compared with `right-to-left-01 … 21`.
 
 ## Related (ingestion status)
-Layout (✓ CRITICAL), Inclusion (✓), Icons (✓), Images (✓), SF Symbols (✓), Typography (✓ CRITICAL), Writing (✓), Sliders,
+Layout (✓ CRITICAL), Inclusion (✓), Icons (✓), Images (✓), SF Symbols (✓), Typography (✓ CRITICAL), Writing (✓), Sliders (✓ `components/selection-and-input/sliders.md`),
 Progress indicators, Rating indicators — not yet ingested (except ✓).

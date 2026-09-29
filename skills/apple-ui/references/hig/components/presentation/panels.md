@@ -87,7 +87,7 @@ Field-note cross-links:
 - `hig/components/menus/the-menu-bar.md` (✓): **Window menu** rules (list only documents; show/hide commands) and **View**-menu toggles.
 - `hig/components/layout/disclosure-controls.md` (✓): the **only control that fits a HUD**; `hig/foundations/dark-mode.md` (✓), `materials.md`, `color.md` (✓ CRITICAL): dark translucent surfaces, contrast, fallbacks.
 - `hig/patterns/undo-and-redo.md` (✓): immediate-apply adjustments need Undo; `hig/foundations/writing.md` (✓): Title Case titles, "Show X" menu wording.
-- Windows (✓ `components/presentation/windows.md`: main / key / inactive states). Not yet ingested: Sliders, Steppers.
+- Windows (✓ `components/presentation/windows.md`: main / key / inactive states). Sliders (✓ `components/selection-and-input/sliders.md`). Not yet ingested: Steppers.
 - No conflict with a field note.
 
 ## Checklist
