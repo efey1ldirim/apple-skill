@@ -158,6 +158,7 @@ Apple's rule (this page): choose the case **per UI element type** and hold it. T
 | Tooltips (help tags) | Sentence case, no ending period | HIG Offering help |
 | Permission purpose strings | Sentence case, one full sentence, ends with a period | HIG Privacy |
 | Descriptions, helper text, empty states, errors, full sentences | Sentence case | Apple's own examples (headlines, descriptions); CONV |
+| Segmented control segment labels (nouns or noun phrases) | **Title Case** | HIG Segmented controls § Content |
 | Combo box introductory label | **Title Case**, ends with a colon | HIG Combo boxes |
 | Alert titles | Title Case when the product uses title case for alerts (Apple's example); keep it uniform | HIG Writing (example) |
 

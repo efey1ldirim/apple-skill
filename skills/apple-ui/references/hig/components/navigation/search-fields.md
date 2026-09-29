@@ -147,7 +147,7 @@ Field-note cross-links:
 - `hig/components/menus/toolbars.md` (✓): search field at the trailing side, glass groups, priority collapse; `pull-down-buttons.md` for "⋯" beside the search button.
 - `hig/components/layout/split-views.md`, `outline-views.md`, `tab-views.md` (✓): sidebar/column filtering; a field at the top of a tree filters expandable rows.
 - `hig/components/menus/buttons.md` (✓ CRITICAL), `hig/foundations/materials.md` (✓ CRITICAL), `hig/foundations/color.md` (✓ CRITICAL): gates above.
-- Ingested since: Tab bars (✓ `tab-bars.md`), Sidebars (✓ `sidebars.md`). Token fields (✓ `token-fields.md`). Not yet ingested and named here: Segmented controls.
+- Ingested since: Tab bars (✓ `tab-bars.md`), Sidebars (✓ `sidebars.md`). Token fields (✓ `token-fields.md`). Segmented controls (✓ `components/selection-and-input/segmented-controls.md`: Apple's ceiling is ~5–7 segments, so the 2–4 CONV here is stricter, both hold).
 - No conflict with a field note.
 
 ## Checklist

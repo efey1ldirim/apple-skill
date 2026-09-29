@@ -84,5 +84,5 @@ Field-note cross-links:
 
 ## Related
 - Ingested: Menus (✓), Buttons (✓ CRITICAL), Context menus (✓), Disclosure controls (✓), Entering data (✓), Writing (✓).
-- Ingested since: Pull-down buttons (✓). Popovers (✓ `components/presentation/popovers.md`). Sheets (✓ `components/presentation/sheets.md`). Pickers (✓ `components/selection-and-input/pickers.md`). Not yet ingested: Segmented controls.
+- Ingested since: Pull-down buttons (✓). Popovers (✓ `components/presentation/popovers.md`). Sheets (✓ `components/presentation/sheets.md`). Pickers (✓ `components/selection-and-input/pickers.md`). Segmented controls (✓ `components/selection-and-input/segmented-controls.md`).
 - Developer docs: `MenuPickerStyle` (SwiftUI), `changesSelectionAsPrimaryAction` (UIKit), `NSPopUpButton` (AppKit).

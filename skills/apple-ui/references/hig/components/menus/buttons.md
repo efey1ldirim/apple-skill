@@ -102,7 +102,7 @@ A button **starts one instantaneous action**, and it is defined by **style, cont
 | Prominent fill | white on system blue #0088FF is 3.52 : 1 → use #1E6EF4 (4.57) / #0040DD (7.6) or a black/white pill | FN / color.md |
 | Spacing | ≥ 8 px between standalone buttons (attached groups exempt) | CONV |
 | Developer docs | SwiftUI `Button` · UIKit `UIButton` · AppKit `NSButton` (`BezelStyle.flexiblePush`, `.smallSquare`, `.disclosure`…) · SwiftUI `ButtonBorderShape` (`circle`, `roundedRectangle`, `capsule`) | — |
-| Related HIG pages | Pop-up buttons ✓ · Pull-down buttons ✓ · Toggles · Segmented controls · Privacy › Location button (not yet ingested) · Labels ✓ · Offering help ✓ · Ornaments ✓ · Toolbars ✓ · Alerts ✓ `components/presentation/alerts.md` · Sheets ✓ `components/presentation/sheets.md` | — |
+| Related HIG pages | Pop-up buttons ✓ · Pull-down buttons ✓ · Toggles · Segmented controls ✓ · Privacy › Location button (not yet ingested) · Labels ✓ · Offering help ✓ · Ornaments ✓ · Toolbars ✓ · Alerts ✓ `components/presentation/alerts.md` · Sheets ✓ `components/presentation/sheets.md` | — |
 
 ## Visual notes (from screenshots)
 - **Hero:** a red-to-orange card with **two capsule buttons labelled "Button"** side by side, with dimension arrows for the **width** of the first, the **gap** between them and the **space above and below** **(from screenshot)**: size, spacing and shape are the subject.
@@ -142,7 +142,7 @@ Web buttons are `<button>` elements (and `<a href>` for navigation). Everything 
 | watchOS: capsule, full width, corner toolbar | For narrow/glanceable UIs: **capsule** buttons, **full-width** primary action (`btn-block`), two side-by-side buttons share one height and use icons or short labels, stacks share one height; corner actions in a toolbar. |
 | Contrast | Label vs button fill ≥ **4.5 : 1** (3 : 1 for ≥ 24 px or ≥ 18.66 px bold), icon-only ≥ 3 : 1 (**FAIL `button-contrast`**): white on system blue #0088FF is 3.52 : 1, so use **#1E6EF4** (4.57), **#0040DD**, or a **black/white pill**; white on system green/red fails: dark label or a deeper fill (color.md gate). |
 | Disabled/unavailable | `disabled` or `aria-disabled="true"` with a **visibly different look** (opacity/tone) and **a reason** next to it (`feedback.md`); WARN `disabled-looks-enabled` if it renders like its enabled sibling. Prefer `aria-disabled` for buttons that should stay focusable and explain themselves. |
-| Toggles, pop-ups, segmented controls | Different components: **toggle** = `aria-pressed`/switch; **pop-up/pull-down** = `aria-haspopup` + `aria-expanded`; **segmented** = tabs/radiogroup (`tab-views.md`); don't style a toggle as a plain action button. |
+| Toggles, pop-ups, segmented controls | Different components: **toggle** = `aria-pressed`/switch; **pop-up/pull-down** = `aria-haspopup` + `aria-expanded`; **segmented** = radiogroup (single choice), `aria-pressed` group (multiple choice), plain buttons (momentary actions) or tabs only when it swaps panels (`selection-and-input/segmented-controls.md`, `tab-views.md`); don't style a toggle as a plain action button. |
 
 **BUTTONS GATE (how to run it):**
 1. `node tools/check-buttons.mjs <changed files>` → **0 errors** (WARNs fixed or justified with `// buttons-ok: <reason>`).
@@ -173,5 +173,5 @@ Field-note cross-links:
 
 ## Related
 - Ingested: Feedback (✓ CRITICAL), Color (✓ CRITICAL), Typography (✓ CRITICAL), Layout (✓ CRITICAL), Materials (✓ CRITICAL), Labels (✓), Offering help (✓), Icons (✓), SF Symbols (✓), Modality (✓), Undo and redo (✓), Entering data (✓), Drag and drop (✓), Lists and tables (✓), Tab views (✓), Disclosure controls (✓), Activity views (✓), Image views (✓), Workouts (✓), Playing haptics (✓).
-- Ingested since: Context menus (✓). Ingested since: Pop-up buttons (✓). Ingested since: Pull-down buttons (✓). Not yet ingested: **Toggles**, **Segmented controls**, **Location button** (Privacy). Sheets (✓ `components/presentation/sheets.md`: Cancel/Done/Back roles), Alerts (✓ `components/presentation/alerts.md`: default/Cancel placement, deliberate-intent destructive exception). Ingested since: Toolbars (✓). Ingested since: Ornaments (✓).
+- Ingested since: Context menus (✓). Ingested since: Pop-up buttons (✓). Ingested since: Pull-down buttons (✓). Segmented controls (✓ `components/selection-and-input/segmented-controls.md`). Not yet ingested: **Toggles**, **Location button** (Privacy). Sheets (✓ `components/presentation/sheets.md`: Cancel/Done/Back roles), Alerts (✓ `components/presentation/alerts.md`: default/Cancel placement, deliberate-intent destructive exception). Ingested since: Toolbars (✓). Ingested since: Ornaments (✓).
 - Developer docs: see Specs & values.
