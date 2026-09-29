@@ -44,7 +44,7 @@ available space** (size classes, text size, locale, safe areas) instead of to de
   apps — video, music, books).
 - **must — Differentiate controls from content.** Use **Liquid Glass** for controls where supported.
   **Instead of a solid or semi-opaque background colour beneath controls, use a scroll edge effect**
-  to lift controls above content (see Scroll views). **Extend full-screen background content under
+  to lift controls above content (see Scroll views ✓ `components/presentation/scroll-views.md`). **Extend full-screen background content under
   sidebars, toolbars and tab bars** to fill the whole screen/window.
   - If a full-bleed image would be covered by sidebars/inspectors in important parts, use a
     **background extension effect**: the image is **flipped and blurred** and mirrored under the
