@@ -166,7 +166,7 @@ The script reports **2 comparisons** for this page.
 Field-note cross-links:
 - `field-notes/*`: **no care-plan or health-app recipe**; nothing conflicts.
 - `hig/patterns/charting-data.md` (✓) and `hig/components/content/charts.md` (✓): **chart labelling, legends, colours, units, consolidation**; `hig/foundations/color.md` (✓ CRITICAL) and `accessibility.md` (✓): **colour never the only cue, contrast**; `hig/foundations/privacy.md` (✓): **permission timing, purpose text, no lookalike permission screens**; `hig/inputs/gyro-and-accelerometer.md` (✓): **motion data and permission**; `hig/components/system-experiences/notifications.md` (✓) and `hig/patterns/managing-notifications.md` (✓): **sparing, actionable notifications**; `hig/foundations/sf-symbols.md` (✓): **symbol guidance (native)**, web icons stay Lucide/Phosphor/Ionicons; `hig/foundations/branding.md` (✓): **subtle branding**; `hig/patterns/entering-data.md` (✓): **logging and input**; `hig/patterns/workouts.md` (✓): **health-adjacent activity tracking**; `hig/foundations/writing.md` (✓): **plain wording**.
-- Not yet ingested (linked from this page): **HealthKit**, **ResearchKit** (Technologies).
+- Ingested since: HealthKit (✓ `technologies/healthkit.md`). Not yet ingested (linked from this page): **ResearchKit** (Technologies).
 
 ## Checklist
 - [ ] **A privacy policy is linked everywhere data is collected**; **health data is never in URLs, analytics or third-party scripts**; **transport and storage are encrypted**.
@@ -184,6 +184,6 @@ Field-note cross-links:
 
 ## Related
 - Ingested: Charting data (✓), Charts (✓), Color (✓ CRITICAL), Accessibility (✓), Privacy (✓), Notifications (✓), Managing notifications (✓), SF Symbols (✓), Branding (✓), Entering data (✓), Workouts (✓), Writing (✓), Gyroscope and accelerometer (✓).
-- Not yet ingested (linked from this page): **HealthKit**, **ResearchKit** (Technologies).
+- Ingested since: HealthKit (✓ `technologies/healthkit.md`). Not yet ingested (linked from this page): **ResearchKit** (Technologies).
 - Developer docs: CareKit (GitHub docs) · Research & Care (CareKit, developers) · HealthKit "Protecting user privacy" · HealthKit · ResearchKit GitHub · Core Motion · `UIImagePickerController`.
 - Videos: What's new in CareKit (WWDC20 10151), Build a research and care app, part 1: Setup onboarding (WWDC21 10068).
