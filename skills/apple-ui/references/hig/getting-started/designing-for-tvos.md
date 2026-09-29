@@ -96,5 +96,5 @@ apply to TV web apps, smart-TV/HTML5 apps, kiosks, digital signage and presentat
 - [ ] PiP and playback continuity supported?
 
 ## Related (ingestion status)
-Siri, Playing video (TV app), SharePlay, Top Shelf (✓ `components/system-experiences/top-shelf.md`), Managing accounts
-(TV provider accounts) — not yet ingested; Focus and selection (✓ `inputs/focus-and-selection.md`); Game controls (✓ `inputs/game-controls.md`). Ingested since: Remotes (✓ `inputs/remotes.md`), Lockups (✓ `components/layout/lockups.md`), Collections (✓), Lists and tables (✓), Image views (✓).
+Playing video (TV app), Top Shelf (✓ `components/system-experiences/top-shelf.md`), Managing accounts
+(TV provider accounts) — not yet ingested; Focus and selection (✓ `inputs/focus-and-selection.md`); Game controls (✓ `inputs/game-controls.md`). Ingested since: Siri (✓ `technologies/siri.md`), SharePlay (✓ `technologies/shareplay.md`), Remotes (✓ `inputs/remotes.md`), Lockups (✓ `components/layout/lockups.md`), Collections (✓), Lists and tables (✓), Image views (✓).

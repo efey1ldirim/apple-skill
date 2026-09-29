@@ -141,5 +141,5 @@ pattern; in app chrome keep the field-note rule (status colour dot-sized, no col
 
 ## Related (ingestion status)
 Windows (incl. volumes), Immersive experiences, Digital Crown, Playing audio (visionOS), Eyes,
-Accessibility, SharePlay — not yet
-ingested. Ingested since: Gestures (✓ `hig/inputs/gestures.md`: indirect vs direct, system overlays). Motion (✓ `hig/foundations/motion.md`, visionOS comfort rules). Spatial layout (✓ `hig/foundations/spatial-layout.md`: field of view, depth, scale).
+Accessibility — not yet
+ingested. Ingested since: SharePlay (✓ `hig/technologies/shareplay.md`). Gestures (✓ `hig/inputs/gestures.md`: indirect vs direct, system overlays). Motion (✓ `hig/foundations/motion.md`, visionOS comfort rules). Spatial layout (✓ `hig/foundations/spatial-layout.md`: field of view, depth, scale).

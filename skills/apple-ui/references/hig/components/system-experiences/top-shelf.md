@@ -114,7 +114,7 @@ Field-note cross-links:
 - `hig/getting-started/designing-for-tvos.md` (✓): Top Shelf is listed among tvOS system experiences; `hig/components/layout/lockups.md` (✓) and `hig/components/layout/collections.md` (✓): the same focusable, label-on-focus, poster/square rows; `hig/foundations/images.md` (✓): **layered images and parallax** (tvOS); `hig/foundations/materials.md` (✓ CRITICAL): Liquid Glass on Top Shelf and the Dock; `hig/components/presentation/scroll-views.md` (✓): peek, snap, no nested same-axis scroll; `hig/components/menus/buttons.md` (✓ CRITICAL) and **Buttons GATE**: one prominent button; `hig/foundations/accessibility.md` (✓): pausable motion, accessible names; `hig/patterns/playing-video.md` (✓): autoplay and previews.
 - **Tension to note (not a conflict with a field note):** tvOS asks that banner **text be part of the image**; `hig/foundations/writing.md` (and localisation practice) says **don't bake text into images**. On the web the writing rule wins (live text + `aria-label`).
 - `field-notes/*`: no featured-carousel recipe; **no conflict**.
-- Not yet ingested (linked from this page): **VoiceOver** (named in the text), **Apple Design Resources** is external.
+- Ingested since: VoiceOver (✓ `technologies/voiceover.md`). **Apple Design Resources** is external.
 
 ## Checklist
 - [ ] The hero has **one primary action that goes straight to the content** and a **More Info** secondary.
@@ -128,5 +128,5 @@ Field-note cross-links:
 
 ## Related
 - Ingested: Designing for tvOS (✓), Lockups (✓), Collections (✓), Images (✓), Materials (✓ CRITICAL), Scroll views (✓), Buttons (✓ CRITICAL), Accessibility (✓), Playing video (✓), Writing (✓), Color (✓ CRITICAL).
-- Not yet ingested (linked from this page): none beyond **VoiceOver** (named in the text); Apple Design Resources is an external download.
+- Ingested since: VoiceOver (✓ `technologies/voiceover.md`). Apple Design Resources is an external download.
 - Videos: Mastering the Living Room With tvOS (WWDC19 211).

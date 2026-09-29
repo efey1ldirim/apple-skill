@@ -358,6 +358,6 @@ Field-note cross-links:
 - [ ] A plain-language data-use explanation is linkable from every permission/consent point.
 
 ## Related (ingestion status)
-Entering data (✓), Managing accounts (✓), Managing notifications (✓), Onboarding, Sign in with Apple, Eyes, Gestures (✓ `inputs/gestures.md`: hand-data permission for visionOS custom gestures), SharePlay,
+Entering data (✓), Managing accounts (✓), Managing notifications (✓), Onboarding (✓), Sign in with Apple (✓ `technologies/sign-in-with-apple.md`), Eyes (✓), Gestures (✓ `inputs/gestures.md`: hand-data permission for visionOS custom gestures), SharePlay (✓ `technologies/shareplay.md`),
 Alerts (✓ `components/presentation/alerts.md`). Layout (✓ CRITICAL: text must fit at all sizes), Accessibility (✓),
 Inclusion (✓), Immersive experiences (✓).

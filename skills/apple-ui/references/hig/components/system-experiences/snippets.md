@@ -82,7 +82,7 @@ Field-note cross-links:
 - `hig/components/system-experiences/app-shortcuts.md` (✓): snippets are its **"custom views for static information or dialog options"** response type (weather, order confirmation); **consistent**; that note's "not yet ingested: Snippets" is now updated. `live-activities.md` (✓): the sibling response for **timers/progress**; snippet = one-shot answer, Live Activity = ongoing status.
 - `hig/components/presentation/alerts.md` (✓): descriptive button verbs, cancel/primary structure; `hig/patterns/feedback.md` (✓ CRITICAL): result vs confirmation feedback and `alertdialog`; `hig/patterns/undo-and-redo.md` (✓): prefer Undo to confirmation for reversible actions; `hig/components/menus/buttons.md` (✓ CRITICAL) and **Buttons GATE**; `hig/foundations/color.md` (✓ CRITICAL) and **Color gate**; `hig/foundations/layout.md` (✓ CRITICAL) and **Layout gate**; `hig/foundations/writing.md` (✓): button labels Title Case.
 - `field-notes/*`: no snippet/confirmation-card recipe; **no conflict**.
-- Not yet ingested (linked from this page): **Siri**.
+- Ingested since: Siri (✓ `technologies/siri.md`). Not yet ingested (linked from this page): none in the HIG.
 
 ## Checklist
 - [ ] Each action declares **result** (always) and, only if needed, **confirmation**; reversible actions use Undo instead of a confirm.
@@ -95,6 +95,6 @@ Field-note cross-links:
 
 ## Related
 - Ingested: App Shortcuts (✓), Live Activities (✓), Alerts (✓), Feedback (✓ CRITICAL), Undo and redo (✓), Buttons (✓ CRITICAL), Color (✓ CRITICAL), Layout (✓ CRITICAL), Writing (✓), Steppers (✓), Toggles (✓).
-- Not yet ingested (linked from this page): **Siri**.
+- Ingested since: Siri (✓ `technologies/siri.md`). Not yet ingested (linked from this page): none in the HIG.
 - Developer docs: App Intents, "Displaying static and interactive snippets", `ConfirmationActionName`.
 - Videos: Design interactive snippets (WWDC25 281).

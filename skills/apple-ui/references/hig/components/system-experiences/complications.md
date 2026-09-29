@@ -227,7 +227,7 @@ Field-note cross-links:
 - `hig/foundations/color.md` (✓ CRITICAL) and **Color gate**: tinted mode, colour not the only signal; `hig/foundations/images.md` (✓): transparency required for complication images; `typography.md` (✓ CRITICAL): SF Compact Rounded on watchOS; `hig/components/status/activity-rings.md` (✓): the ring in the hero; `progress-indicators.md` (✓), `hig/components/content/charts.md` (✓) and `hig/patterns/charting-data.md` (✓): rectangular graphs.
 - `hig/components/system-experiences/app-shortcuts.md` (✓): the Action-button/quick-launch counterpart; both are **glance + deep link** surfaces.
 - `field-notes/*`: no widget/tile recipe; **no conflict**.
-- Ingested since: Watch faces (✓ `components/system-experiences/watch-faces.md`). Widgets (✓ `components/system-experiences/widgets.md`). Not yet ingested (linked from this page): **Always On**.
+- Ingested since: Watch faces (✓ `components/system-experiences/watch-faces.md`). Widgets (✓ `components/system-experiences/widgets.md`). Always On (✓ `technologies/always-on.md`). Not yet ingested (linked from this page): none.
 
 ## Checklist
 - [ ] Every tile shows **live, meaningful data** with its **freshness**; a tile that only launches is replaced by one that shows data.
@@ -243,6 +243,6 @@ Field-note cross-links:
 
 ## Related
 - Ingested: Gauges (✓), Labels (✓), Designing for watchOS (✓), Color (✓ CRITICAL), Images (✓), Typography (✓ CRITICAL), Activity rings (✓), Progress indicators (✓), Charts (✓), Charting data (✓), App Shortcuts (✓).
-- Not yet ingested (linked from this page): **Always On** (Watch faces ✓ `watch-faces.md`, Widgets ✓ `widgets.md`).
+- Ingested since: Always On (✓ `technologies/always-on.md`), Watch faces (✓ `watch-faces.md`), Widgets (✓ `widgets.md`). Not yet ingested (linked from this page): none.
 - Developer docs: WidgetKit, "Migrating ClockKit complications to WidgetKit", `CLKComplicationDataSource`, `WidgetRenderingMode`, `placeholder(in:)`, `WidgetFamily.accessoryRectangular`, App Intents.
 - Videos: Design widgets for the Smart Stack on Apple Watch (WWDC23 10309), Go further with Complications in WidgetKit (WWDC22 10051), Complications and widgets: Reloaded (WWDC22 10050).

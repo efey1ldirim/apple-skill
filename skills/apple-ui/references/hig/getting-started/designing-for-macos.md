@@ -102,5 +102,4 @@ media and content, and games — **often with several apps at once**.
 
 ## Related (ingestion status)
 The menu bar, File management (✓), Going full screen (✓), Dock menus (✓), Menus (✓), Toolbars (✓),
-Siri — not yet
-ingested (Game controls ✓ `inputs/game-controls.md`). Ingested since: Sidebars (✓ `components/navigation/sidebars.md`), Windows (✓ `components/presentation/windows.md`), Keyboards (✓ `inputs/keyboards.md`), Pointing devices (✓ `inputs/pointing-devices.md`: click/gesture and pointer tables).
+Siri (✓ `technologies/siri.md`) ingested since (Game controls ✓ `inputs/game-controls.md`). Ingested since: Sidebars (✓ `components/navigation/sidebars.md`), Windows (✓ `components/presentation/windows.md`), Keyboards (✓ `inputs/keyboards.md`), Pointing devices (✓ `inputs/pointing-devices.md`: click/gesture and pointer tables).

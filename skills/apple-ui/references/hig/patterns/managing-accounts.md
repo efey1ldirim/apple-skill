@@ -8,7 +8,7 @@ Don't ask for an account unless the core functionality needs one; when you do, *
 
 ### Framing (intro)
 - **must** **Require an account only if the core functionality needs it**; otherwise let people use the app or game without one.
-- If an account is required, consider **Sign in with Apple**: a consistent, trustworthy sign-in, and no need to remember several accounts and methods (Sign in with Apple page: not yet ingested).
+- If an account is required, consider **Sign in with Apple**: a consistent, trustworthy sign-in, and no need to remember several accounts and methods (see `technologies/sign-in-with-apple.md`).
 - An account is a convenient way to reach content and track personal details, **when it doesn't create an unnecessary barrier**.
 
 ### Best practices
@@ -37,7 +37,7 @@ Don't ask for an account unless the core functionality needs one; when you do, *
 - **should** **If you support in-app purchases, explain how billing and cancellation work on deletion.**
   - Auto-renewable subscription **billing continues through Apple until the person cancels**, whether or not they delete the account.
   - After deleting, people must **cancel the subscription or request a refund**.
-  - Also give information on how to **cancel subscriptions and manage purchases** (Apple links Apple In-App Purchase › Helping people manage their subscriptions and Providing help).
+  - Also give information on how to **cancel subscriptions and manage purchases** (Apple links Apple In-App Purchase › Helping people manage their subscriptions and Providing help; ✓ `technologies/apple-in-app-purchase.md`).
   - **Note (aside):** even if people didn't buy the subscription in your app, you still need to support account deletion.
 
 ### TV provider accounts
@@ -73,7 +73,7 @@ The page has **no sizes, colours or numeric values**. Its concrete facts:
 | tvOS | minimum info; other-device sign-in via associated domains; shared-account per-user profiles (tvOS 16+); email keyboard screen with recent addresses |
 | watchOS | iCloud Keychain sync for autofill and settings |
 | Developer docs | *Supporting passkeys* · *Securing Logins with iCloud Keychain Verification Codes* · `LABiometryType` · Token revocation · *Configuring an associated domain* · `kSecUseUserIndependentKeychain` · *User Management Entitlement* |
-| Related HIG pages | Onboarding ✓ · Sign in with Apple (not yet ingested) |
+| Related HIG pages | Onboarding ✓ · Sign in with Apple ✓ (`technologies/sign-in-with-apple.md`) |
 | Videos | *What's new in passkeys* (WWDC25 279) · *What's new in device management* (WWDC24 10143) |
 
 ## Visual notes (from screenshots)
@@ -134,5 +134,5 @@ Field-note cross-links:
 
 ## Related
 - Ingested: Privacy (✓), Entering data (✓), Feedback (✓ CRITICAL), Writing (✓), Launching (✓), Designing for tvOS (✓).
-- Ingested since: Managing notifications (✓). Onboarding (✓ ingested). Not yet ingested: **Sign in with Apple**, Apple In-App Purchase, Settings (✓ ingested). Remotes (✓ `inputs/remotes.md`). Text fields (✓ `components/selection-and-input/text-fields.md`: secure fields, validation timing).
+- Ingested since: Managing notifications (✓). Onboarding (✓ ingested). Sign in with Apple (✓ `technologies/sign-in-with-apple.md`). Settings (✓ ingested). Apple In-App Purchase (✓ `technologies/apple-in-app-purchase.md`). Remotes (✓ `inputs/remotes.md`). Text fields (✓ `components/selection-and-input/text-fields.md`: secure fields, validation timing).
 - Developer docs: listed in Specs & values. Videos: *What's new in passkeys* (WWDC25 279), *What's new in device management* (WWDC24 10143).
