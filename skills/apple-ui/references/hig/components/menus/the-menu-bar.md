@@ -201,7 +201,7 @@ Sits at the **trailing end** and gives access to **help documentation**; with **
 | Change log | Jun 9, 2025: iPadOS menu bar guidance added |
 | Developer docs | SwiftUI `CommandMenu` · UIKit "Adding menus and shortcuts to the menu bar and user interface" · AppKit `NSStatusBar` · `MenuBarExtra` (SwiftUI) · `NSHelpManager` · `isAlternate` |
 | Video | "Elevate the design of your iPad app" (WWDC25) |
-| Related HIG pages | Menus ✓ · Dock menus ✓ · Standard keyboard shortcuts (Keyboards; not yet ingested) |
+| Related HIG pages | Menus ✓ · Dock menus ✓ · Standard keyboard shortcuts (Keyboards ✓ `inputs/keyboards.md`) |
 
 ## Visual notes (from screenshots)
 - **Hero:** a red-to-pink card whose top edge carries a **menu bar** with titles **App Name · File · Edit (highlighted pill) · Format · View · Window · Help**; below **Edit** a light rounded menu lists **Undo** and **Redo** (leading icons), a hairline separator, **Cut, Copy, Paste** (with ⌘X, ⌘C, ⌘V), **Delete**, another separator, **Find** (⌘F), each with a leading symbol **(from screenshot)**. It shows the **fixed title order**, the **selected title as a pill**, **grouped commands** and **right-aligned shortcut glyphs**.
@@ -258,6 +258,6 @@ Field-note cross-links and conflicts:
 
 ## Related
 - Ingested: Menus (✓), Context menus (✓), Edit menus (✓), Dock menus (✓), Undo and redo (✓), Going full screen (✓), Multitasking (✓), Offering help (✓), Buttons (✓ CRITICAL), Writing (✓).
-- Ingested since: Toolbars (✓). Sidebars (✓ `components/navigation/sidebars.md`: View ▸ Show/Hide Sidebar). Tab bars (✓ `components/navigation/tab-bars.md`). Panels (✓ `components/presentation/panels.md`: Window menu lists documents only). Not yet ingested: Settings, Keyboards (§ Standard keyboard shortcuts), Status bars.
+- Ingested since: Toolbars (✓). Sidebars (✓ `components/navigation/sidebars.md`: View ▸ Show/Hide Sidebar). Tab bars (✓ `components/navigation/tab-bars.md`). Panels (✓ `components/presentation/panels.md`: Window menu lists documents only). Ingested since: Keyboards (✓ `inputs/keyboards.md`: standard and custom shortcuts, modifier order). Not yet ingested: Settings, Status bars.
 - Developer docs: `CommandMenu` (SwiftUI), "Adding menus and shortcuts to the menu bar and user interface" (UIKit), `NSStatusBar` (AppKit), `MenuBarExtra`, `NSHelpManager`, `isAlternate`.
 - Video: "Elevate the design of your iPad app" (WWDC25).

@@ -257,5 +257,5 @@ Visual pairs: `visual-examples` ids accessibility-01 … 07.
 - [ ] Simple, consistent interactions; destructive actions confirmed?
 
 ## Related (ingestion status)
-Inclusion, Typography (Dynamic Type), VoiceOver, Color, Dark Mode, Playing haptics, Keyboards,
-Siri — not yet ingested. Spatial layout (✓). Motion (✓ `motion.md`).
+Inclusion, Typography (Dynamic Type), VoiceOver, Color, Dark Mode, Playing haptics,
+Siri — not yet ingested. Spatial layout (✓). Keyboards (✓ `inputs/keyboards.md`: Full Keyboard Access). Motion (✓ `motion.md`).

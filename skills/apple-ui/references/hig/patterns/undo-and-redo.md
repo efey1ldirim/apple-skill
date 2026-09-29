@@ -48,7 +48,7 @@ The page has **no numbers**. Concrete facts:
 | Dedicated buttons | only if important; standard symbols; in a toolbar |
 | Not supported | tvOS, watchOS |
 | Developer docs | `UndoManager` (Foundation) |
-| Related HIG pages | Feedback ✓ · Pointing devices · Standard keyboard shortcuts (Keyboards) · Edit menu (The menu bar ✓) (first two not yet ingested) |
+| Related HIG pages | Feedback ✓ · Pointing devices · Standard keyboard shortcuts (Keyboards ✓ `inputs/keyboards.md`) · Edit menu (The menu bar ✓) (Pointing devices not yet ingested) |
 | Video | *Essential Design Principles* (WWDC17 802) |
 
 ## Visual notes (from screenshots)
@@ -96,5 +96,5 @@ Field-note cross-links:
 
 ## Related
 - Ingested: Feedback (✓ CRITICAL), Drag and drop (✓), File management (✓), Modality (✓), Managing accounts (✓), Motion (✓), Icons (✓).
-- Not yet ingested: **Pointing devices**, **Keyboards** (§ Standard keyboard shortcuts). Ingested since: Toolbars (✓), The menu bar (✓ § Edit menu).
+- Not yet ingested: **Pointing devices**. Ingested since: Toolbars (✓), The menu bar (✓ § Edit menu), Keyboards (✓ `inputs/keyboards.md`: ⌘Z / ⇧⌘Z).
 - Developer docs: `UndoManager`. Video: *Essential Design Principles* (WWDC17 802).

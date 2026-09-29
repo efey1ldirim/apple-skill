@@ -33,7 +33,7 @@ A **gesture** is a physical motion that **directly acts on an object** on a touc
 - **should** **Consider simultaneous recognition of multiple gestures if it improves the experience.** It is **unlikely to help in non-game apps**; a **game** may have several on-screen controls (a **joystick and fire buttons**) used **at the same time**. For touch input combined with Apple Pencil in an iPadOS app → Apple Pencil and Scribble.
 
 #### macOS
-- People mainly use a **keyboard and mouse** (→ Keyboards). They can also make **standard gestures on a Magic Trackpad, Magic Mouse or a game controller with a touch surface**.
+- People mainly use a **keyboard and mouse** (→ Keyboards ✓ `inputs/keyboards.md`). They can also make **standard gestures on a Magic Trackpad, Magic Mouse or a game controller with a touch surface**.
 
 #### tvOS
 - People expect **standard gestures** to navigate tvOS apps and games with a **compatible remote, the Siri Remote, or a game controller with a touch surface** (→ Remotes).
@@ -115,7 +115,7 @@ A **gesture** is a physical motion that **directly acts on an object** on a touc
 | Developer docs | SwiftUI **Gestures**, UIKit **UITouch**, Setting up access to ARKit data, `persistentSystemOverlays(_:)` |
 | Videos (links only, not watched) | Enhance your UI animations and transitions (WWDC24 10145) · Design for spatial input (WWDC23 10073) |
 | Apple's Related list | Feedback (✓), Eyes (✓), Playing haptics (✓) |
-| Other links in the text | Accessibility (✓), Apple Pencil and Scribble (✓), Game controls (✓), Notifications (✓), Keyboards, Remotes, Pointing devices |
+| Other links in the text | Accessibility (✓), Apple Pencil and Scribble (✓), Game controls (✓), Notifications (✓), Keyboards (✓), Remotes, Pointing devices |
 | Change log | Sep 9 2024: visionOS system overlays + reorganisation · Sep 15 2023: double tap in the watchOS specifications · Jun 21 2023: renamed from "Touchscreen gestures", visionOS guidance |
 
 ## Visual notes (from screenshots)
@@ -177,7 +177,7 @@ Field-note cross-links:
 - `hig/foundations/accessibility.md` (✓): **simple gestures + alternatives** row (WCAG 2.5.1 / 2.5.7) is **confirmed** here; `hig/patterns/feedback.md` (✓) and `hig/patterns/playing-haptics.md` (✓): the **immediate feedback** and **haptics** side of responsiveness (`navigator.vibrate` Android only, never rely on haptics alone).
 - `hig/patterns/undo-and-redo.md` (✓): **three-finger swipe and shake** are the system undo/redo gestures, **don't redefine**; `hig/components/system-experiences/notifications.md` (✓) and `widgets.md` / `live-activities.md` (✓): **double tap** on watchOS runs the **first non-destructive action / primary action**; `hig/components/presentation/scroll-views.md` (✓): **native scrolling, no scroll-jacking, zoom bounds**; `hig/components/menus/edit-menus.md` (✓): **pinch and hold / touch and hold** reveals commands (three-finger pinch = copy/paste); `hig/patterns/drag-and-drop.md` (✓): **drag** as a gesture; `hig/components/navigation/sidebars.md` (✓): **iPadOS edge swipe**.
 - `hig/inputs/eyes.md` (✓) and `hig/inputs/focus-and-selection.md` (✓): **look then pinch = indirect gesture**, **hover ≠ focus**; `hig/inputs/game-controls.md` (✓): **simultaneous touches** for joystick + buttons and **spatial controllers** acting like hands; `hig/inputs/apple-pencil-and-scribble.md` (✓): **touch + Pencil** together; `hig/foundations/spatial-layout.md` (✓), `immersive-experiences.md` (✓), `privacy.md` (✓): **direct gestures tire arms**, **Full Space**, **hand-data permission**; `hig/patterns/going-full-screen.md` (✓): **deferring edge gestures** for games on iPadOS.
-- Not yet ingested (linked from this page): **Keyboards**, **Remotes**, **Pointing devices**.
+- Not yet ingested (linked from this page): **Remotes**, **Pointing devices**. Ingested since: Keyboards (✓ `inputs/keyboards.md`).
 
 ## Checklist
 - [ ] **Every gesture-driven action has a visible control or keyboard route** (buttons, menu, arrow keys, `+`/`−`); nothing needs a swipe, pinch, drag or long-press alone (WCAG 2.5.1, 2.5.7).
@@ -194,6 +194,6 @@ Field-note cross-links:
 
 ## Related
 - Ingested: Feedback (✓), Eyes (✓), Playing haptics (✓), Accessibility (✓), Apple Pencil and Scribble (✓), Game controls (✓), Notifications (✓), Focus and selection (✓), Undo and redo (✓), Scroll views (✓), Edit menus (✓), Drag and drop (✓), Spatial layout (✓), Immersive experiences (✓), Privacy (✓), Going full screen (✓).
-- Not yet ingested (linked from this page): **Keyboards**, **Remotes**, **Pointing devices**.
+- Not yet ingested (linked from this page): **Remotes**, **Pointing devices**. Ingested since: Keyboards (✓ `inputs/keyboards.md`).
 - Developer docs: Gestures (SwiftUI) · UITouch (UIKit) · Setting up access to ARKit data · `persistentSystemOverlays(_:)` · `handGestureShortcut(_:isEnabled:)` · `primaryAction`.
 - Videos: Enhance your UI animations and transitions (WWDC24 10145), Design for spatial input (WWDC23 10073).
