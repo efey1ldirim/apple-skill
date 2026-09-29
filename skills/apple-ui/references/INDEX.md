@@ -53,6 +53,7 @@ ingested so far.
 | Workout / fitness / stopwatch / tracker / "session in progress" screens: live metrics, big controls, pause/resume/end, sensor-unavailable states, session summary, courier/driver mode | + `hig/patterns/workouts.md` (3 screens: controls · metrics · media; timer from timestamp; wake lock; `--` not 0; summary; discard micro-sessions; legible in motion), `hig/patterns/feedback.md`, `hig/patterns/playing-haptics.md`, `hig/patterns/going-full-screen.md`, `hig/foundations/typography.md` + `color.md` (legibility gates); visual `workouts-01` | HIG: Activity rings, Charting data |
 | Settings / list screen | + `field-notes/components.md` § Settings list, `hig/patterns/settings.md` (few settings, good defaults, in-context options, respect system settings) | HIG: Settings, Lists and tables, Toggles |
 | Embedded web content: iframes, in-app browser/webview, rendering email or CMS HTML, external links from an app, embed fallbacks | + `hig/components/content/web-views.md` (sandbox + sanitise, back/forward only for multi-page, never rebuild a browser, open external in new tab/system browser, embed-refused fallback, block remote content) | HIG: Modality, Privacy |
+| Accordions, expandable rows, "Advanced options", show more/less, collapsible sections, tree rows, expanding dialogs | + `hig/components/layout/disclosure-controls.md` (essentials visible, advanced collapsed, `aria-expanded` buttons/`<details>`, chevron direction incl. RTL, descriptive label, one expander per view, open on error/find), `hig/foundations/motion.md`, `hig/patterns/feedback.md`; visuals `disclosure-controls-01 … 02` | HIG: Outline views, Lists and tables, Buttons |
 | File/asset browsers, cascading category or taxonomy pickers, Miller columns, Finder-like explorers, deep hierarchies with preview pane | + `hig/components/layout/column-views.md` (root in first column, chevron parents, leaf preview + metadata, resizable columns with keyboard separators, arrow-key tree navigation, mobile → drill-in stack), `hig/patterns/file-management.md`, `hig/foundations/layout.md` | HIG: Lists and tables, Outline views, Split views |
 | Galleries, image/product grids, carousels/shelves, template or app pickers, photo libraries, selectable/reorderable item sets | + `hig/components/layout/collections.md` (standard grid/row, table for text, padding so focus/hover isn't clipped, selection + edit without gesture-only, animate insert/delete/reorder, never reflow under the user), `hig/components/content/image-views.md`, `hig/foundations/layout.md`, `hig/patterns/drag-and-drop.md` | HIG: Lists and tables |
 | Grouping: cards, panels, fieldsets, settings groups, section containers, callout boxes, form sections with titles | + `hig/components/layout/boxes.md` (border OR tone, small vs container, padding/alignment instead of nested boxes, short sentence-case title, `<fieldset>/<legend>`), `field-notes/principles.md` § 3 (groups not cards), `hig/foundations/layout.md`, `hig/foundations/color.md` (surface levels) | HIG: Collections, Lists and tables, Disclosure controls |
@@ -146,7 +147,7 @@ on every ingestion. `—` = not yet ingested.
 | Undo and redo `undo-and-redo` | `hig/patterns/undo-and-redo.md` | 2026-09-29 |
 | Workouts `workouts` | `hig/patterns/workouts.md` | 2026-09-29 |
 
-### Components  (collection page: —; **Content group complete**: Charts, Image views, Text views, Web views · Layout and organization: Boxes, Collections, Column views)
+### Components  (collection page: —; **Content group complete**: Charts, Image views, Text views, Web views · Layout and organization: Boxes, Collections, Column views, Disclosure controls)
 | Page | File | Ingested |
 |---|---|---|
 | **Content** (group) | | |
@@ -158,7 +159,7 @@ on every ingestion. `—` = not yet ingested.
 | &nbsp;&nbsp;Boxes `boxes` | `hig/components/layout/boxes.md` | 2026-09-29 |
 | &nbsp;&nbsp;Collections `collections` | `hig/components/layout/collections.md` | 2026-09-29 |
 | &nbsp;&nbsp;Column views `column-views` | `hig/components/layout/column-views.md` | 2026-09-29 |
-| &nbsp;&nbsp;Disclosure controls `disclosure-controls` | — | — |
+| &nbsp;&nbsp;Disclosure controls `disclosure-controls` | `hig/components/layout/disclosure-controls.md` | 2026-09-29 |
 | &nbsp;&nbsp;Labels `labels` | — | — |
 | &nbsp;&nbsp;Lists and tables `lists-and-tables` | — | — |
 | &nbsp;&nbsp;Lockups `lockups` | — | — |

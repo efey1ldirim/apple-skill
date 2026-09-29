@@ -81,5 +81,5 @@ Field-note cross-links:
 
 ## Related
 - Ingested: Collections (✓), Boxes (✓), Layout (✓ CRITICAL), File management (✓), Searching (✓), Drag and drop (✓), Undo and redo (✓), Loading (✓), Feedback (✓ CRITICAL), Right to left (✓).
-- Not yet ingested: **Lists and tables**, **Outline views**, **Split views**.
+- Ingested since: Disclosure controls (✓ `disclosure-controls.md`). Not yet ingested: **Lists and tables**, **Outline views**, **Split views**.
 - Developer docs: `NSBrowser`.
