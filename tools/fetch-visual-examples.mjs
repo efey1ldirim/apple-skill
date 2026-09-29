@@ -38,7 +38,7 @@ const PAGES = [
   "printing", "ratings-and-reviews", "searching",
   "settings", "undo-and-redo", "workouts",
   "charts", "image-views", "text-views", "web-views",
-  "boxes", "collections", "column-views", "disclosure-controls", "labels", "lists-and-tables", "lockups", "outline-views", "split-views", "tab-views", "activity-views", "buttons", "context-menus", "dock-menus", "edit-menus", "home-screen-quick-actions", "menus", "ornaments", "pop-up-buttons", "pull-down-buttons", "the-menu-bar", "toolbars", "path-controls", "search-fields", "sidebars", "tab-bars", "token-fields", "action-sheets", "alerts", "page-controls", "panels", "popovers", "scroll-views", "sheets", "windows", "color-wells", "combo-boxes", "digit-entry-views", "image-wells", "pickers", "segmented-controls", "sliders", "steppers", "text-fields", "toggles", "virtual-keyboards", "activity-rings", "gauges", "progress-indicators", "rating-indicators", "app-shortcuts", "complications", "controls", "live-activities", "notifications", "snippets", "status-bars", "top-shelf", "watch-faces", "widgets", "action-button",
+  "boxes", "collections", "column-views", "disclosure-controls", "labels", "lists-and-tables", "lockups", "outline-views", "split-views", "tab-views", "activity-views", "buttons", "context-menus", "dock-menus", "edit-menus", "home-screen-quick-actions", "menus", "ornaments", "pop-up-buttons", "pull-down-buttons", "the-menu-bar", "toolbars", "path-controls", "search-fields", "sidebars", "tab-bars", "token-fields", "action-sheets", "alerts", "page-controls", "panels", "popovers", "scroll-views", "sheets", "windows", "color-wells", "combo-boxes", "digit-entry-views", "image-wells", "pickers", "segmented-controls", "sliders", "steppers", "text-fields", "toggles", "virtual-keyboards", "activity-rings", "gauges", "progress-indicators", "rating-indicators", "app-shortcuts", "complications", "controls", "live-activities", "notifications", "snippets", "status-bars", "top-shelf", "watch-faces", "widgets", "action-button", "apple-pencil-and-scribble",
 ];
 // Stand-alone images that are comparisons on their own (before/after drawn inside one image, or
 // a sequence of single images under one rule). Consecutive singles under the same rule are grouped.
@@ -55,6 +55,7 @@ const SINGLES = {
     "visionos-materials-window-example.png", "watchos-modal-view-material-background.png",
   ],
   buttons: ["buttons-roles-alert.png"],
+  "apple-pencil-and-scribble": ["apple-pencil-scribble.png", "apple-pencil-undo-redo-buttons.png"],
   menus: ["small-medium-large-menu-layouts.png"],
   "right-to-left": [
     "download-uneven-vertical-height.png", "download-even-vertical-height.png",
