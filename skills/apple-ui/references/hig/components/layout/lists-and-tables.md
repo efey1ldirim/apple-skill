@@ -81,7 +81,7 @@ Web equivalents: **`<ul>/<ol>` lists** (settings, menus, navigation lists, feeds
 | Edit when it makes sense | **Reorder** with drag handles **plus** keyboard/button alternatives (Move up/down); **select** with checkboxes revealed in an **Edit/Select mode** (iOS-style) or on hover/focus (desktop); bulk actions bar with count ("3 selected") and Undo for deletes (`drag-and-drop.md`, `undo-and-redo.md`). |
 | Selection feedback | **Navigation lists** (master-detail, sidebar, folder trees): the selected row stays **persistently highlighted** (`aria-current="page"`/`aria-selected="true"`, tone + non-colour cue). **Option lists** (choose one/many): brief pressed/hover highlight, then a **checkmark** at the row's trailing (or leading) end; `role="radio"/"checkbox"` or `<input>` inside the row, `aria-checked`. Whole row is the target (≥ 44 px). |
 | Short row text, readability when truncated | Keep row titles brief; long text lives in a detail view/expander. Truncate with `text-overflow: ellipsis` and a full-text tooltip (hover **and** focus), or **middle truncation** for file names/IDs (CSS can't; use a small helper that keeps the start and the extension/end: "Quarterly-rep…final.pdf"). Let rows wrap for accessibility rather than clip when zoomed (`typography.md`). |
-| Column headings | Nouns or short noun phrases, **no ending punctuation**. Apple specifies **title-style capitalisation** for column headings; Nonplo's copy convention and `writing.md` default to **sentence case** for UI text. **Flagged difference:** there is no field-note rule about column headings, so keep **one convention per product** (sentence case is our default, Apple-style products use Title Case) and never mix them. In a single-column list without headings, give a section header or `aria-label`. |
+| Column headings | Nouns or short noun phrases in **Title Case**, **no ending punctuation** ("Date Modified", "Team Members"); **follows Apple** (skill decision 2026-09-29, `writing.md` › Capitalisation table). In a single-column list without headings, give a section header or `aria-label`. |
 | Styles: grouped, elliptical, bordered | **Grouped** = the field-note Settings list: rounded group, hairlines starting at the text, optional section **header above** and **footnote below** the group (`field-notes/components.md` § Group), for settings and option lists on any screen size. **Bordered/alternating rows** (macOS) = zebra striping for wide data tables (`tr:nth-child(even)` in a subtle tone that keeps 4.5 : 1 for text, plus a hover/selected state that is clearly different). **Elliptical** (watchOS) has no web equivalent; use a short scrolling list with fade edges at most. |
 | Row style: leading image + label | Row grid: **icon or thumbnail** (about 28–40 px, CONV; `icons.md`/`image-views.md`) → title (+ secondary line, `labels.md` levels) → optional value → trailing control. Keep alignment identical in every row. |
 | Info button vs disclosure indicator | **ⓘ info button** = a `<button>` with `aria-label="Details for {item}"` that opens a **popover/sheet/inline expansion**; it never navigates. **Chevron (disclosure indicator)** = the row is a **link** to the next level; the chevron is decorative (`aria-hidden`), trailing, in a **muted colour** (secondary), optionally preceded by a value ("Detail"). Don't put both on the same row for the same purpose; don't make a navigating row's chevron a separate button. |
@@ -101,8 +101,8 @@ Field-note cross-links:
 - `hig/foundations/color.md` (CRITICAL) and `typography.md` (CRITICAL): zebra contrast, highlight tones, row text sizes; `layout.md` (CRITICAL): row heights ≥ 44 px, margins, responsive reflow.
 - `hig/components/layout/collections.md` (✓): choose collection vs list; `column-views.md`, `disclosure-controls.md`, `labels.md`: neighbouring components; `hig/patterns/searching.md`, `drag-and-drop.md`, `undo-and-redo.md`, `loading.md`, `feedback.md`.
 - `hig/patterns/settings.md` and `entering-data.md`: settings lists and option lists.
-- `hig/foundations/writing.md`: column heading and row copy (with the capitalisation difference flagged above).
-- No conflict with a field note apart from the flagged column-heading capitalisation, which the field notes don't cover.
+- `hig/foundations/writing.md`: column heading and row copy (with Title Case for headings).
+- No conflict with a field note (the field notes have no rule on column headings); capitalisation follows Apple.
 
 ## Checklist
 - [ ] Text and records are in a list or `<table>`; card grids are used only for images or widely varying sizes.
@@ -114,7 +114,7 @@ Field-note cross-links:
 - [ ] Reordering and selection have keyboard/button alternatives, a select mode with a count, and Undo for deletes.
 - [ ] Wide tables offer resizable columns, sticky header/first column and zebra striping that keeps 4.5 : 1; at narrow widths they stack or scroll with a cue.
 - [ ] Hierarchies use a tree/treegrid with `aria-expanded`/`aria-level`; long lists are paginated or virtualised with correct `aria-*` counts.
-- [ ] Column headings are nouns without punctuation and one capitalisation convention is used across the product.
+- [ ] Column headings are nouns without punctuation and headings are in Title Case.
 - [ ] Layout, Color and Typography gates pass on list and table screens.
 
 ## Related

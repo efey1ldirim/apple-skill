@@ -63,7 +63,7 @@ Web equivalents: **tree tables / treegrids** (file managers, org charts with att
 |---|---|
 | Hierarchical data only | Nested data → **`role="treegrid"`** (tabular, with attribute columns) or **`role="tree"`** (single column); flat data → `<table>`. The DOM stays a flat sequence of rows with `aria-level`, `aria-posinset`, `aria-setsize` and `aria-expanded` on parents (the ARIA treegrid pattern), so sorting/virtualisation stay tractable. |
 | Hierarchy in the first column only | The first (**Name**) cell holds indentation, the **chevron** (leading edge, `aria-hidden`; expanded points down, collapsed points inward, mirrored in RTL: `disclosure-controls.md`), the icon and the name; other cells show **attributes only** (date, size, kind, owner, status). Indent per level with a fixed step (CONV: 16–20 px); the chevron sits in a reserved gutter so labels align. |
-| Descriptive column headings | `<th scope="col">` nouns/short noun phrases without punctuation or colon; **always present** in multi-column trees; a single-column tree gets a visible label/`aria-label` ("Files"). Apple specifies **title-style capitalisation**; the product's own convention applies (**same flagged difference as `lists-and-tables.md`**: our default is sentence case; keep one convention per product). |
+| Descriptive column headings | `<th scope="col">` nouns/short noun phrases without punctuation or colon; **always present** in multi-column trees; a single-column tree gets a visible label/`aria-label` ("Files"). Column headings use **Title Case**, as Apple specifies (`writing.md` › Capitalisation table). |
 | Sorting | Header buttons with `aria-sort`; sorting acts **within each parent** (siblings are re-ordered at every level, children stay under their parents); clicking the primary column sorts every level, clicking again reverses; secondary keys (e.g. name, then date) are used silently for ties; the current sort survives expand/collapse and is reflected in the URL; announce "Sorted by Size, descending". |
 | Resizable columns | Drag handle (`role="separator"`, ← → keyboard steps, double-click to fit), min widths, persisted per view; **long cell text: middle ellipsis** (helper keeping the start and the end/extension; full text in a tooltip on hover **and** focus); numeric columns **right-aligned** with `font-variant-numeric: tabular-nums` (as the hero's Size column); sticky header and sticky first column. |
 | Easy expand/collapse | Click the chevron or the row (per product) to toggle one container; **Alt/Option-click the chevron expands all descendants** (and Alt-click again collapses them); keyboard per ARIA: **→** expands (or moves to first child), **←** collapses (or moves to parent), **\*** expands all siblings, **Shift+→/←** may expand/collapse all descendants (document it); an **Expand all / Collapse all** control in the toolbar for lengthy trees. |
@@ -78,16 +78,16 @@ Web equivalents: **tree tables / treegrids** (file managers, org charts with att
 
 Field-note cross-links:
 - `hig/components/layout/disclosure-controls.md` (✓): the triangle/chevron direction, Alt-expand, and expansion behaviour are the same pattern; `column-views.md` (✓): the alternative for deep browsing with preview.
-- `hig/components/layout/lists-and-tables.md` (✓): sorting, resizing, zebra and column-heading rules are shared (macOS section); **the title-style vs sentence-case difference is flagged there and here**.
+- `hig/components/layout/lists-and-tables.md` (✓): sorting, resizing, zebra and column-heading rules are shared (macOS section); **both use Title Case for column headings (follows Apple)**.
 - `hig/patterns/file-management.md` (✓), `searching.md` (✓), `drag-and-drop.md` (✓), `undo-and-redo.md` (✓), `loading.md` (✓), `feedback.md` (CRITICAL): file trees, filtering, reorder, rename undo and per-node loading states.
 - `hig/foundations/color.md` (CRITICAL), `typography.md` (CRITICAL), `layout.md` (CRITICAL): stripes and selected-row contrast, tabular numerals and text sizes, resizable panes and reflow.
 - `field-notes/principles.md` § 3 "Groups, not cards" and `components.md` § Settings list: trees are one group with hairlines, not a card per node; **compatible**.
-- No conflict with a field note apart from the capitalisation difference (no field-note rule on column headings).
+- No conflict with a field note (no field-note rule on column headings); headings use Title Case.
 
 ## Checklist
 - [ ] A treegrid/tree is used only for hierarchical data; flat data uses a table.
 - [ ] Only the first column carries hierarchy (indent, chevron, icon, name); other columns are attributes; numeric columns are right-aligned with tabular numerals.
-- [ ] Multi-column trees always have column headings (nouns, no punctuation, one capitalisation convention); single-column trees have a visible label.
+- [ ] Multi-column trees always have column headings (nouns in Title Case, no punctuation); single-column trees have a visible label.
 - [ ] Sortable headings use `aria-sort`; sorting applies at every level; clicking again reverses; the state is announced and persisted.
 - [ ] Columns are resizable by mouse and keyboard, with min widths, persisted sizes, middle-ellipsis truncation and a full-text tooltip on hover and focus.
 - [ ] Expand/collapse works by click, keyboard (→ ←, `*`) and Alt-click for all descendants; Expand all/Collapse all exists for long trees.

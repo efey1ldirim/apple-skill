@@ -66,7 +66,7 @@ The browser's native counterpart is the **Web Share API**; the fallback is your 
 | Fallback: sheet or popover by device | If the API is missing (most desktops) show **your own** share UI: a **popover anchored to the Share button** on desktop and a **bottom sheet** on mobile (`modality.md`), with two rows like Apple's: **targets** (Messages/Email/social/Copy link…) and **actions** (Copy link, Download, Print, More). Sensible order: app-specific first, then generic. |
 | Don't duplicate system actions | If the platform share sheet already offers Copy/Print/Save/AirDrop, **don't add your own duplicates next to it**; when you need a similar action, **name it specifically** ("Copy invoice link", "Print statement"). In your **fallback** sheet you must provide the basics (Copy link, Email) because the OS won't. |
 | Symbol for custom activities, ~70 × 70 px | Icons for custom targets: **SVG icons from Lucide/Phosphor/Ionicons or brand glyphs, centred in a ~70 × 70 px tile** (CONV mapping of Apple's "about 70 × 70 pixels" for custom icons; use larger tiles on touch); **never Apple's SF Symbols artwork on the web** (`icons.md`). Label under the icon, one or two lines, 12–13 px (CONV). |
-| Succinct verb titles, no company name | Actions: **"Copy link", "Add bookmark", "Export as PDF"** (verb + object, sentence case per `writing.md`); no product name in action labels ("Save to Nonplo" → "Save to workspace" only if it's a target destination). For a **share target** the label is the **service name** under its icon ("Mail", "Slack"). Wrap to two lines then truncate with a tooltip. |
+| Succinct verb titles, no company name | Actions: **"Copy Link", "Add Bookmark", "Export as PDF"** (verb + object, Title Case per `writing.md`); no product name in action labels ("Save to Nonplo" → "Save to workspace" only if it's a target destination). For a **share target** the label is the **service name** under its icon ("Mail", "Slack"). Wrap to two lines then truncate with a tooltip. |
 | Exclude inapplicable activities; choose custom ones by context | Show only actions valid for **this item and this user** (no "Print" for a live map; no "Export" without permission; disable with reason, `feedback.md`); order by relevance; hide targets the device can't use, but always keep the Copy link path. |
 | Use the Share button | **One Share button** (consistent icon: box + up-arrow or the three-node share glyph; `aria-label="Share"`), same place in every content view (toolbar, trailing end, grouped with More as in the Notes example); don't provide a second route (a "Send" link and a Share button that do the same). Keyboard: Enter/Space opens; Esc closes; focus returns to the button. |
 | Share targets (extensions on the web) | To appear in the OS share sheet, a **PWA declares `share_target`** in its manifest (`action`, `method`, `enctype`, `params` for title/text/url/files); the **receiving page** (a short compose/confirm screen) shows what was shared, the destination, and a single primary action. |
@@ -76,7 +76,7 @@ The browser's native counterpart is the **Web Share API**; the fallback is your 
 | No modal above the extension | Don't stack a second modal over the share sheet/popover; errors appear **inline** in the sheet or as an alert **only if necessary** (`modality.md`); the sheet is itself dismissible. |
 | Purpose image / app icon | Share targets show **their app or service icon**; custom action targets show a **task symbol**; provide `alt=""` (decorative) plus the visible label so screen readers read the label once. |
 | Progress of a lengthy operation lives in the main app | After starting an upload/export from the sheet, **close it immediately** with a quiet confirmation ("Sharing started"), **continue in the background** (a service worker/upload queue), show status in a **persistent place** (a downloads/activity list, `loading.md`), and **notify only on problems** (`managing-notifications.md`): don't send a "done" notification for every completion. |
-| Confirmations | After **Copy link** show a **quiet status** ("Link copied", `role="status"`, ~2–4 s, CONV) and keep the sheet or close it; never an alert for a routine success (Feedback gate). |
+| Confirmations | After **Copy Link** show a **quiet status** ("Link copied", `role="status"`, ~2–4 s, CONV) and keep the sheet or close it; never an alert for a routine success (Feedback gate). |
 | Accessibility | Sheet/popover is `role="dialog"` (modal only if it traps focus) with a label ("Share"); rows are lists of buttons with visible labels; arrow keys move within a row; Esc closes; focus returns; contrast and 44 px targets; reduced-motion sheet transitions. |
 
 Field-note cross-links:
@@ -84,12 +84,12 @@ Field-note cross-links:
 - `hig/foundations/icons.md` and `sf-symbols.md` (✓): the **web icon rule** (never SF Symbols artwork; use Lucide/Phosphor/Ionicons) applies to every custom activity icon here.
 - `hig/patterns/feedback.md` (CRITICAL), `modality.md`, `loading.md`, `managing-notifications.md`, `undo-and-redo.md`: status after copy, no modal-on-modal, background progress, notification etiquette, undo.
 - `hig/patterns/file-management.md`, `printing.md`: Print/Save/Export actions already offered by the platform; `drag-and-drop.md`: share targets can also be drop targets.
-- `hig/foundations/writing.md`: action titles (verb + object, sentence case); the ~70 px icon tile follows `layout.md` spacing.
+- `hig/foundations/writing.md`: action titles (verb + object, Title Case); the ~70 px icon tile follows `layout.md` spacing.
 - No conflict with a field note.
 
 ## Checklist
 - [ ] A single Share button (labelled "Share", consistent icon and position) opens `navigator.share` where available and a custom popover/bottom sheet otherwise; cancelling is silent.
-- [ ] The fallback sheet has two clear rows (targets, actions), app-specific first, with Copy link and Email at minimum.
+- [ ] The fallback sheet has two clear rows (targets, actions), app-specific first, with Copy Link and Email at minimum.
 - [ ] No duplicate of an action the OS sheet already offers; similar custom actions have specific titles ("Copy invoice link").
 - [ ] Action titles are single verbs or short verb phrases without company/product names; share targets show the service name under the icon.
 - [ ] Custom icons are SVG (never SF Symbols artwork), centred in a ~70 × 70 px tile, with a visible label.

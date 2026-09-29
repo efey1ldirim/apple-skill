@@ -87,7 +87,7 @@ A button **starts one instantaneous action**, and it is defined by **style, cont
 | Preferred choice | marked by **style, not size**; same-size sets | HIG |
 | Roles | normal · primary · cancel · destructive; primary = accent + Return; destructive = system red; **never primary + destructive** | HIG |
 | Press state | required for a custom button | HIG |
-| Label | few words, verb-led, title-style capitalisation (product convention flagged below); familiar icon for familiar action | HIG |
+| Label | few words, verb-led, title-style capitalisation (skill decision: follow Apple); familiar icon for familiar action | HIG |
 | iOS | activity indicator inside the button; label can change ("Checking out…") | HIG |
 | macOS ellipsis | trailing "…" when the button opens another window/view/app | HIG |
 | macOS help button | circular "?"; ≤ 1 per window; lower corner placement table above | HIG |
@@ -130,7 +130,7 @@ Web buttons are `<button>` elements (and `<a href>` for navigation). Everything 
 | Use style, not size, to mark the preferred choice | In a row all option buttons share **one height**, in a stack **one width**; the preferred one differs by **fill/weight only** (`option-set-size-mismatch` = FAIL: heights differ > 2 px in a row, widths > 4 px in a stack). |
 | Avoid label colour like colourful content | Labels in the default (monochrome) colour on neutral/black/white fills; don't tint labels with the content layer's brand colour; if the page background is vivid use a black/white pill (color.md gate). |
 | Content: icon, text, or both; familiar icons | **Icon-only** button → **accessible name** (`aria-label` or visually hidden text) **and a tooltip** (`title` or `data-tooltip`; macOS/visionOS show one): missing name = FAIL (**`button-no-name`**, static **`icon-button-no-name`**), missing tooltip = WARN. Use familiar glyphs (share = box + up arrow, trash = delete): Lucide/Phosphor/Ionicons **never SF Symbols artwork on the web** (`icons.md`). |
-| Label: few words, verb-led, title case | Verb + object ("Add to cart", "Save changes"), no "Click here", no "OK" alone where a verb fits. **Capitalisation:** Apple says **title-style**; Nonplo/`writing.md` default to **sentence case**: **flagged difference** (same as lists-and-tables/tab-views): choose **one convention per product** and use it on every button. |
+| Label: few words, verb-led, title case | Verb + object in **Title Case** ("Add to Cart", "Save Changes", "Export Data"), no "Click here", no "OK" alone where a verb fits. **Capitalisation follows Apple** (skill decision 2026-09-29; see `hig/foundations/writing.md` › Capitalisation table). |
 | Role: normal / primary / cancel / destructive | Encode roles in `data-role` or classes: **primary** = the form's **default submit** (Enter activates it; dialogs close on Enter); **cancel** = normal look, `Esc`; **destructive** = **red label on a neutral fill** (`btn-destructive`, `#C4132A` ≥ 4.9 : 1 on the neutral fill; a red *filled* pill only when repair is the action, FN). |
 | Never primary + destructive | **FAIL `primary-destructive`** when a prominent, non-red button's label is destructive (delete, remove, erase, discard, reset, disconnect, revoke…, English and Turkish); **FAIL `destructive-autofocus`** for `autofocus` on a destructive button; WARN when the default (Enter) submit of a form/dialog is destructive. Put a **safe** action first/default, ask confirmation only for unexpected irreversible loss (`feedback.md`) and offer Undo for the rest. |
 | iOS: activity indicator in the button | While work runs: `aria-busy="true"`, **spinner** (`aria-hidden`, `btn__spinner`) on the leading side, **changed label** ("Checking out…"), and **`aria-disabled="true"`** so it can't fire twice (keep focus; not `disabled`). WARN `busy-not-blocked` if busy but still clickable; the spinner is decorative because the text carries the status (Feedback gate). Reduced motion: no spin. |
@@ -163,7 +163,7 @@ Field-note cross-links:
 - [ ] ≥ 8 px between standalone buttons; no overlapping hit regions.
 - [ ] Every custom button has a visible `:active` (press), a `:hover` (pointer) and a visible `:focus-visible` state; no `outline: none` without a replacement.
 - [ ] One or two prominent buttons per view/dialog (Nonplo default: one); the preferred option differs by style, never by size; option sets share one height (row) or width (stack).
-- [ ] Each button says what it does: a familiar icon, a short verb-led label, or both; icon-only buttons have an accessible name and a tooltip; one capitalisation convention.
+- [ ] Each button says what it does: a familiar icon, a short verb-led label, or both; icon-only buttons have an accessible name and a tooltip; labels in Title Case.
 - [ ] Roles: the primary button is the default (Enter) action of its form/dialog; cancel is normal; destructive = red label on a neutral fill; **no destructive primary, no autofocus on a destructive button**.
 - [ ] Long actions show an in-button indicator with a changed label and are blocked from double submit (`aria-busy` + `aria-disabled`).
 - [ ] Buttons that open another dialog/view end with "…"; at most one help button per view, placed in the lower corner; square/image buttons sit with their view, not in the toolbar.

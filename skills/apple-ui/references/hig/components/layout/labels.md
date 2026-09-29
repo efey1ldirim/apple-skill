@@ -85,7 +85,7 @@ Field-note cross-links:
 - `hig/foundations/typography.md` (CRITICAL) and `tokens/apple-typography.json`: the hero's **"Body (Emphasized)"** is a text style; label sizes come from the type scale, not ad-hoc pixels.
 - `hig/foundations/color.md` (CRITICAL) and `tokens/apple-system-colors.css`: the four label levels are the **foreground dynamic colours**; contrast rules and increased-contrast variants apply.
 - `hig/components/content/text-views.md` (✓): selectable/copyable text and label/field/view choice is the same decision; the two pages are two halves.
-- `hig/foundations/writing.md`: button/menu/list labels (verb-led, sentence case, no jargon).
+- `hig/foundations/writing.md`: button/menu/list labels (verb-led, Title Case per its table, no jargon).
 - `hig/patterns/feedback.md` (CRITICAL): tertiary "unavailable" text needs a reason; `disabled` without explanation is flagged by the checker.
 - `hig/patterns/workouts.md`, `charts.md`: numerals, timers and accessible values.
 - `hig/foundations/right-to-left.md`: leading/trailing alignment via logical properties.

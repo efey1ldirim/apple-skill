@@ -111,6 +111,7 @@ description: >
 > 4. Purpose is clear: familiar icon and/or short verb-led label; icon-only buttons have an accessible name + tooltip. Roles: **primary = default (Enter)**, cancel normal,
 >    destructive = red label on a neutral fill; **never a destructive primary, never autofocus on a destructive button**. Long actions: in-button spinner + changed label + no double submit.
 >    Label contrast ≥ 4.5:1 (3:1 large; icon-only 3:1); buttons that open another dialog end with "…".
+>    Labels are verb-led and in **Title Case** ("Add to Cart", "Save Changes"; Apple's rule, see `hig/foundations/writing.md` › Capitalisation table).
 > 5. `node tools/check-buttons.mjs <changed files>` → **0 errors** (WARNs fixed or justified with `// buttons-ok: <reason>`).
 > 6. `node tools/run-buttons-probe.mjs <url>` (add `--click "<selector>"` to open dialogs first) → **PASS** at 375 and 1440 px, light and dark: names, hit regions,
 >    prominent count, size sets, roles, contrast, crowding, **press state and focus ring** (forced `:active`/`:hover` and real Tab).

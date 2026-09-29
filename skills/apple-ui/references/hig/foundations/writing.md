@@ -124,9 +124,9 @@ Writing is platform-neutral; it applies to every string a web UI shows. The chec
 | Be clear / fewer words | Trim every label and sentence until nothing can be removed (this matches `field-notes/principles.md` §16). Read the screen aloud. |
 | Write for everyone | Plain words, no jargon, no gendered defaults ("Welcome back" not "Welcome back, sir"), text ready for translation: no string concatenation for sentences, no text baked into images, allow 30–40 % expansion (see `right-to-left.md`, `inclusion.md`). |
 | Most important first | Put the primary message or the result first in headings, dialogs and toasts; details after. Split a screen with several ideas into steps. |
-| Verb-led labels | Buttons and menu items start with a verb ("Send", "Save changes", "Add member"). No cute labels. Links describe their destination: never "Click here" / "Read more" alone. Give ambiguous links an accessible name (`aria-label`, or visually hidden text after the visible label). |
+| Verb-led labels | Buttons and menu items start with a verb ("Send", "Save Changes", "Add Member"). No cute labels. Links describe their destination: never "Click here" / "Read more" alone. Give ambiguous links an accessible name (`aria-label`, or visually hidden text after the visible label). |
 | Language patterns | Same action, same word everywhere. Enforce with the glossary and a review checklist. |
-| Capitalisation | Choose sentence case or title case **per element type** and keep it. The default in this skill is **sentence case** for headings, labels and buttons (this matches the field note that bans uppercase eyebrow labels and Apple's Privacy page, which requires sentence case for purpose strings). Do not fake case with CSS `text-transform` on content that is translated; write the case in the string. |
+| Capitalisation | **Follow Apple's case per element type (decided 2026-09-29; Nonplo's own copy convention is set aside and will be reconciled later).** See *Capitalisation table* below. Never fake case with CSS `text-transform` on translated content; write the case in the string. |
 | Multi-step flows | One start label ("Get started"), one advance label ("Continue" **or** "Next", never both in one product) and one ending label ("Done"). The final step's button says what happened or what is next. |
 | Possessives and "we" | Prefer "Favorites" to "Your favorites". If "your" is used, use it everywhere. Never "we" in errors or status text: "Unable to load content." |
 | Device-appropriate wording | Say **tap** for touch UIs, **click** for pointer UIs, **press** for keyboard shortcuts. Choose the verb from `(pointer: coarse)` / input type, or write neutral verbs ("Select", "Choose"). Keep phone and watch-size text short; large-screen and TV text large and brief (see `typography.md`). |
@@ -145,13 +145,30 @@ Field-note cross-links:
 - `hig/foundations/typography.md` (CRITICAL) listed this page as "next": *labels and content hierarchy*. The link is now ✓.
 - `hig/getting-started/design-principles.md`: Simplicity ("be clear and direct") and Familiarity are the principles behind these rules.
 
+### Capitalisation table (skill decision: follow Apple)
+Apple's rule (this page): choose the case **per UI element type** and hold it. The skill therefore applies the case **each ingested HIG page states for that element**, and **sentence case only where no page says otherwise**. Nonplo's own convention (sentence case everywhere) is **not** applied here; it will be reconciled separately.
+
+| Element | Case | Source |
+|---|---|---|
+| Button labels ("Add to Cart") | **Title Case** | HIG Buttons § Content |
+| Menu item labels, menu titles | **Title Case** | HIG Menus § Labels |
+| Table / outline column headings | **Title Case**, no ending punctuation | HIG Lists and tables, Outline views |
+| Tab labels | **Title Case** | HIG Tab views |
+| Box / group titles | Sentence case, no ending punctuation | HIG Boxes |
+| Tooltips (help tags) | Sentence case, no ending period | HIG Offering help |
+| Permission purpose strings | Sentence case, one full sentence, ends with a period | HIG Privacy |
+| Descriptions, helper text, empty states, errors, full sentences | Sentence case | Apple's own examples (headlines, descriptions); CONV |
+| Alert titles | Title Case when the product uses title case for alerts (Apple's example); keep it uniform | HIG Writing (example) |
+
+**Title-style capitalisation, concretely (HIG Menus):** capitalise **every word except articles, coordinating conjunctions and short prepositions**, and **always capitalise the last word**, whatever its part of speech. Working detail from the Apple Style Guide (not on the HIG page, tagged CONV): prepositions of **four letters or fewer** stay lowercase ("Move to Folder", "Save as PDF"), while **longer** ones are capitalised ("Export Through Email"); **"to" in an infinitive** stays lowercase ("How to Reset"). Examples: **Add to Cart · Save Changes · Move to Folder… · Show in Finder · Sort by Date · Turn HDR On**. Drop leading articles ("View Settings", not "View the Settings").
+
 ## Checklist
 - [ ] A product voice and a term list exist; the same thing has the same word everywhere.
 - [ ] Tone fits the situation: serious moments are plain, celebratory ones may be light; failure copy has no jokes or "oops!".
 - [ ] Every string is as short as it can be and read out loud once.
 - [ ] The most important information comes first on each screen; multi-idea screens are split into steps.
 - [ ] Buttons and links start with a verb; no "Click here", no cute labels; link text makes sense out of context.
-- [ ] One capitalisation style per element type, applied everywhere (default here: sentence case).
+- [ ] Capitalisation follows the table below per element type (Title Case for buttons, menu items, column headings and tab labels; sentence case for box titles, tooltips, descriptions, purpose strings), applied everywhere.
 - [ ] Multi-step flows use one consistent set of start / advance / finish labels ("Get started" · "Continue" or "Next" · "Done").
 - [ ] Possessive pronouns are minimal and consistent; the word "we" is not used, especially not in errors.
 - [ ] Gesture verbs match the device (tap for touch, click for pointer); text length fits the screen (brief on small and large-distance screens).

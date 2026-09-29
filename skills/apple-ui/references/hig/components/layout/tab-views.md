@@ -61,7 +61,7 @@ The web standard is the **tabs pattern**: a `tablist` of `tab`s controlling `tab
 |---|---|
 | Closely related, mutually exclusive panes | Use tabs only when **exactly one pane is visible at a time** and the panes are **peer views of the same object** (Overview · Activity · Settings). If people need to compare or see several at once, use sections, an accordion (`disclosure-controls.md`) or a split view (`split-views.md`). Navigation between different pages/routes is a **nav/tab bar** or links, not `role=tab` (Tab bars page not yet ingested). |
 | Each pane self-contained | A control inside a panel changes **that panel's** data only; no toggles that silently alter another tab. Keep **form state and scroll position per panel** when switching (don't reset typed values; keep panels mounted or restore their state), and don't require another tab to finish a task. |
-| Label describes the content | Visible text names the content ("Billing", "Team members", "Activity"), **nouns or short noun phrases**; no icon-only tabs without `aria-label`; labels stay short so all tabs fit on one row. **Capitalisation:** Apple says title-style; our `writing.md` default is sentence case. **Same flagged difference as `lists-and-tables.md`**: pick one convention per product and use it for every tab, column and menu title. |
+| Label describes the content | Visible text names the content ("Billing", "Team Members", "Activity"), **nouns or short noun phrases**; no icon-only tabs without `aria-label`; labels stay short so all tabs fit on one row. **Capitalisation:** Title Case, as Apple says (skill decision 2026-09-29; `writing.md` › Capitalisation table), the same as column headings and menu items. |
 | One click, all choices visible | Render the tab strip **visibly and fully** (no dropdown as the primary switch); each tab is one click/tap/keypress. Only when there are **too many** panes use a `<select>`/menu ("View: Overview ▾") as the overflow, as the page suggests. |
 | **≤ 6 tabs** | Cap at **six** in one tablist; more → group into fewer tabs, a menu, a left-hand section list, or a sidebar. On narrow screens six labels may not fit: allow **horizontal scroll with a visible affordance** (`scroll-snap`, fade edges) or collapse to a menu **below a breakpoint**, but never wrap tabs into a second row that looks like a different control. |
 | Tabbed control on the top edge, inset margin | Place the tablist **above the panel, centred or leading-aligned consistently** (macOS centres; product choice) inside a container with **consistent margins on all sides** (`layout.md`); the panel is visually tied to its tabs (shared surface/border; selected tab merges with the panel). Extending to the viewport edges is the exception (full-bleed mobile sheets). |
@@ -78,13 +78,13 @@ Field-note cross-links:
 - `hig/components/layout/boxes.md`, `split-views.md`, `disclosure-controls.md`, `lists-and-tables.md` (✓): choose tabs vs sections vs panes vs accordion vs lists deliberately.
 - `hig/foundations/layout.md` (CRITICAL layout gate): consistent margins around the tab view and behaviour at any width; `motion.md`, `accessibility.md`, `typography.md`: transitions, focus and label scaling.
 - `hig/patterns/settings.md` and `entering-data.md`: settings sections as tabs vs one scrolling list (our default is a single grouped list on mobile); `hig/patterns/loading.md`: lazy panels.
-- `hig/foundations/writing.md`: tab label copy; the capitalisation difference is flagged above.
-- No conflict with a field note apart from the capitalisation difference.
+- `hig/foundations/writing.md`: tab label copy (Title Case, per its capitalisation table).
+- No conflict with a field note; tab labels use Title Case.
 
 ## Checklist
 - [ ] Tabs are used only for a few closely related, mutually exclusive panes that are peers of the same object; navigation between routes uses links or a tab bar.
 - [ ] Each pane is self-contained; state and scroll per pane survive switching.
-- [ ] Every tab has a visible noun/short-noun-phrase label (icon-only tabs have `aria-label`); one capitalisation convention is used across the product.
+- [ ] Every tab has a visible noun/short-noun-phrase label (icon-only tabs have `aria-label`); labels are in Title Case.
 - [ ] There are **at most six** tabs; overflow moves to a menu/section list; tabs are never replaced by a two-click dropdown unless there are too many panes.
 - [ ] Tablist above the panel with consistent margins on all sides; the selected tab is visibly joined to its panel; selected state is not colour alone.
 - [ ] If the tablist is hidden for programmatic switching, Back/Next (or a step indicator) and an announcement exist.

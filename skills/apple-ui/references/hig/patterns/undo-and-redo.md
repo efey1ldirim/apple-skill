@@ -63,7 +63,7 @@ Undo/redo on the web: editors, canvases, forms, lists, boards. It is also the **
 | HIG rule | Web implementation |
 |---|---|
 | Expected trigger paths | **Ctrl/⌘ + Z** and **Shift + Ctrl/⌘ + Z** (also **Ctrl + Y** on Windows), an **Edit menu / ⋯ menu** with Undo and Redo at the top, and, on touch, a toolbar Undo/Redo pair; never override the shortcuts in text inputs where the browser's native undo should work (only in your custom editor/canvas surface, `beforeinput` with `historyUndo`/`historyRedo`). |
-| Predict the result | Menu items and buttons carry **labels/tooltips naming the action**: "Undo delete card", "Redo move to Done"; the disabled state shows "Nothing to undo". Keep labels sentence case, short (`writing.md`). Announce with a polite live region ("Undid delete card"). |
+| Predict the result | Menu items and buttons carry **labels/tooltips naming the action**: "Undo Delete Card", "Redo Move to Done"; the disabled state shows "Nothing to undo". Keep labels short, in Title Case (`writing.md`); tooltips stay sentence case. Announce with a polite live region ("Undid delete card"). |
 | Show the result | After undo/redo, **scroll into view, focus and briefly highlight** the affected item (a soft outline/fade ≤ ~1 s; CONV; respect `prefers-reduced-motion`), and restore selection; if it's on another page/tab, navigate there. Never make undo silent when the result is off-screen. |
 | No arbitrary limit | Keep a **stack back to the last logical step** (document open/save), bounded by memory only; group typing into word/pause-sized steps, drags into one step, incremental slider changes into one step (coalescing). Persist history across autosaves if feasible (`file-management.md`). |
 | Batch / revert all | "Revert to last saved" / "Undo all changes since opening" as an explicit menu action with a confirm (irreversible loss rule); coalesce related steps (`group` transactions) so one undo reverts a logical operation. |
@@ -87,7 +87,7 @@ Field-note cross-links:
 
 ## Checklist
 - [ ] Undo and redo work with ⌘/Ctrl+Z and ⇧⌘/Ctrl+Z (plus Ctrl+Y where expected), from an Edit/⋯ menu, and, where useful, toolbar buttons; native text-input undo is not broken.
-- [ ] Labels name the action ("Undo delete card"); empty states say "Nothing to undo".
+- [ ] Labels name the action ("Undo Delete Card"); empty states say "Nothing to undo".
 - [ ] After every undo/redo the affected item is scrolled into view and highlighted; off-screen results are never silent.
 - [ ] History reaches back to the last open/save with no arbitrary cap; related steps are coalesced; "Revert all" exists where useful.
 - [ ] Recoverable destructive actions execute immediately with an Undo (soft delete, ≥ 5 s toast); confirmations are kept for irreversible loss.

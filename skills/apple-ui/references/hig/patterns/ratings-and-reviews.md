@@ -64,7 +64,7 @@ For **app-store and web-app ratings**, and by extension NPS/CSAT/review prompts 
 | Opt out of all prompts | A **Settings › "Ask me for feedback"** switch and a "Don't ask again" link on the card; honour it everywhere. |
 | Check for previous feedback | Don't ask people who already rated or reviewed (track `answered`); don't re-ask after a support complaint or refund. |
 | Reset summary rating (versions) | For your own public rating widgets/"average" displays: if you reset per release, show the **count** and the **since-version** so a small sample doesn't look like a bad product; prefer showing all-time plus recent. |
-| Copy | Sentence case, plain words, no "we", no begging ("Please!"), no guilt on the decline button (`writing.md`). |
+| Copy | Sentence case for the prompt text, Title Case on the buttons (`writing.md`), plain words, no "we", no begging ("Please!"), no guilt on the decline button (`writing.md`). |
 | Accessibility | Not a modal focus trap; announce with a polite live region only if it appears without user action; don't rely on star colour alone (filled vs outlined shape); keyboard-operable. |
 
 Field-note cross-links:

@@ -28,7 +28,7 @@
   "content": {
     "purpose": { "tag": "HIG", "text": "Each button clearly communicates its purpose with an icon, a text label, or both." },
     "familiarIcons": { "tag": "HIG", "example": "square.and.arrow.up = share", "web": "Lucide/Phosphor/Ionicons glyph; never SF Symbols artwork on the web" },
-    "label": { "tag": "HIG", "text": "A few words describing what the button does; consider starting with a verb (\"Add to Cart\"); Apple specifies title-style capitalisation.", "webNote": "Nonplo/writing.md default is sentence case: pick ONE convention per product (flagged difference)." },
+    "label": { "tag": "HIG", "text": "A few words describing what the button does; consider starting with a verb (\"Add to Cart\"); Apple specifies title-style capitalisation.", "webNote": "Skill decision 2026-09-29: follow Apple, Title Case for button labels (see writing.md capitalisation table). Nonplo's sentence-case convention is set aside for now." },
     "iconOnlyName": { "tag": "WCAG", "text": "An icon-only button needs an accessible name (aria-label / visually hidden text); macOS and visionOS also show a tooltip after hover or dwell (HIG note)." }
   },
 
