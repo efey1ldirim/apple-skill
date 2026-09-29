@@ -65,7 +65,7 @@ The page gives **no sizes or timings**. Concrete facts:
 | visionOS | prefer over panels/inspectors; height ≤ window height |
 | Not supported | watchOS |
 | Developer docs | SwiftUI `contextMenu(menuItems:)` · UIKit `UIContextMenuInteraction`, `UIContextMenuInteractionDelegate` · AppKit `NSMenu.popUpContextMenu(_:with:for:)` · UIKit `UIMenuElement.Attributes.destructive` |
-| Related HIG pages | Menus ✓ (§ Submenus, § Labels) · Edit menus ✓ (its wording differs: "remove or dim" inapplicable commands, see `edit-menus.md`) · Pop-up buttons ✓ · Pull-down buttons (not yet ingested) · Icons ✓ (Standard icons) |
+| Related HIG pages | Menus ✓ (§ Submenus, § Labels) · Edit menus ✓ (its wording differs: "remove or dim" inapplicable commands, see `edit-menus.md`) · Pop-up buttons ✓ · Pull-down buttons ✓ · Icons ✓ (Standard icons) |
 
 ## Visual notes (from screenshots)
 - **Hero:** a red-to-orange card showing a **mouse pointer with a small click burst** just above the leading corner of a light rounded **menu**: rows **Item A** (triangle glyph), **Item B** (circle glyph), **Item C** and **Item D** (no glyph), then **Submenu A** (square glyph, trailing chevron, **highlighted**) and **Submenu B** (diamond glyph, trailing chevron) **(from screenshot)**. It shows a menu opening **at the pointer**, with a leading icon column that may be empty for some rows and **trailing chevrons marking submenus**; the icons are aligned so labels share one leading edge.
@@ -120,5 +120,5 @@ Field-note cross-links:
 
 ## Related
 - Ingested: Buttons (✓ CRITICAL), Icons (✓), SF Symbols (✓), Feedback (✓ CRITICAL), Undo and redo (✓), Modality (✓), Drag and drop (✓), Lists and tables (✓), Collections (✓), Color (✓ CRITICAL), Materials (✓ CRITICAL), Writing (✓), Accessibility (✓), Activity views (✓).
-- Ingested since: Menus (✓). Ingested since: Pop-up buttons (✓). Not yet ingested: **Pull-down buttons**, The menu bar, Toolbars.
+- Ingested since: Menus (✓). Ingested since: Pop-up buttons (✓). Ingested since: Pull-down buttons (✓). Not yet ingested: The menu bar, Toolbars.
 - Developer docs: see Specs & values.

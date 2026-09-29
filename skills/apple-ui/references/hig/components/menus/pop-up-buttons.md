@@ -38,7 +38,7 @@ The page has **no sizes, counts or timings**. Facts it states:
 | iPadOS | in a popover/modal, a pop-up button can replace a disclosure indicator for a small, well-defined option set |
 | Change log | Oct 24, 2023 artwork added · Sep 14, 2022 iPadOS popover/modal guideline |
 | Developer docs | SwiftUI `MenuPickerStyle` · UIKit `changesSelectionAsPrimaryAction` · AppKit `NSPopUpButton` |
-| Related HIG pages | Pull-down buttons (not yet ingested) · Buttons ✓ CRITICAL · Menus ✓ |
+| Related HIG pages | Pull-down buttons ✓ · Buttons ✓ CRITICAL · Menus ✓ |
 
 ## Visual notes (from screenshots)
 - **Hero:** a red-to-orange card with a **dashed rounded frame** holding a column of five "Option" rows in which **the third row is a raised, light selected capsule** with **a stacked up/down chevron in a rounded square at its trailing edge**; a **horizontal double arrow** marks the button's width and a **vertical measure bracket** its height; a faint dotted leader follows the selected label **(from screenshot)**. It shows the **selected option as the button**, the other options above and below it (the dashed frame stands for the menu), and the **up/down chevron as the pop-up affordance**.
@@ -84,5 +84,5 @@ Field-note cross-links:
 
 ## Related
 - Ingested: Menus (✓), Buttons (✓ CRITICAL), Context menus (✓), Disclosure controls (✓), Entering data (✓), Writing (✓).
-- Not yet ingested: **Pull-down buttons**, Pickers, Segmented controls, Popovers, Sheets.
+- Ingested since: Pull-down buttons (✓). Not yet ingested: Pickers, Segmented controls, Popovers, Sheets.
 - Developer docs: `MenuPickerStyle` (SwiftUI), `changesSelectionAsPrimaryAction` (UIKit), `NSPopUpButton` (AppKit).
