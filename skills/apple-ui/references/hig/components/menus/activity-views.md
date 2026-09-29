@@ -46,7 +46,7 @@ An activity view (the **share sheet**) offers **sharing targets and actions for 
 | Extensions | share (composition view, app icon) · action (app name, symbol/icon); few steps; no modal above; progress in the main app; notify only on problems |
 | Not supported | macOS (use extensions), tvOS, watchOS |
 | Developer docs | UIKit `UIActivityViewController`, `UIActivity` · Foundation *App Extension Support* |
-| Related HIG pages | Sheets (not yet ingested) · Popovers (not yet ingested) · Collaboration and sharing ✓ · Icons ✓ · SF Symbols ✓ |
+| Related HIG pages | Sheets (not yet ingested) · Popovers ✓ · Collaboration and sharing ✓ · Icons ✓ · SF Symbols ✓ |
 | Video | *Design for Collaboration with Messages* (WWDC22 10015) |
 
 ## Visual notes (from screenshots)
@@ -102,5 +102,5 @@ Field-note cross-links:
 
 ## Related
 - Ingested: Collaboration and sharing (✓), Icons (✓), SF Symbols (✓), Feedback (✓ CRITICAL), Modality (✓), Loading (✓), Managing notifications (✓), Undo and redo (✓), File management (✓), Printing (✓), Drag and drop (✓), Writing (✓), Layout (✓ CRITICAL).
-- Ingested since: Buttons (✓ CRITICAL: the Share button rules). Not yet ingested: **Sheets**, **Popovers**.
+- Ingested since: Buttons (✓ CRITICAL: the Share button rules). Popovers (✓ `components/presentation/popovers.md`). Not yet ingested: **Sheets**.
 - Developer docs: see Specs & values. Video: *Design for Collaboration with Messages* (WWDC22 10015).

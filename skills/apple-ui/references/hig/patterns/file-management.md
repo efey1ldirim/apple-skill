@@ -156,5 +156,5 @@ Field-note cross-links:
 ## Related
 - Ingested: Feedback (✓ CRITICAL), Drag and drop (✓), Entering data (✓), Motion (✓), Layout (✓ CRITICAL), Materials (✓ CRITICAL), Privacy (✓), Designing for macOS (✓), Designing for iPadOS (✓), symbol-effects kit (✓).
 - Ingested since: Going full screen (✓).
-- Ingested since: Toolbars (✓). Not yet ingested: Sheets, Popovers, Collaboration (✓ ingested: `hig/patterns/collaboration-and-sharing.md`), Windows.
+- Ingested since: Toolbars (✓). Popovers (✓ `components/presentation/popovers.md`). Not yet ingested: Sheets, Collaboration (✓ ingested: `hig/patterns/collaboration-and-sharing.md`), Windows.
 - Developer docs: SwiftUI *Documents* · `DocumentGroupLaunchScene` · File Provider · Finder Sync. Video: *Build document-based apps in SwiftUI* (WWDC20 10039).
