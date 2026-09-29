@@ -76,7 +76,7 @@ check("slider: rendered lens element matches the model (max)", Math.max(...domEr
 
 // ---------- segmented: one tap on the other segment (video 1) ----------
 const sg = await page.evaluate(() => {
-  const s = window.__gc.seg; s.clock.manual = true; s.clock.stop(); const dt = 1 / 30, rows = []; s.press(s.seg[1].c);
+  const s = window.__gc.seg; s.speed = 1; s.clock.manual = true; s.clock.stop(); const dt = 1 / 30, rows = []; s.press(s.seg[1].c);
   for (let i = 0; i < 70; i++) { if (i * dt >= 0.3 && s.down) s.release(s.seg[1].c); s.advance(dt); const g = s.geom, el = s.layer.querySelector(".gc-lens"), b = el.getBoundingClientRect(); rows.push({ i, cx: g.cx + 71, w: g.w, h: g.h, p: g.p, g: g.glass, dom: [b.width / g.m, b.height / g.m] }); }
   return rows;
 });

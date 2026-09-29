@@ -196,7 +196,7 @@ export class GlassSlider {
 export class GlassSegmented {
   /** host: empty element. options: {items:['For You','Library'], value:0, scale, refraction, onChange(i)} */
   constructor(host, o = {}) {
-    this.o = Object.assign({ items: ["For You", "Library"], value: 0, scale: 1, refraction: "auto", onChange: null }, o);
+    this.o = Object.assign({ items: ["For You", "Library"], value: 0, scale: 1, refraction: "auto", speed: G.speed.default, onChange: null }, o); this.speed = this.o.speed;   // 1 = the video's exact timing
     const k = this.o.scale; this.k = k; this.host = host; this.n = this.o.items.length;
     const tw = G.track.width * k, th = G.track.height * k; this.tw = tw; this.th = th; this.pad = 34 * k;
     host.classList.add("gc-seg"); host.style.cssText += `;position:relative;touch-action:none;user-select:none;width:${tw}px;height:${th}px;cursor:default;margin:${this.pad}px 0`;
@@ -234,6 +234,7 @@ export class GlassSegmented {
     if (changed) this.o.onChange && this.o.onChange(i);
   }
   advance(dt) {
+    dt *= this.speed;
     if (this.reduced) { this.st.x = this.seg[this.target != null ? this.index : 0].c; this.p = 0; this.glass = 0; this.render(); return; }
     this.t += dt;
     if (this.phase === "press") { this.p = segPress(this.t); if (this.t > (G.press.samples.length - 1) * FR) this.p = 1; }

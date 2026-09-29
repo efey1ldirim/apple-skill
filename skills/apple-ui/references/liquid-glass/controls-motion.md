@@ -44,6 +44,8 @@
 | Refraction | same bevel as the slider (21.3 / 7.1 / 0.7·0.8·0.5) | FIT |
 | Shadow | `0 6px 16px rgb(0 0 0/.10)` on the lens, `0 3px 10px rgb(0 0 0/.05)` on the rest pill | FIT |
 
+**Speed.** The numbers above are the video's real timing (1×). Used live it feels slow — the lens waits 0.29 s before it moves and takes ~0.65 s to settle — so `GlassControls.segmented(el, {speed})` scales the whole timeline; **the default is 2×** (moves after ~0.15 s, settles in ~0.3 s), `speed: 1` gives the measured timing (the checker uses it).
+
 ## Using it on other controls (buttons, toggles, menus)
 - **Same layers, same order**: opaque rest surface → glass lens (veil + redrawn content + displacement filter) → rim → shadow; **same press table and blur/crossfade**; **release table by control kind** (no overshoot for a knob that is dragged, spring undershoot for a selection that slides).
 - **Growth is measured per control**: slider thumb ×1.5 uniform; segmented lens +22.5 / +28.5 px (×1.12 wide, ×1.38 tall). For a new control, **measure the same way** (pill → lens size at p = 1, then reuse the tables).

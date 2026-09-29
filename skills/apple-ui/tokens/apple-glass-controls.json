@@ -417,6 +417,11 @@
    "droopPerSecond": 0.9,
    "droopFloor": 0.75,
    "startAtRemaining": 0.3
+  },
+  "speed": {
+   "tag": "CONV",
+   "default": 2,
+   "notes": "time scale applied to the whole segmented-control timeline (press, travel delay, spring, release). 1 reproduces the video exactly (0.29 s before the lens starts moving, ~0.65 s to settle) and is what the checker uses; that feels slow in real use, so the kit defaults to 2 (lens starts moving after ~0.15 s, settles in ~0.3 s). Option `speed`."
   }
  },
  "reducedMotion": {
