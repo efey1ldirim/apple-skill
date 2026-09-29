@@ -231,5 +231,5 @@ Apple-style UI.
 - [ ] No Apple hardware replicas?
 
 ## Related (ingestion status)
-App icons (✓), Inclusion (✓), Right to left (✓ flip/don't-flip rules for icons), SF Symbols (✓ weights/scales/variants/licence; animations → `symbol-effects.md`), VoiceOver, Menus, Toolbars, Buttons — not yet
+App icons (✓), Inclusion (✓), Right to left (✓ flip/don't-flip rules for icons), SF Symbols (✓ weights/scales/variants/licence; animations → `symbol-effects.md`), Menus (✓), Buttons (✓), VoiceOver, Toolbars, Buttons — not yet
 ingested (except ✓).

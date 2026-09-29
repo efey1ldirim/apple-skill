@@ -39,7 +39,7 @@ The page has **no sizes or timings**; the only number is the cap.
 | Subtitle | optional; short status (e.g. unread counts) |
 | Icon | SF Symbol preferred; else Quick Action Icon Template; **monochrome, adapts to Dark Mode; no emoji** |
 | Developer docs | UIKit "Add Home Screen quick actions" |
-| Related HIG page | Menus (not yet ingested) |
+| Related HIG page | Menus ✓ |
 
 ## Visual notes (from screenshots)
 - **Hero:** a red-tinted card with a rounded menu bubble listing **Item A** (triangle), **Item B** (circle), **Item C** (square) and **Item D** (diamond) above **four blurred app tiles**, the second in focus, so it reads as a menu extending upward from one icon **(from screenshot)**. It shows the **four-item cap**, a **symbol at each row's edge** and generic placeholder titles (the picture shows no subtitle).
@@ -82,5 +82,5 @@ Field-note cross-links:
 
 ## Related
 - Ingested: Dock menus (✓), Context menus (✓), Icons (✓), SF Symbols (✓), Writing (✓), Launching (✓), Managing notifications (✓), Managing accounts (✓), Designing for iOS (✓).
-- Not yet ingested: **Menus**.
+- Ingested since: Menus (✓).
 - Developer docs: UIKit "Add Home Screen quick actions" (`UIApplicationShortcutItem`).

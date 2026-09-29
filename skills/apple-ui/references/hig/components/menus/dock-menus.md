@@ -34,7 +34,7 @@ The page has **no numbers, sizes or timings**. Concrete facts:
 | iOS/iPadOS equivalent | Home Screen quick actions (long press) |
 | Not supported | iOS, iPadOS, tvOS, visionOS, watchOS |
 | Developer docs | AppKit `applicationDockMenu(_:)` (`NSApplicationDelegate`) |
-| Related HIG pages | Menus (not yet ingested) · Home Screen quick actions ✓ |
+| Related HIG pages | Menus ✓ · Home Screen quick actions ✓ |
 
 ## Visual notes (from screenshots)
 - **Hero:** a red-to-orange card with a rounded light **menu bubble** whose **tail points down at the fourth of six app-icon tiles** in a Dock strip; the menu lists **Menu Item A** (trailing chevron, a submenu), **Menu Item B**, a hairline separator, **Show Recents** (trailing chevron), **Open**; **three of the six icons carry a small dot** below them (running apps) **(from screenshot)**. It shows a menu attached to an icon, system-style groups (custom items above, system items such as Open below the separator), and submenus marked by chevrons.
@@ -74,5 +74,5 @@ Field-note cross-links:
 
 ## Related
 - Ingested: Context menus (✓), Launching (✓), Multitasking (✓), Managing notifications (✓), Managing accounts (✓), App icons (✓), Icons (✓), Writing (✓), Buttons (✓ CRITICAL), Activity views (✓).
-- Ingested since: Home Screen quick actions (✓). Not yet ingested: **Menus**.
+- Ingested since: Home Screen quick actions (✓), Menus (✓).
 - Developer docs: `applicationDockMenu(_:)` (AppKit).

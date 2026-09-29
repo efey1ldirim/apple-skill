@@ -101,6 +101,6 @@ media and content, and games — **often with several apps at once**.
 - [ ] Works from laptop to very large displays without stretched lines?
 
 ## Related (ingestion status)
-The menu bar, File management (✓), Going full screen (✓), Dock menus, Keyboards, Pointing devices,
-Game controls, Siri, Windows, Toolbars, Sidebars, Menus — not yet
+The menu bar, File management (✓), Going full screen (✓), Dock menus (✓), Menus (✓), Keyboards, Pointing devices,
+Game controls, Siri, Windows, Toolbars, Sidebars — not yet
 ingested.
