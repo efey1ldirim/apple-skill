@@ -76,7 +76,7 @@ The page has **no numbers, sizes or timings**. Its concrete content:
 - **Mismatches / notes:**
   1. **The page uses Apple products as examples** (**Genmoji, Image Playground, Apple Intelligence summaries, Foundation Models**) but **gives no UI patterns, sizes or layouts**; it is **guidance on behaviour**, not visual design.
   2. **"Consider" wording dominates** (**should** in most bullets); **the strongest obligations are around disclosure (never pass AI off as human), permission and irreversible actions**.
-  3. **Several links point to the Machine learning page's sections** (Limitations, Multiple options, Explicit feedback, Implicit feedback); **Machine learning is not yet ingested**.
+  3. **Several links point to the Machine learning page's sections** (Limitations, Multiple options, Explicit feedback, Implicit feedback); **Machine learning is now ingested** (`technologies/machine-learning.md`).
   4. **The June 2026 update added refinement, feedback and model-type guidance**, but **the page doesn't say what changed in the model-type advice** (it now weighs on-device against server-based).
   5. **The page names Foundation Models and Core AI** but **doesn't explain either**; **details live in developer docs**.
   6. **"Apps for kids have stricter rules and laws"** is stated as a warning with **no specifics**.
@@ -119,7 +119,7 @@ No catalog entries (no comparison images). The script reports **0 comparisons** 
 Field-note cross-links:
 - `field-notes/*`: **no AI-feature recipe**; nothing conflicts. **Note:** `field-notes/principles.md` §16 (copy: state facts calmly, remove duplicates) **fits** the "specific, reassuring feedback" and "plain-language errors" rules.
 - `hig/foundations/privacy.md` (✓): **permission timing, purpose text, data-use disclosure, no lookalike prompts**; `hig/foundations/inclusion.md` (✓) and `hig/foundations/accessibility.md` (✓): **Apple's Related pages** (bias, diverse testing, accessible AI UI); `hig/patterns/loading.md` (✓): **latency and progress**; `hig/patterns/undo-and-redo.md` (✓): **revert/retry**; `hig/patterns/feedback.md` (✓ CRITICAL): **clear, specific messages**; `hig/foundations/writing.md` (✓): **plain, non-blaming wording**; `hig/components/presentation/alerts.md` (✓): **confirmation before significant actions**; `hig/components/system-experiences/app-shortcuts.md` (✓): **App Intents/Apple Intelligence surfacing app actions (agent-facing side)**; `hig/patterns/managing-notifications.md` (✓): **AI summaries of notifications**; `hig/technologies/carekit.md` (✓): **health-grade privacy**.
-- Not yet ingested (linked from this page): **Machine learning** (Technologies).
+- Ingested: Machine learning (✓, `technologies/machine-learning.md`); not yet ingested (linked from this page): none in the HIG.
 
 ## Checklist
 - [ ] **AI is used only where it gives clear value; every AI feature has a manual or non-AI path and a global off switch.**
@@ -138,6 +138,6 @@ Field-note cross-links:
 
 ## Related
 - Ingested: Inclusion (✓), Accessibility (✓), Privacy (✓), Loading (✓), Undo and redo (✓), Feedback (✓ CRITICAL), Writing (✓), Alerts (✓), App Shortcuts (✓), Managing notifications (✓), CareKit (✓).
-- Not yet ingested (linked from this page): **Machine learning** (Technologies).
+- Ingested: Machine learning (✓, `technologies/machine-learning.md`); not yet ingested (linked from this page): none in the HIG.
 - Developer docs: Apple Intelligence and machine learning · Foundation Models · Core AI. External: Acceptable Use Requirements for the Foundation Models Framework.
 - Videos: Create UI prototypes using agents in Xcode (WWDC26 227), What's new in the Foundation Models framework (WWDC26 241), Explore prompt design & safety for on-device foundation models (WWDC25 248).
