@@ -190,5 +190,5 @@ with Reality Composer Pro 3* (WWDC26 252), *Level up your games* (WWDC25 209).
 ## Related (ingestion status)
 Loading, Settings, Onboarding, Privacy (✓ `hig/foundations/privacy.md`), Ratings and reviews, Launching, Typography, Buttons,
 Images, Layout, Menus (in-game menus), Going full screen, Game controls, Pointing
-devices, Accessibility, Inclusion, Game Center, iCloud, Playing haptics,
-Technologies — not yet ingested (Playing audio ✓). Ingested since: Game controls (✓ `inputs/game-controls.md`), Gestures (✓ `inputs/gestures.md`), Apple In-App Purchase (✓ `technologies/apple-in-app-purchase.md`).
+devices, Accessibility, Inclusion, iCloud, Playing haptics,
+Technologies — not yet ingested (Playing audio ✓). Ingested since: Game controls (✓ `inputs/game-controls.md`), Gestures (✓ `inputs/gestures.md`), Apple In-App Purchase (✓ `technologies/apple-in-app-purchase.md`), Game Center (✓ `technologies/game-center.md`).
