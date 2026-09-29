@@ -89,7 +89,7 @@ Field-note cross-links:
 - `hig/components/content/charts.md` (✓) and `hig/patterns/charting-data.md` (✓): the Health/Fitness charts and the D · W · M · 6M · Y range control; `hig/components/selection-and-input/segmented-controls.md` (✓): that control's Health example.
 - `hig/patterns/managing-notifications.md` (✓): no duplicate system notifications; `hig/foundations/branding.md` (✓) and `app-icons.md` (✓): no rings in icons or marketing; `hig/foundations/color.md` (✓ CRITICAL) and **Color gate**: contrast on black and colour-not-alone; `hig/foundations/writing.md` (✓): number/unit text ("300/300 CAL").
 - No field note mentions Activity rings; **no conflict**. (`screenshots-described/curated-references.md` cites the Fitness rings only as a visual reference.)
-- Gauges (✓ `gauges.md`). Not yet ingested: Progress indicators, Rating indicators (the rest of the Status group).
+- Gauges (✓ `gauges.md`). Progress indicators (✓ `progress-indicators.md`). Not yet ingested: Rating indicators (the last of the Status group).
 
 ## Checklist
 - [ ] Rings show **only Move, Exercise and Stand** for **one labelled person**, from **genuine Apple Activity data**; otherwise a **different progress component** is used.
@@ -103,6 +103,6 @@ Field-note cross-links:
 
 ## Related
 - Ingested: Workouts (✓), Charts (✓), Charting data (✓), Segmented controls (✓), Managing notifications (✓), Branding (✓), App icons (✓), Color (✓ CRITICAL), Writing (✓).
-- Gauges (✓ `gauges.md`). Not yet ingested: Progress indicators, Rating indicators.
+- Gauges (✓ `gauges.md`). Progress indicators (✓ `progress-indicators.md`). Not yet ingested: Rating indicators.
 - Developer docs: HealthKit UI `HKActivityRingView`.
 - Videos: Track workouts with HealthKit on iOS and iPadOS (WWDC25); Build a workout app for Apple Watch (WWDC21); Build custom workouts with WorkoutKit (WWDC23).

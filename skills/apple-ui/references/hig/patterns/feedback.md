@@ -128,5 +128,5 @@ Field-note cross-links:
 
 ## Related
 - Ingested: Accessibility (✓), Writing (✓), Motion (✓), Entering data (✓), Drag and drop (✓), Color (✓ CRITICAL), Materials (✓ CRITICAL), Layout (✓ CRITICAL), Typography (✓ CRITICAL).
-- Ingested since: Loading (✓). Not yet ingested: **Alerts**, Notifications, Managing notifications, Progress indicators. Action sheets (✓ `components/presentation/action-sheets.md`). Undo and redo ✓, Modality ✓.
+- Ingested since: Loading (✓). Progress indicators (✓ `components/status/progress-indicators.md`). Not yet ingested: **Alerts**, Notifications, Managing notifications. Action sheets (✓ `components/presentation/action-sheets.md`). Undo and redo ✓, Modality ✓.
 - Developer docs: UIKit *Animation and haptics*. Videos: *Designing Fluid Interfaces* (WWDC18 803), *Essential Design Principles* (WWDC17 802).

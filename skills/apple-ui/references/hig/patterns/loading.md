@@ -24,7 +24,7 @@ The best loading is the one people never notice. When it can't be instant, **sho
 ### Showing progress
 - **must** **Say clearly that content is loading, and how long it might take.**
   - Ideally content shows **instantly**. When loading takes **more than a moment or two**, use the system **progress indicators** to show it is ongoing.
-  - **Determinate** indicator when you **know how long** it will take; **indeterminate** when you **don't** (Apple links Progress indicators, not yet ingested).
+  - **Determinate** indicator when you **know how long** it will take; **indeterminate** when you **don't** (Apple links Progress indicators: ✓ `components/status/progress-indicators.md`).
 - **may** **For games, consider a custom loading view.** Standard indicators suit most apps but can feel out of place in a game; use custom animations and elements that match the game's style for a more engaging experience.
 
 ### Platform considerations
@@ -47,7 +47,7 @@ The page has **no sizes, colours or exact durations**. Its concrete facts:
 | watchOS | avoid loading indicators; if content needs "a second or two", an indicator beats a blank screen |
 | Games | custom loading view allowed |
 | Developer docs | *Background Assets* · *Improving the player experience for games with large downloads* |
-| Related HIG pages | Launching ✓ · Progress indicators (not yet ingested) |
+| Related HIG pages | Launching ✓ · Progress indicators ✓ |
 | Video | *Discover Apple-Hosted Background Assets* (WWDC25 325) |
 | Web tokens (CONV, not Apple) | `tokens/apple-feedback.json` → `loading` (indicator delay 300 ms, minimum visible 500 ms, instant below 100 ms) |
 
@@ -97,5 +97,5 @@ Field-note cross-links:
 
 ## Related
 - Ingested: Launching (✓), Feedback (✓ CRITICAL), Live-viewing apps (✓), File management (✓), Drag and drop (✓), Motion (✓), Accessibility (✓), Writing (✓).
-- Not yet ingested: **Progress indicators**. Playing video ✓, Onboarding ✓ (`hig/patterns/onboarding.md`).
+- Progress indicators (✓ `components/status/progress-indicators.md`). Playing video ✓, Onboarding ✓ (`hig/patterns/onboarding.md`).
 - Developer docs: *Background Assets*. Video: *Discover Apple-Hosted Background Assets* (WWDC25 325).
