@@ -97,7 +97,7 @@ Use the **system player** (or copy its behaviour exactly), **never bake letterbo
 | watchOS clip | ≤ **30 s**; H.264 High Profile · 160 kbps ≤ 30 fps · 208×260 (portrait) or 320×180 (16:9) · 64 kbps HE-AAC |
 | Keyboard | **Space** = play/pause |
 | Developer docs | *Configuring your app for media playback* · AVKit · HTTP Live Streaming · `AVPlayerViewController` · `externalMetadata` · `resizeAspect` / `resizeAspectFill` · `silenceSecondaryAudioHintNotification` · RealityKit · `VideoPlayer` |
-| Related HIG pages | Playing audio ✓ · Feedback ✓ · Keyboards · Remotes · Ornaments (last three not yet ingested) |
+| Related HIG pages | Playing audio ✓ · Feedback ✓ · Ornaments ✓ · Keyboards · Remotes (last two not yet ingested) |
 | Videos | *Create a great video playback experience* (WWDC22 10147) · *Explore video experiences for visionOS* (WWDC25 304) · *Deliver a great playback experience on tvOS* (WWDC21 10191) |
 
 ## Visual notes (from screenshots)
@@ -161,5 +161,5 @@ Field-note cross-links:
 
 ## Related
 - Ingested: Playing audio (✓), Feedback (✓ CRITICAL), Live-viewing apps (✓), Multitasking (✓), Loading (✓), Launching (✓), Going full screen (✓), Images (✓), Layout (✓ CRITICAL), Accessibility (✓).
-- Not yet ingested: **Keyboards**, **Remotes**, **Ornaments**, Windows, Focus and selection.
+- Ingested since: Ornaments (✓). Not yet ingested: **Keyboards**, **Remotes**, Windows, Focus and selection.
 - Developer docs and videos: listed in Specs & values.

@@ -102,7 +102,7 @@ A button **starts one instantaneous action**, and it is defined by **style, cont
 | Prominent fill | white on system blue #0088FF is 3.52 : 1 → use #1E6EF4 (4.57) / #0040DD (7.6) or a black/white pill | FN / color.md |
 | Spacing | ≥ 8 px between standalone buttons (attached groups exempt) | CONV |
 | Developer docs | SwiftUI `Button` · UIKit `UIButton` · AppKit `NSButton` (`BezelStyle.flexiblePush`, `.smallSquare`, `.disclosure`…) · SwiftUI `ButtonBorderShape` (`circle`, `roundedRectangle`, `capsule`) | — |
-| Related HIG pages | Pop-up buttons · Pull-down buttons · Toggles · Segmented controls · Privacy › Location button (not yet ingested) · Labels ✓ · Offering help ✓ · Alerts/Sheets/Toolbars/Ornaments (not yet ingested) | — |
+| Related HIG pages | Pop-up buttons · Pull-down buttons · Toggles · Segmented controls · Privacy › Location button (not yet ingested) · Labels ✓ · Offering help ✓ · Ornaments ✓ · Alerts/Sheets/Toolbars (not yet ingested) | — |
 
 ## Visual notes (from screenshots)
 - **Hero:** a red-to-orange card with **two capsule buttons labelled "Button"** side by side, with dimension arrows for the **width** of the first, the **gap** between them and the **space above and below** **(from screenshot)**: size, spacing and shape are the subject.
@@ -173,5 +173,5 @@ Field-note cross-links:
 
 ## Related
 - Ingested: Feedback (✓ CRITICAL), Color (✓ CRITICAL), Typography (✓ CRITICAL), Layout (✓ CRITICAL), Materials (✓ CRITICAL), Labels (✓), Offering help (✓), Icons (✓), SF Symbols (✓), Modality (✓), Undo and redo (✓), Entering data (✓), Drag and drop (✓), Lists and tables (✓), Tab views (✓), Disclosure controls (✓), Activity views (✓), Image views (✓), Workouts (✓), Playing haptics (✓).
-- Ingested since: Context menus (✓). Not yet ingested: **Pop-up buttons**, **Pull-down buttons**, **Toggles**, **Segmented controls**, **Location button** (Privacy), Alerts, Sheets, Toolbars, Ornaments.
+- Ingested since: Context menus (✓). Not yet ingested: **Pop-up buttons**, **Pull-down buttons**, **Toggles**, **Segmented controls**, **Location button** (Privacy), Alerts, Sheets, Toolbars. Ingested since: Ornaments (✓).
 - Developer docs: see Specs & values.
