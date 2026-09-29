@@ -358,4 +358,4 @@ Field-note cross-links:
 
 ## Related (ingestion status)
 Icons (✓), Motion (✓), Right to left (✓), Color (✓ CRITICAL), Branding (✓), Accessibility (✓), Typography,
-VoiceOver — not yet ingested (except ✓).
+VoiceOver (✓ `technologies/voiceover.md`). (Other unmarked items: not yet ingested, except ✓.)
