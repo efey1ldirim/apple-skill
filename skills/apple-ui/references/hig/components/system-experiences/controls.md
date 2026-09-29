@@ -119,6 +119,7 @@ Field-note cross-links:
 - [ ] Hit regions **≥ 44 px** (24 px fine pointer), visible focus, keyboard operable; no fake OS chrome.
 
 ## Related
+- Camera Control (✓ `inputs/camera-control.md`) links here for locked-camera launch.
 - Ingested: App Shortcuts (✓), Complications (✓), Toggles (✓), Buttons (✓ CRITICAL), SF Symbols (✓), Branding (✓), Color (✓ CRITICAL), Privacy (✓), Managing accounts (✓), Feedback (✓ CRITICAL), Home Screen quick actions (✓), Offering help (✓).
 - Not yet ingested (linked from this page): Action button (now ✓ `inputs/action-button.md`), Widgets (now ✓ `widgets.md`); named in the text: Live Activities (now ✓ `live-activities.md`).
 - Developer docs: `LockedCameraCapture`, WidgetKit (controls via `ControlWidget`), `SymbolEffect`, `promptsForUserConfiguration()`, `controlWidgetActionHint(_:)`, `IntentAuthenticationPolicy`.
