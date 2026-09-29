@@ -70,5 +70,5 @@ Field-note cross-links:
 
 ## Related
 - Ingested: Image views (✓), Drag and drop (✓), Undo and redo (✓), Edit menus (✓), The menu bar (✓), Context menus (✓), Feedback (✓ CRITICAL), Color wells (✓).
-- Not yet ingested: Pickers, Progress indicators.
+- Not yet ingested: Progress indicators. Pickers (✓ `pickers.md`).
 - Developer docs: AppKit `NSImageView`.

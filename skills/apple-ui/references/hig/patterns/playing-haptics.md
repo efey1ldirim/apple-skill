@@ -200,5 +200,5 @@ Field-note cross-links:
 
 ## Related
 - Ingested: Feedback (✓ CRITICAL), Playing audio (✓), Motion (✓), Drag and drop (✓), Managing notifications (✓), symbol-effects kit (✓).
-- Not yet ingested: **Gestures**, Sliders, Toggles, Pickers, Game controls, Apple Pencil and Scribble.
+- Pickers (✓ `components/selection-and-input/pickers.md`). Not yet ingested: **Gestures**, Sliders, Toggles, Game controls, Apple Pencil and Scribble.
 - Developer docs: Core Haptics and the APIs listed in Specs & values. Videos: *Practice audio haptic design* (WWDC21 10278), *Introducing Core Haptics* (WWDC19 520).

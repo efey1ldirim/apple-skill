@@ -60,7 +60,7 @@ Field-note cross-links:
 - `hig/components/layout/labels.md` (✓): the label conventions; `hig/foundations/writing.md` (✓): the **Capitalisation table** now has a **combo-box introductory label** row (Title Case + colon); form-label rule in `labels.md` is a CONV for general web forms and does not override it for combo boxes on desktop layouts.
 - `hig/components/menus/pull-down-buttons.md` (✓): the button half; `pop-up-buttons.md` (✓): closed-set choice (no free typing); `hig/components/navigation/token-fields.md` (✓): typing with suggestions that become tokens; `search-fields.md` (✓): suggestions while typing.
 - `hig/components/presentation/popovers.md` (✓): the popup list's anchoring and dismissal.
-- Not yet ingested: **Text fields**, Pickers (Apple's Related lists Text fields).
+- Not yet ingested: **Text fields** (Apple's Related lists Text fields). Pickers (✓ `pickers.md`).
 - No conflict with a field note.
 
 ## Checklist
@@ -75,5 +75,5 @@ Field-note cross-links:
 
 ## Related
 - Ingested: Pull-down buttons (✓), Pop-up buttons (✓), Token fields (✓), Search fields (✓), Popovers (✓), Labels (✓), Writing (✓), Color wells (✓).
-- Not yet ingested: Text fields, Pickers.
+- Not yet ingested: Text fields. Pickers (✓ `pickers.md`).
 - Developer docs: AppKit `NSComboBox`.

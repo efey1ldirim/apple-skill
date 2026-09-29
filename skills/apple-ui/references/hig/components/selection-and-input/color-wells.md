@@ -66,7 +66,7 @@ Field-note cross-links:
 - `hig/patterns/drag-and-drop.md` (✓): the drag/drop of colours and the non-drag alternatives.
 - `hig/components/presentation/popovers.md` (✓): the picker popover; `sheets.md` (✓): the picker as a sheet on compact widths (the iOS system picker is presented as a sheet, not on this page).
 - `hig/components/navigation/token-fields.md` (✓) and `search-fields.md` (✓): other text-entry-like controls; `hig/components/menus/pop-up-buttons.md` (✓): choosing from a fixed list instead of free colour.
-- Not yet ingested: Pickers, Sliders (colour channel sliders), Text fields, Toggles.
+- Not yet ingested: Sliders (colour channel sliders), Text fields, Toggles. Pickers (✓ `pickers.md`).
 - No conflict with a field note.
 
 ## Checklist
@@ -81,5 +81,5 @@ Field-note cross-links:
 
 ## Related
 - Ingested: Color (✓ CRITICAL), Drag and drop (✓), Popovers (✓), Sheets (✓), Token fields (✓), Pop-up buttons (✓).
-- Not yet ingested: Pickers, Sliders, Text fields, Toggles.
+- Not yet ingested: Sliders, Text fields, Toggles. Pickers (✓ `pickers.md`).
 - Developer docs: UIKit `UIColorWell`, `UIColorPickerViewController`; AppKit `NSColorWell`; "Color Programming Topics".
