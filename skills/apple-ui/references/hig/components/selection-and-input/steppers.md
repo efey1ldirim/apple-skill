@@ -64,7 +64,7 @@ Field-note cross-links:
 - `hig/patterns/entering-data.md` (✓): "steppers/sliders for bounded numbers", `inputmode`, inline validation; `hig/components/presentation/panels.md` (✓): steppers as simple adjustment controls in inspectors, with immediate application and Undo; `hig/patterns/printing.md` (✓): the copies field (Apple's own example); `hig/patterns/undo-and-redo.md` (✓).
 - `hig/foundations/right-to-left.md` (✓): steppers run from inline-start; `hig/components/menus/buttons.md` (✓ CRITICAL) and **Buttons GATE**: 44 px hit regions, attached groups exempt from the 8 px gap rule.
 - `field-notes/components.md` (Slider row: quiet grey value text) and `anti-patterns.md` (values in badges): **compatible**; a stepper's value lives in a real field/readout, not a badge.
-- Not yet ingested: Text fields (Apple's Related), Toggles.
+- Not yet ingested: Toggles. Text fields (✓ `text-fields.md`, Apple's Related).
 
 ## Checklist
 - [ ] The value is **always visible in an adjacent field or readout** and has a **visible label**; the stepper is never alone.
@@ -79,5 +79,5 @@ Field-note cross-links:
 
 ## Related
 - Ingested: Sliders (✓), Pickers (✓), Segmented controls (✓), Entering data (✓), Panels (✓), Printing (✓), Undo and redo (✓), Right to left (✓), Buttons (✓ CRITICAL).
-- Not yet ingested: Text fields, Toggles.
+- Not yet ingested: Toggles. Text fields (✓ `text-fields.md`).
 - Developer docs: UIKit `UIStepper`; AppKit `NSStepper`.

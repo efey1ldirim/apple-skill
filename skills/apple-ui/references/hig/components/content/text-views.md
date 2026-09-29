@@ -38,7 +38,7 @@ The page has **no numbers, sizes or timings**. Concrete facts:
 | Keyboard (iOS/iPadOS) | appears on selecting an editable view; type must match the content |
 | tvOS | text view displays text only; editable text uses text fields |
 | Developer docs | SwiftUI `Text` · UIKit `UITextView` · AppKit `NSTextView` |
-| Related HIG pages | Labels ✓ · Text fields (not yet ingested) · Combo boxes ✓ · Accessibility ✓ · Typography ✓ · Virtual keyboards (not yet ingested) |
+| Related HIG pages | Labels ✓ · Text fields ✓ · Combo boxes ✓ · Accessibility ✓ · Typography ✓ · Virtual keyboards (not yet ingested) |
 
 ## Visual notes (from screenshots)
 - **Hero:** a red-to-orange gradient card holding a pale, sharp-cornered **text panel** filled with a large red sans-serif paragraph, framed by **dimension arrows** along its top and trailing edge (the measured-text motif). The paragraph itself **(from screenshot)** is a passage about what a human interface is: the **sum of all communication between the computer and the user**, covering both what it shows and what it accepts. It is an illustration; it makes no rule. It is not quoted here.
@@ -85,5 +85,5 @@ Field-note cross-links:
 
 ## Related
 - Ingested: Typography (✓ CRITICAL), Accessibility (✓), Entering data (✓), Undo and redo (✓), Writing (✓), Right to left (✓), Feedback (✓ CRITICAL), Image views (✓), Charts (✓).
-- Ingested since: Labels (✓ `components/layout/labels.md`). Combo boxes (✓ `components/selection-and-input/combo-boxes.md`). Not yet ingested: **Text fields**, **Virtual keyboards**.
+- Ingested since: Labels (✓ `components/layout/labels.md`). Combo boxes (✓ `components/selection-and-input/combo-boxes.md`). Text fields (✓ `components/selection-and-input/text-fields.md`). Not yet ingested: **Virtual keyboards**.
 - Developer docs: see Specs & values.

@@ -105,5 +105,5 @@ Field-note cross-links:
 
 ## Related
 - Ingested: Writing (✓), Privacy (✓), Accessibility (✓), Drag and drop (✓), Layout (✓ CRITICAL), Typography (✓ CRITICAL), Right to left (✓).
-- Ingested since: Feedback (✓ CRITICAL), Managing accounts (✓), Offering help (✓). Not yet ingested: **Text fields**, **Virtual keyboards**, **Keyboards**. Pickers (✓ `components/selection-and-input/pickers.md`). Onboarding (✓ `hig/patterns/onboarding.md`). Digit entry views (✓ `components/selection-and-input/digit-entry-views.md`).
+- Ingested since: Feedback (✓ CRITICAL), Managing accounts (✓), Offering help (✓). Not yet ingested: **Virtual keyboards**, **Keyboards**. Text fields (✓ `components/selection-and-input/text-fields.md`: hint + label, validation timing, number formatter). Pickers (✓ `components/selection-and-input/pickers.md`). Onboarding (✓ `hig/patterns/onboarding.md`). Digit entry views (✓ `components/selection-and-input/digit-entry-views.md`).
 - Developer docs: SwiftUI *Input events*. Video: *What's new in UIKit* (WWDC21 10059).

@@ -56,7 +56,7 @@ Field-note cross-links:
 - `hig/foundations/privacy.md` (✓): never prefill passwords, Password AutoFill and passkeys; `hig/patterns/managing-accounts.md` (✓): sign-in flows (PIN as a second step), passkeys before codes.
 - `hig/patterns/feedback.md` (✓ CRITICAL) and **Feedback gate**: error placement and tone; `hig/foundations/writing.md` (✓): title/prompt copy and the capitalisation table.
 - `hig/patterns/onboarding.md` (✓): the code-entry step inside a flow; `hig/components/content/text-views.md` (✓): multi-line text (not digits).
-- Not yet ingested: **Virtual keyboards** (Apple's Related), Text fields.
+- Not yet ingested: **Virtual keyboards** (Apple's Related). Text fields (✓ `text-fields.md`).
 - No conflict with a field note.
 
 ## Checklist
@@ -70,5 +70,5 @@ Field-note cross-links:
 
 ## Related
 - Ingested: Entering data (✓), Privacy (✓), Managing accounts (✓), Feedback (✓ CRITICAL), Writing (✓), Onboarding (✓), Text views (✓), Combo boxes (✓), Color wells (✓).
-- Not yet ingested: Virtual keyboards, Text fields.
+- Not yet ingested: Virtual keyboards. Text fields (✓ `text-fields.md`).
 - Developer docs: TVUIKit `TVDigitEntryViewController`.

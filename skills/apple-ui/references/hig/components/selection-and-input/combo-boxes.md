@@ -34,7 +34,7 @@ A combo box **combines a text field with a pull-down button in one control**: pe
 | Platforms | macOS only |
 | Developer docs | AppKit `NSComboBox` |
 | Video / Change log | none |
-| Apple's Related list | Text fields · Pull-down buttons ✓ (Text fields not yet ingested) |
+| Apple's Related list | Text fields ✓ · Pull-down buttons ✓ |
 
 ## Visual notes (from screenshots)
 - **Hero (screenshot):** a red-to-orange gradient card with a **wide rounded field** containing the text **"Cupertino"** with a **blinking text cursor** (in red) at its end and a **small rounded red button with a white chevron-down** at the trailing end; a **width arrow above** the whole control and a **height I-beam mark at its right**, showing it as one sized control. Directly under the field, **attached to its width**, a **list of city names in a soft-pink translucent panel**: **Chicago, Monaco, San Francisco, New York** (cut off at the card's lower edge). The typed value **"Cupertino" is not in the list**, illustrating "a custom value isn't added to the list"; the list is **exactly as wide as the field** (the width rule) **(from screenshot)**. The alt text describes *a combo box displaying a list of cities*, tinted red.
@@ -60,7 +60,7 @@ Field-note cross-links:
 - `hig/components/layout/labels.md` (✓): the label conventions; `hig/foundations/writing.md` (✓): the **Capitalisation table** now has a **combo-box introductory label** row (Title Case + colon); form-label rule in `labels.md` is a CONV for general web forms and does not override it for combo boxes on desktop layouts.
 - `hig/components/menus/pull-down-buttons.md` (✓): the button half; `pop-up-buttons.md` (✓): closed-set choice (no free typing); `hig/components/navigation/token-fields.md` (✓): typing with suggestions that become tokens; `search-fields.md` (✓): suggestions while typing.
 - `hig/components/presentation/popovers.md` (✓): the popup list's anchoring and dismissal.
-- Not yet ingested: **Text fields** (Apple's Related lists Text fields). Pickers (✓ `pickers.md`).
+- Text fields (✓ `text-fields.md`, Apple's Related). Pickers (✓ `pickers.md`).
 - No conflict with a field note.
 
 ## Checklist
@@ -75,5 +75,5 @@ Field-note cross-links:
 
 ## Related
 - Ingested: Pull-down buttons (✓), Pop-up buttons (✓), Token fields (✓), Search fields (✓), Popovers (✓), Labels (✓), Writing (✓), Color wells (✓).
-- Not yet ingested: Text fields. Pickers (✓ `pickers.md`).
+- Ingested since: Text fields (✓ `text-fields.md`), Pickers (✓ `pickers.md`).
 - Developer docs: AppKit `NSComboBox`.

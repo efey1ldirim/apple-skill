@@ -34,7 +34,7 @@ The page has **no numbers, sizes or timings**. Concrete facts:
 | Also used for | search terms (Search fields) |
 | Not supported | iOS, iPadOS, tvOS, visionOS, watchOS |
 | Developer docs | AppKit `NSTokenField` |
-| Related HIG pages | Text fields (not yet ingested) · Search fields ✓ · Context menus ✓ |
+| Related HIG pages | Text fields ✓ · Search fields ✓ · Context menus ✓ |
 
 ## Visual notes (from screenshots)
 - **Hero:** a red-to-orange card with a **pale pink capsule search-style field**: a **magnifier** at the left, then a **token "Juan Chavez"** (a **rounded rectangle filled in red-orange** with a **person-in-circle icon** and white text), immediately followed by **plain typed text "Design"** and a **red text caret**, then a **round red clear (✕) button** at the right. It shows a **token sitting inline with ordinary text** in the same field, and that the field is the search-style one from *Search fields* **(from screenshot)**.
@@ -64,7 +64,7 @@ Field-note cross-links:
 - `hig/patterns/entering-data.md` (✓): prefer selection/suggestions over free typing; validation timing.
 - `hig/patterns/drag-and-drop.md` (✓) and `undo-and-redo.md` (✓): moving tokens between fields; undo removal.
 - `hig/components/menus/buttons.md` (✓ CRITICAL): chip buttons, remove buttons, hit regions; `hig/foundations/color.md` (✓ CRITICAL): selected-chip contrast.
-- Not yet ingested: **Text fields** (the base control).
+- Text fields (✓ `components/selection-and-input/text-fields.md`, the base control).
 - No conflict with a field note.
 
 ## Checklist
@@ -78,5 +78,5 @@ Field-note cross-links:
 
 ## Related
 - Ingested: Search fields (✓), Context menus (✓), Entering data (✓), Drag and drop (✓), Undo and redo (✓), Buttons (✓ CRITICAL), Color (✓ CRITICAL), Writing (✓), Feedback (✓ CRITICAL).
-- Not yet ingested: **Text fields**.
+- Text fields (✓ `components/selection-and-input/text-fields.md`).
 - Developer docs: AppKit `NSTokenField`.

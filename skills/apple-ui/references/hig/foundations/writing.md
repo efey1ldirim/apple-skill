@@ -183,6 +183,6 @@ Apple's rule (this page): choose the case **per UI element type** and hold it. T
 - Ingested: Inclusion (✓), Accessibility (✓), Color (✓ CRITICAL: contrast of text), Typography (✓ CRITICAL), Branding (✓), Privacy (✓: purpose strings), Design principles (✓).
 - Ingested since: Entering data (✓ `hig/patterns/entering-data.md`).
 - Ingested since: Buttons (✓ CRITICAL, § Content label rules).
-- Ingested since: Action sheets (✓ `components/presentation/action-sheets.md`). Not yet ingested: Notifications, Alerts, Text fields, VoiceOver, Managing notifications.
+- Ingested since: Action sheets (✓ `components/presentation/action-sheets.md`). Not yet ingested: Notifications, Alerts, VoiceOver, Managing notifications.
 - External (not HIG pages): Apple Style Guide; Writing inclusively; Localization (Xcode).
 - Videos listed: *Craft clear names for features and labels in your app* (WWDC26 290), *Make a big impact with small writing changes* (WWDC25 404), *Writing for interfaces* (WWDC22 10037).
