@@ -104,7 +104,7 @@ Field-note cross-links:
 - `hig/components/system-experiences/app-shortcuts.md` (✓) and `complications.md` (✓): the sibling **glance / quick-launch** surfaces (shortcuts = phrases and Spotlight, complications = tiles); all three lean on **deep links**, **fresh state** and **privacy on shared displays**. Consistent.
 - `hig/components/selection-and-input/toggles.md` (✓): switch semantics and the **iOS switch colours** (green on; here the on tint is **the app's brand**); `hig/components/menus/buttons.md` (✓ CRITICAL) and **Buttons GATE**: names, hit regions; `hig/foundations/sf-symbols.md` (✓) and `tokens/apple-symbol-effects.json`: symbol animations; `hig/foundations/branding.md` (✓): tint; `hig/foundations/color.md` (✓ CRITICAL) and **Color gate**: state not by colour alone; `hig/foundations/privacy.md` (✓) and `hig/patterns/managing-accounts.md` (✓): redaction and authentication; `hig/patterns/feedback.md` (✓): in-progress and failure states; `hig/components/menus/home-screen-quick-actions.md` (✓): the web/PWA entry point.
 - `field-notes/*`: no quick-toggle recipe; **no conflict**. (Field-note toggles/checkbox decision, 2026-09-29 in `toggles.md`: circle marks for mobile-style selection lists, square checkboxes for desktop forms; **not affected** here, controls are switches/buttons.)
-- Not yet ingested (linked from this page): **Action button** (Widgets now ✓ `widgets.md`); also named in the text: Live Activities (now ✓ `live-activities.md`).
+- Not yet ingested (linked from this page): Action button (now ✓ `inputs/action-button.md`), Widgets (now ✓ `widgets.md`); also named in the text: Live Activities (now ✓ `live-activities.md`).
 
 ## Checklist
 - [ ] Every quick control **does something useful without opening the app**; buttons vs toggles used for what they mean (action vs two-state).
@@ -120,5 +120,5 @@ Field-note cross-links:
 
 ## Related
 - Ingested: App Shortcuts (✓), Complications (✓), Toggles (✓), Buttons (✓ CRITICAL), SF Symbols (✓), Branding (✓), Color (✓ CRITICAL), Privacy (✓), Managing accounts (✓), Feedback (✓ CRITICAL), Home Screen quick actions (✓), Offering help (✓).
-- Not yet ingested (linked from this page): **Action button** (Widgets now ✓ `widgets.md`); named in the text: Live Activities (now ✓ `live-activities.md`).
+- Not yet ingested (linked from this page): Action button (now ✓ `inputs/action-button.md`), Widgets (now ✓ `widgets.md`); named in the text: Live Activities (now ✓ `live-activities.md`).
 - Developer docs: `LockedCameraCapture`, WidgetKit (controls via `ControlWidget`), `SymbolEffect`, `promptsForUserConfiguration()`, `controlWidgetActionHint(_:)`, `IntentAuthenticationPolicy`.
