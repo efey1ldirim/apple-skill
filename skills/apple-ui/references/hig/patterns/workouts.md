@@ -48,7 +48,7 @@ The page has **no numbers, sizes or timings** ("large", "a few seconds", "high-c
 | Activity rings | only for their documented purpose; same colours/meanings as the Activity app |
 | Not supported | macOS · tvOS · visionOS |
 | Developer docs | WorkoutKit · HealthKit *Workouts and activity rings* |
-| Related HIG pages | Activity rings (Components › Status, not yet ingested) |
+| Related HIG pages | Activity rings ✓ (`components/status/activity-rings.md`) |
 | Videos | *Track workouts with HealthKit on iOS and iPadOS* (WWDC25 322) · *Build custom workouts with WorkoutKit* (WWDC23 10016) · *Build a workout app for Apple Watch* (WWDC21 10009) |
 
 ## Visual notes (from screenshots)
@@ -110,5 +110,5 @@ Field-note cross-links:
 
 ## Related
 - Ingested: Feedback (✓ CRITICAL), Playing haptics (✓), Playing audio (✓), Playing video (✓), Live-viewing apps (✓), Going full screen (✓), Launching (✓), Multitasking (✓), Ratings and reviews (✓), Modality (✓), Undo and redo (✓), Charting data (✓), Designing for watchOS (✓), Typography, Color, Layout, Materials, Accessibility (✓).
-- Ingested since: Labels (✓, date/time/timer text). Not yet ingested: **Activity rings** (Components › Status).
+- Ingested since: Labels (✓, date/time/timer text). Activity rings (✓ `components/status/activity-rings.md`: only Move, Exercise, Stand; one person; fixed appearance and colours).
 - Developer docs: WorkoutKit; HealthKit *Workouts and activity rings*. Videos: see Specs & values.
