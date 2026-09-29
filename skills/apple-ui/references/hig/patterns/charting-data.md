@@ -17,7 +17,7 @@ Use a chart to **say something** about data people care about: keep it simple wi
   - showing the current state of a process, system or quantity that changes over time;
   - evaluating items, or one item at different times, by comparing data across categories.
 - **should** Don't chart everything. When the goal is only to *provide* data, with no message to convey and no analysis to support, offer a **list or table** that people can scroll, search and sort.
-- Component-level guidance (marks, axes, gridlines, selection, accessibility APIs) lives in the separate **Charts** page (not yet ingested).
+- Component-level guidance (marks, axes, gridlines, selection, accessibility APIs) lives in the separate **Charts** page (✓ ingested: `components/content/charts.md`).
 
 ### Best practices
 - **should** **Use a chart to highlight important information about a dataset.**
@@ -140,6 +140,6 @@ Field-note cross-links:
 - [ ] Compared with Apple's `charting-data-01` (Stocks and Activity).
 
 ## Related
-- Not yet ingested: **Charts** (component page: marks, axes, accessibility of charts), Lists and tables, Segmented controls, Progress indicators, Gauges, Rating indicators, Activity rings.
+- Ingested since: **Charts** (✓ `components/content/charts.md`: marks, axes, accessibility of charts). Not yet ingested: Lists and tables, Segmented controls, Progress indicators, Gauges, Rating indicators, Activity rings.
 - Ingested: Color (✓ CRITICAL), Accessibility (✓), Motion (✓), Writing (✓), Layout (✓ CRITICAL), Typography (✓ CRITICAL), Dark Mode (✓).
 - Developer docs: Swift Charts. Videos: see Specs & values.

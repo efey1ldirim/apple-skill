@@ -56,7 +56,7 @@ ingested so far.
 | Consent / permission / connect screen | + `field-notes/components.md` § Consent screen, `hig/foundations/privacy.md` (grant dialog vs pre-alert screen) | HIG: Managing accounts, Alerts/Sheets |
 | Asking for location/camera/mic/notifications/contacts, pre-permission ("soft ask") screens, cookie/tracking consent, purpose/reason copy, sign-in & password/passkey flows, storing tokens | + `hig/foundations/privacy.md` (visuals `privacy-01 … 04`) | HIG: Managing accounts, Sign in with Apple, Entering data, Onboarding |
 | Landing / marketing page | + `field-notes/landing-and-motion.md`, `hig/overview/design-landing.md` (Apple's own page: section rhythm, cards, links), `hig/foundations/motion.md` (purposeful motion, no ~0.2 Hz loops, no edge motion) | HIG: Branding, Typography, Materials |
-| Dashboard / analytics / any chart, graph or sparkline | + `hig/patterns/charting-data.md` (message first, detail on demand, common types, descriptive text, consistency, accessibility), `field-notes/components.md` § Dashboard tiles, `hig/foundations/accessibility.md` (not colour alone) | HIG: Charts, Color, Layout |
+| Dashboard / analytics / any chart, graph or sparkline | + `hig/patterns/charting-data.md` (message first, detail on demand, common types, descriptive text, consistency, accessibility), **`hig/components/content/charts.md`** (mark types, fixed vs dynamic axis, zero baseline for bars, quiet grid, not colour alone, per-element vs grouped labels, keyboard path, hide tick text from AT; visual `charts-01`), `field-notes/components.md` § Dashboard tiles, `hig/foundations/accessibility.md` (not colour alone) | HIG: Color, Layout |
 | Dark mode | + `hig/foundations/dark-mode.md`, `field-notes/tokens.md` § Dark, `hig/foundations/color.md`, `tokens/apple-system-colors.css` | HIG: Dark Mode, Color, Materials |
 | Design review / audit | `field-notes/anti-patterns.md` + checklist in `SKILL.md` + `visual-examples/README.md` (compare screenshots with Apple's ✗/✓ images) | HIG pages for every component on screen |
 | Visual proportions in doubt | `screenshots-described/` | — |
@@ -141,11 +141,11 @@ on every ingestion. `—` = not yet ingested.
 | Undo and redo `undo-and-redo` | `hig/patterns/undo-and-redo.md` | 2026-09-29 |
 | Workouts `workouts` | `hig/patterns/workouts.md` | 2026-09-29 |
 
-### Components  (collection page: —)
+### Components  (collection page: —; 1 ingested: Charts)
 | Page | File | Ingested |
 |---|---|---|
 | **Content** (group) | | |
-| &nbsp;&nbsp;Charts `charts` | — | — |
+| &nbsp;&nbsp;Charts `charts` | `hig/components/content/charts.md` | 2026-09-29 |
 | &nbsp;&nbsp;Image views `image-views` | — | — |
 | &nbsp;&nbsp;Text views `text-views` | — | — |
 | &nbsp;&nbsp;Web views `web-views` | — | — |
