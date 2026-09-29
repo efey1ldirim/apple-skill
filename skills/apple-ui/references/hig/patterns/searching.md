@@ -99,5 +99,5 @@ Field-note cross-links:
 
 ## Related
 - Ingested: File management (✓), Entering data (✓), Feedback (✓ CRITICAL), Privacy (✓), Managing accounts (✓), Onboarding (✓), Offering help (✓), Writing (✓).
-- Ingested since: **Search fields** (✓ `hig/components/navigation/search-fields.md`, incl. scope bars and tokens). Not yet ingested: **Tab bars**, Sidebars.
+- Ingested since: **Search fields** (✓ `hig/components/navigation/search-fields.md`, incl. scope bars and tokens). **Tab bars** (✓ `hig/components/navigation/tab-bars.md`), **Sidebars** (✓ `hig/components/navigation/sidebars.md`).
 - Developer docs: listed in Specs & values. Video: *Design intuitive search experiences* (WWDC26 292).

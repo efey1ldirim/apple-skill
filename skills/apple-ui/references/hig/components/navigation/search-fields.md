@@ -147,7 +147,7 @@ Field-note cross-links:
 - `hig/components/menus/toolbars.md` (✓): search field at the trailing side, glass groups, priority collapse; `pull-down-buttons.md` for "⋯" beside the search button.
 - `hig/components/layout/split-views.md`, `outline-views.md`, `tab-views.md` (✓): sidebar/column filtering; a field at the top of a tree filters expandable rows.
 - `hig/components/menus/buttons.md` (✓ CRITICAL), `hig/foundations/materials.md` (✓ CRITICAL), `hig/foundations/color.md` (✓ CRITICAL): gates above.
-- Not yet ingested and named here: **Tab bars**, **Sidebars**, **Token fields**, Segmented controls.
+- Ingested since: Tab bars (✓ `tab-bars.md`), Sidebars (✓ `sidebars.md`). Not yet ingested and named here: **Token fields**, Segmented controls.
 - No conflict with a field note.
 
 ## Checklist
@@ -165,6 +165,6 @@ Field-note cross-links:
 
 ## Related
 - Ingested: Searching (✓), Toolbars (✓), Split views (✓), Outline views (✓), Tab views (✓), Pull-down buttons (✓), Buttons (✓ CRITICAL), Materials (✓ CRITICAL), Color (✓ CRITICAL), Layout (✓ CRITICAL), Writing (✓), Privacy (✓), Right to left (✓), Entering data (✓).
-- Not yet ingested: **Token fields**, **Tab bars**, **Sidebars**.
+- Ingested since: **Tab bars** (✓), **Sidebars** (✓). Not yet ingested: **Token fields**.
 - Developer docs: SwiftUI `searchable(text:placement:prompt:)`, *Adding a search interface to your app*, *Scoping a search operation*; UIKit `UISearchBar`, `UISearchTextField`, `UISearchController`; AppKit `NSSearchField`.
 - Videos: "Design intuitive search experiences" (WWDC26), "Get to know the new design system" (WWDC25), "Discoverable design" (WWDC21).

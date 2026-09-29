@@ -59,7 +59,7 @@ The page has **no numbers, sizes or timings**. Concrete facts:
 | visionOS | sidebar in a tab; selection must not switch tabs |
 | Developer docs | SwiftUI `sidebarAdaptable`, `NavigationSplitView`, `sidebar` list style, `backgroundExtensionEffect()` · UIKit `UICollectionLayoutListConfiguration` (+ `.Appearance.sidebar`), `UISplitViewController` · AppKit `NSSplitViewController` |
 | Video | "Elevate the design of your iPad app" (WWDC25) |
-| Related HIG pages | Split views ✓ · Tab bars (not yet ingested) · Layout ✓ CRITICAL |
+| Related HIG pages | Split views ✓ · Tab bars ✓ · Layout ✓ CRITICAL |
 
 ## Visual notes (from screenshots)
 - **Hero:** a card whose left ~75 % is pale pink and right ~25 % a darker red-pink panel (the content area). At the top, a **round sidebar-toggle button** (rectangle with a leading column). Below: a big bold **"Section"** heading with a **chevron at the right** (the collapsible section), then three rows **Item 1, Item 2, Item 3**, each with a **folder icon at the leading edge, the name, and a star at the trailing edge**. **Item 1 is selected**: a **full-width red capsule** with white icon, text and star. **Dashed guide lines** mark the **leading icon column**, the **text start** and the **trailing star column**, and a **vertical double-headed arrow** marks the **row height**: the picture is about consistent alignment and row rhythm, no numbers **(from screenshot)**.
@@ -95,7 +95,7 @@ Field-note cross-links:
 - `hig/foundations/materials.md` (✓ CRITICAL): glass layer vs content layer, text on materials, fallbacks; `hig/foundations/color.md` (✓ CRITICAL): accent colour, contrast.
 - `hig/components/menus/toolbars.md` (✓): the sidebar toggle button lives in the toolbar; `the-menu-bar.md` (✓): View ▸ Show/Hide Sidebar.
 - `hig/components/layout/disclosure-controls.md`, `outline-views.md`, `lists-and-tables.md`, `tab-views.md` (✓).
-- Not yet ingested: **Tab bars**, Windows.
+- Ingested since: Tab bars (✓ `tab-bars.md`). Not yet ingested: Windows.
 - No conflict with a field note.
 
 ## Checklist
@@ -112,6 +112,6 @@ Field-note cross-links:
 
 ## Related
 - Ingested: Split views (✓), Layout (✓ CRITICAL), Materials (✓ CRITICAL), Color (✓ CRITICAL), Disclosure controls (✓), Outline views (✓), Lists and tables (✓), Tab views (✓), Toolbars (✓), The menu bar (✓), Search fields (✓), Path controls (✓), SF Symbols (✓), Icons (✓), Buttons (✓ CRITICAL).
-- Not yet ingested: **Tab bars**.
+- Ingested since: **Tab bars** (✓ `hig/components/navigation/tab-bars.md`).
 - Developer docs: SwiftUI `sidebarAdaptable`, `NavigationSplitView`, `sidebar`, `backgroundExtensionEffect()`; UIKit `UICollectionLayoutListConfiguration`, `UISplitViewController`; AppKit `NSSplitViewController`.
 - Video: "Elevate the design of your iPad app" (WWDC25).

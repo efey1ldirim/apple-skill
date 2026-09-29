@@ -44,7 +44,7 @@ A tab view shows **several mutually exclusive, closely related panes in the same
 | watchOS | page controls; enlarged current dot; scroll within content and between pages |
 | Not supported | iOS, iPadOS, tvOS, visionOS |
 | Developer docs | SwiftUI `TabView` · AppKit `NSTabView` |
-| Related HIG pages | Tab bars (not yet ingested) · Segmented controls (not yet ingested) · Page controls (not yet ingested) |
+| Related HIG pages | Tab bars ✓ `components/navigation/tab-bars.md` · Segmented controls (not yet ingested) · Page controls (not yet ingested) |
 
 ## Visual notes (from screenshots)
 - **Hero:** a red-to-orange card with a rounded content panel and, **straddling its top edge**, a **pill-shaped three-tab control** labelled **"Label · Label · Label"**; the **first tab is selected** (a lighter raised pill), a thin divider separates the other two, and dimension arrows show the **margin around the panel** (top, bottom, leading, trailing) **(from screenshot)**. Matches "inset with a margin".
@@ -95,5 +95,5 @@ Field-note cross-links:
 
 ## Related
 - Ingested: Boxes (✓), Split views (✓), Disclosure controls (✓), Lists and tables (✓), Layout (✓ CRITICAL), Settings (✓), Entering data (✓), Loading (✓), Motion (✓), Accessibility (✓), Writing (✓), Workouts (✓).
-- Not yet ingested: **Tab bars**, **Segmented controls**, **Page controls**.
+- Ingested since: Tab bars (✓ `components/navigation/tab-bars.md`: the app-level counterpart). Not yet ingested: **Segmented controls**, **Page controls**.
 - Developer docs: `TabView`, `NSTabView`.
