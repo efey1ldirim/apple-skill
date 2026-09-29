@@ -144,5 +144,5 @@ Field-note cross-links and conflicts:
 
 ## Related
 - Ingested: Context menus (✓), Edit menus (✓), Dock menus (✓), Home Screen quick actions (✓), Buttons (✓ CRITICAL), Activity views (✓), Icons (✓), SF Symbols (✓), Writing (✓), Typography (✓ CRITICAL), Layout (✓ CRITICAL), Undo and redo (✓).
-- Ingested since: Pop-up buttons (✓). Ingested since: Pull-down buttons (✓). Ingested since: The menu bar (✓). Not yet ingested: Game controls (§ Touch controls), Settings.
+- Ingested since: Pop-up buttons (✓). Ingested since: Pull-down buttons (✓). Ingested since: The menu bar (✓). Ingested since: Game controls (✓ `inputs/game-controls.md`, § Touch controls). Not yet ingested: Settings.
 - Developer docs: SwiftUI `Menu`, UIKit "Menus and shortcuts" (`preferredElementSize`), AppKit "Menus".
