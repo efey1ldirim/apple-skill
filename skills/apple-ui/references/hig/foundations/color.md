@@ -229,5 +229,5 @@ increased-contrast light values reach **≥ 4.5:1** on white (Apple designed the
 - [ ] Screenshots in light and dark compared with visual pairs color-01 … color-04.
 
 ## Related (ingestion status)
-Dark Mode, Accessibility (✓), Materials (✓ CRITICAL — Liquid Glass), Complications — not yet ingested (Sidebars ✓ `components/navigation/sidebars.md`)
+Dark Mode, Accessibility (✓), Materials (✓ CRITICAL — Liquid Glass), Complications (✓ `components/system-experiences/complications.md`) (Sidebars ✓ `components/navigation/sidebars.md`)
 (except ✓).
