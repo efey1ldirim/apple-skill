@@ -124,5 +124,5 @@ Field-note cross-links:
 
 ## Related
 - Ingested: Privacy (✓), Feedback (✓ CRITICAL), Managing accounts (✓), Writing (✓), Collaboration and sharing (✓), Live-viewing apps (✓).
-- Ingested since: Modality (✓), Multitasking (✓). Settings ✓. Alerts (✓ `components/presentation/alerts.md`). Not yet ingested: **Notifications** (component). Onboarding ✓.
+- Ingested since: Modality (✓), Multitasking (✓). Settings ✓. Alerts (✓ `components/presentation/alerts.md`). Ingested since: **Notifications** (component, ✓ `components/system-experiences/notifications.md`). Onboarding ✓.
 - Developer docs: *User Notifications*. Videos: *Send communication and Time Sensitive notifications* (WWDC21 10091), *The Push Notifications primer* (WWDC20 10095).

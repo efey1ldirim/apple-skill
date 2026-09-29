@@ -99,4 +99,4 @@ widgets, status summaries, mobile "at a glance" screens:
 
 ## Related (ingestion status)
 Digital Crown, Gestures, Action button, Siri (Shortcuts and suggestions), Complications,
-Notifications, Always On, Watch faces — not yet ingested. Ingested since: Workouts (✓ `patterns/workouts.md`), Color (✓), Materials (✓).
+Notifications (✓ `components/system-experiences/notifications.md`), Always On, Watch faces (✓ `components/system-experiences/watch-faces.md`) — not yet ingested (except ✓). Ingested since: Workouts (✓ `patterns/workouts.md`), Color (✓), Materials (✓).
