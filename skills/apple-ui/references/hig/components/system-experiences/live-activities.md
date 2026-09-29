@@ -249,7 +249,7 @@ Field-note cross-links:
 - `hig/patterns/managing-notifications.md` (✓) and `hig/patterns/feedback.md` (✓ CRITICAL): alert discipline (no duplicate push, only essential alerts); `hig/patterns/workouts.md` (✓) and `hig/patterns/live-viewing-apps.md` (✓): timers from timestamps, live scores; `hig/patterns/playing-audio.md` (✓): playback controls outside the app.
 - `hig/foundations/color.md` (✓ CRITICAL) and **Color gate**; `hig/foundations/dark-mode.md` (✓); `hig/foundations/branding.md` (✓); `hig/foundations/typography.md` (✓ CRITICAL): weights/sizes; `hig/foundations/layout.md` (✓ CRITICAL) and **Layout gate**: safe areas, margins; `hig/foundations/privacy.md` (✓): sensitive data; `hig/foundations/motion.md` (✓): purposeful motion, duration limits.
 - `field-notes/*`: no status-tile recipe; **no conflict**. `hig/foundations/motion.md` (purposeful motion, no ~0.2 Hz loops, no edge motion) is **consistent** with the 2 s ceiling and the "no animation on reduced luminance" rule here.
-- Not yet ingested (linked from this page or named): **Always On**, **Widgets** (Smart Stack); **Notifications** is now ✓ (`notifications.md`).
+- Not yet ingested (linked from this page or named): **Always On**; **Widgets** and **Notifications** is now ✓ (`notifications.md`).
 
 ## Checklist
 - [ ] The tile is for a **bounded task**, with a **start trigger, an end condition and auto-expiry** (≈ ≤ 8 h).
@@ -266,6 +266,6 @@ Field-note cross-links:
 
 ## Related
 - Ingested: App Shortcuts (✓), Controls (✓), Complications (✓), Managing notifications (✓), Feedback (✓ CRITICAL), Workouts (✓), Live viewing apps (✓), Color (✓ CRITICAL), Dark Mode (✓), Branding (✓), Typography (✓ CRITICAL), Layout (✓ CRITICAL), Privacy (✓), Motion (✓), Buttons (✓ CRITICAL).
-- Not yet ingested (linked from this page): **Always On**; named in the text: **Widgets** (Smart Stack); **Notifications** is now ✓ (`notifications.md`).
+- Not yet ingested (linked from this page): **Always On**; named in the text: **Widgets** (Smart Stack, now ✓ `widgets.md`); **Notifications** now ✓ (`notifications.md`).
 - Developer docs: ActivityKit, SwiftUI, WidgetKit, "Developing a WidgetKit strategy".
 - Videos: Live Activities essentials (WWDC26 223), Turbocharge your app for CarPlay (WWDC25 216), What's new in widgets (WWDC25 278).
