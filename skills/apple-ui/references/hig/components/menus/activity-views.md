@@ -102,5 +102,5 @@ Field-note cross-links:
 
 ## Related
 - Ingested: Collaboration and sharing (✓), Icons (✓), SF Symbols (✓), Feedback (✓ CRITICAL), Modality (✓), Loading (✓), Managing notifications (✓), Undo and redo (✓), File management (✓), Printing (✓), Drag and drop (✓), Writing (✓), Layout (✓ CRITICAL).
-- Not yet ingested: **Sheets**, **Popovers**.
+- Ingested since: Buttons (✓ CRITICAL: the Share button rules). Not yet ingested: **Sheets**, **Popovers**.
 - Developer docs: see Specs & values. Video: *Design for Collaboration with Messages* (WWDC22 10015).

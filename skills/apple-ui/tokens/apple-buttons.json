@@ -1,0 +1,113 @@
+{
+  "_about": "Button facts from the HIG Buttons page (CRITICAL for this skill). Every value carries a source tag: HIG = stated by Apple on the page · WCAG = W3C · CONV = apple-skill convention (Apple gives no number) · FN = Nonplo field note. Colours come from apple-system-colors.css; the page itself gives no colour values.",
+  "source": "https://developer.apple.com/design/human-interface-guidelines/buttons",
+  "capturedAt": "2026-09-29",
+  "appleLastUpdated": "2025-12-16",
+
+  "anatomy": { "tag": "HIG", "attributes": ["style (size, colour, shape)", "content (symbol/icon, text label, or both)", "role (normal | primary | cancel | destructive)"], "buttonLikeComponents": ["toggles", "pop-up buttons", "segmented controls"] },
+
+  "hitRegion": {
+    "minimum": { "value": 44, "unit": "pt", "tag": "HIG", "note": "general rule: at least 44 x 44 pt so a fingertip, pointer, eyes or remote can select it" },
+    "visionOS": { "value": 60, "unit": "pt", "tag": "HIG" },
+    "web": {
+      "target": { "value": 44, "unit": "css-px", "tag": "HIG", "note": "44 x 44 CSS px hit region on touch-width layouts; the visible button may be smaller if the hit region is extended (padding or ::after)" },
+      "floor": { "value": 24, "unit": "css-px", "tag": "WCAG", "note": "WCAG 2.5.8 minimum for pointer layouts; between 24 and 44 is a WARN" },
+      "probeRule": "FAIL below 44 at 375 px viewport width; FAIL below 24 at any width; WARN 24-43 at desktop width"
+    }
+  },
+
+  "press": { "required": true, "tag": "HIG", "text": "Always include a press state for a custom button; without it the button feels unresponsive.", "webStates": ["default", "hover (pointer only)", "active/pressed", "focus-visible", "disabled/unavailable", "selected (toggle)", "busy"], "webTag": "CONV" },
+
+  "style": {
+    "prominentPerView": { "min": 1, "max": 2, "tag": "HIG", "text": "Keep the number of prominent buttons to one or two per view; more raises cognitive load." },
+    "distinguishBy": { "value": "style, not size", "tag": "HIG", "text": "Same-size buttons signal a coherent set; different sizes near each other look inconsistent. Highlight the preferred option with a more prominent style." },
+    "labelColour": { "tag": "HIG", "text": "Avoid a label colour similar to bright content-layer backgrounds; prefer the default monochromatic label (Liquid Glass colour)." },
+    "fieldNote": { "tag": "FN", "text": "Nonplo principle 4: exactly one filled button per screen; black pill on light / white pill on dark; destructive secondary = red text, no fill." }
+  },
+
+  "content": {
+    "purpose": { "tag": "HIG", "text": "Each button clearly communicates its purpose with an icon, a text label, or both." },
+    "familiarIcons": { "tag": "HIG", "example": "square.and.arrow.up = share", "web": "Lucide/Phosphor/Ionicons glyph; never SF Symbols artwork on the web" },
+    "label": { "tag": "HIG", "text": "A few words describing what the button does; consider starting with a verb (\"Add to Cart\"); Apple specifies title-style capitalisation.", "webNote": "Nonplo/writing.md default is sentence case: pick ONE convention per product (flagged difference)." },
+    "iconOnlyName": { "tag": "WCAG", "text": "An icon-only button needs an accessible name (aria-label / visually hidden text); macOS and visionOS also show a tooltip after hover or dwell (HIG note)." }
+  },
+
+  "roles": {
+    "tag": "HIG",
+    "normal": "No specific meaning.",
+    "primary": "The default button, the one people are most likely to choose; uses the accent colour; responds to Return; in a sheet/alert/editable view it lets the view close on Return.",
+    "cancel": "Cancels the current action.",
+    "destructive": "Performs an action that can destroy data; uses the system red colour.",
+    "rules": [
+      "Assign the primary role to the button people are most likely to choose.",
+      "Never assign the primary role to a destructive button, even if it is the most likely choice (people press a prominent button without reading)."
+    ],
+    "illustration": { "kind": "alert", "primary": "solid accent fill, white label", "destructive": "red label on a neutral fill", "secondary": "neutral fill, label colour text" }
+  },
+
+  "iOS": {
+    "activityIndicator": { "tag": "HIG", "text": "Configure a button to show an activity indicator (spinner) for an action that does not complete instantly; optionally change the label (\"Checkout\" → \"Checking out…\"); the indicator replaces the button image, sits on the leading side of the label.", "webTag": "CONV", "web": "aria-busy=\"true\" + spinner glyph aria-hidden + changed label text + prevent double submit (aria-disabled)" }
+  },
+
+  "macOS": {
+    "pushButton": { "tag": "HIG", "text": "Standard button; text, symbol, icon or image, or both; can be default; can be tinted." },
+    "flexibleHeight": { "tag": "HIG", "text": "Only for tall or variable-height content (two lines of text, tall icon); same corner radius and padding as a push button." },
+    "ellipsis": { "tag": "HIG", "text": "Append a trailing ellipsis to the title when the button opens another window, view or app (more input is needed)." },
+    "springLoading": { "tag": "HIG", "text": "Consider spring loading (drag over + force click) on Magic Trackpad systems." },
+    "squareButton": { "tag": "HIG", "text": "Symbol/icon only (no label), in or beneath the view it affects; not in a toolbar or status bar (use a toolbar item); prefer an SF Symbol." },
+    "helpButton": {
+      "tag": "HIG",
+      "shape": "circular, consistent size, question mark",
+      "maxPerWindow": 1,
+      "opensContextTopic": true,
+      "noIntroText": true,
+      "notInWindowFrame": true,
+      "placement": [
+        { "view": "Dialog with dismissal buttons (OK, Cancel)", "location": "lower corner opposite the dismissal buttons, vertically aligned with them" },
+        { "view": "Dialog without dismissal buttons", "location": "lower-left or lower-right corner" },
+        { "view": "Settings window or pane", "location": "lower-left or lower-right corner" }
+      ]
+    },
+    "imageButton": { "tag": "HIG", "paddingPx": 10, "paddingNote": "about 10 pixels between image edges and button edges (the edges define the clickable area)", "label": "below the image button", "notInWindowFrame": true, "avoidSystemBorder": true }
+  },
+
+  "visionOS": {
+    "tag": "HIG",
+    "backgroundShape": "Prefer a discernible background shape and fill (exceptions: toolbar, context menu, alert, ornament).",
+    "materials": { "onGlassWindow": "thin material", "floatingInSpace": "glass material" },
+    "avoid": "No custom button with white fill and black text/icon; the system reserves it for the toggled state.",
+    "shapes": { "iconOnly": "circle", "textOnly": ["roundedRectangle", "capsule"], "iconAndText": "capsule", "stack": "roundedRectangle in a vertical stack", "row": "capsule in a horizontal row", "alone": "capsule" },
+    "states": ["idle", "hover", "selected", "unavailable"],
+    "customHover": false,
+    "tooltipOnDwell": true,
+    "sizesPt": { "mini": 28, "small": 32, "regular": 44, "large": 52, "extraLarge": 64 },
+    "sizeAvailability": {
+      "circular": ["mini", "small", "regular", "large", "extraLarge"],
+      "capsuleTextOnly": ["small", "regular", "large"],
+      "capsuleTextAndIcon": ["regular", "large"],
+      "roundedRectangle": ["small", "regular", "large"]
+    },
+    "spacing": { "centreToCentrePt": 60, "paddingWhenAtLeast60pt": 4, "note": "Avoid small or mini buttons in a vertical stack or horizontal row." },
+    "sound": "Buttons play sound as feedback; the system doesn't play haptics; use standard controls for the known sounds."
+  },
+
+  "watchOS": {
+    "tag": "HIG",
+    "inlineShape": "capsule",
+    "material": "inline buttons gain a contrasting material effect",
+    "toolbar": "put buttons in the corners with a toolbar; the system moves time and title and applies Liquid Glass",
+    "primaryActions": "full-width buttons; if two share a row use the same height and short titles or images",
+    "stacks": "identical height for vertical stacks of one- and two-line text buttons",
+    "toolbarButtons": "navigation to related areas or contextual actions for the view's content"
+  },
+
+  "web": {
+    "tag": "CONV",
+    "semantics": "Use <button> (or <a href> for navigation). A clickable <div>/<span> is not a button: no keyboard, no role, no Return/Space.",
+    "defaultButton": "In a dialog or form the primary action is the default submit button so Enter activates it; a destructive action must never be the default.",
+    "focusRing": { "tag": "WCAG", "rule": "visible :focus-visible indicator, ≥ 3:1 against adjacent colours (WCAG 2.4.7/1.4.11); never outline:none without a replacement" },
+    "labelContrast": { "tag": "WCAG", "normal": 4.5, "large": 3, "note": "white on system blue #0088FF is 3.52:1 → use a deeper prominent fill (#1E6EF4 4.57, #0040DD 7.6) or a black/white pill (FN)." },
+    "spacing": { "gapMinPx": 8, "tag": "CONV", "note": "adjacent standalone buttons keep ≥ 8 px between hit regions; attached groups (segmented, toolbar, tablist) are exempt" },
+    "hitRegionTrick": "keep the visual size (e.g. 36 px pill) and extend the hit region with ::after {inset:-4px} or padding so it measures ≥ 44 px (FN pills are 36/30 px)"
+  }
+}

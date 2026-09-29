@@ -191,5 +191,5 @@ Field-note cross-links:
 - [ ] Usable seated, with no required physical movement.
 
 ## Related (ingestion status)
-Eyes, Windows (§ visionOS volumes), Gestures, Digital Crown, Buttons — not yet ingested. Layout (✓ CRITICAL),
+Eyes, Windows (§ visionOS volumes), Gestures, Digital Crown — not yet ingested; Buttons ✓ CRITICAL (visionOS sizes, shapes, 60 pt spacing). Layout (✓ CRITICAL),
 Immersive experiences (✓), Motion (✓), Images (✓), Materials (✓ CRITICAL).

@@ -51,7 +51,7 @@ The page has **no numbers, sizes or timings**. Concrete facts:
 | macOS | `NSTextField` with `isEditable` off |
 | watchOS | date/time text and timer text components; auto-fit and auto-update; use in complications |
 | Developer docs | SwiftUI `Label`, `Text` · UIKit `UILabel` · AppKit `NSTextField` |
-| Related HIG pages | Text fields (not yet ingested) · Text views ✓ · Lists and tables ✓ · Buttons, Menus (not yet ingested) · Color ✓ · Complications (not yet ingested) |
+| Related HIG pages | Text fields (not yet ingested) · Text views ✓ · Lists and tables ✓ · Buttons ✓ CRITICAL · Menus (not yet ingested) · Color ✓ · Complications (not yet ingested) |
 
 ## Visual notes (from screenshots)
 - **Hero:** a red-to-orange card with a large bold word **"Label"** framed by a **dashed box with two square handles** at its sides, dimension arrows around it, and two monospaced captions beneath it: **"System Font - Body (Emphasized)"** and **"Primary Text Color"** **(from screenshot)**. It shows a label's two style choices: **type style** and **colour level**.
@@ -105,5 +105,5 @@ Field-note cross-links:
 
 ## Related
 - Ingested: Text views (✓), Typography (✓ CRITICAL), Color (✓ CRITICAL), Writing (✓), Feedback (✓ CRITICAL), Workouts (✓), Charts (✓), Right to left (✓), Icons (✓), Image views (✓), Boxes (✓).
-- Not yet ingested: **Text fields**, **Buttons**, **Menus**, **Complications**. Ingested since: Lists and tables ✓.
+- Not yet ingested: **Text fields**, **Menus**, **Complications**. Ingested since: Buttons (✓ CRITICAL). Ingested since: Lists and tables ✓.
 - Developer docs: see Specs & values.

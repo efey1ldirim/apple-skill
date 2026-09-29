@@ -44,7 +44,7 @@ skills/apple-ui/
     hig/                   one note per Apple design page
     field-notes/           principles, tokens, components, anti-patterns, gotchas, landing/motion
     screenshots-described/ text descriptions of visual references
-skills/apple-ui/tokens/    exact Apple system colours (CSS + JSON, 4 modes) + layout tokens + material/glass tokens + feedback tokens
+skills/apple-ui/tokens/    exact Apple system colours (CSS + JSON, 4 modes) + layout tokens + material/glass tokens + feedback tokens + button tokens
 tools/check-colors.mjs     colour gate: palette + outdated-value + contrast checks
 tools/check-layout.mjs     layout gate (static): dvh, zoom, device/orientation logic, safe areas…
 tools/layout-probe.js      layout gate (live): overflow, clipped text at 200%, target size/spacing
@@ -56,6 +56,10 @@ tools/check-feedback.mjs   feedback gate (static): unannounced toasts, alert() f
 tools/feedback-probe.js    feedback gate (live): announced messages, colour-only status, invalid fields, interruptions, contrast
 tools/run-feedback-probe.mjs runs it in light, dark and reduced motion (--click / --fill to trigger messages first)
 tools/fixtures/feedback/   bad.html (must fail) and good.html (must pass) — regression fixtures for the feedback gate
+tools/check-buttons.mjs    buttons gate (static): clickable non-buttons, icon buttons with no name, removed focus outline, destructive primary
+tools/buttons-probe.js     buttons gate (live): names, hit region, prominent count, size sets, roles, contrast, crowding
+tools/run-buttons-probe.mjs runs it at 375 and 1440 px, light and dark, and forces :active/:hover and Tab focus (press state, focus ring)
+tools/fixtures/buttons/    bad.html (must fail) and good.html (must pass) — regression fixtures for the buttons gate
 tools/fetch-visual-examples.mjs  downloads Apple's do/don't images locally
 tools/hig-fetch.mjs        reads a HIG page's full content (DocC JSON → text) for ingestion
 MAINTAINING.md             how pages are ingested (template, copyright rule)

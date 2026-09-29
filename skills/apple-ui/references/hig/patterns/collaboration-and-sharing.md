@@ -139,5 +139,5 @@ Field-note cross-links:
 
 ## Related
 - Ingested: Immersive experiences (✓), Writing (✓), Materials (✓ CRITICAL), Privacy (✓), Layout (✓ CRITICAL), Icons (✓), SF Symbols (✓), Right to left (✓).
-- Ingested since: Activity views (✓ the share sheet component). Not yet ingested: SharePlay, Sheets, Popovers, Toolbars, Buttons, Notifications, Managing notifications, Managing accounts.
+- Ingested since: Activity views (✓ the share sheet component), Buttons (✓ CRITICAL). Not yet ingested: SharePlay, Sheets, Popovers, Toolbars, Notifications, Managing notifications, Managing accounts.
 - Developer docs: Supporting universal links in your app; `ShareLink` (SwiftUI); Shared with You; `SWHighlightEvent`.

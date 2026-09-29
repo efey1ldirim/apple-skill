@@ -101,6 +101,21 @@ description: >
 >    success; no warning for expected removals (give Undo); every unavailable command says why.
 > If any step fails, the design is not finished.
 
+> ## ⚠️ BUTTONS GATE — CRITICAL, zero tolerance
+> Every button the UI shows must follow Apple's HIG Buttons page (style · content · role):
+> 1. Read `references/hig/components/menus/buttons.md` (CRITICAL page) and `tokens/apple-buttons.json`; use `tokens/apple-buttons.css`
+>    (`.btn`, `.btn-prominent`, `.btn-destructive`, `.btn-compact`, `.btn-icon`, `.btn-block`, `.btn-row`, `.btn-stack`, `.btn__spinner`).
+> 2. A real `<button>` (or `<a href>` for navigation), never a clickable div/span. **Hit region ≥ 44 × 44 CSS px** (60 in gaze UIs; small visuals extend it
+>    with `::after`/padding). ≥ 8 px between standalone buttons. Every custom button has a **visible press (`:active`) state, hover and `:focus-visible`**.
+> 3. **One or two prominent buttons per view or dialog** (Nonplo: exactly one); the preferred option differs by **style, never by size**; option sets share one height (row) or width (stack).
+> 4. Purpose is clear: familiar icon and/or short verb-led label; icon-only buttons have an accessible name + tooltip. Roles: **primary = default (Enter)**, cancel normal,
+>    destructive = red label on a neutral fill; **never a destructive primary, never autofocus on a destructive button**. Long actions: in-button spinner + changed label + no double submit.
+>    Label contrast ≥ 4.5:1 (3:1 large; icon-only 3:1); buttons that open another dialog end with "…".
+> 5. `node tools/check-buttons.mjs <changed files>` → **0 errors** (WARNs fixed or justified with `// buttons-ok: <reason>`).
+> 6. `node tools/run-buttons-probe.mjs <url>` (add `--click "<selector>"` to open dialogs first) → **PASS** at 375 and 1440 px, light and dark: names, hit regions,
+>    prominent count, size sets, roles, contrast, crowding, **press state and focus ring** (forced `:active`/`:hover` and real Tab).
+> If any step fails, the design is not finished.
+
 You are designing as an Apple design engineer would: restraint first, one idea per surface,
 depth from light and tone instead of borders and colour, and every number chosen on purpose.
 
@@ -186,6 +201,7 @@ never decoration). Use them to resolve trade-offs; details and web translations 
 - [ ] **LAYOUT GATE passed** (all steps above; `layout.md` checklist fully ✓; probe PASS at every viewport).
 - [ ] **MATERIALS GATE passed** (all steps above; `materials.md` checklist fully ✓; probe PASS in every mode).
 - [ ] **FEEDBACK GATE passed** (all steps above; `feedback.md` checklist fully ✓; checker 0 errors; probe PASS in every mode; failure and destructive paths walked).
+- [ ] **BUTTONS GATE passed** (all steps above; `buttons.md` checklist fully ✓; checker 0 errors; probe PASS at 375 and 1440 px in light and dark; press state, focus ring, roles and hit regions verified).
 
 - [ ] Exactly one filled button visible per screen/state.
 - [ ] No uppercase/wide-tracked eyebrow labels; no count badges shouting next to titles.
