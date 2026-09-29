@@ -130,7 +130,7 @@ for …" platform pages) so the game feels at home everywhere. Developer guidanc
   immersive where supported. (→ Playing audio › visionOS)
 - **Unique mechanics** from AR, machine learning, HealthKit, location, camera, microphone (with
   permission). (→ Technologies)
-- Related tiles: Game Center · iCloud · Apple In-App Purchase.
+- Related tiles: Game Center (✓ `technologies/game-center.md`) · iCloud (✓ `technologies/icloud.md`) · Apple In-App Purchase (✓ `technologies/apple-in-app-purchase.md`).
 
 ### Resources listed
 Related: Game Center, Game controls. Developer documentation: Games Pathway, *Create games for
@@ -190,5 +190,5 @@ with Reality Composer Pro 3* (WWDC26 252), *Level up your games* (WWDC25 209).
 ## Related (ingestion status)
 Loading, Settings, Onboarding, Privacy (✓ `hig/foundations/privacy.md`), Ratings and reviews, Launching, Typography, Buttons,
 Images, Layout, Menus (in-game menus), Going full screen, Game controls, Pointing
-devices, Accessibility, Inclusion, iCloud, Playing haptics,
-Technologies — not yet ingested (Playing audio ✓). Ingested since: Game controls (✓ `inputs/game-controls.md`), Gestures (✓ `inputs/gestures.md`), Apple In-App Purchase (✓ `technologies/apple-in-app-purchase.md`), Game Center (✓ `technologies/game-center.md`).
+devices, Accessibility, Inclusion, Playing haptics,
+Technologies — not yet ingested (Playing audio ✓). Ingested since: Game controls (✓ `inputs/game-controls.md`), Gestures (✓ `inputs/gestures.md`), Apple In-App Purchase (✓ `technologies/apple-in-app-purchase.md`), Game Center (✓ `technologies/game-center.md`), iCloud (✓ `technologies/icloud.md`).
