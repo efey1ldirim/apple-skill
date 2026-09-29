@@ -97,5 +97,5 @@ productivity work**, and **creating** things. Start from the device characterist
 - [ ] Orientation, Dark Mode, large text all handled?
 
 ## Related (ingestion status)
-Multitasking, Widgets, Drag and drop (✓ `hig/patterns/drag-and-drop.md`), Pointing devices,
-Apple Pencil and Scribble (✓ `inputs/apple-pencil-and-scribble.md`), Siri — not yet ingested (except ✓). Windows (✓ `components/presentation/windows.md`). Popovers (✓ `components/presentation/popovers.md`). Virtual keyboards (✓ `components/selection-and-input/virtual-keyboards.md`). Ingested since: Split views (✓ `components/layout/split-views.md`), Sidebars (✓ `components/navigation/sidebars.md`), Gestures (✓ `inputs/gestures.md`), Keyboards (✓ `inputs/keyboards.md`).
+Multitasking, Widgets, Drag and drop (✓ `hig/patterns/drag-and-drop.md`),
+Apple Pencil and Scribble (✓ `inputs/apple-pencil-and-scribble.md`), Siri — not yet ingested (except ✓). Windows (✓ `components/presentation/windows.md`). Popovers (✓ `components/presentation/popovers.md`). Virtual keyboards (✓ `components/selection-and-input/virtual-keyboards.md`). Ingested since: Split views (✓ `components/layout/split-views.md`), Sidebars (✓ `components/navigation/sidebars.md`), Gestures (✓ `inputs/gestures.md`), Keyboards (✓ `inputs/keyboards.md`), Pointing devices (✓ `inputs/pointing-devices.md`: iPadOS pointer effects).

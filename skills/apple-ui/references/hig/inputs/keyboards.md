@@ -206,7 +206,7 @@ A **physical keyboard** matters most on **Mac and iPad**, but any device except 
 | visionOS | shortcut interface on holding ⌘; flat list with File/Edit/View categories; `discoverabilityTitle`; virtual keyboard overlay with completions |
 | Developer docs | SwiftUI `KeyboardShortcut` · SwiftUI "Input events" · UIKit "Handling key presses made on a physical keyboard" · AppKit "Mouse, Keyboard, and Trackpad" · `isFullKeyboardAccessEnabled` · `discoverabilityTitle` · "Focus-based navigation" |
 | Video (link only, not watched) | Support Full Keyboard Access in your iOS app (WWDC21 10120) |
-| Apple's Related list | Virtual keyboards (✓), Entering data (✓), Pointing devices |
+| Apple's Related list | Virtual keyboards (✓), Entering data (✓), Pointing devices (✓) |
 | Other links in the text | Game controls (✓), Focus and selection (✓), The menu bar (✓), Right to left (✓) |
 | Change log | Jun 9 2025: game key-binding guidance moved to Game controls · Jun 10 2024: game guidance added, organisational updates · Jun 21 2023: visionOS guidance |
 
@@ -253,7 +253,7 @@ The web has real keyboard events but **no OS-level shortcut ownership**: the bro
 Field-note cross-links:
 - `field-notes/*`: **no keyboard-shortcut recipe**; nothing to conflict. **Tension with web reality:** Apple's standard-shortcut table is **system-owned** (Spotlight, Dock, screenshots, Eject) and is **out of reach on the web**; the web's baseline is the **browser's reserved set**, so only the **editing and document shortcuts** in the table transfer. The **iPadOS "no keyboard navigation for controls"** advice (Important callout) is **already documented as a native-only model** in `focus-and-selection.md`; on the web every control is Tab-reachable and that is **correct**, so **no conflict**.
 - `hig/inputs/game-controls.md` (✓): the **game key-binding guidance that used to live here** (§ Keyboards: single-key commands, ⌘ next to Space, key proximity, rebinding); `hig/inputs/focus-and-selection.md` (✓): **Full Keyboard Access vs focus groups**, Tab between groups, arrows inside; `hig/components/menus/the-menu-bar.md` (✓) and `menus.md` (✓): **shortcuts shown in menus**, standard sets, dynamic modifier items (one modifier); `hig/patterns/undo-and-redo.md` (✓): **⌘Z / ⇧⌘Z**; `hig/components/menus/edit-menus.md` (✓): cut/copy/paste shortcuts; `hig/components/selection-and-input/virtual-keyboards.md` (✓) and `hig/patterns/entering-data.md` (✓): **Apple's Related** pages (typing on a physical vs virtual keyboard, hints and formats); `hig/foundations/accessibility.md` (✓): **keyboard-only, don't override system shortcuts, test with Full Keyboard Access**; `hig/foundations/right-to-left.md` (✓): **mirroring**; `hig/inputs/gestures.md` (✓): **keyboard as one of "more than one way"**; `hig/patterns/playing-video.md` (✓): **Space plays/pauses** on a connected keyboard.
-- Not yet ingested (linked from this page): **Pointing devices**.
+- Ingested since: Pointing devices (✓ `inputs/pointing-devices.md`). Not yet ingested (linked from this page): none.
 
 ## Checklist
 - [ ] **Everything is reachable and operable by keyboard** (Tab, Enter/Space, Esc), with a **visible focus indicator** and **no traps**.
@@ -270,6 +270,6 @@ Field-note cross-links:
 
 ## Related
 - Ingested: Virtual keyboards (✓), Entering data (✓), Game controls (✓), Focus and selection (✓), The menu bar (✓), Menus (✓), Undo and redo (✓), Edit menus (✓), Right to left (✓), Accessibility (✓), Gestures (✓), Playing video (✓).
-- Not yet ingested (linked from this page): **Pointing devices**.
+- Ingested since: Pointing devices (✓ `inputs/pointing-devices.md`). Not yet ingested (linked from this page): none.
 - Developer docs: SwiftUI `KeyboardShortcut` · SwiftUI "Input events" · UIKit "Handling key presses made on a physical keyboard" · AppKit "Mouse, Keyboard, and Trackpad" · `isFullKeyboardAccessEnabled` · `discoverabilityTitle` · "Focus-based navigation".
 - Videos: Support Full Keyboard Access in your iOS app (WWDC21 10120).
