@@ -130,6 +130,7 @@ work from memory of this summary.**
 | Apple's web patterns | `references/apple-web/` | Apple's own websites measured live (mega-menu, nav, cards, docs layout) — the closest reference for web work. |
 | Apple's visual do/don't | `references/visual-examples/` | Apple's ✗/✓ example images (fetched locally by a script) with a catalog of which rule each pair illustrates — for visual self-checks. |
 | Symbol effects kit | `references/symbol-effects.md`, `tokens/apple-symbol-effects.*` | SF Symbols animation presets measured frame-by-frame from Apple's videos, rebuilt for any icon set (CSS + JS), with a how-to per effect. |
+| Liquid Glass | `references/liquid-glass/` (`overview.md`, `adopting.md`, `controls-motion.md`), `tokens/apple-glass-controls.*` | Apple's Liquid Glass pages distilled, plus the slider thumb and segmented control measured frame-by-frame from Apple's videos and rebuilt (lens, refraction, press/release motion) as a web kit — the base for other glass controls. |
 | Visual references | `references/screenshots-described/` | Text descriptions of screenshots (Apple pages and curated reference shots) so proportions can be recalled without the images. |
 
 ## Workflow

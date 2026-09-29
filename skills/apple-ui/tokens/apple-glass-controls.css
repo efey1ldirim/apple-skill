@@ -1,0 +1,11 @@
+/* Companion CSS for tokens/apple-glass-controls.js (Liquid Glass slider + segmented control).
+   The controls build their own DOM; this only supplies the stage colours (measured from Apple's demo
+   videos) and keyboard focus. Light appearance only - the videos show no dark variant. */
+:root {
+  --gc-slider-stage: #d8d8d8;   /* MEASURED background of the slider video */
+  --gc-seg-stage: #dddddd;      /* MEASURED background of the segmented-control video */
+  --gc-focus: #0088ff;
+}
+.gc-slider, .gc-seg { -webkit-tap-highlight-color: transparent; outline: none; }
+.gc-slider:focus-visible, .gc-seg:focus-visible { outline: 2px solid var(--gc-focus); outline-offset: 6px; border-radius: 12px; }
+@media (prefers-reduced-motion: reduce) { .gc-slider *, .gc-seg * { transition: none !important; } }
