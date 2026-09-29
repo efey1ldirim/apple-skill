@@ -35,6 +35,7 @@ ingested so far.
 | Drag and drop, reordering lists/boards, file upload drop zones, moving items between containers, multi-select drag | + `hig/patterns/drag-and-drop.md` (move vs copy, drag image, target feedback, undo, alternatives), `hig/foundations/accessibility.md` (dragging alternatives), `field-notes/anti-patterns.md` (no dashed drop frame at rest) | HIG: Pointing devices, Undo and redo, Feedback, Loading, Keyboards |
 | Toasts, alerts, error/success/status messages, validation, spinners, disabled buttons, confirmations, destructive-action prompts | **`hig/patterns/feedback.md` (FEEDBACK GATE)**, `tokens/apple-feedback.json` / `.css`, `node tools/check-feedback.mjs`, `node tools/run-feedback-probe.mjs <url>`, `hig/foundations/writing.md`, `hig/foundations/accessibility.md` | HIG: Alerts, Playing haptics, Undo and redo, Loading, Notifications |
 | Documents/files: create-open-save flows, autosave, unsaved changes, file pickers, upload/export/import, previews, drive/library start screens | + `hig/patterns/file-management.md` (autosave, extensions, Quick Look, document launcher), `hig/patterns/feedback.md` (save status, unsaved dot), `hig/patterns/drag-and-drop.md` | HIG: Toolbars, The menu bar (File menu), Printing, Sheets |
+| Breadcrumbs / location trail for file-like hierarchies (drives, folders, buckets, repo paths), folder pickers, "where am I" bars | + `hig/components/navigation/path-controls.md` (root → parents → selected with icon + name, last item current, hide the middle first/last stay, pop-up style on narrow widths, editable = drop or Choose…, in the content region not toolbar/status bar, ≥ 44 px segments) + visual `path-controls-01` | HIG: File management, Pop-up buttons, Column views, Sidebars |
 | First load / app start: launch or splash screens, app shell + skeletons, PWA startup, restoring last state, orientation at start | + `hig/patterns/launching.md` (near-identical first screen, no text/branding, restore state), `hig/foundations/branding.md`, `hig/foundations/layout.md` | HIG: Onboarding, Loading |
 | Live video / streaming / TV-style apps: live badges, channel switching, EPG/guide grid, content footer, PiP, cloud DVR/recording | + `hig/patterns/live-viewing-apps.md`, `hig/patterns/launching.md` (auto-start), `hig/patterns/going-full-screen.md`, `hig/patterns/feedback.md`, `hig/getting-started/designing-for-tvos.md` | HIG: Playing video, Remotes, Focus and selection |
 | Loading states: skeletons, placeholders, spinners/progress, prefetch, background downloads, long waits, offline/stalled loads | + `hig/patterns/loading.md`, `hig/patterns/feedback.md` (FEEDBACK GATE: named spinners, watchOS rule), `hig/patterns/launching.md` | HIG: Progress indicators |
@@ -164,7 +165,7 @@ on every ingestion. `—` = not yet ingested.
 | Undo and redo `undo-and-redo` | `hig/patterns/undo-and-redo.md` | 2026-09-29 |
 | Workouts `workouts` | `hig/patterns/workouts.md` | 2026-09-29 |
 
-### Components  (collection page: —; Menus and actions: Activity views, **Buttons ⚠️**, Context menus, Dock menus, Edit menus, Home Screen quick actions, Menus, Ornaments, Pop-up buttons, Pull-down buttons, The menu bar, Toolbars — **Menus and actions group complete** · **Content group complete**: Charts, Image views, Text views, Web views · Layout and organization: Boxes, Collections, Column views, Disclosure controls, Labels, Lists and tables, Lockups, Outline views, Split views, Tab views — **Layout and organization group complete**)
+### Components  (collection page: —; Menus and actions: Activity views, **Buttons ⚠️**, Context menus, Dock menus, Edit menus, Home Screen quick actions, Menus, Ornaments, Pop-up buttons, Pull-down buttons, The menu bar, Toolbars — **Menus and actions group complete** · **Content group complete**: Charts, Image views, Text views, Web views · Layout and organization: Boxes, Collections, Column views, Disclosure controls, Labels, Lists and tables, Lockups, Outline views, Split views, Tab views — **Layout and organization group complete** · Navigation and search: Path controls)
 | Page | File | Ingested |
 |---|---|---|
 | **Content** (group) | | |
@@ -197,7 +198,7 @@ on every ingestion. `—` = not yet ingested.
 | &nbsp;&nbsp;The menu bar `the-menu-bar` | `hig/components/menus/the-menu-bar.md` | 2026-09-29 |
 | &nbsp;&nbsp;Toolbars `toolbars` | `hig/components/menus/toolbars.md` | 2026-09-29 |
 | **Navigation and search** (group) | | |
-| &nbsp;&nbsp;Path controls `path-controls` | — | — |
+| &nbsp;&nbsp;Path controls `path-controls` | `hig/components/navigation/path-controls.md` | 2026-09-29 |
 | &nbsp;&nbsp;Search fields `search-fields` | — | — |
 | &nbsp;&nbsp;Sidebars `sidebars` | — | — |
 | &nbsp;&nbsp;Tab bars `tab-bars` | — | — |
