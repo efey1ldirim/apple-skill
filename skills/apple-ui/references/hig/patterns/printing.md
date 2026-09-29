@@ -88,5 +88,5 @@ Field-note cross-links:
 
 ## Related
 - Ingested: File management (✓), Modality (✓), Feedback (✓ CRITICAL), Accessibility (✓), Entering data (✓).
-- Ingested since: Disclosure controls (✓, the "Advanced Options" pattern). Ingested since: The menu bar (✓ § File menu). Not yet ingested: **Action sheets**, Toolbars.
+- Ingested since: Disclosure controls (✓, the "Advanced Options" pattern). Ingested since: The menu bar (✓ § File menu). Action sheets (✓ `components/presentation/action-sheets.md`). Toolbars ✓.
 - Developer docs: `UIPrintInteractionController`, `NSDocument`.

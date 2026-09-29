@@ -92,5 +92,5 @@ Field-note cross-links:
 
 ## Related
 - Ingested: Pop-up buttons (✓), Menus (✓), Buttons (✓ CRITICAL), Context menus (✓), Undo and redo (✓), Modality (✓), Icons (✓).
-- Ingested since: The menu bar (✓). Ingested since: Toolbars (✓). Not yet ingested: Action sheets, Popovers.
+- Ingested since: The menu bar (✓). Ingested since: Toolbars (✓). Action sheets (✓ `components/presentation/action-sheets.md`). Not yet ingested: Popovers.
 - Developer docs: `MenuPickerStyle` (SwiftUI), `showsMenuAsPrimaryAction` (UIKit), `pullsDown` (AppKit `NSPopUpButton`).

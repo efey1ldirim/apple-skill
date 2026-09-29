@@ -27,7 +27,7 @@ Tell people what is happening, what they can do next, what their action did, and
   - Example: Mail (iOS/iPadOS) states the latest update and the unread count in the mailbox toolbar: unobtrusive, easy to check.
 - **should** **Use alerts for critical, and ideally actionable, information.**
   - Alerts interrupt the current context by design, so match the importance of the message to the level of interruption.
-  - They lose their impact if used too often or for unimportant information (Apple links Alerts, not yet ingested).
+  - They lose their impact if used too often or for unimportant information (Apple links Alerts ✓ `components/presentation/alerts.md`).
 - **must** **Warn when a task can cause data loss that is unexpected AND irreversible.**
   - **must not** warn when data loss is the expected result. Example: the Finder does not warn on each file thrown away, because deleting is the expected result.
 - **should** **Confirm that a significant action or task has completed, when it makes sense.**
@@ -128,5 +128,5 @@ Field-note cross-links:
 
 ## Related
 - Ingested: Accessibility (✓), Writing (✓), Motion (✓), Entering data (✓), Drag and drop (✓), Color (✓ CRITICAL), Materials (✓ CRITICAL), Layout (✓ CRITICAL), Typography (✓ CRITICAL).
-- Ingested since: Loading (✓). Not yet ingested: **Alerts**, Notifications, Managing notifications, Progress indicators, Action sheets. Undo and redo ✓, Modality ✓.
+- Ingested since: Loading (✓). Not yet ingested: **Alerts**, Notifications, Managing notifications, Progress indicators. Action sheets (✓ `components/presentation/action-sheets.md`). Undo and redo ✓, Modality ✓.
 - Developer docs: UIKit *Animation and haptics*. Videos: *Designing Fluid Interfaces* (WWDC18 803), *Essential Design Principles* (WWDC17 802).

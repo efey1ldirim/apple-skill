@@ -36,7 +36,7 @@ People expect every app to survive being switched away from, split, windowed and
 - People use iPad **full screen** (apps fill the screen; switch windows with the **app switcher**) or **windowed**.
 - **Windowed apps** are **resizable**; people arrange them with behaviour **similar to macOS**.
   - The system provides window controls for **common tiling configurations, full screen, minimise and close**.
-  - The system marks the **frontmost window** by **colouring its window controls** and casting a **drop shadow on windows behind it** (Apple links Windows › iPadOS, not yet ingested).
+  - The system marks the **frontmost window** by **colouring its window controls** and casting a **drop shadow on windows behind it** (Apple links Windows › iPadOS: ✓ `hig/components/presentation/windows.md`).
 - **Picture in Picture:** videos and FaceTime calls can also play in a PiP overlay above other content, whether apps are full screen or windowed.
 - **Note (aside):** apps **don't control** multitasking configurations and **receive no indication** of which one people choose.
 - **should** So that the app responds correctly when opened windowed, **adapt gracefully to different screen sizes** (Layout ✓, Windows; developer doc *Multitasking on iPad, Mac, and Apple Vision Pro*).
@@ -73,7 +73,7 @@ The page has **no sizes, timings or colours**. Its concrete facts:
 | tvOS | PiP (where supported) |
 | visionOS | one active window; inactive = more translucent, recedes on z; closing = background, not quit; Now Playing: closing pauses audio (resume from Control Center); feathered mask: don't change edge appearance; don't pause video on look-away; audio may duck |
 | Developer docs | UIKit *Responding to the launch of your app* · *Multitasking on iPad, Mac, and Apple Vision Pro* |
-| Related HIG pages | Layout ✓ · Windows (not yet ingested) · Playing video ✓ |
+| Related HIG pages | Layout ✓ · Windows ✓ · Playing video ✓ |
 | Videos | *Elevate the design of your iPad app* (WWDC25 208) · *Make your UIKit app more flexible* (WWDC25 282) |
 
 ## Visual notes (from screenshots)
@@ -131,5 +131,5 @@ Field-note cross-links:
 
 ## Related
 - Ingested: Launching (✓), File management (✓), Loading (✓), Managing notifications (✓), Live-viewing apps (✓), Going full screen (✓), Layout (✓ CRITICAL), Feedback (✓ CRITICAL), Spatial layout (✓), Designing for iPadOS (✓), Designing for visionOS (✓).
-- Ingested since: Offering help (✓). Split views ✓ (`components/layout/split-views.md`). Not yet ingested: **Windows**, Sidebars.
+- Ingested since: Offering help (✓). Split views ✓ (`components/layout/split-views.md`). Sidebars (✓ `components/navigation/sidebars.md`). Windows (✓ `components/presentation/windows.md`: fluid resizing, window controls vs toolbar items).
 - Developer docs and videos: listed in Specs & values.

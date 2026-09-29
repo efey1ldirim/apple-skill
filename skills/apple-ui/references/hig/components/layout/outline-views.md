@@ -23,7 +23,7 @@ An outline view is a **hierarchical table**: a scrolling list of rows and column
 - **may** **Use alternating row colours** in multi-column outline views to help track values across columns, especially in wide ones.
 - **should** **Let people edit data when it makes sense.** In an editable cell people expect to **single-click to edit**; a cell may respond differently to a **double-click** (e.g. single-click a file name to rename, double-click to open the file). Reordering, adding and removing rows can be offered too.
 - **may** **Truncate cell text with a centred (middle) ellipsis** instead of clipping: it keeps the **beginning and end**, making content more distinct and recognisable.
-- **may** **Offer a search field** to find values in a **lengthy** outline view; windows whose main feature is an outline view often put the search field in the **toolbar** (see Search fields).
+- **may** **Offer a search field** to find values in a **lengthy** outline view; windows whose main feature is an outline view often put the search field in the **toolbar** (see Search fields ✓ `hig/components/navigation/search-fields.md`).
 
 ### Platform considerations
 - **macOS:** the only supported platform. **iOS, iPadOS, tvOS, visionOS, watchOS:** not supported.
@@ -47,7 +47,7 @@ The page has **no numbers, sizes or timings**. Concrete facts:
 | Search | search field in the toolbar for long outlines |
 | Not supported | iOS, iPadOS, tvOS, visionOS, watchOS |
 | Developer docs | SwiftUI `OutlineGroup` · AppKit `NSOutlineView` |
-| Related HIG pages | Column views ✓ · Lists and tables ✓ · Split views ✓ · Search fields (not yet ingested) |
+| Related HIG pages | Column views ✓ · Lists and tables ✓ · Split views ✓ · Search fields ✓ |
 | Video | *Stacks, Grids, and Outlines in SwiftUI* (WWDC20 10031) |
 
 ## Visual notes (from screenshots)
@@ -98,5 +98,5 @@ Field-note cross-links:
 
 ## Related
 - Ingested: Column views (✓), Lists and tables (✓), Disclosure controls (✓), Collections (✓), Labels (✓), File management (✓), Searching (✓), Drag and drop (✓), Undo and redo (✓), Loading (✓), Feedback (✓ CRITICAL), Layout/Color/Typography (✓ CRITICAL).
-- Ingested since: Split views (✓ `split-views.md`). Not yet ingested: **Search fields**.
+- Ingested since: Split views (✓ `split-views.md`). Search fields (✓ `hig/components/navigation/search-fields.md`).
 - Developer docs: `OutlineGroup`, `NSOutlineView`. Video: *Stacks, Grids, and Outlines in SwiftUI* (WWDC20 10031).

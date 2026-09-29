@@ -158,6 +158,8 @@ Apple's rule (this page): choose the case **per UI element type** and hold it. T
 | Tooltips (help tags) | Sentence case, no ending period | HIG Offering help |
 | Permission purpose strings | Sentence case, one full sentence, ends with a period | HIG Privacy |
 | Descriptions, helper text, empty states, errors, full sentences | Sentence case | Apple's own examples (headlines, descriptions); CONV |
+| Segmented control segment labels (nouns or noun phrases) | **Title Case** | HIG Segmented controls § Content |
+| Combo box introductory label | **Title Case**, ends with a colon | HIG Combo boxes |
 | Alert titles | Title Case when the product uses title case for alerts (Apple's example); keep it uniform | HIG Writing (example) |
 
 **Title-style capitalisation, concretely (HIG Menus):** capitalise **every word except articles, coordinating conjunctions and short prepositions**, and **always capitalise the last word**, whatever its part of speech. Working detail from the Apple Style Guide (not on the HIG page, tagged CONV): prepositions of **four letters or fewer** stay lowercase ("Move to Folder", "Save as PDF"), while **longer** ones are capitalised ("Export Through Email"); **"to" in an infinitive** stays lowercase ("How to Reset"). Examples: **Add to Cart · Save Changes · Move to Folder… · Show in Finder · Sort by Date · Turn HDR On**. Drop leading articles ("View Settings", not "View the Settings").
@@ -181,6 +183,6 @@ Apple's rule (this page): choose the case **per UI element type** and hold it. T
 - Ingested: Inclusion (✓), Accessibility (✓), Color (✓ CRITICAL: contrast of text), Typography (✓ CRITICAL), Branding (✓), Privacy (✓: purpose strings), Design principles (✓).
 - Ingested since: Entering data (✓ `hig/patterns/entering-data.md`).
 - Ingested since: Buttons (✓ CRITICAL, § Content label rules).
-- Not yet ingested: Notifications, Alerts, Action sheets, Text fields, VoiceOver, Managing notifications.
+- Ingested since: Action sheets (✓ `components/presentation/action-sheets.md`). Not yet ingested: Notifications, Alerts, VoiceOver, Managing notifications.
 - External (not HIG pages): Apple Style Guide; Writing inclusively; Localization (Xcode).
 - Videos listed: *Craft clear names for features and labels in your app* (WWDC26 290), *Make a big impact with small writing changes* (WWDC25 404), *Writing for interfaces* (WWDC22 10037).

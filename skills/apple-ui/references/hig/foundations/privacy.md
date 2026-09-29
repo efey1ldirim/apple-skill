@@ -359,5 +359,5 @@ Field-note cross-links:
 
 ## Related (ingestion status)
 Entering data (✓), Managing accounts (✓), Managing notifications (✓), Onboarding, Sign in with Apple, Eyes, Gestures, SharePlay,
-Alerts — not yet ingested. Layout (✓ CRITICAL: text must fit at all sizes), Accessibility (✓),
+Alerts (✓ `components/presentation/alerts.md`). Layout (✓ CRITICAL: text must fit at all sizes), Accessibility (✓),
 Inclusion (✓), Immersive experiences (✓).

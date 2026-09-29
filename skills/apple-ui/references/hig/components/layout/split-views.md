@@ -55,7 +55,7 @@ A split view shows **several adjacent panes at once**, usually **levels of a hie
 | visionOS | prefer split view to a new window; sheet for small tasks |
 | watchOS | full-screen list **or** detail; auto-show the most relevant detail; multiple details → vertical tab view with Digital Crown and page indicator |
 | Developer docs | SwiftUI `NavigationSplitView`, `VSplitView`, `HSplitView` · UIKit `UISplitViewController` · AppKit `NSSplitViewController`, `NSSplitView.DividerStyle` |
-| Related HIG pages | Sidebars (not yet ingested) · Tab bars (not yet ingested) · Layout ✓ · Drag and drop ✓ · Sheets (not yet ingested) · Tab views ✓ |
+| Related HIG pages | Sidebars ✓ · Tab bars ✓ · Layout ✓ · Drag and drop ✓ · Sheets ✓ · Tab views ✓ |
 | Video | *Make your UIKit app more flexible* (WWDC25 282) |
 
 ## Visual notes (from screenshots)
@@ -108,5 +108,5 @@ Field-note cross-links:
 
 ## Related
 - Ingested: Layout (✓ CRITICAL), Outline views (✓), Column views (✓), Lists and tables (✓), Collections (✓), Drag and drop (✓), Undo and redo (✓), Multitasking (✓), Going full screen (✓), Modality (✓), Launching (✓), Loading (✓), Designing for iPadOS/macOS/tvOS/visionOS/watchOS (✓), Lockups (✓), Workouts (✓).
-- Ingested since: Tab views (✓ `tab-views.md`). Not yet ingested: **Sidebars**, **Tab bars**, **Sheets**.
+- Ingested since: Tab views (✓ `tab-views.md`). Sidebars (✓ `components/navigation/sidebars.md`). Tab bars (✓ `components/navigation/tab-bars.md`), Sheets (✓ `components/presentation/sheets.md`).
 - Developer docs and video: see Specs & values.

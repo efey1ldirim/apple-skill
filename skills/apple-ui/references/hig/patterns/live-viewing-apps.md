@@ -119,4 +119,4 @@ Field-note cross-links:
 
 ## Related
 - Ingested: Launching (✓), Feedback (✓ CRITICAL), Going full screen (✓), Materials (✓ CRITICAL), Layout (✓ CRITICAL), Motion (✓), Designing for tvOS (✓), Accessibility (✓), Writing (✓).
-- Not yet ingested: **Remotes**, Sliders/Progress indicators, Collections.
+- Sliders (✓ `components/selection-and-input/sliders.md`). Not yet ingested: **Remotes**, Progress indicators, Collections.
