@@ -97,5 +97,5 @@ productivity work**, and **creating** things. Start from the device characterist
 - [ ] Orientation, Dark Mode, large text all handled?
 
 ## Related (ingestion status)
-Multitasking, Widgets, Drag and drop (✓ `hig/patterns/drag-and-drop.md`), Gestures, Virtual keyboards, Keyboards, Pointing devices,
-Apple Pencil and Scribble, Siri — not yet ingested. Windows (✓ `components/presentation/windows.md`). Popovers (✓ `components/presentation/popovers.md`). Ingested since: Split views (✓ `components/layout/split-views.md`), Sidebars (✓ `components/navigation/sidebars.md`).
+Multitasking, Widgets, Drag and drop (✓ `hig/patterns/drag-and-drop.md`), Gestures, Keyboards, Pointing devices,
+Apple Pencil and Scribble, Siri — not yet ingested. Windows (✓ `components/presentation/windows.md`). Popovers (✓ `components/presentation/popovers.md`). Virtual keyboards (✓ `components/selection-and-input/virtual-keyboards.md`). Ingested since: Split views (✓ `components/layout/split-views.md`), Sidebars (✓ `components/navigation/sidebars.md`).

@@ -100,12 +100,13 @@ Web equivalents: **`role="switch"`** (or a styled checkbox), **`<input type="che
 | Field-note switches / consent lists | `field-notes/components.md`: the settings **switch row** (`role="switch"`, right-aligned, `py-2`); the **selection marks are 21 px circles** in consent/choice lists. See **Field-note conflict** below. |
 
 Field-note cross-links:
+- **Decision (2026-09-29, resolved with the user):** *mobile-style choice and consent lists use circle selection marks (field-note recipe, 21 px, whole row tappable); desktop-style forms, settings panes and dependency hierarchies use square checkboxes (this page, with a mixed state); the two are never mixed in one list.* `field-notes/*` stays **unedited** (Nonplo-sourced); this decision lives in the HIG notes and is the reading rule for both.
 - **Field-note conflict (kept, not edited):** `field-notes/principles.md` ("Selection marks: **circles (21 px), not square checkboxes**: square boxes feel like a form") and `anti-patterns.md` ("Square checkboxes in a consent list → 21 px circle marks, whole row tappable") **differ from this page's macOS checkbox (a small rounded square)**. They are **compatible by platform and use**: the field notes describe **iOS-style list rows and consent/choice lists** (where Apple's own iOS UI uses circle marks and switches), while this page describes **macOS checkboxes for forms and hierarchies**; on the web, **use circle marks in mobile-style choice lists and square checkboxes in desktop forms and dependency hierarchies**, and never mix both in one list.
 - `field-notes/components.md` (settings **switch row**, right-aligned, `role="switch"` + `aria-checked`), `tokens.md` (component boundaries ≥ 3:1; thumb shadow), `engineering-gotchas.md` (shadows vanish on black): apply to switch tracks and thumbs; `anti-patterns.md` ("each switch in its own bordered box" → rows in one group with hairlines): **consistent** with the grouped-form guidance here.
 - `hig/components/menus/buttons.md` (✓ CRITICAL) and **Buttons GATE**: toggle buttons are buttons (44 px hit region, exactly one prominent per view, never primary + destructive); its "Toggles, pop-ups, segmented controls" row now points here; `segmented-controls.md` (✓): multi-choice segments are `aria-pressed` groups.
 - `hig/components/menus/pop-up-buttons.md` (✓) and `pickers.md` (✓): the list alternatives; `hig/components/layout/lists-and-tables.md` (✓): switches in list rows; `hig/patterns/settings.md` (✓): settings screens (defaults, group toggles); `hig/components/presentation/alerts.md` (✓): "Don't Show Again"/suppression checkboxes; `hig/components/menus/the-menu-bar.md` (✓) and `menus.md` (✓): check-marked menu items as toggles; `hig/patterns/playing-haptics.md` (✓): standard toggles play haptics automatically.
 - `hig/foundations/color.md` (✓ CRITICAL): on/off contrast and non-colour cues; `hig/foundations/accessibility.md` (✓): on/off labels, contrast; `hig/foundations/right-to-left.md` (✓): thumb direction; `hig/foundations/layout.md` (✓ CRITICAL): row layout and reflow.
-- Not yet ingested: Virtual keyboards, Focus and selection.
+- Virtual keyboards (✓ `virtual-keyboards.md`). Not yet ingested: Focus and selection.
 
 ## Checklist
 - [ ] Semantics match meaning: **switch** (`role="switch"`) for immediate settings, **checkbox** for form/multi-select/hierarchy, **radio group** for 2–5 exclusive options, **`aria-pressed` button** for tool/filter toggles.
@@ -121,5 +122,5 @@ Field-note cross-links:
 
 ## Related
 - Ingested: Buttons (✓ CRITICAL), Segmented controls (✓), Pop-up buttons (✓), Pickers (✓), Toolbars (✓), Windows (✓), Lists and tables (✓), Settings (✓), Alerts (✓), The menu bar (✓), Menus (✓), Playing haptics (✓), Color (✓ CRITICAL), Accessibility (✓), Right to left (✓), Layout (✓ CRITICAL), Writing (✓).
-- Not yet ingested: Virtual keyboards, Focus and selection.
+- Virtual keyboards (✓ `virtual-keyboards.md`). Not yet ingested: Focus and selection.
 - Developer docs: SwiftUI `Toggle`, `ToggleStyle`; UIKit `UISwitch`; AppKit `NSButton.ButtonType.toggle`, `NSSwitch`.

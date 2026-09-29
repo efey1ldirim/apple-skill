@@ -31,7 +31,7 @@ A digit entry view is a **full-screen tvOS view that prompts for a series of dig
 | Platforms | tvOS only |
 | Developer docs | TVUIKit `TVDigitEntryViewController` (`isSecureDigitEntry` is named on the Entering data page) |
 | Video / Change log | none |
-| Apple's Related list | Virtual keyboards (not yet ingested) |
+| Apple's Related list | Virtual keyboards ✓ |
 
 ## Visual notes (from screenshots)
 - **Hero (screenshot):** a red-to-orange gradient card, the Apple TV five-digit passcode screen: the **title "Enter Passcode"** in large text, the **prompt "Enter your five-digit passcode."** below it, **five tall rounded rectangles in a row** (the digit boxes; the third one is set slightly lighter, the current position), and under them a **single row of numerals "1 2 3 4 5 6 7 8 9 0" and a delete key (a filled backspace glyph)**; the **"1" sits in a white rounded highlight** (the focused key). **Measurement arrows** run: vertically above and below the block, horizontally from the card edges to the boxes on both sides (the block is centred with generous space), and small **I-beam spacing marks** between title and prompt, prompt and boxes, and between the boxes **(from screenshot)**. The alt text: *a stylised representation of an Apple TV five-digit passcode entry screen*.
@@ -56,7 +56,7 @@ Field-note cross-links:
 - `hig/foundations/privacy.md` (✓): never prefill passwords, Password AutoFill and passkeys; `hig/patterns/managing-accounts.md` (✓): sign-in flows (PIN as a second step), passkeys before codes.
 - `hig/patterns/feedback.md` (✓ CRITICAL) and **Feedback gate**: error placement and tone; `hig/foundations/writing.md` (✓): title/prompt copy and the capitalisation table.
 - `hig/patterns/onboarding.md` (✓): the code-entry step inside a flow; `hig/components/content/text-views.md` (✓): multi-line text (not digits).
-- Not yet ingested: **Virtual keyboards** (Apple's Related). Text fields (✓ `text-fields.md`).
+- Virtual keyboards (✓ `virtual-keyboards.md`, Apple's Related). Text fields (✓ `text-fields.md`).
 - No conflict with a field note.
 
 ## Checklist
@@ -70,5 +70,5 @@ Field-note cross-links:
 
 ## Related
 - Ingested: Entering data (✓), Privacy (✓), Managing accounts (✓), Feedback (✓ CRITICAL), Writing (✓), Onboarding (✓), Text views (✓), Combo boxes (✓), Color wells (✓).
-- Not yet ingested: Virtual keyboards. Text fields (✓ `text-fields.md`).
+- Virtual keyboards (✓ `virtual-keyboards.md`). Text fields (✓ `text-fields.md`).
 - Developer docs: TVUIKit `TVDigitEntryViewController`.
