@@ -41,7 +41,7 @@ ingested so far.
 | Loading states: skeletons, placeholders, spinners/progress, prefetch, background downloads, long waits, offline/stalled loads | + `hig/patterns/loading.md`, `hig/patterns/feedback.md` (FEEDBACK GATE: named spinners, watchOS rule), `hig/patterns/launching.md` | HIG: Progress indicators |
 | Accounts: sign-in/sign-up, guest mode, passkeys/SSO, auth button wording, account deletion, subscriptions on deletion, device/TV sign-in | + `hig/patterns/managing-accounts.md`, `hig/foundations/privacy.md`, `hig/patterns/entering-data.md`, `hig/patterns/feedback.md` (deletion confirm) | HIG: Sign in with Apple, Onboarding, Apple In-App Purchase |
 | Push/email/SMS notifications: permission timing, urgency levels, time-sensitive alerts, marketing opt-in, quiet hours/digest, notification settings | + `hig/patterns/managing-notifications.md`, `hig/foundations/privacy.md`, `hig/patterns/feedback.md` | HIG: Notifications, Settings, Alerts |
-| Modals, dialogs, sheets, drawers, confirmations, popups, "are you sure" prompts, unsaved-changes dialogs, full-screen viewers | + `hig/patterns/modality.md` (only when beneficial, one at a time, obvious dismissal, data-loss guard), `hig/patterns/feedback.md` (FEEDBACK GATE: alertdialog rules), `hig/foundations/materials.md` | HIG: Sheets, Alerts, Popovers, Action sheets |
+| Modals, dialogs, sheets, drawers, confirmations, popups, "are you sure" prompts, unsaved-changes dialogs, full-screen viewers | + `hig/components/presentation/action-sheets.md` (choices for an action the person just took: not an alert, not a menu; sparing, one-line title, message only if needed, destructive on top in red + verb, Cancel at the bottom, ≤ 4 buttons incl. Cancel, no scrolling, roles per Buttons gate; visual `action-sheets-01`), `hig/patterns/modality.md` (only when beneficial, one at a time, obvious dismissal, data-loss guard), `hig/patterns/feedback.md` (FEEDBACK GATE: alertdialog rules), `hig/foundations/materials.md` | HIG: Sheets, Alerts, Popovers, Action sheets |
 | Multitasking: tabs/windows, resizing, split screen, background tabs, PiP, media that keeps playing, save/restore state, background uploads | + `hig/patterns/multitasking.md`, `hig/patterns/launching.md`, `hig/foundations/layout.md` (any window size) | HIG: Windows, Playing video, Playing audio |
 | Help, tips, coach marks, tooltips, help text, tutorials, first-use hints | + `hig/patterns/offering-help.md` (tip types + eligibility, tooltip copy 60–75 chars), `hig/foundations/writing.md`, `hig/patterns/feedback.md`; visuals `offering-help-01 … 03` | HIG: Onboarding, Help menu |
 | Sound: audio playback, sound effects, UI sounds, mute/silent, volume, headphones/output routing, interruptions, media keys, spatial audio | + `hig/patterns/playing-audio.md` (categories, interruptions, silent switch), `hig/patterns/multitasking.md`, `hig/patterns/feedback.md`, `hig/foundations/accessibility.md` | HIG: Playing video, Playing haptics |
@@ -168,7 +168,7 @@ on every ingestion. `—` = not yet ingested.
 | Undo and redo `undo-and-redo` | `hig/patterns/undo-and-redo.md` | 2026-09-29 |
 | Workouts `workouts` | `hig/patterns/workouts.md` | 2026-09-29 |
 
-### Components  (collection page: —; Menus and actions: Activity views, **Buttons ⚠️**, Context menus, Dock menus, Edit menus, Home Screen quick actions, Menus, Ornaments, Pop-up buttons, Pull-down buttons, The menu bar, Toolbars — **Menus and actions group complete** · **Content group complete**: Charts, Image views, Text views, Web views · Layout and organization: Boxes, Collections, Column views, Disclosure controls, Labels, Lists and tables, Lockups, Outline views, Split views, Tab views — **Layout and organization group complete** · Navigation and search: Path controls, Search fields, Sidebars, Tab bars, Token fields — **Navigation and search group complete**)
+### Components  (collection page: —; Menus and actions: Activity views, **Buttons ⚠️**, Context menus, Dock menus, Edit menus, Home Screen quick actions, Menus, Ornaments, Pop-up buttons, Pull-down buttons, The menu bar, Toolbars — **Menus and actions group complete** · **Content group complete**: Charts, Image views, Text views, Web views · Layout and organization: Boxes, Collections, Column views, Disclosure controls, Labels, Lists and tables, Lockups, Outline views, Split views, Tab views — **Layout and organization group complete** · Navigation and search: Path controls, Search fields, Sidebars, Tab bars, Token fields — **Navigation and search group complete** · Presentation: Action sheets)
 | Page | File | Ingested |
 |---|---|---|
 | **Content** (group) | | |
@@ -207,7 +207,7 @@ on every ingestion. `—` = not yet ingested.
 | &nbsp;&nbsp;Tab bars `tab-bars` | `hig/components/navigation/tab-bars.md` | 2026-09-29 |
 | &nbsp;&nbsp;Token fields `token-fields` | `hig/components/navigation/token-fields.md` | 2026-09-29 |
 | **Presentation** (group) | | |
-| &nbsp;&nbsp;Action sheets `action-sheets` | — | — |
+| &nbsp;&nbsp;Action sheets `action-sheets` | `hig/components/presentation/action-sheets.md` | 2026-09-29 |
 | &nbsp;&nbsp;Alerts `alerts` | — | — |
 | &nbsp;&nbsp;Page controls `page-controls` | — | — |
 | &nbsp;&nbsp;Panels `panels` | — | — |

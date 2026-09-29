@@ -108,5 +108,5 @@ Field-note cross-links:
 
 ## Related
 - Ingested: Feedback (✓ CRITICAL), Going full screen (✓), Immersive experiences (✓), File management (✓), Managing accounts (✓), Entering data (✓), Materials (✓ CRITICAL), Spatial layout (✓), Accessibility (✓).
-- Not yet ingested: **Sheets**, **Alerts**, **Popovers**, **Action sheets**, Windows. Ingested since: Activity views (✓).
+- Ingested since: Action sheets (✓ `components/presentation/action-sheets.md`). Not yet ingested: **Sheets**, **Alerts**, **Popovers**, Windows. Ingested since: Activity views (✓).
 - Developer docs: SwiftUI *Presentation modifiers*, UIKit `UIModalPresentationStyle`, AppKit *Modal Windows and Panels*. Video: *Get to know the new design system* (WWDC25 356).
