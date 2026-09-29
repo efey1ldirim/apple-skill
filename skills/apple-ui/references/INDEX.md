@@ -129,6 +129,7 @@ ingested so far.
 | Design review / audit | `field-notes/anti-patterns.md` + checklist in `SKILL.md` + `visual-examples/README.md` (compare screenshots with Apple's ✗/✓ images) | HIG pages for every component on screen |
 | Visual proportions in doubt | `screenshots-described/` | — |
 | Media streaming to TVs and speakers / AirPlay and remote playback / custom media players / HLS rendition ladders / background playback / Media Session / device-picker button / partner-logo and compatibility wording | + `hig/technologies/airplay.md` (system player first; HLS with the full resolution range; stream only what people expect (mute and `disableRemotePlayback` on decorative loops); support streaming and mirroring; remote control events (Media Session); don't stop on background or lock and never auto-mirror; don't interrupt other apps' audio (autoplay muted); app stays usable while streaming; custom player: system-like buttons and states, picker at the lower right, generic Lucide `cast` icon not AirPlay artwork; AirPlay icon/name only non-interactively (black/white/matching colour, less prominent than your app); spelling "AirPlay", noun use, "works with / compatible / supports", never "has AirPlay"), `hig/patterns/playing-video.md`, `hig/patterns/playing-audio.md`, `hig/foundations/branding.md` | HIG: Playing video, Playing audio |
+| Idle / ambient / dimmed states / kiosk and dashboard screens / privacy masking when locked or idle / screen wake lock / low-power glanceable UI / winding down animation | + `hig/technologies/always-on.md` (redact sensitive data (balances, health, notification text); keep chosen glanceable values; dim secondary text, images and fills, remove rich imagery; stable layout (controls become unavailable-looking, not removed); rare, subtle updates; wind motion down gently; people can turn it off; web: idle theme, throttled updates, Screen Wake Lock only on request, tap-to-wake without acting), `hig/components/system-experiences/widgets.md`, `hig/components/system-experiences/live-activities.md`, `hig/foundations/privacy.md` | HIG: Designing for watchOS |
 
 When a HIG page and a field note disagree: the **field note wins for the web** when it records
 an explicit user decision (marked **[user decision]**); otherwise follow the HIG and note the
@@ -303,11 +304,11 @@ on every ingestion. `—` = not yet ingested.
 | Pointing devices `pointing-devices` | `hig/inputs/pointing-devices.md` | 2026-09-29 |
 | Remotes `remotes` | `hig/inputs/remotes.md` | 2026-09-29 |
 
-### Technologies  (collection page: —; ingested so far: AirPlay)
+### Technologies  (collection page: —; ingested so far: AirPlay, Always On)
 | Page | File | Ingested |
 |---|---|---|
 | AirPlay `airplay` | `hig/technologies/airplay.md` | 2026-09-29 |
-| Always On `always-on` | — | — |
+| Always On `always-on` | `hig/technologies/always-on.md` | 2026-09-29 |
 | App Clips `app-clips` | — | — |
 | Apple In-App Purchase `apple-in-app-purchase` | — | — |
 | Apple Pay `apple-pay` | — | — |

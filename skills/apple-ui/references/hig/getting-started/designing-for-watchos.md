@@ -99,4 +99,4 @@ widgets, status summaries, mobile "at a glance" screens:
 
 ## Related (ingestion status)
 Digital Crown, Action button, Siri (Shortcuts and suggestions), Complications,
-Notifications (✓ `components/system-experiences/notifications.md`), Always On, Watch faces (✓ `components/system-experiences/watch-faces.md`) — not yet ingested (except ✓). Ingested since: Workouts (✓ `patterns/workouts.md`), Color (✓), Materials (✓), Gestures (✓ `inputs/gestures.md`: watchOS 11 double tap).
+Notifications (✓ `components/system-experiences/notifications.md`), Watch faces (✓ `components/system-experiences/watch-faces.md`) — not yet ingested (except ✓). Ingested since: Workouts (✓ `patterns/workouts.md`), Color (✓), Materials (✓), Gestures (✓ `inputs/gestures.md`: watchOS 11 double tap), Always On (✓ `technologies/always-on.md`).
