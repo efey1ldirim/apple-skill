@@ -193,7 +193,7 @@ Field-note cross-links:
 - [ ] **Limitations are explained before, during and after use.**
 
 ## Related
-- Ingested: Generative AI (✓), Privacy (✓), Inclusion (✓), Accessibility (✓), Feedback (✓ CRITICAL), Undo and redo (✓), Onboarding (✓), Settings (✓), Offering help (✓), Searching (✓), Menus (✓), Collections (✓), HealthKit (✓), CareKit (✓).
+- Ingested: Generative AI (✓), Privacy (✓), Inclusion (✓), Accessibility (✓), Feedback (✓ CRITICAL), Undo and redo (✓), Onboarding (✓), Settings (✓), Offering help (✓), Searching (✓), Menus (✓), Collections (✓), HealthKit (✓), CareKit (✓), Maps (✓, `technologies/maps.md`: the multiple-routes example).
 - Not yet ingested (linked from this page): none in the HIG.
 - Developer docs: Apple Intelligence and machine learning · Create ML · Core ML.
 - Videos: Explore prompt design & safety for on-device foundation models (WWDC25 248); Discover machine learning & AI frameworks on Apple platforms (WWDC25 360).
