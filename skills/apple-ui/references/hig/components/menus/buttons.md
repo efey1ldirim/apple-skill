@@ -173,5 +173,5 @@ Field-note cross-links:
 
 ## Related
 - Ingested: Feedback (✓ CRITICAL), Color (✓ CRITICAL), Typography (✓ CRITICAL), Layout (✓ CRITICAL), Materials (✓ CRITICAL), Labels (✓), Offering help (✓), Icons (✓), SF Symbols (✓), Modality (✓), Undo and redo (✓), Entering data (✓), Drag and drop (✓), Lists and tables (✓), Tab views (✓), Disclosure controls (✓), Activity views (✓), Image views (✓), Workouts (✓), Playing haptics (✓).
-- Not yet ingested: **Pop-up buttons**, **Pull-down buttons**, **Toggles**, **Segmented controls**, **Location button** (Privacy), Alerts, Sheets, Toolbars, Ornaments.
+- Ingested since: Context menus (✓). Not yet ingested: **Pop-up buttons**, **Pull-down buttons**, **Toggles**, **Segmented controls**, **Location button** (Privacy), Alerts, Sheets, Toolbars, Ornaments.
 - Developer docs: see Specs & values.
