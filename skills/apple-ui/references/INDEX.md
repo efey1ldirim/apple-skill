@@ -53,6 +53,7 @@ ingested so far.
 | Workout / fitness / stopwatch / tracker / "session in progress" screens: live metrics, big controls, pause/resume/end, sensor-unavailable states, session summary, courier/driver mode | + `hig/patterns/workouts.md` (3 screens: controls · metrics · media; timer from timestamp; wake lock; `--` not 0; summary; discard micro-sessions; legible in motion), `hig/patterns/feedback.md`, `hig/patterns/playing-haptics.md`, `hig/patterns/going-full-screen.md`, `hig/foundations/typography.md` + `color.md` (legibility gates); visual `workouts-01` | HIG: Activity rings, Charting data |
 | Settings / list screen | + `field-notes/components.md` § Settings list, `hig/patterns/settings.md` (few settings, good defaults, in-context options, respect system settings) | HIG: Settings, Lists and tables, Toggles |
 | Embedded web content: iframes, in-app browser/webview, rendering email or CMS HTML, external links from an app, embed fallbacks | + `hig/components/content/web-views.md` (sandbox + sanitise, back/forward only for multi-page, never rebuild a browser, open external in new tab/system browser, embed-refused fallback, block remote content) | HIG: Modality, Privacy |
+| Installed-app launcher menu: PWA manifest `shortcuts`, taskbar/Dock jump lists, app badge, launch handler, quick actions from the app icon | + `hig/components/menus/dock-menus.md` (high-value cold-start actions, same commands in-app, `short_name`, reuse window, badge not notifications, iOS has no manifest shortcuts) | HIG: Menus, Home Screen quick actions |
 | Context menus, right-click / long-press menus, item ⋯ menus, row actions menus, "New …" from empty space, menu preview | + `hig/components/menus/context-menus.md` (every command also in the main UI, hide don't dim, ≤ 3 groups, one submenu level, destructive last + Undo, reverse when opening upward, ARIA menu keyboard model, Shift+F10), `hig/components/menus/buttons.md` (the ⋯ button), `hig/patterns/undo-and-redo.md` | HIG: Menus, Edit menus, Pop-up buttons, Pull-down buttons |
 | Buttons, CTAs, icon buttons, form submit, dialog actions, primary/secondary/destructive hierarchy, help buttons, busy/loading buttons, hit targets, press/focus states | **`hig/components/menus/buttons.md` (BUTTONS GATE)**, `tokens/apple-buttons.json` / `.css`, `node tools/check-buttons.mjs`, `node tools/run-buttons-probe.mjs <url>`, `hig/patterns/feedback.md`, `hig/foundations/color.md`; visuals `buttons-01 … 03` | HIG: Pop-up buttons, Pull-down buttons, Toggles, Segmented controls, Alerts, Toolbars |
 | Share button / share sheet, Web Share API + fallback popover, share targets (PWA `share_target`), custom share/quick actions, "copy link", background upload progress | + `hig/components/menus/activity-views.md` (one Share button, `navigator.share` + AbortError silent, no duplicate system actions, verb titles, ~70 px SVG icons, exclude inapplicable, no modal-on-modal, progress in main app; visual `activity-views-01`), `hig/patterns/collaboration-and-sharing.md`, `hig/foundations/icons.md` | HIG: Sheets, Popovers |
@@ -156,7 +157,7 @@ on every ingestion. `—` = not yet ingested.
 | Undo and redo `undo-and-redo` | `hig/patterns/undo-and-redo.md` | 2026-09-29 |
 | Workouts `workouts` | `hig/patterns/workouts.md` | 2026-09-29 |
 
-### Components  (collection page: —; Menus and actions: Activity views, **Buttons ⚠️**, Context menus · **Content group complete**: Charts, Image views, Text views, Web views · Layout and organization: Boxes, Collections, Column views, Disclosure controls, Labels, Lists and tables, Lockups, Outline views, Split views, Tab views — **Layout and organization group complete**)
+### Components  (collection page: —; Menus and actions: Activity views, **Buttons ⚠️**, Context menus, Dock menus · **Content group complete**: Charts, Image views, Text views, Web views · Layout and organization: Boxes, Collections, Column views, Disclosure controls, Labels, Lists and tables, Lockups, Outline views, Split views, Tab views — **Layout and organization group complete**)
 | Page | File | Ingested |
 |---|---|---|
 | **Content** (group) | | |
@@ -179,7 +180,7 @@ on every ingestion. `—` = not yet ingested.
 | &nbsp;&nbsp;Activity views `activity-views` | `hig/components/menus/activity-views.md` | 2026-09-29 |
 | &nbsp;&nbsp;Buttons `buttons` ⚠️ CRITICAL | `hig/components/menus/buttons.md` (+ `tokens/apple-buttons.{css,json}`, `tools/check-buttons.mjs`, `tools/buttons-probe.js`, `tools/run-buttons-probe.mjs`, fixtures) | 2026-09-29 |
 | &nbsp;&nbsp;Context menus `context-menus` | `hig/components/menus/context-menus.md` | 2026-09-29 |
-| &nbsp;&nbsp;Dock menus `dock-menus` | — | — |
+| &nbsp;&nbsp;Dock menus `dock-menus` | `hig/components/menus/dock-menus.md` | 2026-09-29 |
 | &nbsp;&nbsp;Edit menus `edit-menus` | — | — |
 | &nbsp;&nbsp;Home Screen quick actions `home-screen-quick-actions` | — | — |
 | &nbsp;&nbsp;Menus `menus` | — | — |
