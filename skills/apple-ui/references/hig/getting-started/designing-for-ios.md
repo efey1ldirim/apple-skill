@@ -104,4 +104,5 @@ This page *is* the iOS platform summary. iPadOS/macOS/etc. have their own pages.
 Siri, Privacy (✓ `hig/foundations/privacy.md`), Widgets, Home Screen
 quick actions — not yet ingested; Activity views (✓ `components/menus/activity-views.md`); Searching (✓), Layout (✓ CRITICAL), Dark Mode (✓), Typography (✓ CRITICAL) are ingested. Virtual keyboards (✓ `components/selection-and-input/virtual-keyboards.md`). Ingested since: Gestures (✓ `inputs/gestures.md`), Gyroscope and accelerometer (✓ `inputs/gyro-and-accelerometer.md`).
 Note: the page links "spatial interactions" (`/spatial-interactions`), which is not in the
-current HIG navigator tree.
+current HIG navigator tree. It is the old title of Nearby interactions (renamed June 21, 2023;
+✓ `hig/inputs/nearby-interactions.md`; the old slug is inferred from that page's Change log).
