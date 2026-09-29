@@ -171,7 +171,7 @@ The script reports **6 comparisons** for this page.
 Field-note cross-links:
 - `field-notes/*`: **no commerce recipe**; nothing conflicts.
 - `hig/patterns/onboarding.md` (✓): **benefits at first launch**; `hig/patterns/settings.md` (✓): **a sign-up entry and plan in settings**; `hig/patterns/managing-accounts.md` (✓): **sign-in, restore, subscriptions and accounts**; `hig/patterns/entering-data.md` (✓): **ask only what's necessary**; `hig/patterns/offering-help.md` (✓): **contextual help and support entry points**; `hig/components/presentation/sheets.md` (✓) and `hig/patterns/modality.md` (✓): **modal sign-up sheets with Close**; `hig/getting-started/designing-for-games.md` (✓): **in-app purchases in games**; `hig/foundations/writing.md` (✓): **plain product names and honest terms**; `hig/foundations/privacy.md` (✓): **Terms/Privacy links**; `hig/technologies/app-clips.md` (✓): **Apple Pay and Sign in with Apple for quick payment**; `hig/patterns/loading.md` (✓) and `feedback.md` (✓): **purchase progress and confirmation**.
-- Not yet ingested (linked from this page): **Apple Pay**.
+- Ingested since: Apple Pay (✓ `technologies/apple-pay.md`). Not yet ingested (linked from this page): none.
 
 ## Checklist
 - [ ] **People can try before paying** (free tier, metered paywall or trial).
@@ -190,6 +190,6 @@ Field-note cross-links:
 
 ## Related
 - Ingested: Onboarding (✓), Settings (✓), Managing accounts (✓), Entering data (✓), Offering help (✓), Sheets (✓), Modality (✓), Designing for games (✓), Writing (✓), Privacy (✓), App Clips (✓), Loading (✓), Feedback (✓ CRITICAL).
-- Not yet ingested (linked from this page): **Apple Pay** (Technologies).
+- Ingested since: Apple Pay (✓ `technologies/apple-pay.md`). Not yet ingested (linked from this page): none.
 - Developer docs: StoreKit "Apple In-App Purchase"; Advanced Commerce API; Retention Messaging API. External: Apple In-App Purchase and Offering Subscriptions (developer site), App Review Guidelines, Apple Support refund article.
 - Videos: What's new in Apple In-App Purchase (WWDC26 210).
