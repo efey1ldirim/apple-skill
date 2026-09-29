@@ -101,6 +101,6 @@ media and content, and games — **often with several apps at once**.
 - [ ] Works from laptop to very large displays without stretched lines?
 
 ## Related (ingestion status)
-The menu bar, File management (✓), Going full screen (✓), Dock menus (✓), Menus (✓), Toolbars (✓), Keyboards, Pointing devices,
+The menu bar, File management (✓), Going full screen (✓), Dock menus (✓), Menus (✓), Toolbars (✓),
 Siri — not yet
-ingested (Game controls ✓ `inputs/game-controls.md`). Ingested since: Sidebars (✓ `components/navigation/sidebars.md`), Windows (✓ `components/presentation/windows.md`).
+ingested (Game controls ✓ `inputs/game-controls.md`). Ingested since: Sidebars (✓ `components/navigation/sidebars.md`), Windows (✓ `components/presentation/windows.md`), Keyboards (✓ `inputs/keyboards.md`), Pointing devices (✓ `inputs/pointing-devices.md`: click/gesture and pointer tables).

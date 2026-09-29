@@ -66,7 +66,7 @@ On devices without physical keyboards the system offers **virtual keyboards** wh
 | Sizes, spacing, hit regions | **none given on this page** |
 | Developer docs | SwiftUI `keyboardType(_:)`, `textContentType(_:)`, `submitLabel(_:)`, `ToolbarItemPlacement` · UIKit `UIKeyboardType`, `UITextContentType`, `UIReturnKeyType`, `inputViewController`, `inputAccessoryView`, `UIKeyboardLayoutGuide`, `playInputClick()` |
 | Video | visionOS virtual keyboard (recording of typing) |
-| Apple's Related list | Entering data ✓ · Keyboards (not yet ingested) · Layout ✓ |
+| Apple's Related list | Entering data ✓ · Keyboards (✓ `inputs/keyboards.md`) · Layout ✓ |
 | Change log | June 9, 2025 (accessory controls above the keyboard; watchOS keyboard availability) · Feb 2, 2024 (visionOS gestures) · Dec 5, 2023 (visionOS artwork) · June 21, 2023 (renamed from *Onscreen keyboards*; visionOS) |
 
 ## Visual notes (from screenshots and downloaded pictures)
@@ -102,7 +102,7 @@ Field-note cross-links:
 - `hig/foundations/layout.md` (✓ CRITICAL) and **Layout gate**: `dvh`/`visualViewport`, safe areas, 200 % text; `hig/foundations/materials.md` (✓ CRITICAL) and **Materials GATE**: glass accessory bar with a solid fallback; `hig/patterns/playing-haptics.md` (✓): no synthesised system click; `hig/components/menus/the-menu-bar.md` (✓): shortcuts live on hardware keyboards.
 - `hig/components/navigation/search-fields.md` (✓): the search Return key; `hig/foundations/right-to-left.md` (✓): `lang`/`dir` for keyboards; `hig/foundations/privacy.md` (✓): secure and phone fields, passkeys/AutoFill.
 - `field-notes/engineering-gotchas.md`: no keyboard-specific note; **no conflict**.
-- Not yet ingested: **Keyboards** (Apple's Related: physical keyboards and shortcuts). Ingested since: Focus and selection (✓ `inputs/focus-and-selection.md`).
+- Ingested since: Keyboards (✓ `inputs/keyboards.md`: physical keyboards and shortcuts), Focus and selection (✓ `inputs/focus-and-selection.md`).
 
 ## Checklist
 - [ ] Every input has the **right `type`/`inputmode`** for its content; **numeric IDs use `inputmode="numeric"`** (not `type="number"`), decimals `decimal`, phones `tel`, emails `email`, URLs `url`, search `search`.
@@ -117,6 +117,6 @@ Field-note cross-links:
 
 ## Related
 - Ingested: Entering data (✓), Text fields (✓), Digit entry views (✓), Search fields (✓), Layout (✓ CRITICAL), Materials (✓ CRITICAL), Playing haptics (✓), The menu bar (✓), Privacy (✓), Right to left (✓).
-- Not yet ingested: Keyboards. Focus and selection (✓ `inputs/focus-and-selection.md`).
+- Ingested since: Keyboards (✓ `inputs/keyboards.md`). Focus and selection (✓ `inputs/focus-and-selection.md`).
 - Developer docs: SwiftUI `keyboardType(_:)`, `textContentType(_:)`, `submitLabel(_:)`; UIKit `UIKeyboardType`, `UITextContentType`, `UIReturnKeyType`, `UIKeyboardLayoutGuide`.
 - Video: visionOS virtual keyboard recording (on the page).

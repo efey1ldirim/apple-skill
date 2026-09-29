@@ -44,7 +44,7 @@ The page has **no numbers** (no sizes, lengths, durations or thresholds). Its co
 | Numeric display formats named | number of decimal places · percentage · currency |
 | Continue/Next button | enabled only after the required data is in |
 | Password fields | never prepopulated; ask, or use biometrics/keychain |
-| Related HIG pages | Text fields · Virtual keyboards · Keyboards (none ingested yet) |
+| Related HIG pages | Text fields · Virtual keyboards · Keyboards ✓ (`inputs/keyboards.md`) |
 | Developer docs | SwiftUI *Input events* · `SecureField` · `isSecureDigitEntry` |
 | Video | *What's new in UIKit* (WWDC21 10059) |
 
@@ -105,5 +105,5 @@ Field-note cross-links:
 
 ## Related
 - Ingested: Writing (✓), Privacy (✓), Accessibility (✓), Drag and drop (✓), Layout (✓ CRITICAL), Typography (✓ CRITICAL), Right to left (✓).
-- Ingested since: Feedback (✓ CRITICAL), Managing accounts (✓), Offering help (✓). Virtual keyboards (✓ `components/selection-and-input/virtual-keyboards.md`: keyboard types, Return key, layout guide). Not yet ingested: **Keyboards**. Text fields (✓ `components/selection-and-input/text-fields.md`: hint + label, validation timing, number formatter). Pickers (✓ `components/selection-and-input/pickers.md`). Onboarding (✓ `hig/patterns/onboarding.md`). Digit entry views (✓ `components/selection-and-input/digit-entry-views.md`).
+- Ingested since: Feedback (✓ CRITICAL), Managing accounts (✓), Offering help (✓). Virtual keyboards (✓ `components/selection-and-input/virtual-keyboards.md`: keyboard types, Return key, layout guide). Keyboards (✓ `inputs/keyboards.md`: typing on a physical keyboard, shortcuts). Text fields (✓ `components/selection-and-input/text-fields.md`: hint + label, validation timing, number formatter). Pickers (✓ `components/selection-and-input/pickers.md`). Onboarding (✓ `hig/patterns/onboarding.md`). Digit entry views (✓ `components/selection-and-input/digit-entry-views.md`).
 - Developer docs: SwiftUI *Input events*. Video: *What's new in UIKit* (WWDC21 10059).

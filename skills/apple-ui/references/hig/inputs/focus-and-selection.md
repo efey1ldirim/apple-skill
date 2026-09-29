@@ -63,7 +63,7 @@ Source: https://developer.apple.com/design/human-interface-guidelines/focus-and-
 | Pointer | **avoid** on tvOS (unless gameplay needs it) |
 | Developer APIs named | `UICollectionView`, `NSTableView`, `UIFocusHaloEffect`, `UICollectionViewCell` (content configurations), `focusGroupIdentifier`, `UIFocusGroupPriority`, TVML Focus Attributes, "Focus-based navigation", "About focus interactions for Apple TV", "Adding user-focusable elements to a tvOS app" |
 | Videos (links only, not watched) | Design for spatial input (WWDC23 10073), Design for spatial user interfaces (WWDC23 10076), Design for the iPadOS pointer (WWDC20 10640) |
-| Apple's Related list | Eyes (✓), Keyboards (not yet ingested) |
+| Apple's Related list | Eyes (✓), Keyboards (✓ `inputs/keyboards.md`) |
 | Change log | Oct 24 2023 · Jun 21 2023 |
 
 ## Visual notes (from screenshots)
@@ -112,7 +112,7 @@ Field-note cross-links:
 - `hig/inputs/eyes.md` (✓): Apple's Related page; **hover effect vs focus effect**, the Note repeats that they're unrelated; **consistent**. `hig/components/selection-and-input/toggles.md`, `sliders.md`, `segmented-controls.md`, `virtual-keyboards.md` (✓): their "not yet ingested: Focus and selection" lines are now updated; keyboard/remote behaviour of those controls follows this page. `hig/components/layout/lockups.md` (✓) and `hig/components/system-experiences/top-shelf.md` (✓): the tvOS **focus-grow with parallax** and label-on-focus behaviour; `hig/components/layout/collections.md` (✓), `lists-and-tables.md` (✓), `sidebars.md` (✓), `tab-views.md` (✓): row highlight vs ring, focus groups (sidebar, list), keyboard navigation; `hig/foundations/images.md` (✓): parallax effect.
 - `hig/components/menus/menus.md` (✓) / `the-menu-bar.md` (✓): **unavailable items** decision (dimmed + focusable, `aria-disabled`), which differs from tvOS "unavailable can't take focus" (see table above); `hig/components/menus/buttons.md` (✓ CRITICAL) and **Buttons GATE**: removed focus outline is a violation; `hig/foundations/accessibility.md` (✓) and `color.md` (✓ CRITICAL): focus visibility and contrast.
 - `field-notes/engineering-gotchas.md` (a missing `focus-visible` ring is worse in dark mode) and `field-notes/components.md` (input recipe with `focus:ring-2`) are **consistent** with the ring-for-fields rule; **no conflict**.
-- Not yet ingested (linked from this page): **Keyboards** (physical keyboards).
+- Ingested since: Keyboards (✓ `inputs/keyboards.md`: Full Keyboard Access, the iPadOS "no keyboard navigation for controls" note). Not yet ingested (linked from this page): none.
 
 ## Checklist
 - [ ] Every interactive element has a **visible `:focus-visible` indicator** with **≥ 3:1** contrast; no bare `outline: none`.
@@ -126,6 +126,6 @@ Field-note cross-links:
 
 ## Related
 - Ingested: Eyes (✓), Toggles (✓), Sliders (✓), Segmented controls (✓), Virtual keyboards (✓), Lockups (✓), Top Shelf (✓), Collections (✓), Lists and tables (✓), Sidebars (✓), Tab views (✓), Images (✓), Menus (✓), Buttons (✓ CRITICAL), Accessibility (✓), Color (✓ CRITICAL).
-- Not yet ingested (linked from this page): **Keyboards**.
+- Ingested since: Keyboards (✓ `inputs/keyboards.md`). Not yet ingested (linked from this page): none.
 - Developer docs: TVML Focus Attributes, UIKit "Focus-based navigation", "About focus interactions for Apple TV", `UIFocusHaloEffect`, `focusGroupIdentifier`, `UIFocusGroupPriority`.
 - Videos: Design for spatial input (WWDC23 10073), Design for spatial user interfaces (WWDC23 10076), Design for the iPadOS pointer (WWDC20 10640).

@@ -54,7 +54,7 @@ A game can take input from **touch, a remote, a mouse and keyboard, or a physica
 | visionOS spatial controller | trigger + look = indirect · trigger + reach = direct (PlayStation VR2 Sense) |
 | Frameworks named | Touch Controller · Game Controller · `GCControllerElement` · `GCRequiresControllerUserInteraction` |
 | Videos | Make your game great with touch (WWDC26 358) · Design advanced games for Apple platforms (WWDC24 10085) · Explore game input in visionOS (WWDC24 10094) |
-| Apple's Related list | Designing for games (✓), Gestures, Keyboards, Playing haptics (✓) |
+| Apple's Related list | Designing for games (✓), Gestures (✓), Keyboards (✓), Playing haptics (✓) |
 | Change log | Jun 9 2025: touch-control practices, controller mapping for UI, spatial controllers · Jun 10 2024: touch controls added, title changed from "Game controllers" |
 
 **Controller button → expected UI behaviour (outside gameplay)**
@@ -125,7 +125,7 @@ Touch games map to **Pointer Events** with **multi-touch**, physical controllers
 Field-note cross-links:
 - `hig/getting-started/designing-for-games.md` (✓): the platform input matrix and "support controllers but offer alternatives"; this page holds the **details**; its "Game controls" references are now ingested. `hig/patterns/playing-haptics.md` (✓): press-state feedback and controller haptics; `hig/components/menus/buttons.md` (✓ CRITICAL): the **≥ 44 pt hit region and press-state** rules the virtual buttons follow; `hig/inputs/focus-and-selection.md` (✓): moving selection with sticks / D-pad and the tvOS focus states; `hig/inputs/eyes.md` (✓) and `hig/inputs/apple-pencil-and-scribble.md` (✓): sibling input pages; `hig/foundations/layout.md` (✓ CRITICAL): safe areas; `hig/foundations/sf-symbols.md` (✓): the symbol side of controller glyphs (web icons stay Lucide / Phosphor / Ionicons); `hig/foundations/accessibility.md` (✓): switch/hardware alternatives.
 - `field-notes/*`: no game-input recipe. **Tension with the web hit-region convention** (the ≥ 44 px FAIL line at touch widths in `buttons.md`): Apple lets **menus and other secondary controls drop to 28 pt** in games; on ordinary web pages keep **44 px**, and use 28 px only for **secondary controls inside a game HUD**, never below **24 px**. No conflict with `anti-patterns.md`.
-- Ingested since: none yet. Not yet ingested (linked from this page): **Gestures**, **Keyboards**.
+- Ingested since: Gestures (✓ `inputs/gestures.md`: visionOS indirect/direct, simultaneous recognition for joysticks and buttons), Keyboards (✓ `inputs/keyboards.md`: standard shortcuts, modifier order; the game key-binding text moved here from Keyboards in June 2025). Not yet ingested (linked from this page): none.
 
 ## Checklist
 - [ ] **Touch/pointer and keyboard paths exist for every action**; a gamepad is an **extra**, and a required controller is **announced up front** with a connect prompt.
@@ -142,7 +142,7 @@ Field-note cross-links:
 - [ ] visionOS: **look + trigger** and **reach + trigger** share one interaction path.
 
 ## Related
-- Ingested: Designing for games (✓), Playing haptics (✓), Focus and selection (✓), Eyes (✓), Apple Pencil and Scribble (✓), Buttons (✓ CRITICAL), Layout (✓ CRITICAL), SF Symbols (✓), Accessibility (✓), Menus (✓).
-- Not yet ingested (linked from this page): **Gestures**, **Keyboards**.
+- Ingested: Designing for games (✓), Playing haptics (✓), Focus and selection (✓), Eyes (✓), Apple Pencil and Scribble (✓), Gestures (✓), Buttons (✓ CRITICAL), Layout (✓ CRITICAL), SF Symbols (✓), Accessibility (✓), Menus (✓).
+- Ingested since: Keyboards (✓ `inputs/keyboards.md`). Not yet ingested (linked from this page): none.
 - Developer docs: Create games for Apple platforms · Touch Controller · Game Controller (plus `GCControllerElement`, `GCRequiresControllerUserInteraction`, "Adding virtual controls to games that support game controllers in iOS").
 - Videos: Make your game great with touch (WWDC26 358), Design advanced games for Apple platforms (WWDC24 10085), Explore game input in visionOS (WWDC24 10094).

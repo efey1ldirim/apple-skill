@@ -89,7 +89,7 @@ Make picking up, carrying and putting down content feel **controlled**: a transl
   - **should** Let people drag selected content from an **inactive window** without making it active first. Selected content in an inactive window is a **background selection** and looks different from selection in the active window; people expect to drag it to the active window without bringing the inactive window forward.
   - **should** When possible, let people drag an individual item from an inactive window **without disturbing its existing background selection** (drag an unselected Finder file without deselecting the selected ones).
   - **may** Show a **badge** during multi-item drags: a small filled oval containing a number for how many items are being dragged. If the destination accepts only a subset, **update the number**.
-  - **may** Change the **pointer** to say what will happen on drop: the *copy* pointer, plus *drag link*, *disappearing item* and *operation not allowed* depending on the situation (Apple links Pointing devices § Pointers).
+  - **may** Change the **pointer** to say what will happen on drop: the *copy* pointer, plus *drag link*, *disappearing item* and *operation not allowed* depending on the situation (Apple links Pointing devices § Pointers; ✓ `inputs/pointing-devices.md`: the macOS pointer table with CSS cursor equivalents).
   - **should** Let people **select and drag in one motion**, without a pause between selecting and dragging (except when selecting multiple items).
 - **visionOS:** **launch the app to handle content dropped into empty space** when possible.
   - Associate a **user activity** with the draggable content so the app can open a window or scene when the content is dropped (`NSUserActivity`).
@@ -183,5 +183,5 @@ Field-note cross-links:
 ## Related
 - Ingested: Accessibility (✓), Motion (✓), Materials (✓ CRITICAL), Spatial layout (✓), Designing for iPadOS (✓), Designing for macOS (✓), Designing for visionOS (✓), SF Symbols (✓: `circle.slash`).
 - Ingested since: Entering data (✓), Feedback (✓ CRITICAL), File management (✓).
-- Not yet ingested: Pointing devices (§ Pointers), Keyboards, Gestures. Progress indicators (✓ `components/status/progress-indicators.md`). Segmented controls (✓ `components/selection-and-input/segmented-controls.md`: macOS spring loading). Ingested since: Collections ✓, Lists and tables ✓ (`components/layout/`).
+- Ingested since: Pointing devices (✓ `inputs/pointing-devices.md`: drag pointers, ⌥ / ⌥⌘ modifiers). Gestures (✓ `inputs/gestures.md`: drag as a standard gesture), Keyboards (✓ `inputs/keyboards.md`: modifier keys while dragging). Progress indicators (✓ `components/status/progress-indicators.md`). Segmented controls (✓ `components/selection-and-input/segmented-controls.md`: macOS spring loading). Ingested since: Collections ✓, Lists and tables ✓ (`components/layout/`).
 - External: Universal Control (support article).

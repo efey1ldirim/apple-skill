@@ -67,7 +67,7 @@ The page has **no numbers** (no durations, sizes or thresholds). Its concrete fa
 | EPG grouping | My Channels/Favorites; categories such as Movies, TV Shows, Kids, Sports, Popular |
 | Browse without interrupting | PiP or background playback |
 | Cloud DVR choices | this program / all future episodes; only current, only new, only games with specific teams; play/delete/adjust; auto-delete watched or older than N days; auto-overwrite oldest/watched |
-| Related HIG pages | Remotes (not yet ingested) · Playing video ✓ |
+| Related HIG pages | Remotes ✓ (`inputs/remotes.md`: guide/browse and page up/down buttons) · Playing video ✓ |
 
 ## Visual notes (from screenshots)
 - **Hero:** an orange grid card with a rounded TV set containing a large play triangle, on a small stand bar, over construction circles.
@@ -119,4 +119,4 @@ Field-note cross-links:
 
 ## Related
 - Ingested: Launching (✓), Feedback (✓ CRITICAL), Going full screen (✓), Materials (✓ CRITICAL), Layout (✓ CRITICAL), Motion (✓), Designing for tvOS (✓), Accessibility (✓), Writing (✓).
-- Sliders (✓ `components/selection-and-input/sliders.md`). Progress indicators (✓ `components/status/progress-indicators.md`). Not yet ingested: **Remotes**, Collections.
+- Sliders (✓ `components/selection-and-input/sliders.md`). Progress indicators (✓ `components/status/progress-indicators.md`). Ingested since: Remotes (✓ `inputs/remotes.md`), Collections (✓). Not yet ingested: none.

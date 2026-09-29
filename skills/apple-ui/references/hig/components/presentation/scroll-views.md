@@ -79,7 +79,7 @@ The page has **no numbers, sizes or timings**. Concrete facts:
 | visionOS indicator | small, fixed size, slightly thicker than iOS; trailing edge centred (vertical) / bottom edge centred (horizontal); jog bar with tick marks; **Look to Scroll** (per view, reading/browsing only) |
 | watchOS | vertical, Digital Crown; tab-view pages; ≤ 1 screen per page; indicator expands into a scroll indicator |
 | Developer docs | SwiftUI `ScrollView`, `PagingScrollTargetBehavior`, `ScrollEdgeEffectStyle`, `look` / `ScrollInputKind` · UIKit `UIScrollView`, `UIScrollEdgeEffect.Style` · AppKit `NSScrollView`, `NSScrollEdgeEffectStyle` · WatchKit `WKPageOrientation` |
-| Related HIG pages | Page controls ✓ · Gestures (not yet ingested) · Pointing devices (not yet ingested) · Tab views ✓ · Toolbars ✓ |
+| Related HIG pages | Page controls ✓ · Gestures ✓ (`inputs/gestures.md`) · Pointing devices ✓ (`inputs/pointing-devices.md`) · Tab views ✓ · Toolbars ✓ |
 
 ## Visual notes (from screenshots)
 - **Hero:** a red-to-orange card with a **red-tinted picture placeholder** (a rounded frame holding a **circle "sun" and two mountain shapes**) that is **cut off at the bottom edge** (content larger than the view), and a **dark maroon vertical pill at the top-right** = the **scroll indicator** **(from screenshot)**.
@@ -117,7 +117,7 @@ Field-note cross-links:
 - `hig/components/menus/toolbars.md` (✓): floating bars over scrolling content; `hig/components/navigation/tab-bars.md` (✓): floating tab bar minimising on scroll and per-tab state.
 - `hig/components/presentation/panels.md`, `popovers.md` (✓): small scrollbars in panels; `hig/components/layout/split-views.md` (✓): per-pane edge effects.
 - `hig/foundations/motion.md` (✓): reduced motion; `hig/foundations/accessibility.md` (✓): zoom and focus visibility.
-- Not yet ingested: **Gestures**, **Pointing devices**.
+- Ingested since: Gestures (✓ `inputs/gestures.md`), Pointing devices (✓ `inputs/pointing-devices.md`). Not yet ingested: none.
 - **Refinement, not a conflict:** the field notes and `materials.md` recommend a **gradient fade instead of a hard border** under bars; this page adds that the **automatic (more opaque) style** is preferred for **dense toolbars, non-glass text and pinned table headers**. Follow: gradient/soft for light glass controls over imagery, **opaque + hairline** for dense bars and sticky table headers.
 
 ## Checklist
@@ -135,5 +135,5 @@ Field-note cross-links:
 
 ## Related
 - Ingested: Page controls (✓), Tab views (✓), Tab bars (✓), Toolbars (✓), Split views (✓), Panels (✓), Popovers (✓), Materials (✓ CRITICAL), Layout (✓ CRITICAL), Color (✓ CRITICAL), Motion (✓), Accessibility (✓).
-- Not yet ingested: **Gestures**, **Pointing devices**.
+- Ingested since: Gestures (✓ `inputs/gestures.md`), Pointing devices (✓ `inputs/pointing-devices.md`). Not yet ingested: none.
 - Developer docs: SwiftUI `ScrollView`, `ScrollEdgeEffectStyle`, `look`; UIKit `UIScrollView`; AppKit `NSScrollView`; WatchKit `WKPageOrientation`.
