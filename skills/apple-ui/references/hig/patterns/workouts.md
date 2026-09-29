@@ -110,5 +110,5 @@ Field-note cross-links:
 
 ## Related
 - Ingested: Feedback (✓ CRITICAL), Playing haptics (✓), Playing audio (✓), Playing video (✓), Live-viewing apps (✓), Going full screen (✓), Launching (✓), Multitasking (✓), Ratings and reviews (✓), Modality (✓), Undo and redo (✓), Charting data (✓), Designing for watchOS (✓), Typography, Color, Layout, Materials, Accessibility (✓).
-- Not yet ingested: **Activity rings** (Components › Status).
+- Ingested since: Labels (✓, date/time/timer text). Not yet ingested: **Activity rings** (Components › Status).
 - Developer docs: WorkoutKit; HealthKit *Workouts and activity rings*. Videos: see Specs & values.

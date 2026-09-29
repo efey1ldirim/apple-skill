@@ -85,5 +85,5 @@ Field-note cross-links:
 
 ## Related
 - Ingested: Typography (✓ CRITICAL), Accessibility (✓), Entering data (✓), Undo and redo (✓), Writing (✓), Right to left (✓), Feedback (✓ CRITICAL), Image views (✓), Charts (✓).
-- Not yet ingested: **Labels**, **Text fields**, **Combo boxes**, **Virtual keyboards**.
+- Ingested since: Labels (✓ `components/layout/labels.md`). Not yet ingested: **Text fields**, **Combo boxes**, **Virtual keyboards**.
 - Developer docs: see Specs & values.
