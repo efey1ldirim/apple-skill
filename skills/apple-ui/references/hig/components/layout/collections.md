@@ -83,5 +83,5 @@ Field-note cross-links:
 
 ## Related
 - Ingested: Image views (✓), Layout (✓ CRITICAL), Boxes (✓), Drag and drop (✓), Undo and redo (✓), Searching (✓), Loading (✓), Feedback (✓ CRITICAL), Motion (✓), Charts (✓).
-- Ingested since: Column views (✓ `components/layout/column-views.md`). Lists and tables ✓ (`lists-and-tables.md`).
+- Ingested since: Lockups (✓ `lockups.md`, focus-growth items), Column views (✓ `components/layout/column-views.md`). Lists and tables ✓ (`lists-and-tables.md`).
 - Developer docs: `UICollectionView`, `NSCollectionView`.
