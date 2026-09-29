@@ -161,5 +161,5 @@ Field-note cross-links:
 
 ## Related
 - Ingested: Playing audio (✓), Feedback (✓ CRITICAL), Live-viewing apps (✓), Multitasking (✓), Loading (✓), Launching (✓), Going full screen (✓), Images (✓), Layout (✓ CRITICAL), Accessibility (✓).
-- Ingested since: Ornaments (✓). Windows (✓ `components/presentation/windows.md`). Not yet ingested: **Keyboards**, **Remotes**, Focus and selection.
+- Ingested since: Ornaments (✓). Windows (✓ `components/presentation/windows.md`). Focus and selection (✓ `inputs/focus-and-selection.md`). Not yet ingested: **Keyboards**, **Remotes**.
 - Developer docs and videos: listed in Specs & values.

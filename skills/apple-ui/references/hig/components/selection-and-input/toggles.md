@@ -106,7 +106,7 @@ Field-note cross-links:
 - `hig/components/menus/buttons.md` (✓ CRITICAL) and **Buttons GATE**: toggle buttons are buttons (44 px hit region, exactly one prominent per view, never primary + destructive); its "Toggles, pop-ups, segmented controls" row now points here; `segmented-controls.md` (✓): multi-choice segments are `aria-pressed` groups.
 - `hig/components/menus/pop-up-buttons.md` (✓) and `pickers.md` (✓): the list alternatives; `hig/components/layout/lists-and-tables.md` (✓): switches in list rows; `hig/patterns/settings.md` (✓): settings screens (defaults, group toggles); `hig/components/presentation/alerts.md` (✓): "Don't Show Again"/suppression checkboxes; `hig/components/menus/the-menu-bar.md` (✓) and `menus.md` (✓): check-marked menu items as toggles; `hig/patterns/playing-haptics.md` (✓): standard toggles play haptics automatically.
 - `hig/foundations/color.md` (✓ CRITICAL): on/off contrast and non-colour cues; `hig/foundations/accessibility.md` (✓): on/off labels, contrast; `hig/foundations/right-to-left.md` (✓): thumb direction; `hig/foundations/layout.md` (✓ CRITICAL): row layout and reflow.
-- Virtual keyboards (✓ `virtual-keyboards.md`). Not yet ingested: Focus and selection.
+- Virtual keyboards (✓ `virtual-keyboards.md`). Focus and selection (✓ `inputs/focus-and-selection.md`).
 
 ## Checklist
 - [ ] Semantics match meaning: **switch** (`role="switch"`) for immediate settings, **checkbox** for form/multi-select/hierarchy, **radio group** for 2–5 exclusive options, **`aria-pressed` button** for tool/filter toggles.
@@ -122,5 +122,5 @@ Field-note cross-links:
 
 ## Related
 - Ingested: Buttons (✓ CRITICAL), Segmented controls (✓), Pop-up buttons (✓), Pickers (✓), Toolbars (✓), Windows (✓), Lists and tables (✓), Settings (✓), Alerts (✓), The menu bar (✓), Menus (✓), Playing haptics (✓), Color (✓ CRITICAL), Accessibility (✓), Right to left (✓), Layout (✓ CRITICAL), Writing (✓).
-- Virtual keyboards (✓ `virtual-keyboards.md`). Not yet ingested: Focus and selection.
+- Virtual keyboards (✓ `virtual-keyboards.md`). Focus and selection (✓ `inputs/focus-and-selection.md`).
 - Developer docs: SwiftUI `Toggle`, `ToggleStyle`; UIKit `UISwitch`; AppKit `NSButton.ButtonType.toggle`, `NSSwitch`.

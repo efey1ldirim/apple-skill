@@ -165,6 +165,7 @@ Apple's rule (this page): choose the case **per UI element type** and hold it. T
 | Notification body text (and hidden-preview placeholder text) | Sentence case, complete sentences, proper punctuation (placeholder: sentence case, generic category words) | HIG Notifications § Content |
 | Notification action buttons | **Title Case**, short result-oriented phrase, no app name | HIG Notifications § Notification actions |
 | Widget gallery descriptions | Sentence case, one succinct sentence starting with an action verb; no "This widget shows…", "Use this widget to…", "Add this widget" | HIG Widgets § Previews and placeholders |
+| Action button action labels (shown in Settings) | **Title Case**, begin with a verb, present tense, no articles or prepositions, **≤ 3 words** ("Start Race") | HIG Action button § Best practices |
 
 **Title-style capitalisation, concretely (HIG Menus):** capitalise **every word except articles, coordinating conjunctions and short prepositions**, and **always capitalise the last word**, whatever its part of speech. Working detail from the Apple Style Guide (not on the HIG page, tagged CONV): prepositions of **four letters or fewer** stay lowercase ("Move to Folder", "Save as PDF"), while **longer** ones are capitalised ("Export Through Email"); **"to" in an infinitive** stays lowercase ("How to Reset"). Examples: **Add to Cart · Save Changes · Move to Folder… · Show in Finder · Sort by Date · Turn HDR On**. Drop leading articles ("View Settings", not "View the Settings").
 
