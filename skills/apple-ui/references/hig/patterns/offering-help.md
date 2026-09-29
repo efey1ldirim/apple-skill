@@ -127,5 +127,5 @@ Field-note cross-links:
 
 ## Related
 - Ingested: Writing (✓), Feedback (✓ CRITICAL), Modality (✓), Entering data (✓), Inclusion (✓), Icons (✓), SF Symbols (✓), Launching (✓).
-- Ingested since: Onboarding (✓). Ingested since: The menu bar (✓ § Help menu). Not yet ingested: Toolbars.
+- Ingested since: Onboarding (✓). Ingested since: The menu bar (✓ § Help menu). Ingested since: Toolbars (✓).
 - Developer docs: TipKit, `help(_:)`, `NSHelpManager`. Video: *Make features discoverable with TipKit* (WWDC23 10229).

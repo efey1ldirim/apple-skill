@@ -96,5 +96,5 @@ Field-note cross-links:
 
 ## Related
 - Ingested: Feedback (✓ CRITICAL), Drag and drop (✓), File management (✓), Modality (✓), Managing accounts (✓), Motion (✓), Icons (✓).
-- Not yet ingested: **Pointing devices**, **Keyboards** (§ Standard keyboard shortcuts), Toolbars. Ingested since: The menu bar (✓ § Edit menu).
+- Not yet ingested: **Pointing devices**, **Keyboards** (§ Standard keyboard shortcuts). Ingested since: Toolbars (✓), The menu bar (✓ § Edit menu).
 - Developer docs: `UndoManager`. Video: *Essential Design Principles* (WWDC17 802).

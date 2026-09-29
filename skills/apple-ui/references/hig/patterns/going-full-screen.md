@@ -111,5 +111,5 @@ Field-note cross-links:
 
 ## Related
 - Ingested: Immersive experiences (✓), Layout (✓ CRITICAL), Feedback (✓ CRITICAL), Motion (✓), File management (✓), Designing for macOS (✓), Designing for iPadOS (✓).
-- Ingested since: Modality (✓). Not yet ingested: **Multitasking**, **Windows**, Toggles, Toolbars. Playing video ✓, Launching ✓.
+- Ingested since: Modality (✓). Not yet ingested: **Multitasking**, **Windows**, Toggles. Ingested since: Toolbars (✓). Playing video ✓, Launching ✓.
 - Developer docs: listed in Specs & values. Video: *Elevate the design of your iPad app* (WWDC25 208).

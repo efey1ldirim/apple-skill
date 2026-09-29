@@ -41,7 +41,7 @@ The page has **no sizes or timings**. Facts it states:
 | Change log | Feb 2, 2024 multiple-ornaments guidance · Dec 5, 2023 removed the "supplementary items" statement · Jun 21, 2023 new page |
 | Developer docs | SwiftUI `ornament(visibility:attachmentAnchor:contentAlignment:ornament:)` |
 | Video | "Design for spatial user interfaces" (WWDC23) |
-| Related HIG pages | Layout ✓ CRITICAL · Toolbars (not yet ingested) |
+| Related HIG pages | Layout ✓ CRITICAL · Toolbars ✓ |
 
 ## Visual notes (from screenshots)
 - **Hero:** a red-to-pink card with a paler rounded **window** whose **bottom edge is crossed by a wide, light, fully rounded pill** (the ornament) that hangs below the window; a **red double-headed arrow above the pill** shows its width and a **red vertical arrow on its right** shows its height; **a small dot and a short bar sit under the pill** (window-control handles) **(from screenshot)**. It shows the ornament **attached outside the window's bottom edge**, **narrower than the window**, capsule-shaped, with a measuring arrow for width.
@@ -85,6 +85,6 @@ Field-note cross-links:
 
 ## Related
 - Ingested: Layout (✓ CRITICAL), Materials (✓ CRITICAL), Buttons (✓ CRITICAL), Playing video (✓), Tab views (✓), Menus (✓).
-- Not yet ingested: **Toolbars**, **Tab bars**, Eyes (gaze hover).
+- Ingested since: Toolbars (✓). Not yet ingested: **Tab bars**, Eyes (gaze hover).
 - Developer docs: SwiftUI `ornament(visibility:attachmentAnchor:contentAlignment:ornament:)`.
 - Video: "Design for spatial user interfaces" (WWDC23).

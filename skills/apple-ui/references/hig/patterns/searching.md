@@ -48,7 +48,7 @@ The page has **no numbers, sizes or timings**. Concrete facts:
 | Systemwide | Spotlight indexing + metadata; File Importer plug-in for custom types; Quick Look generator for previews |
 | System open/save views | include a system-wide search field |
 | Developer docs | `searchSuggestions(_:)` (SwiftUI) · *Adding your app's content to Spotlight indexes* · `CSImportExtension` · Quick Look |
-| Related HIG pages | Search fields (not yet ingested) · Toolbars · Tab bars · File management ✓ |
+| Related HIG pages | Search fields (not yet ingested) · Toolbars ✓ · Tab bars · File management ✓ |
 | Video | *Design intuitive search experiences* (WWDC26 292) |
 
 ## Visual notes (from screenshots)
@@ -99,5 +99,5 @@ Field-note cross-links:
 
 ## Related
 - Ingested: File management (✓), Entering data (✓), Feedback (✓ CRITICAL), Privacy (✓), Managing accounts (✓), Onboarding (✓), Offering help (✓), Writing (✓).
-- Not yet ingested: **Search fields** (scope bars and tokens), **Toolbars**, **Tab bars**, Sidebars.
+- Not yet ingested: **Search fields** (scope bars and tokens), **Tab bars**, Sidebars.
 - Developer docs: listed in Specs & values. Video: *Design intuitive search experiences* (WWDC26 292).

@@ -120,5 +120,5 @@ Field-note cross-links:
 
 ## Related
 - Ingested: Buttons (✓ CRITICAL), Icons (✓), SF Symbols (✓), Feedback (✓ CRITICAL), Undo and redo (✓), Modality (✓), Drag and drop (✓), Lists and tables (✓), Collections (✓), Color (✓ CRITICAL), Materials (✓ CRITICAL), Writing (✓), Accessibility (✓), Activity views (✓).
-- Ingested since: Menus (✓). Ingested since: Pop-up buttons (✓). Ingested since: Pull-down buttons (✓). Ingested since: The menu bar (✓). Not yet ingested: Toolbars.
+- Ingested since: Menus (✓). Ingested since: Pop-up buttons (✓). Ingested since: Pull-down buttons (✓). Ingested since: The menu bar (✓). Ingested since: Toolbars (✓).
 - Developer docs: see Specs & values.

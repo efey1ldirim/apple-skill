@@ -258,6 +258,6 @@ Field-note cross-links and conflicts:
 
 ## Related
 - Ingested: Menus (✓), Context menus (✓), Edit menus (✓), Dock menus (✓), Undo and redo (✓), Going full screen (✓), Multitasking (✓), Offering help (✓), Buttons (✓ CRITICAL), Writing (✓).
-- Not yet ingested: **Toolbars**, Tab bars, Sidebars, Panels, Settings, Keyboards (§ Standard keyboard shortcuts), Status bars.
+- Ingested since: Toolbars (✓). Not yet ingested: Tab bars, Sidebars, Panels, Settings, Keyboards (§ Standard keyboard shortcuts), Status bars.
 - Developer docs: `CommandMenu` (SwiftUI), "Adding menus and shortcuts to the menu bar and user interface" (UIKit), `NSStatusBar` (AppKit), `MenuBarExtra`, `NSHelpManager`, `isAlternate`.
 - Video: "Elevate the design of your iPad app" (WWDC25).
