@@ -22,7 +22,7 @@ ingested so far.
 | Text styles, Dynamic Type, line height, tracking, custom fonts, readable copy | + `hig/foundations/typography.md` (TYPOGRAPHY GATE), `tokens/apple-typography.json` (exact platform tables), `tokens/apple-typography.css` (web preview), `node tools/check-typography.mjs <changed files>` | HIG: Accessibility, Writing (✓ `hig/foundations/writing.md`) |
 | Foldable / dual-pane / wide-short layouts, toolbar overflow priority, navigation rail | + `hig/getting-started/designing-for-iphone-duo.md` | HIG: Layout, Split views, Toolbars, Tab bars |
 | App icon, favicon, PWA/maskable icons, brand mark tiles | + `hig/foundations/app-icons.md` | HIG: Icons, Branding |
-| Images, photos, srcset/retina assets, image formats, hover-lift/parallax cards, media viewers | + `hig/foundations/images.md` | HIG: Layout, Materials |
+| Images, photos, srcset/retina assets, image formats, hover-lift/parallax cards, media viewers, `<img>` vs icon, clickable images, text over images, image upload/replace, frame animations | + `hig/foundations/images.md`, `hig/components/content/image-views.md` (display-only, button for clicks, symbol/template icon not image, scrim behind overlaid text, same-size animation frames, image-well behaviours) | HIG: Layout, Materials |
 | RTL / Arabic / Hebrew / i18n-ready layouts, bidirectional text, numbers & phone numbers in other scripts, mirroring icons, sliders, ratings, carousels | + `hig/foundations/right-to-left.md` (flip / don't-flip table; visuals `right-to-left-01 … 21`), `node tools/check-layout.mjs --strict` | HIG: Layout, Inclusion, SF Symbols, Typography |
 | UI copy: button/link labels, error messages, empty states, settings descriptions, field hints, step-flow wording, capitalisation, tone | + `hig/foundations/writing.md` (verb-led labels, no "we", consistent terms, error/empty-state rules), `field-notes/principles.md` §16 | HIG: Inclusion, Accessibility, Alerts, Text fields |
 | Forms asking personal data (gender, family, names), imagery of people, localisation, inclusive language | + `hig/foundations/inclusion.md`, `hig/foundations/writing.md` | HIG: Right to left |
@@ -141,12 +141,12 @@ on every ingestion. `—` = not yet ingested.
 | Undo and redo `undo-and-redo` | `hig/patterns/undo-and-redo.md` | 2026-09-29 |
 | Workouts `workouts` | `hig/patterns/workouts.md` | 2026-09-29 |
 
-### Components  (collection page: —; 1 ingested: Charts)
+### Components  (collection page: —; 2 ingested: Charts, Image views)
 | Page | File | Ingested |
 |---|---|---|
 | **Content** (group) | | |
 | &nbsp;&nbsp;Charts `charts` | `hig/components/content/charts.md` | 2026-09-29 |
-| &nbsp;&nbsp;Image views `image-views` | — | — |
+| &nbsp;&nbsp;Image views `image-views` | `hig/components/content/image-views.md` | 2026-09-29 |
 | &nbsp;&nbsp;Text views `text-views` | — | — |
 | &nbsp;&nbsp;Web views `web-views` | — | — |
 | **Layout and organization** (group) | | |

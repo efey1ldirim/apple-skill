@@ -179,4 +179,4 @@ Images (SwiftUI); `UIImageView` (UIKit); `NSImageView` (AppKit).
 
 ## Related (ingestion status)
 Layout, App icons (✓), Color (✓ CRITICAL), Dark Mode (✓), Materials (✓ CRITICAL), Spatial layout — not yet
-ingested (except ✓).
+ingested (except ✓). Ingested since: Image views (✓ `components/content/image-views.md`).
