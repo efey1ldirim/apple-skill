@@ -104,5 +104,5 @@ Field-note cross-links:
 
 ## Related
 - Ingested: Designing for tvOS (✓), Collections (✓), Image views (✓), Layout (✓ CRITICAL), Motion (✓), Accessibility (✓), Live-viewing apps (✓), Playing video (✓), Typography (✓ CRITICAL).
-- Not yet ingested: Focus and selection, Remotes (Inputs), Top Shelf (Technologies).
+- Not yet ingested: Focus and selection, Remotes (Inputs), Top Shelf (now ✓ `components/system-experiences/top-shelf.md`).
 - Developer docs: see Specs & values.
