@@ -213,7 +213,7 @@ The script reports **12 comparisons** for this page.
 | Multiple methods/destinations first | **Collect per-item shipping choices before the sheet.** |
 | Pickup location first | **Pickup picker before the sheet**, **pass the location as the read-only shipping contact/address**. |
 | Prefer Apple Pay's data | **Request only needed fields** (`requiredShippingContactFields` / `requiredBillingContactFields`), **use the returned contact and address as the source of truth**, **don't re-ask**. |
-| No account before purchase | **Guest checkout; create an account on the confirmation page**, **prefilled**, with **Sign in with Apple / passkeys** (`sign-in-with-apple.md`, not yet ingested). |
+| No account before purchase | **Guest checkout; create an account on the confirmation page**, **prefilled**, with **Sign in with Apple / passkeys** (`sign-in-with-apple.md` ✓). |
 | Report results in the sheet; confirmation page | **Complete the session with `ApplePaySession.STATUS_SUCCESS`/`STATUS_FAILURE`** (or **`PaymentResponse.complete("success" | "fail")`**); **then an order confirmation**: **thanks, ship date, status link, "Paid with Apple Pay" or "1234 (Apple Pay)"**. |
 | Essential information only in the sheet | **Only the needed contact/shipping fields**: **no shipping address for a digital gift card**. |
 | Shipping methods with cost and dates | **`shippingMethods`** with **label, detail, amount**, **`dateComponentsRange`** for **delivery estimates**. |

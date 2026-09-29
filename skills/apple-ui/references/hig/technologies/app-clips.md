@@ -205,7 +205,7 @@ Web pages **can't be App Clips**, but the **web is the natural counterpart**: an
 Field-note cross-links:
 - `field-notes/*`: **no instant-launch or QR recipe**; nothing conflicts. **Web note:** the skill's **capitalisation table** (Title Case for buttons, action labels; sentence case for descriptions) applies to the **card verbs (View / Play / Open)**, which are **Title Case single words** in both.
 - `hig/patterns/launching.md` (✓): **launch straight to content, no splash, restore state**; `hig/patterns/loading.md` (✓): **immediate content and progress**; `hig/patterns/onboarding.md` (✓): **minimal onboarding, ask for accounts later**; `hig/patterns/managing-accounts.md` (✓) and `hig/foundations/privacy.md` (✓): **sign-in and data minimisation**; `hig/patterns/entering-data.md` (✓): **fewer forms and inputs**; `hig/components/system-experiences/notifications.md` (✓) and `hig/patterns/managing-notifications.md` (✓): **task-related, consented notifications**; `hig/foundations/branding.md` (✓): **branding of the business vs the platform**; `hig/foundations/writing.md` (✓): **copy and capitalisation**; `hig/patterns/collaboration-and-sharing.md` (✓): **shareable links** and **Messages**; `hig/components/content/web-views.md` (✓): **avoid web views** in native; `hig/technologies/airplay.md` (✓): same **trademark-wording** structure as this page.
-- Ingested since: Apple Pay (✓ `technologies/apple-pay.md`), NFC (✓ `technologies/nfc.md`). Not yet ingested (linked from this page): **Sign in with Apple**.
+- Ingested since: Apple Pay (✓ `technologies/apple-pay.md`), NFC (✓ `technologies/nfc.md`), Sign in with Apple (✓ `technologies/sign-in-with-apple.md`). Not yet ingested (linked from this page): none in the HIG.
 
 ## Checklist
 - [ ] **The task or demo completes without installing**; **no ads and no marketing-only content** in the flow.
@@ -223,6 +223,6 @@ Field-note cross-links:
 
 ## Related
 - Ingested: Launching (✓), Loading (✓), Onboarding (✓), Managing accounts (✓), Privacy (✓), Entering data (✓), Notifications (✓), Managing notifications (✓), Branding (✓), Writing (✓), Collaboration and sharing (✓), Web views (✓), AirPlay (✓).
-- Ingested since: Apple Pay (✓ `technologies/apple-pay.md`), NFC (✓ `technologies/nfc.md`). Not yet ingested (linked from this page): **Sign in with Apple** (Technologies).
+- Ingested since: Apple Pay (✓ `technologies/apple-pay.md`), NFC (✓ `technologies/nfc.md`), Sign in with Apple (✓ `technologies/sign-in-with-apple.md`). Not yet ingested (linked from this page): none in the HIG.
 - Developer docs: App Clips (and its guides, see Specs) · App Store Connect · `SKOverlay`. External: App Clip resources (Code Generator, printer calibration test sheets), RR Donnelley, Guidelines for Using Apple Trademarks and Copyrights.
 - Videos: What's new in App Clips (WWDC21 10012), Build light and fast App Clips (WWDC21 10013).
