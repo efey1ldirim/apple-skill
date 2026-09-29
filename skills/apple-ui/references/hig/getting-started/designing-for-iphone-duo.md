@@ -259,4 +259,4 @@ Browsers expose foldables and wide-short viewports too; the lessons generalise t
 
 ## Related (ingestion status)
 Layout (size classes), Split views, Toolbars, Tab bars, Designing for iOS (✓), Designing for games
-(✓), Live Activities — not yet ingested (except ✓).
+(✓), Live Activities (✓ `components/system-experiences/live-activities.md`) (except ✓).

@@ -91,7 +91,7 @@ Field-note cross-links:
 - `hig/components/menus/home-screen-quick-actions.md` (✓): the same idea at the app-icon level (1–4 ranked cold-start actions, manifest `shortcuts`); this page adds the system-wide/voice layer, parameters and responses. Consistent.
 - `hig/patterns/searching.md` (✓) and `hig/components/navigation/search-fields.md` (✓): command palettes and Spotlight-like results follow the searching rules. `hig/patterns/offering-help.md` (✓) and `hig/patterns/onboarding.md` (✓): tips and discoverability. `hig/patterns/feedback.md` (✓) and **Feedback gate**: responses announced, no `alert()`. `hig/patterns/live-viewing-apps.md` (✓) and `hig/patterns/workouts.md` (✓): timers from timestamps. `hig/foundations/writing.md` (✓): capitalisation table and voice; a row for the "App Shortcuts" terms was **not** added because Apple's rule concerns names of features, not UI element types (recorded here). `hig/foundations/icons.md` (✓) and `sf-symbols.md` (✓): the web uses Lucide/Phosphor/Ionicons.
 - `field-notes/*`: no shortcut or command-palette recipe; **no conflict**.
-- Not yet ingested (linked from this page): **Siri** (voice dialogue guidance, `siri`), **Snippets**, **Live Activities**, **Action button**, **Apple Pencil and Scribble** (Squeeze). Non-HIG links: Siri Style Guide, Shortcuts User Guide (Apple Support).
+- Not yet ingested (linked from this page): **Siri** (voice dialogue guidance, `siri`), **Snippets**, **Action button**, **Apple Pencil and Scribble** (Squeeze). Non-HIG links: Siri Style Guide, Shortcuts User Guide (Apple Support).
 
 ## Checklist
 - [ ] The **key, self-contained tasks** (≤ 10, in practice 1–4 for a web manifest) are reachable from outside the main UI, ranked by importance, and every one has a **stable deep link** and an in-app equivalent.
@@ -105,6 +105,7 @@ Field-note cross-links:
 
 ## Related
 - Ingested: Home Screen quick actions (✓), Searching (✓), Search fields (✓), Offering help (✓), Onboarding (✓), Feedback (✓ CRITICAL), Live viewing apps (✓), Workouts (✓), Writing (✓), Icons (✓), SF Symbols (✓).
-- Not yet ingested (linked from this page): **Siri**, **Snippets**, **Live Activities**, **Action button**, **Apple Pencil and Scribble**.
+- Ingested since: Live Activities (✓ `components/system-experiences/live-activities.md`).
+- Not yet ingested (linked from this page): **Siri**, **Snippets**, **Action button**, **Apple Pencil and Scribble**.
 - Developer docs: App Intents, SiriKit, "Getting started with the App Intents framework", "Defining app entities for your custom data types".
 - Videos: What's new in Shortcuts (WWDC26 310), Design interactive snippets (WWDC25 281), Get to know App Intents (WWDC25 244).
