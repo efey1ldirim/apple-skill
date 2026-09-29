@@ -37,7 +37,7 @@ const PAGES = [
   "playing-audio", "playing-haptics", "playing-video",
   "printing", "ratings-and-reviews", "searching",
   "settings", "undo-and-redo", "workouts",
-  "charts", "image-views",
+  "charts", "image-views", "text-views",
 ];
 // Stand-alone images that are comparisons on their own (before/after drawn inside one image, or
 // a sequence of single images under one rule). Consecutive singles under the same rule are grouped.

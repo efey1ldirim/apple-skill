@@ -52,6 +52,7 @@ ingested so far.
 | Undo/redo, history, revert, undo toasts instead of confirmations, soft delete, shortcuts | + `hig/patterns/undo-and-redo.md`, `hig/patterns/feedback.md` (undo instead of "are you sure" for recoverable actions), `hig/patterns/drag-and-drop.md` | HIG: Pointing devices, Keyboards, The menu bar (Edit menu) |
 | Workout / fitness / stopwatch / tracker / "session in progress" screens: live metrics, big controls, pause/resume/end, sensor-unavailable states, session summary, courier/driver mode | + `hig/patterns/workouts.md` (3 screens: controls · metrics · media; timer from timestamp; wake lock; `--` not 0; summary; discard micro-sessions; legible in motion), `hig/patterns/feedback.md`, `hig/patterns/playing-haptics.md`, `hig/patterns/going-full-screen.md`, `hig/foundations/typography.md` + `color.md` (legibility gates); visual `workouts-01` | HIG: Activity rings, Charting data |
 | Settings / list screen | + `field-notes/components.md` § Settings list, `hig/patterns/settings.md` (few settings, good defaults, in-context options, respect system settings) | HIG: Settings, Lists and tables, Toggles |
+| Long text and multi-line input: textarea, notes/comment/message boxes, rich-text editors, read-only text panels, copyable error text/IDs, on-screen keyboard type | + `hig/components/content/text-views.md` (label vs field vs text view, scroll with max height, start-aligned label colour, legible at any text size, selectable + Copy, right keyboard attributes), `hig/patterns/entering-data.md`, `hig/foundations/typography.md` (TYPOGRAPHY GATE), `field-notes/engineering-gotchas.md` (16 px, autogrow) | HIG: Labels, Text fields, Virtual keyboards |
 | Wizard / onboarding / form | + `field-notes/components.md` § Wizard, `hig/patterns/onboarding.md` (optional, interactive, tips over tours, postpone setup, permissions/ratings timing), `hig/patterns/entering-data.md` (pre-gather, defaults, choices over typing, live validation, Continue only when required data is in), `hig/foundations/privacy.md` (no permission requests up front; ask only for needed data) | HIG: Onboarding, Entering data, Text fields, Pickers |
 | Consent / permission / connect screen | + `field-notes/components.md` § Consent screen, `hig/foundations/privacy.md` (grant dialog vs pre-alert screen) | HIG: Managing accounts, Alerts/Sheets |
 | Asking for location/camera/mic/notifications/contacts, pre-permission ("soft ask") screens, cookie/tracking consent, purpose/reason copy, sign-in & password/passkey flows, storing tokens | + `hig/foundations/privacy.md` (visuals `privacy-01 … 04`) | HIG: Managing accounts, Sign in with Apple, Entering data, Onboarding |
@@ -141,13 +142,13 @@ on every ingestion. `—` = not yet ingested.
 | Undo and redo `undo-and-redo` | `hig/patterns/undo-and-redo.md` | 2026-09-29 |
 | Workouts `workouts` | `hig/patterns/workouts.md` | 2026-09-29 |
 
-### Components  (collection page: —; 2 ingested: Charts, Image views)
+### Components  (collection page: —; 3 ingested: Charts, Image views, Text views)
 | Page | File | Ingested |
 |---|---|---|
 | **Content** (group) | | |
 | &nbsp;&nbsp;Charts `charts` | `hig/components/content/charts.md` | 2026-09-29 |
 | &nbsp;&nbsp;Image views `image-views` | `hig/components/content/image-views.md` | 2026-09-29 |
-| &nbsp;&nbsp;Text views `text-views` | — | — |
+| &nbsp;&nbsp;Text views `text-views` | `hig/components/content/text-views.md` | 2026-09-29 |
 | &nbsp;&nbsp;Web views `web-views` | — | — |
 | **Layout and organization** (group) | | |
 | &nbsp;&nbsp;Boxes `boxes` | — | — |
