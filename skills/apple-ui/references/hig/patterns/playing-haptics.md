@@ -72,7 +72,7 @@ Hard numbers in the page text: **none** (no durations, strengths or frequencies;
 | Custom building blocks | transient · continuous; parameters sharpness · intensity |
 | Digital Crown haptics | Apple Watch Series 4 and later; linear detents by default |
 | Developer docs | `UIFeedbackGenerator` · `NSHapticFeedbackPerformer` · `WKHapticType` · Core Haptics · *Playing Haptics on Game Controllers* · *Delivering Rich App Experiences with Haptics* |
-| Related HIG pages | Feedback ✓ · Gestures (not yet ingested) |
+| Related HIG pages | Feedback ✓ · Gestures ✓ (`inputs/gestures.md`) |
 | Videos | *Practice audio haptic design* (WWDC21 10278) · *Introducing Core Haptics* (WWDC19 520) |
 
 ## What the demo media show (measured 2026-09-28)
@@ -200,5 +200,5 @@ Field-note cross-links:
 
 ## Related
 - Ingested: Feedback (✓ CRITICAL), Playing audio (✓), Motion (✓), Drag and drop (✓), Managing notifications (✓), symbol-effects kit (✓).
-- Pickers (✓ `components/selection-and-input/pickers.md`). Sliders (✓ `components/selection-and-input/sliders.md`). Toggles (✓ `components/selection-and-input/toggles.md`). Not yet ingested: **Gestures**. Ingested since: Game controls (✓ `inputs/game-controls.md`).
+- Pickers (✓ `components/selection-and-input/pickers.md`). Sliders (✓ `components/selection-and-input/sliders.md`). Toggles (✓ `components/selection-and-input/toggles.md`). Ingested since: Game controls (✓ `inputs/game-controls.md`), Gestures (✓ `inputs/gestures.md`). Not yet ingested: none.
 - Developer docs: Core Haptics and the APIs listed in Specs & values. Videos: *Practice audio haptic design* (WWDC21 10278), *Introducing Core Haptics* (WWDC19 520).

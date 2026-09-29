@@ -58,7 +58,7 @@ The page gives **no sizes or timings**. Concrete facts:
 | Duplicates | no separate controls duplicating edit-menu functions |
 | Undo | support undo/redo (no confirmation in menus) |
 | Developer docs | UIKit `UIEditMenuInteraction`, `UIResponderStandardEditActions` · AppKit `NSMenu` |
-| Related HIG pages | Menus ✓ (§ iOS, iPadOS) · Context menus ✓ · The menu bar ✓ (§ Edit menu) · Undo and redo ✓ · Gestures (§ pinch and hold, not yet ingested) · Labels ✓ |
+| Related HIG pages | Menus ✓ (§ iOS, iPadOS) · Context menus ✓ · The menu bar ✓ (§ Edit menu) · Undo and redo ✓ · Gestures ✓ (`inputs/gestures.md`, § touch/pinch and hold) · Labels ✓ |
 
 ## Visual notes (from screenshots)
 - **Hero:** a red-to-orange card with a rounded **pill-shaped horizontal menu** reading **Cut | Copy | Paste | Delete** with thin dividers and a **circular chevron button** at the trailing end; **Delete is rendered lighter than the others** (a dimmed/unavailable look), beneath it the word **"Text"** selected with two round **selection handles** (top-leading and bottom-trailing) **(from screenshot)**. It shows the **iOS compact style**, the chevron that expands to a context menu, and that **dimmed commands are allowed** in this component.
@@ -111,5 +111,5 @@ Field-note cross-links:
 
 ## Related
 - Ingested: Context menus (✓), Undo and redo (✓), Text views (✓), Labels (✓), Buttons (✓ CRITICAL), Entering data (✓), Drag and drop (✓), Feedback (✓ CRITICAL), Accessibility (✓), Writing (✓).
-- Ingested since: Menus (✓). Ingested since: The menu bar (✓ § Edit menu). Not yet ingested: Gestures (§ pinch and hold).
+- Ingested since: Menus (✓). Ingested since: The menu bar (✓ § Edit menu). Ingested since: Gestures (✓ `inputs/gestures.md`, § touch/pinch and hold).
 - Developer docs: see Specs & values.
