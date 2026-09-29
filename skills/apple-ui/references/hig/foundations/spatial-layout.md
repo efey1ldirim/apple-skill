@@ -125,7 +125,7 @@ the head**.
 - **visionOS only.** Not supported in iOS, iPadOS, macOS, tvOS or watchOS.
 
 ## Resources listed
-- Related: Eyes (not yet ingested), Layout (✓ CRITICAL), Immersive experiences (✓).
+- Related: Eyes (✓ `inputs/eyes.md`), Layout (✓ CRITICAL), Immersive experiences (✓).
 - Developer docs: *Presenting windows and spaces*, *Positioning and sizing windows*, *Adding 3D content to
   your app* (all visionOS).
 - Videos: *Meet SwiftUI spatial layout* (WWDC25 273), *Principles of spatial design* (WWDC23 10072),
@@ -191,5 +191,5 @@ Field-note cross-links:
 - [ ] Usable seated, with no required physical movement.
 
 ## Related (ingestion status)
-Eyes, Gestures — not yet ingested; Digital Crown (✓ `inputs/digital-crown.md`); Windows (✓ `components/presentation/windows.md`: visionOS windows and volumes); Buttons ✓ CRITICAL (visionOS sizes, shapes, 60 pt spacing). Layout (✓ CRITICAL),
+Eyes (✓ `inputs/eyes.md`), Gestures — not yet ingested; Digital Crown (✓ `inputs/digital-crown.md`); Windows (✓ `components/presentation/windows.md`: visionOS windows and volumes); Buttons ✓ CRITICAL (visionOS sizes, shapes, 60 pt spacing). Layout (✓ CRITICAL),
 Immersive experiences (✓), Motion (✓), Images (✓), Materials (✓ CRITICAL).

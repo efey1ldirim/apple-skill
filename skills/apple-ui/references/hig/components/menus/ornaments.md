@@ -85,6 +85,6 @@ Field-note cross-links:
 
 ## Related
 - Ingested: Layout (✓ CRITICAL), Materials (✓ CRITICAL), Buttons (✓ CRITICAL), Playing video (✓), Tab views (✓), Menus (✓).
-- Ingested since: Toolbars (✓). Tab bars (✓ `components/navigation/tab-bars.md`). Not yet ingested: Eyes (gaze hover).
+- Ingested since: Toolbars (✓). Tab bars (✓ `components/navigation/tab-bars.md`). Eyes (gaze hover) now ✓ `inputs/eyes.md`.
 - Developer docs: SwiftUI `ornament(visibility:attachmentAnchor:contentAlignment:ornament:)`.
 - Video: "Design for spatial user interfaces" (WWDC23).
