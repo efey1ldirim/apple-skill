@@ -82,7 +82,7 @@ The page has **no numbers, sizes or timings.**
   3. **The before/after screenshot shows a reordered icon group**, which the text doesn't mention (see above).
   4. **The design-principles list overlaps HIG pages** (Layout, Color, App icons, Icons, Toolbars, Tab bars, Sidebars); **this note only points there.**
   5. **The page has no accessibility note**; **the HIG Materials page covers Reduce Transparency and Increase Contrast.**
-  6. **The next Adopting Liquid Glass page (not yet ingested here) is expected to hold the detailed steps.**
+  6. **The detailed steps are on Adopting Liquid Glass — see `adopting.md`.**
 
 ## Web translation
 **Liquid Glass is a native material; there's no automatic adoption on the web.** **The page's steps map to explicit work.** Mappings below are this repo's conventions (CONV) or background knowledge, not from the page; **verify blur/filter support per browser and test with Reduce Transparency-style settings** (`prefers-reduced-transparency` support varies).
@@ -121,7 +121,7 @@ Field-note cross-links:
 - [ ] **Tested across browsers, appearances and accessibility settings.**
 
 ## Related
-- Next in this section: **Adopting Liquid Glass** (Essentials) — to be ingested when the page is provided.
+- Next in this section: **Adopting Liquid Glass** (Essentials) → `adopting.md` (✓), with the measured control animations in `controls-motion.md`.
 - Ingested: Materials (✓ CRITICAL), Color (✓ CRITICAL), Layout (✓ CRITICAL), Motion (✓), Dark Mode (✓), Accessibility (✓), App icons (✓), Icons (✓), Toolbars (✓), Buttons (✓ CRITICAL), Tab bars (✓), Sidebars (✓), Search fields (✓), Scroll views (✓), Sheets (✓), Popovers (✓), Windows (✓), Designing for iOS/iPadOS/macOS/iPhone Duo (✓), Design principles (✓), Design Resources (✓ `design-resources.md`).
 - Developer docs: Technology Overviews › Liquid Glass; Adopting Liquid Glass; Landmarks: Building an app with Liquid Glass.
 - Videos: Meet Liquid Glass (WWDC25 219) · Get to know the new design system (356) · Build a SwiftUI app with the new design (323) · Build a UIKit app with the new design (284) · Build an AppKit app with the new design (310).
