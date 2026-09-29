@@ -56,7 +56,7 @@ Field-note cross-links:
 - `hig/components/content/image-views.md` (✓): image well vs image view vs image button (its "Image wells not yet ingested" mention now points here).
 - `hig/patterns/drag-and-drop.md` (✓): drop targets, feedback and alternatives; `hig/patterns/undo-and-redo.md` (✓): Undo after clearing; `hig/components/menus/edit-menus.md` (✓) and `the-menu-bar.md` (✓ Edit menu): standard Copy / Paste.
 - `hig/components/menus/context-menus.md` (✓): the well's context menu; `hig/patterns/feedback.md` (✓ CRITICAL) and **Feedback gate**: inline upload errors.
-- Not yet ingested: Pickers, Progress indicators.
+- Progress indicators (✓ `components/status/progress-indicators.md`). Not yet ingested: Pickers.
 - No conflict with a field note.
 
 ## Checklist
@@ -70,5 +70,5 @@ Field-note cross-links:
 
 ## Related
 - Ingested: Image views (✓), Drag and drop (✓), Undo and redo (✓), Edit menus (✓), The menu bar (✓), Context menus (✓), Feedback (✓ CRITICAL), Color wells (✓).
-- Not yet ingested: Progress indicators. Pickers (✓ `pickers.md`).
+- Progress indicators (✓ `components/status/progress-indicators.md`). Pickers (✓ `pickers.md`).
 - Developer docs: AppKit `NSImageView`.

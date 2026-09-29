@@ -140,6 +140,6 @@ Field-note cross-links:
 - [ ] Compared with Apple's `charting-data-01` (Stocks and Activity).
 
 ## Related
-- Ingested since: **Charts** (✓ `components/content/charts.md`: marks, axes, accessibility of charts). Lists and tables ✓ (`components/layout/lists-and-tables.md`). Segmented controls (✓ `components/selection-and-input/segmented-controls.md`). Not yet ingested: Progress indicators, Gauges, Rating indicators, Activity rings.
+- Ingested since: **Charts** (✓ `components/content/charts.md`: marks, axes, accessibility of charts). Lists and tables ✓ (`components/layout/lists-and-tables.md`). Segmented controls (✓ `components/selection-and-input/segmented-controls.md`). Activity rings (✓ `components/status/activity-rings.md`). Gauges (✓ `components/status/gauges.md`). Progress indicators (✓ `components/status/progress-indicators.md`). Rating indicators (✓ `components/status/rating-indicators.md`).
 - Ingested: Color (✓ CRITICAL), Accessibility (✓), Motion (✓), Writing (✓), Layout (✓ CRITICAL), Typography (✓ CRITICAL), Dark Mode (✓).
 - Developer docs: Swift Charts. Videos: see Specs & values.

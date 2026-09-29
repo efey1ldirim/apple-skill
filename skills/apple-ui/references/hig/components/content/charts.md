@@ -167,5 +167,5 @@ Field-note cross-links:
 
 ## Related
 - Ingested: Charting data (✓), Color (✓ CRITICAL), Accessibility (✓), Feedback (✓ CRITICAL), Writing (✓), Motion (✓), Loading (✓), Workouts (✓), Layout (✓), Typography (✓).
-- Segmented controls (✓ `components/selection-and-input/segmented-controls.md`: the D · W · M · 6M · Y range control). Not yet ingested: Gauges and Progress indicators (Status), Activity rings. Ingested since: Lists and tables ✓.
+- Segmented controls (✓ `components/selection-and-input/segmented-controls.md`: the D · W · M · 6M · Y range control). Activity rings (✓ `components/status/activity-rings.md`). Gauges (✓ `components/status/gauges.md`). Progress indicators (✓ `components/status/progress-indicators.md`). Ingested since: Lists and tables ✓.
 - Developer docs: see Specs & values. Videos: see Specs & values.
