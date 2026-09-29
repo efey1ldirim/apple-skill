@@ -131,5 +131,5 @@ Field-note cross-links:
 
 ## Related
 - Ingested: Launching (✓), File management (✓), Loading (✓), Managing notifications (✓), Live-viewing apps (✓), Going full screen (✓), Layout (✓ CRITICAL), Feedback (✓ CRITICAL), Spatial layout (✓), Designing for iPadOS (✓), Designing for visionOS (✓).
-- Ingested since: Offering help (✓). Not yet ingested: **Windows**, Split views, Sidebars.
+- Ingested since: Offering help (✓). Split views ✓ (`components/layout/split-views.md`). Not yet ingested: **Windows**, Sidebars.
 - Developer docs and videos: listed in Specs & values.

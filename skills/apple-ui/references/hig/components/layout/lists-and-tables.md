@@ -62,7 +62,7 @@ The page has **no numbers, sizes or timings**. Concrete facts:
 | tvOS | row grows and rounds on focus; don't add your own corner masks; check adjacent images |
 | watchOS | few rows + "view more"; short detail views to allow vertical page navigation |
 | Developer docs | SwiftUI `List`, `Tables` · UIKit `UITableView` · AppKit `NSTableView` · `ListStyle`, `UIListContentConfiguration` |
-| Related HIG pages | Collections ✓ · Outline views ✓ · Layout ✓ · Split views (not yet ingested) |
+| Related HIG pages | Collections ✓ · Outline views ✓ · Layout ✓ · Split views ✓ |
 | Video | *Stacks, Grids, and Outlines in SwiftUI* (WWDC20 10031) |
 
 ## Visual notes (from screenshots)
@@ -119,5 +119,5 @@ Field-note cross-links:
 
 ## Related
 - Ingested: Collections (✓), Column views (✓), Disclosure controls (✓), Labels (✓), Boxes (✓), Layout (✓ CRITICAL), Color (✓ CRITICAL), Typography (✓ CRITICAL), Settings (✓), Searching (✓), Drag and drop (✓), Undo and redo (✓), Loading (✓), Feedback (✓ CRITICAL), Writing (✓).
-- Ingested since: Outline views (✓ `outline-views.md`). Not yet ingested: **Split views**.
+- Ingested since: Outline views (✓ `outline-views.md`), Split views (✓ `split-views.md`).
 - Developer docs and video: see Specs & values.

@@ -102,5 +102,5 @@ media and content, and games — **often with several apps at once**.
 
 ## Related (ingestion status)
 The menu bar, File management (✓), Going full screen (✓), Dock menus, Keyboards, Pointing devices,
-Game controls, Siri, Windows, Toolbars, Sidebars, Split views, Menus, Context menus — not yet
+Game controls, Siri, Windows, Toolbars, Sidebars, Menus, Context menus — not yet
 ingested.

@@ -98,4 +98,4 @@ productivity work**, and **creating** things. Start from the device characterist
 
 ## Related (ingestion status)
 Multitasking, Widgets, Drag and drop (✓ `hig/patterns/drag-and-drop.md`), Gestures, Virtual keyboards, Keyboards, Pointing devices,
-Apple Pencil and Scribble, Siri, Windows, Sidebars, Split views, Popovers — not yet ingested.
+Apple Pencil and Scribble, Siri, Windows, Sidebars, Popovers — not yet ingested. Ingested since: Split views (✓ `components/layout/split-views.md`).

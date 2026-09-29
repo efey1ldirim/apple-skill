@@ -47,7 +47,7 @@ The page has **no numbers, sizes or timings**. Concrete facts:
 | Search | search field in the toolbar for long outlines |
 | Not supported | iOS, iPadOS, tvOS, visionOS, watchOS |
 | Developer docs | SwiftUI `OutlineGroup` · AppKit `NSOutlineView` |
-| Related HIG pages | Column views ✓ · Lists and tables ✓ · Split views (not yet ingested) · Search fields (not yet ingested) |
+| Related HIG pages | Column views ✓ · Lists and tables ✓ · Split views ✓ · Search fields (not yet ingested) |
 | Video | *Stacks, Grids, and Outlines in SwiftUI* (WWDC20 10031) |
 
 ## Visual notes (from screenshots)
@@ -98,5 +98,5 @@ Field-note cross-links:
 
 ## Related
 - Ingested: Column views (✓), Lists and tables (✓), Disclosure controls (✓), Collections (✓), Labels (✓), File management (✓), Searching (✓), Drag and drop (✓), Undo and redo (✓), Loading (✓), Feedback (✓ CRITICAL), Layout/Color/Typography (✓ CRITICAL).
-- Not yet ingested: **Split views**, **Search fields**.
+- Ingested since: Split views (✓ `split-views.md`). Not yet ingested: **Search fields**.
 - Developer docs: `OutlineGroup`, `NSOutlineView`. Video: *Stacks, Grids, and Outlines in SwiftUI* (WWDC20 10031).

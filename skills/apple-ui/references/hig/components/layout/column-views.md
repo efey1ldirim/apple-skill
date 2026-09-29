@@ -36,7 +36,7 @@ The page has **no numbers, sizes or timings**. Concrete facts:
 | Alternatives | iPadOS/visionOS: split view · lists and tables · outline views |
 | Not supported | iOS, iPadOS, tvOS, visionOS, watchOS |
 | Developer docs | AppKit `NSBrowser` |
-| Related HIG pages | Lists and tables ✓ · Outline views ✓ · Split views (not yet ingested) |
+| Related HIG pages | Lists and tables ✓ · Outline views ✓ · Split views ✓ |
 
 ## Visual notes (from screenshots)
 - **Hero:** a pale coral card split by two vertical red rules into **three columns**. Column 1 lists **Folder A, Folder B, Folder C**, each with a folder glyph and a trailing **chevron** (parent marker); **Folder A** is highlighted with a soft filled row. Column 2 lists **Image A … Image E** with picture glyphs; **Image B** is selected with a strong solid red row and white text. Column 3 shows a **large image preview** tile, the file name **"Image B.png"**, **"Format - 42 MB"**, and an **"Information"** section with **Created · January 24, 1984** and **Modified · June 6, 2022**, key on the left and value on the right, separated by a thin rule **(from screenshot)**. The selection state cascades: parent highlight (soft) in the first column, leaf selection (strong) in the last list column.
@@ -81,5 +81,5 @@ Field-note cross-links:
 
 ## Related
 - Ingested: Collections (✓), Boxes (✓), Layout (✓ CRITICAL), File management (✓), Searching (✓), Drag and drop (✓), Undo and redo (✓), Loading (✓), Feedback (✓ CRITICAL), Right to left (✓).
-- Ingested since: Disclosure controls (✓ `disclosure-controls.md`). Lists and tables ✓, Outline views ✓. Not yet ingested: **Split views**.
+- Ingested since: Disclosure controls (✓ `disclosure-controls.md`). Lists and tables ✓, Outline views ✓, Split views ✓.
 - Developer docs: `NSBrowser`.

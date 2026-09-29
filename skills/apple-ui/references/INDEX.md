@@ -53,6 +53,7 @@ ingested so far.
 | Workout / fitness / stopwatch / tracker / "session in progress" screens: live metrics, big controls, pause/resume/end, sensor-unavailable states, session summary, courier/driver mode | + `hig/patterns/workouts.md` (3 screens: controls · metrics · media; timer from timestamp; wake lock; `--` not 0; summary; discard micro-sessions; legible in motion), `hig/patterns/feedback.md`, `hig/patterns/playing-haptics.md`, `hig/patterns/going-full-screen.md`, `hig/foundations/typography.md` + `color.md` (legibility gates); visual `workouts-01` | HIG: Activity rings, Charting data |
 | Settings / list screen | + `field-notes/components.md` § Settings list, `hig/patterns/settings.md` (few settings, good defaults, in-context options, respect system settings) | HIG: Settings, Lists and tables, Toggles |
 | Embedded web content: iframes, in-app browser/webview, rendering email or CMS HTML, external links from an app, embed fallbacks | + `hig/components/content/web-views.md` (sandbox + sanitise, back/forward only for multi-page, never rebuild a browser, open external in new tab/system browser, embed-refused fallback, block remote content) | HIG: Modality, Privacy |
+| Master-detail / sidebar + content + inspector layouts, resizable panels, hide/show side panes, responsive collapse to drill-in, TV filter + results, dashboard/editor splits | + `hig/components/layout/split-views.md` (persistent selection in every pane, 1 px divider with bigger hit area + keyboard resize, min/max pane sizes, hide via toggle/menu/shortcut, compact → one pane with Back, TV 1/3 : 2/3, pane over new window; visual `split-views-01`), `hig/foundations/layout.md`, `hig/components/layout/outline-views.md` | HIG: Sidebars, Tab bars, Tab views, Sheets |
 | Tree tables/treegrids, file or page trees with attribute columns, nested category/permission trees, expand-all, remembered expansion, tree search/rename | + `hig/components/layout/outline-views.md` (`role=treegrid`, hierarchy only in first column, sort within every level, Alt-click expand all, persist expansion, single-click rename vs double-click open, filter auto-expands ancestors), `hig/components/layout/disclosure-controls.md`, `lists-and-tables.md` | HIG: Split views, Search fields |
 | TV/10-foot media shelves and focusable media items: posters, cast/crew avatars (monograms), caption buttons, review cards, focus-grow with parallax, D-pad row navigation | + `hig/components/layout/lockups.md` (one focusable unit, single transform, gap > growth, consistent row sizes, initials fallback, poster text on focus, arrow-key row navigation), `hig/getting-started/designing-for-tvos.md`, `hig/components/layout/collections.md` | HIG: Focus and selection, Remotes |
 | Lists and data tables: settings/option lists, master-detail lists, sortable/resizable tables, zebra stripes, row selection + checkmarks, info (ⓘ) vs chevron rows, A–Z index rails, responsive tables | + `hig/components/layout/lists-and-tables.md` (`<table>` semantics + `aria-sort`, selection feedback by task, middle truncation, grouped list = field-note Settings list, info button vs disclosure indicator, no index beside trailing controls, tree/treegrid for hierarchy), `hig/components/layout/collections.md`, `field-notes/components.md` § Settings list; visual `lists-and-tables-01` | HIG: Outline views, Split views |
@@ -151,7 +152,7 @@ on every ingestion. `—` = not yet ingested.
 | Undo and redo `undo-and-redo` | `hig/patterns/undo-and-redo.md` | 2026-09-29 |
 | Workouts `workouts` | `hig/patterns/workouts.md` | 2026-09-29 |
 
-### Components  (collection page: —; **Content group complete**: Charts, Image views, Text views, Web views · Layout and organization: Boxes, Collections, Column views, Disclosure controls, Labels, Lists and tables, Lockups, Outline views)
+### Components  (collection page: —; **Content group complete**: Charts, Image views, Text views, Web views · Layout and organization: Boxes, Collections, Column views, Disclosure controls, Labels, Lists and tables, Lockups, Outline views, Split views)
 | Page | File | Ingested |
 |---|---|---|
 | **Content** (group) | | |
@@ -168,7 +169,7 @@ on every ingestion. `—` = not yet ingested.
 | &nbsp;&nbsp;Lists and tables `lists-and-tables` | `hig/components/layout/lists-and-tables.md` | 2026-09-29 |
 | &nbsp;&nbsp;Lockups `lockups` | `hig/components/layout/lockups.md` | 2026-09-29 |
 | &nbsp;&nbsp;Outline views `outline-views` | `hig/components/layout/outline-views.md` | 2026-09-29 |
-| &nbsp;&nbsp;Split views `split-views` | — | — |
+| &nbsp;&nbsp;Split views `split-views` | `hig/components/layout/split-views.md` | 2026-09-29 |
 | &nbsp;&nbsp;Tab views `tab-views` | — | — |
 | **Menus and actions** (group) | | |
 | &nbsp;&nbsp;Activity views `activity-views` | — | — |
