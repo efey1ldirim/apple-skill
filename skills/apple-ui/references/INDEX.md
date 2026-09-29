@@ -49,7 +49,7 @@ ingested so far.
 | Video players, embedded video, PiP, poster images, video encoding/aspect ratio, resume/exit behaviour, overlays over video, TV/kiosk playback | + `hig/patterns/playing-video.md` (no baked padding, resume without asking, loading, overlays), `hig/patterns/playing-audio.md`, `hig/patterns/live-viewing-apps.md`; visuals `playing-video-01 … 02` | HIG: Keyboards, Remotes |
 | Printing, PDF export, print stylesheets, print options | + `hig/patterns/printing.md` (menu placement, only when possible, custom options panel, advanced options), `hig/patterns/file-management.md` | HIG: The menu bar (File menu), Action sheets |
 | Asking for reviews/ratings/NPS/feedback, review prompts, app-store rating requests | + `hig/patterns/ratings-and-reviews.md` (after engagement, never mid-task, cool-down, system prompt), `hig/patterns/onboarding.md`, `hig/patterns/modality.md` | HIG: Alerts |
-| Search: site/app search box, search tab, suggestions/recent searches, scope and filters, search history privacy, command palette, discoverability (Spotlight-like) | + `hig/patterns/searching.md`, `hig/patterns/entering-data.md`, `hig/foundations/privacy.md` | HIG: Search fields, Toolbars, Tab bars |
+| Search: site/app search box, search tab, suggestions/recent searches, scope and filters, search history privacy, command palette, discoverability (Spotlight-like) | + `hig/components/navigation/search-fields.md` (placeholder names the scope, search as you type, recents/predictive suggestions, ranked and grouped results, scope bar defaults broad, tokens as chips + suggestions, tab / toolbar / inline / sidebar / dedicated-area placement, focus rules, compact resizing; visuals `search-fields-01 … 03`), `hig/patterns/searching.md`, `hig/patterns/entering-data.md`, `hig/foundations/privacy.md` | HIG: Search fields, Toolbars, Tab bars |
 | Undo/redo, history, revert, undo toasts instead of confirmations, soft delete, shortcuts | + `hig/patterns/undo-and-redo.md`, `hig/patterns/feedback.md` (undo instead of "are you sure" for recoverable actions), `hig/patterns/drag-and-drop.md` | HIG: Pointing devices, Keyboards, The menu bar (Edit menu) |
 | Workout / fitness / stopwatch / tracker / "session in progress" screens: live metrics, big controls, pause/resume/end, sensor-unavailable states, session summary, courier/driver mode | + `hig/patterns/workouts.md` (3 screens: controls · metrics · media; timer from timestamp; wake lock; `--` not 0; summary; discard micro-sessions; legible in motion), `hig/patterns/feedback.md`, `hig/patterns/playing-haptics.md`, `hig/patterns/going-full-screen.md`, `hig/foundations/typography.md` + `color.md` (legibility gates); visual `workouts-01` | HIG: Activity rings, Charting data |
 | Settings / list screen | + `field-notes/components.md` § Settings list, `hig/patterns/settings.md` (few settings, good defaults, in-context options, respect system settings) | HIG: Settings, Lists and tables, Toggles |
@@ -165,7 +165,7 @@ on every ingestion. `—` = not yet ingested.
 | Undo and redo `undo-and-redo` | `hig/patterns/undo-and-redo.md` | 2026-09-29 |
 | Workouts `workouts` | `hig/patterns/workouts.md` | 2026-09-29 |
 
-### Components  (collection page: —; Menus and actions: Activity views, **Buttons ⚠️**, Context menus, Dock menus, Edit menus, Home Screen quick actions, Menus, Ornaments, Pop-up buttons, Pull-down buttons, The menu bar, Toolbars — **Menus and actions group complete** · **Content group complete**: Charts, Image views, Text views, Web views · Layout and organization: Boxes, Collections, Column views, Disclosure controls, Labels, Lists and tables, Lockups, Outline views, Split views, Tab views — **Layout and organization group complete** · Navigation and search: Path controls)
+### Components  (collection page: —; Menus and actions: Activity views, **Buttons ⚠️**, Context menus, Dock menus, Edit menus, Home Screen quick actions, Menus, Ornaments, Pop-up buttons, Pull-down buttons, The menu bar, Toolbars — **Menus and actions group complete** · **Content group complete**: Charts, Image views, Text views, Web views · Layout and organization: Boxes, Collections, Column views, Disclosure controls, Labels, Lists and tables, Lockups, Outline views, Split views, Tab views — **Layout and organization group complete** · Navigation and search: Path controls, Search fields)
 | Page | File | Ingested |
 |---|---|---|
 | **Content** (group) | | |
@@ -199,7 +199,7 @@ on every ingestion. `—` = not yet ingested.
 | &nbsp;&nbsp;Toolbars `toolbars` | `hig/components/menus/toolbars.md` | 2026-09-29 |
 | **Navigation and search** (group) | | |
 | &nbsp;&nbsp;Path controls `path-controls` | `hig/components/navigation/path-controls.md` | 2026-09-29 |
-| &nbsp;&nbsp;Search fields `search-fields` | — | — |
+| &nbsp;&nbsp;Search fields `search-fields` | `hig/components/navigation/search-fields.md` | 2026-09-29 |
 | &nbsp;&nbsp;Sidebars `sidebars` | — | — |
 | &nbsp;&nbsp;Tab bars `tab-bars` | — | — |
 | &nbsp;&nbsp;Token fields `token-fields` | — | — |

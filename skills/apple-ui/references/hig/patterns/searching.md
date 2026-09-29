@@ -7,7 +7,7 @@ Give search **one obvious home** (a search field, or a dedicated tab if search i
 ## Rules
 
 ### Framing (intro)
-- People generally expect a **search field** to search an app (Apple links Search fields, not yet ingested).
+- People generally expect a **search field** to search an app (Apple links Search fields ✓ `hig/components/navigation/search-fields.md`).
 - You can **personalise** search from what you know about how people use the app: show **recent searches, suggestions, completions or corrections** based on their earlier terms.
 - Sometimes people want to **scope or filter**: by attributes like **creation date, file size or file type** (Apple links *Scope bars and tokens* in Search fields).
 - People may also want to **find content inside an open document or file**: provide ways to search within a **window or page** (iOS, iPadOS, macOS).
@@ -48,7 +48,7 @@ The page has **no numbers, sizes or timings**. Concrete facts:
 | Systemwide | Spotlight indexing + metadata; File Importer plug-in for custom types; Quick Look generator for previews |
 | System open/save views | include a system-wide search field |
 | Developer docs | `searchSuggestions(_:)` (SwiftUI) · *Adding your app's content to Spotlight indexes* · `CSImportExtension` · Quick Look |
-| Related HIG pages | Search fields (not yet ingested) · Toolbars ✓ · Tab bars · File management ✓ |
+| Related HIG pages | Search fields ✓ · Toolbars ✓ · Tab bars · File management ✓ |
 | Video | *Design intuitive search experiences* (WWDC26 292) |
 
 ## Visual notes (from screenshots)
@@ -99,5 +99,5 @@ Field-note cross-links:
 
 ## Related
 - Ingested: File management (✓), Entering data (✓), Feedback (✓ CRITICAL), Privacy (✓), Managing accounts (✓), Onboarding (✓), Offering help (✓), Writing (✓).
-- Not yet ingested: **Search fields** (scope bars and tokens), **Tab bars**, Sidebars.
+- Ingested since: **Search fields** (✓ `hig/components/navigation/search-fields.md`, incl. scope bars and tokens). Not yet ingested: **Tab bars**, Sidebars.
 - Developer docs: listed in Specs & values. Video: *Design intuitive search experiences* (WWDC26 292).
