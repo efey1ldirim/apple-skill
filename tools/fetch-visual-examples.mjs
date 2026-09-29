@@ -38,6 +38,7 @@ const PAGES = [
   "printing", "ratings-and-reviews", "searching",
   "settings", "undo-and-redo", "workouts",
   "charts", "image-views", "text-views", "web-views",
+  "boxes",
 ];
 // Stand-alone images that are comparisons on their own (before/after drawn inside one image, or
 // a sequence of single images under one rule). Consecutive singles under the same rule are grouped.

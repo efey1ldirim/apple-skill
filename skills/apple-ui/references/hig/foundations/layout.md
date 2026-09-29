@@ -157,7 +157,7 @@ available space** (size classes, text size, locale, safe areas) instead of to de
     instead of sleeping on wrist-flip (`isAutorotating`).
 
 ### Resources listed
-Related: Right to left, Spatial layout, Layout and organization. Developer: Composing custom layouts
+Related: Right to left, Spatial layout, Layout and organization (Boxes ✓ `components/layout/boxes.md`). Developer: Composing custom layouts
 with SwiftUI. Videos: *Get to know the new design system* (WWDC25 356), *Compose custom layouts with
 SwiftUI* (WWDC22 10056), *Essential Design Principles* (WWDC17 802).
 
