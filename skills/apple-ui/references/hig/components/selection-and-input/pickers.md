@@ -109,7 +109,7 @@ Field-note cross-links:
 - `hig/components/menus/pull-down-buttons.md` (✓) and `pop-up-buttons.md` (✓): the short-list alternative; `hig/components/layout/lists-and-tables.md` (✓): the very-large-set alternative with an **index**; `hig/components/selection-and-input/combo-boxes.md` (✓): type-or-pick.
 - `hig/components/presentation/popovers.md` (✓) and `sheets.md` (✓): where a picker appears (popover / bottom of a window); `hig/patterns/entering-data.md` (✓): prefer choices over typing, sensible defaults, keyboard entry; `hig/patterns/settings.md` (✓): pickers in settings screens.
 - `hig/foundations/color.md` (✓ CRITICAL): the accent-colour value and today/selected cues (never colour alone); `hig/foundations/right-to-left.md` (✓): calendars and wheels in RTL; `hig/foundations/writing.md` (✓): labels.
-- Not yet ingested: Toggles (the inline style's header switch). Text fields (✓ `text-fields.md`), Steppers (✓ `steppers.md`), Sliders (✓ `sliders.md`). Segmented controls (✓ `segmented-controls.md`).
+- Toggles (✓ `toggles.md`, the inline style's header switch). Text fields (✓ `text-fields.md`), Steppers (✓ `steppers.md`), Sliders (✓ `sliders.md`). Segmented controls (✓ `segmented-controls.md`).
 - `field-notes/components.md` mentions an "icon picker" only as a control-row example: no conflict.
 
 ## Checklist
@@ -126,5 +126,5 @@ Field-note cross-links:
 
 ## Related
 - Ingested: Pull-down buttons (✓), Pop-up buttons (✓), Lists and tables (✓), Combo boxes (✓), Popovers (✓), Sheets (✓), Entering data (✓), Settings (✓), Color (✓ CRITICAL), Right to left (✓), Writing (✓).
-- Not yet ingested: Toggles. Text fields (✓ `text-fields.md`). Steppers (✓ `steppers.md`), Sliders (✓ `sliders.md`). Segmented controls (✓ `segmented-controls.md`).
+- Toggles (✓ `toggles.md`). Text fields (✓ `text-fields.md`). Steppers (✓ `steppers.md`), Sliders (✓ `sliders.md`). Segmented controls (✓ `segmented-controls.md`).
 - Developer docs: SwiftUI `Picker`, `DatePicker`, `navigationLink`; UIKit `UIDatePicker`, `UIPickerView`; AppKit `NSDatePicker`.

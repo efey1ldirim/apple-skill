@@ -95,7 +95,7 @@ Field-note cross-links:
 - `hig/components/content/text-views.md` (✓): larger text; `hig/components/selection-and-input/combo-boxes.md` (✓), `token-fields.md` (✓), `digit-entry-views.md` (✓), `steppers.md` (✓), `sliders.md` (✓): related entry controls; `hig/components/navigation/search-fields.md` (✓): the search variant.
 - `hig/components/layout/labels.md` (✓) and `hig/foundations/writing.md` (✓): label wording and the **Capitalisation table** (form labels follow the product's convention, combo box labels are Title Case + colon; the Number:/Currency: picture uses Title Case with a colon, a macOS form); `hig/patterns/feedback.md` (✓ CRITICAL) and **Feedback gate**: inline errors; `hig/patterns/managing-accounts.md` (✓): sign-in fields.
 - `hig/foundations/privacy.md` (✓): never prefill passwords; `hig/foundations/right-to-left.md` (✓): mirrored icons/clear button, numerals; `hig/foundations/color.md` (✓ CRITICAL): field boundary and placeholder contrast; `hig/foundations/layout.md` (✓ CRITICAL): reflow.
-- Not yet ingested: Virtual keyboards, Toggles.
+- Not yet ingested: Virtual keyboards. Toggles (✓ `toggles.md`).
 
 ## Checklist
 - [ ] Every input has a **visible `<label for>`**; the **placeholder is only a hint** and meets **≥ 3:1** (token ≈ 3.3:1); floating labels keep the label visible.
@@ -112,5 +112,5 @@ Field-note cross-links:
 
 ## Related
 - Ingested: Text views (✓), Combo boxes (✓), Entering data (✓), Token fields (✓), Search fields (✓), Digit entry views (✓), Steppers (✓), Sliders (✓), Pickers (✓), Labels (✓), Writing (✓), Feedback (✓ CRITICAL), Managing accounts (✓), Privacy (✓), Right to left (✓), Color (✓ CRITICAL), Layout (✓ CRITICAL), Offering help (✓).
-- Not yet ingested: Virtual keyboards, Toggles.
+- Not yet ingested: Virtual keyboards. Toggles (✓ `toggles.md`).
 - Developer docs: SwiftUI `TextField`, `SecureField`; UIKit `UITextField`; AppKit `NSTextField`.

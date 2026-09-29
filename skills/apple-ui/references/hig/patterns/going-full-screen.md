@@ -44,7 +44,7 @@ Full screen is the **person's choice, entered and left by them**, with the syste
 - **should not** **In a game, change the display mode when players go full screen.** People expect to control their display mode, and switching it automatically **doesn't improve performance**. (Developer doc: *Managing your game window for Metal in macOS*.)
 - **should** **Let people choose when to enter full screen** with the window's **Enter Full Screen** button, the **View** menu item or the **Control-Command-F** shortcut.
   - **should not** offer a custom menu of window modes.
-  - In a game you **may** add a custom **toggle** that turns full screen on and off (Apple links Toggles, not yet ingested).
+  - In a game you **may** add a custom **toggle** that turns full screen on and off (Apple links Toggles: ✓ `components/selection-and-input/toggles.md`).
 
 ## Specs & values
 The page has **no sizes, timings or colours**. Its concrete facts:
@@ -111,5 +111,5 @@ Field-note cross-links:
 
 ## Related
 - Ingested: Immersive experiences (✓), Layout (✓ CRITICAL), Feedback (✓ CRITICAL), Motion (✓), File management (✓), Designing for macOS (✓), Designing for iPadOS (✓).
-- Ingested since: Modality (✓). Windows (✓ `components/presentation/windows.md`: iPadOS full screen vs windowed, macOS window states), Multitasking (✓). Not yet ingested: Toggles. Ingested since: Toolbars (✓). Playing video ✓, Launching ✓.
+- Ingested since: Modality (✓). Windows (✓ `components/presentation/windows.md`: iPadOS full screen vs windowed, macOS window states), Multitasking (✓). Toggles (✓ `components/selection-and-input/toggles.md`). Ingested since: Toolbars (✓). Playing video ✓, Launching ✓.
 - Developer docs: listed in Specs & values. Video: *Elevate the design of your iPad app* (WWDC25 208).

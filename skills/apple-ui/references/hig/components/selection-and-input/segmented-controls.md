@@ -102,7 +102,7 @@ Field-note cross-links:
 - `hig/components/navigation/search-fields.md` (✓): the scope bar uses **2–4 segments** (CONV); Apple's ceiling is **~5–7** (and ~5 on iPhone): both hold, the CONV is stricter.
 - `hig/components/layout/tab-views.md` (✓), `tab-bars.md` (✓): tab view vs segmented vs tab bar; `hig/components/layout/split-views.md` (✓): tvOS filtering; `hig/components/menus/toolbars.md` (✓) and `presentation/panels.md` (✓): where segmented controls live; `hig/patterns/drag-and-drop.md` (✓): spring loading; `hig/components/content/charts.md` (✓) and `patterns/charting-data.md` (✓): the D · W · M · 6M · Y range control.
 - `hig/foundations/writing.md` (✓): the Capitalisation table now includes **segment labels (Title Case)**; `hig/foundations/color.md` (✓ CRITICAL): selected-state contrast.
-- Not yet ingested: Toggles, Focus and selection. Text fields (✓ `text-fields.md`). Steppers (✓ `steppers.md`), Sliders (✓ `sliders.md`).
+- Not yet ingested: Focus and selection. Toggles (✓ `toggles.md`). Text fields (✓ `text-fields.md`). Steppers (✓ `steppers.md`), Sliders (✓ `sliders.md`).
 
 ## Checklist
 - [ ] The **selection model is chosen first**: single (`radiogroup`), multiple (`aria-pressed` group) or momentary (plain buttons); **never mixed in one control**.
@@ -118,5 +118,5 @@ Field-note cross-links:
 
 ## Related
 - Ingested: Split views (✓), Tab views (✓), Tab bars (✓), Toolbars (✓), Panels (✓), Search fields (✓), Pickers (✓), Pull-down buttons (✓), Buttons (✓ CRITICAL), Charts (✓), Drag and drop (✓), Writing (✓), Color (✓ CRITICAL).
-- Not yet ingested: Toggles. Text fields (✓ `text-fields.md`). Steppers (✓ `steppers.md`), Sliders (✓ `sliders.md`).
+- Toggles (✓ `toggles.md`). Text fields (✓ `text-fields.md`). Steppers (✓ `steppers.md`), Sliders (✓ `sliders.md`).
 - Developer docs: SwiftUI `segmented`; UIKit `UISegmentedControl`; AppKit `NSSegmentedControl`.

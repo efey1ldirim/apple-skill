@@ -109,5 +109,5 @@ Field-note cross-links:
 
 ## Related
 - Ingested: Onboarding (✓), Entering data (✓), Managing notifications (✓), Managing accounts (✓), Accessibility (✓), Dark Mode (✓), Feedback (✓ CRITICAL), Searching (✓), File management (✓).
-- Ingested since: Disclosure controls (✓ `components/layout/disclosure-controls.md`). Ingested since: The menu bar (✓ `components/menus/the-menu-bar.md`). Sidebars (✓ `components/navigation/sidebars.md`). Pickers (✓ `components/selection-and-input/pickers.md`). Not yet ingested: Toggles.
+- Ingested since: Disclosure controls (✓ `components/layout/disclosure-controls.md`). Ingested since: The menu bar (✓ `components/menus/the-menu-bar.md`). Sidebars (✓ `components/navigation/sidebars.md`). Pickers (✓ `components/selection-and-input/pickers.md`). Toggles (✓ `components/selection-and-input/toggles.md`: switch rows, checkboxes).
 - Developer docs: SwiftUI `Settings`, `UserDefaults`, *Preference Panes*.

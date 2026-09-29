@@ -82,7 +82,7 @@ An alert is a **modal that gives critical information people need right now**: a
 | macOS | app icon by default (replaceable), suppression checkbox, accessory view, Help button, caution symbol `exclamationmark.triangle` sparingly |
 | visionOS | in front of window (Shared Space, slightly forward on z); anchored when window moves; Full Space: centred in field of view; **accessory view ≤ 154 pt tall, 16 pt corner radius** |
 | Developer docs | SwiftUI `alert(_:isPresented:actions:)` · UIKit `UIAlertController` · AppKit `NSAlert` (+ `accessoryView`) |
-| Related HIG pages | Modality ✓ · Action sheets ✓ · Sheets ✓ · Buttons ✓ (Help buttons) · Toggles (checkboxes, not yet ingested) · Spatial layout ✓ (field of view) |
+| Related HIG pages | Modality ✓ · Action sheets ✓ · Sheets ✓ · Buttons ✓ (Help buttons) · Toggles ✓ (checkboxes: `components/selection-and-input/toggles.md`) · Spatial layout ✓ (field of view) |
 
 ## Visual notes (from screenshots)
 - **Hero:** a red-to-orange card with a **pale pink alert card** in the centre: bold **"Alert Title"**, the line **"Alert description"**, and two capsule buttons side by side: a **pale "Secondary"** on the left and a **solid red "Primary"** on the right with white text; **arrows** extend **up, down, left and right** from the card (the alert sits centred with even margins) and a small **chevron/caret** below its right edge; no numbers **(from screenshot)**.
@@ -128,7 +128,7 @@ Field-note cross-links:
 - `hig/components/menus/buttons.md` (✓ CRITICAL): roles (primary/cancel/destructive), hit region ≥ 44 px, Help buttons; **note the deliberate-intent exception** above against the `primary-destructive` rule.
 - `hig/components/presentation/action-sheets.md` (✓): choices for an intentional action (its Mail example has two choices; this page says three).
 - `hig/patterns/undo-and-redo.md` (✓): Undo instead of alerts for common actions; `hig/foundations/writing.md` (✓): capitalisation table, tone, button labels; `hig/foundations/materials.md` (✓ CRITICAL): glass card and fallback; `hig/foundations/layout.md` (✓ CRITICAL): safe areas, `dvh`, 200 % text.
-- Ingested since: Sheets (✓ `sheets.md`). Not yet ingested: **Toggles** (checkboxes).
+- Ingested since: Sheets (✓ `sheets.md`). Toggles (✓ `components/selection-and-input/toggles.md`: checkbox states and labels).
 - No conflict with a field note; one **internal Apple inconsistency** (Mail example, two vs three choices).
 
 ## Checklist
@@ -145,5 +145,5 @@ Field-note cross-links:
 
 ## Related
 - Ingested: Modality (✓), Action sheets (✓), Buttons (✓ CRITICAL), Feedback (✓ CRITICAL), Materials (✓ CRITICAL), Layout (✓ CRITICAL), Writing (✓), Undo and redo (✓), Right to left (✓), Spatial layout (✓).
-- Not yet ingested: **Toggles**.
+- Toggles (✓ `components/selection-and-input/toggles.md`).
 - Developer docs: SwiftUI `alert(_:isPresented:actions:)`; UIKit `UIAlertController`; AppKit `NSAlert`.
