@@ -58,12 +58,12 @@ The page has **no sizes, timings or colours**. Its concrete facts:
 | Example permission phrases | "Only invited people can edit" · "Everyone can make changes" |
 | Example custom sharing choices | who can access · edit or read only · can collaborators add participants |
 | "Send copy" support | CloudKit: pass file + collaboration object · iCloud Drive: default · custom: include a file or a plain-text version in the collaboration object |
-| Share surface by platform | iOS 16 share sheet · iPadOS 16 / macOS 13 sharing popover · SwiftUI `ShareLink` (also watchOS) |
+| Share surface by platform (component page ✓ `components/menus/activity-views.md`) | iOS 16 share sheet · iPadOS 16 / macOS 13 sharing popover · SwiftUI `ShareLink` (also watchOS) |
 | Custom-infrastructure requirement | universal links |
 | Notification event types | content change · membership change · participant mention |
 | Developer docs | Supporting universal links in your app · `ShareLink` · Shared with You · `SWHighlightEvent` |
 | Videos | *Design for Collaboration with Messages* (WWDC22 10015) · *Enhance collaboration experiences with Messages* (WWDC22 10095) · *Integrate your custom collaboration app with Messages* (WWDC22 10093) |
-| Related HIG page | Activity views (not yet ingested) |
+| Related HIG page | Activity views ✓ (`components/menus/activity-views.md`) |
 
 ## Platform considerations
 - **iOS, iPadOS, macOS:** no additional considerations (the iOS 16 share sheet and iPadOS 16 / macOS 13 sharing popover are described in the rules).
@@ -139,5 +139,5 @@ Field-note cross-links:
 
 ## Related
 - Ingested: Immersive experiences (✓), Writing (✓), Materials (✓ CRITICAL), Privacy (✓), Layout (✓ CRITICAL), Icons (✓), SF Symbols (✓), Right to left (✓).
-- Not yet ingested: **Activity views** (the share sheet component), SharePlay, Sheets, Popovers, Toolbars, Buttons, Notifications, Managing notifications, Managing accounts.
+- Ingested since: Activity views (✓ the share sheet component). Not yet ingested: SharePlay, Sheets, Popovers, Toolbars, Buttons, Notifications, Managing notifications, Managing accounts.
 - Developer docs: Supporting universal links in your app; `ShareLink` (SwiftUI); Shared with You; `SWHighlightEvent`.

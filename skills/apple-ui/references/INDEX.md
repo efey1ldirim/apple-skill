@@ -53,6 +53,7 @@ ingested so far.
 | Workout / fitness / stopwatch / tracker / "session in progress" screens: live metrics, big controls, pause/resume/end, sensor-unavailable states, session summary, courier/driver mode | + `hig/patterns/workouts.md` (3 screens: controls · metrics · media; timer from timestamp; wake lock; `--` not 0; summary; discard micro-sessions; legible in motion), `hig/patterns/feedback.md`, `hig/patterns/playing-haptics.md`, `hig/patterns/going-full-screen.md`, `hig/foundations/typography.md` + `color.md` (legibility gates); visual `workouts-01` | HIG: Activity rings, Charting data |
 | Settings / list screen | + `field-notes/components.md` § Settings list, `hig/patterns/settings.md` (few settings, good defaults, in-context options, respect system settings) | HIG: Settings, Lists and tables, Toggles |
 | Embedded web content: iframes, in-app browser/webview, rendering email or CMS HTML, external links from an app, embed fallbacks | + `hig/components/content/web-views.md` (sandbox + sanitise, back/forward only for multi-page, never rebuild a browser, open external in new tab/system browser, embed-refused fallback, block remote content) | HIG: Modality, Privacy |
+| Share button / share sheet, Web Share API + fallback popover, share targets (PWA `share_target`), custom share/quick actions, "copy link", background upload progress | + `hig/components/menus/activity-views.md` (one Share button, `navigator.share` + AbortError silent, no duplicate system actions, verb titles, ~70 px SVG icons, exclude inapplicable, no modal-on-modal, progress in main app; visual `activity-views-01`), `hig/patterns/collaboration-and-sharing.md`, `hig/foundations/icons.md` | HIG: Sheets, Popovers |
 | Tabs / segmented switches / pagers: settings sections, detail sections, view switchers, wizard steps with hidden tabs, dot pagers | + `hig/components/layout/tab-views.md` (≤ 6 tabs, ARIA tabs keyboard model, self-contained panes, noun labels, no pop-up as primary switch, URL-reflected tab, segmented control for in-page switches, page indicator for glanceable UIs) | HIG: Tab bars, Segmented controls, Page controls |
 | Master-detail / sidebar + content + inspector layouts, resizable panels, hide/show side panes, responsive collapse to drill-in, TV filter + results, dashboard/editor splits | + `hig/components/layout/split-views.md` (persistent selection in every pane, 1 px divider with bigger hit area + keyboard resize, min/max pane sizes, hide via toggle/menu/shortcut, compact → one pane with Back, TV 1/3 : 2/3, pane over new window; visual `split-views-01`), `hig/foundations/layout.md`, `hig/components/layout/outline-views.md` | HIG: Sidebars, Tab bars, Tab views, Sheets |
 | Tree tables/treegrids, file or page trees with attribute columns, nested category/permission trees, expand-all, remembered expansion, tree search/rename | + `hig/components/layout/outline-views.md` (`role=treegrid`, hierarchy only in first column, sort within every level, Alt-click expand all, persist expansion, single-click rename vs double-click open, filter auto-expands ancestors), `hig/components/layout/disclosure-controls.md`, `lists-and-tables.md` | HIG: Split views, Search fields |
@@ -153,7 +154,7 @@ on every ingestion. `—` = not yet ingested.
 | Undo and redo `undo-and-redo` | `hig/patterns/undo-and-redo.md` | 2026-09-29 |
 | Workouts `workouts` | `hig/patterns/workouts.md` | 2026-09-29 |
 
-### Components  (collection page: —; **Content group complete**: Charts, Image views, Text views, Web views · Layout and organization: Boxes, Collections, Column views, Disclosure controls, Labels, Lists and tables, Lockups, Outline views, Split views, Tab views — **Layout and organization group complete**)
+### Components  (collection page: —; Menus and actions: Activity views · **Content group complete**: Charts, Image views, Text views, Web views · Layout and organization: Boxes, Collections, Column views, Disclosure controls, Labels, Lists and tables, Lockups, Outline views, Split views, Tab views — **Layout and organization group complete**)
 | Page | File | Ingested |
 |---|---|---|
 | **Content** (group) | | |
@@ -173,7 +174,7 @@ on every ingestion. `—` = not yet ingested.
 | &nbsp;&nbsp;Split views `split-views` | `hig/components/layout/split-views.md` | 2026-09-29 |
 | &nbsp;&nbsp;Tab views `tab-views` | `hig/components/layout/tab-views.md` | 2026-09-29 |
 | **Menus and actions** (group) | | |
-| &nbsp;&nbsp;Activity views `activity-views` | — | — |
+| &nbsp;&nbsp;Activity views `activity-views` | `hig/components/menus/activity-views.md` | 2026-09-29 |
 | &nbsp;&nbsp;Buttons `buttons` | — | — |
 | &nbsp;&nbsp;Context menus `context-menus` | — | — |
 | &nbsp;&nbsp;Dock menus `dock-menus` | — | — |

@@ -58,7 +58,7 @@ The page has **no sizes, timings or colours**. Its concrete facts:
 | Title | names the modal's task (plus optional guidance text) |
 | visionOS | full-screen modal fills a window in the Shared Space; can become immersive in a Full Space |
 | Developer docs | SwiftUI *Presentation modifiers* · UIKit `UIModalPresentationStyle` · AppKit *Modal Windows and Panels* |
-| Related HIG pages | Sheets · Alerts · Popovers · Action sheets · Activity views (none ingested yet) |
+| Related HIG pages | Sheets · Alerts · Popovers · Action sheets · Activity views ✓ (`components/menus/activity-views.md`) |
 | Video | *Get to know the new design system* (WWDC25 356) |
 
 ## Visual notes (from screenshots)
@@ -108,5 +108,5 @@ Field-note cross-links:
 
 ## Related
 - Ingested: Feedback (✓ CRITICAL), Going full screen (✓), Immersive experiences (✓), File management (✓), Managing accounts (✓), Entering data (✓), Materials (✓ CRITICAL), Spatial layout (✓), Accessibility (✓).
-- Not yet ingested: **Sheets**, **Alerts**, **Popovers**, **Action sheets**, **Activity views**, Windows.
+- Not yet ingested: **Sheets**, **Alerts**, **Popovers**, **Action sheets**, Windows. Ingested since: Activity views (✓).
 - Developer docs: SwiftUI *Presentation modifiers*, UIKit `UIModalPresentationStyle`, AppKit *Modal Windows and Panels*. Video: *Get to know the new design system* (WWDC25 356).
