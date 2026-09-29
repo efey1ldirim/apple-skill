@@ -87,7 +87,7 @@ The page gives **no pixel sizes or timings**. Numbers and thresholds it does sta
 | visionOS | small or large layouts; near the controlled content; breakthrough: automatic → subtle · prominent · none |
 | Change log | June 8, 2026 icon guidance updated · Dec 16, 2025 breakthrough effect for visionOS · Jul 28, 2025 icons for menu items added · Jun 10, 2024 in-game menus + game examples · Jun 21, 2023 visionOS · Sep 14, 2022 small/medium/large layouts for iPadOS |
 | Developer docs | SwiftUI `Menu` · UIKit "Menus and shortcuts" · AppKit "Menus" |
-| Related HIG pages | Pop-up buttons · Pull-down buttons · Context menus ✓ · The menu bar |
+| Related HIG pages | Pop-up buttons ✓ · Pull-down buttons · Context menus ✓ · The menu bar |
 
 ## Visual notes (from screenshots)
 - **Hero:** a red-to-pink card showing a light rounded menu with **Item A** (⌥⌘C), **Item B** (⌥⌘V), **Item C** (⌃⌥⇧⌘A) with **right-aligned key shortcuts**, a hairline separator, then a highlighted **Submenu** row with a chevron whose panel (**Item W, Item X selected, Item Y, Item Z**) opens to the lower right with a solid red selection pill **(from screenshot)**. It shows shortcuts in a trailing column, one separator between groups, a chevron marking a submenu and a strongly coloured selection row.
@@ -144,5 +144,5 @@ Field-note cross-links and conflicts:
 
 ## Related
 - Ingested: Context menus (✓), Edit menus (✓), Dock menus (✓), Home Screen quick actions (✓), Buttons (✓ CRITICAL), Activity views (✓), Icons (✓), SF Symbols (✓), Writing (✓), Typography (✓ CRITICAL), Layout (✓ CRITICAL), Undo and redo (✓).
-- Not yet ingested: **Pop-up buttons**, **Pull-down buttons**, **The menu bar**, Game controls (§ Touch controls), Settings.
+- Ingested since: Pop-up buttons (✓). Not yet ingested: **Pull-down buttons**, **The menu bar**, Game controls (§ Touch controls), Settings.
 - Developer docs: SwiftUI `Menu`, UIKit "Menus and shortcuts" (`preferredElementSize`), AppKit "Menus".
