@@ -55,7 +55,7 @@ The page has **one hard number**. Concrete facts:
 | SwiftUI | `confirmationDialog(_:isPresented:titleVisibility:actions:)` (all platforms; Cancel by default) |
 | UIKit | `UIAlertController.Style.actionSheet` (iOS, iPadOS, tvOS), `UIAlertAction.Style.destructive` |
 | Not supported | visionOS |
-| Related HIG pages | Modality ✓ · Sheets (not yet ingested) · Alerts (not yet ingested) |
+| Related HIG pages | Modality ✓ · Sheets (not yet ingested) · Alerts ✓ |
 
 ## Visual notes (from screenshots)
 - **Hero:** a red-to-orange card with a **pale pink rounded card** in the centre: a bold **"Action Title"**, the line **"A short description of the action."**, then **three full-width capsule buttons "Action 1 / Action 2 / Action 3"** in a deeper pink with red labels, each crossed by a **dashed horizontal guide line**; a **horizontal double arrow above** the card (its width) and a **vertical bracket at its right** (its height): the illustration is about **width, height and equal button rows**, no numbers **(from screenshot)**.
@@ -91,7 +91,7 @@ Field-note cross-links:
 - `hig/components/menus/pull-down-buttons.md` (✓): destructive items in a menu (red, last, confirmed apart) vs the sheet's **destructive on top**; the two rules differ by component, follow each.
 - `hig/patterns/undo-and-redo.md` (✓): the better answer for reversible actions.
 - `hig/foundations/materials.md` (✓ CRITICAL): glass sheets and fallbacks; `writing.md` (✓): button labels.
-- Not yet ingested: **Alerts**, **Sheets**.
+- Not yet ingested: **Sheets**.
 - No conflict with a field note.
 
 ## Checklist
@@ -107,5 +107,5 @@ Field-note cross-links:
 
 ## Related
 - Ingested: Modality (✓), Buttons (✓ CRITICAL), Feedback (✓ CRITICAL), Materials (✓ CRITICAL), Pull-down buttons (✓), Menus (✓), Undo and redo (✓), Layout (✓ CRITICAL), Writing (✓).
-- Not yet ingested: **Alerts**, **Sheets**.
+- Ingested since: **Alerts** (✓ `alerts.md`: its Mail example has **three** choices, this page's has **two**). Not yet ingested: **Sheets**.
 - Developer docs: SwiftUI `confirmationDialog(_:isPresented:titleVisibility:actions:)`; UIKit `UIAlertController.Style.actionSheet`.
