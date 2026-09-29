@@ -97,7 +97,7 @@ Field-note cross-links:
 - `hig/patterns/playing-audio.md` (✓): the **volume view** / no fake system volume; `hig/foundations/right-to-left.md` (✓): sliders run from inline-start; `hig/components/presentation/panels.md` (✓): sliders in inspector panels with a numeric field and Undo.
 - `hig/components/selection-and-input/pickers.md` (✓) and `segmented-controls.md` (✓): other ways to choose a value; `hig/components/selection-and-input/color-wells.md` (✓): colour channel sliders; `hig/patterns/entering-data.md` (✓): steppers/sliders for bounded numbers; `hig/patterns/playing-haptics.md` (✓): standard sliders play haptics automatically.
 - `hig/foundations/color.md` (✓ CRITICAL): fill/track contrast; `hig/foundations/materials.md` (✓ CRITICAL): sliders over glass.
-- Not yet ingested: Steppers, Text fields, Toggles, Focus and selection.
+- Not yet ingested: Text fields, Toggles, Focus and selection. Steppers (✓ `steppers.md`).
 
 ## Checklist
 - [ ] The control is a **native `<input type="range">`** (or a full `role="slider"` widget) with **visible label, min/max/step and `aria-valuetext`** where units matter.
@@ -113,5 +113,5 @@ Field-note cross-links:
 
 ## Related
 - Ingested: Pickers (✓), Segmented controls (✓), Color wells (✓), Playing audio (✓), Panels (✓), Right to left (✓), Entering data (✓), Playing haptics (✓), Offering help (✓), Labels (✓), Color (✓ CRITICAL), Materials (✓ CRITICAL).
-- Not yet ingested: Steppers, Text fields, Toggles.
+- Not yet ingested: Text fields, Toggles. Steppers (✓ `steppers.md`).
 - Developer docs: SwiftUI `Slider`; UIKit `UISlider`; AppKit `NSSlider`.
