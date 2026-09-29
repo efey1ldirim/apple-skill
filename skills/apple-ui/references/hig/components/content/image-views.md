@@ -102,5 +102,5 @@ Field-note cross-links:
 
 ## Related
 - Ingested: Images (✓), Icons (✓), SF Symbols (✓), Color (✓ CRITICAL), Materials (✓ CRITICAL), Charts (✓), Drag and drop (✓), Undo and redo (✓), Loading (✓), Motion (✓).
-- Not yet ingested: **Image wells**, **Buttons** (§ Image buttons), Windows (§ visionOS).
+- Ingested since: Collections (✓ `components/layout/collections.md`). Not yet ingested: **Image wells**, **Buttons** (§ Image buttons), Windows (§ visionOS).
 - Developer docs and videos: see Specs & values.
