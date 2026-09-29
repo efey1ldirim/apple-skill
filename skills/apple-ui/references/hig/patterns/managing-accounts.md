@@ -37,7 +37,7 @@ Don't ask for an account unless the core functionality needs one; when you do, *
 - **should** **If you support in-app purchases, explain how billing and cancellation work on deletion.**
   - Auto-renewable subscription **billing continues through Apple until the person cancels**, whether or not they delete the account.
   - After deleting, people must **cancel the subscription or request a refund**.
-  - Also give information on how to **cancel subscriptions and manage purchases** (Apple links Apple In-App Purchase › Helping people manage their subscriptions and Providing help).
+  - Also give information on how to **cancel subscriptions and manage purchases** (Apple links Apple In-App Purchase › Helping people manage their subscriptions and Providing help; ✓ `technologies/apple-in-app-purchase.md`).
   - **Note (aside):** even if people didn't buy the subscription in your app, you still need to support account deletion.
 
 ### TV provider accounts
@@ -134,5 +134,5 @@ Field-note cross-links:
 
 ## Related
 - Ingested: Privacy (✓), Entering data (✓), Feedback (✓ CRITICAL), Writing (✓), Launching (✓), Designing for tvOS (✓).
-- Ingested since: Managing notifications (✓). Onboarding (✓ ingested). Not yet ingested: **Sign in with Apple**, Apple In-App Purchase, Settings (✓ ingested). Remotes (✓ `inputs/remotes.md`). Text fields (✓ `components/selection-and-input/text-fields.md`: secure fields, validation timing).
+- Ingested since: Managing notifications (✓). Onboarding (✓ ingested). Not yet ingested: **Sign in with Apple**, Settings (✓ ingested). Apple In-App Purchase (✓ `technologies/apple-in-app-purchase.md`). Remotes (✓ `inputs/remotes.md`). Text fields (✓ `components/selection-and-input/text-fields.md`: secure fields, validation timing).
 - Developer docs: listed in Specs & values. Videos: *What's new in passkeys* (WWDC25 279), *What's new in device management* (WWDC24 10143).
