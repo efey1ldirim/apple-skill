@@ -76,7 +76,7 @@ No catalog entries (no comparison images). The script reports **0 comparisons** 
 Field-note cross-links:
 - `field-notes/*`: **no identity-verification recipe**; nothing conflicts.
 - `hig/technologies/apple-pay.md` (✓): **Wallet payment neighbour (Apple's Related "Wallet page")**; `hig/foundations/privacy.md` (✓): **minimum data, purpose statements, retention**; `hig/patterns/entering-data.md` (✓): **ask only for what you need**; `hig/patterns/managing-accounts.md` (✓): **identity and sign-in**; `hig/foundations/writing.md` (✓): **button labels in Title Case, verb-led**; `hig/technologies/healthkit.md` (✓) and `carekit.md` (✓): **sensitive-data handling and consent**; `hig/technologies/app-clips.md` (✓): **on-the-go flows with minimal data**; `hig/foundations/accessibility.md` (✓): **non-digital alternatives**.
-- Not yet ingested (linked from this page): **Wallet** (Identity verification section; Technologies).
+- Ingested since: Wallet (✓ `technologies/wallet.md`, Identity verification section). Not yet ingested (linked from this page): none in the HIG.
 
 ## Checklist
 - [ ] **Requests use attribute proofs or thresholds** (e.g. **age over 21**) and **never more data than the check needs.**
@@ -88,6 +88,6 @@ Field-note cross-links:
 
 ## Related
 - Ingested: Apple Pay (✓), Privacy (✓), Entering data (✓), Managing accounts (✓), Writing (✓), HealthKit (✓), CareKit (✓), App Clips (✓), Accessibility (✓).
-- Not yet ingested (linked from this page): **Wallet** (Identity verification section; Technologies).
+- Ingested since: Wallet (✓ `technologies/wallet.md`, Identity verification section). Not yet ingested (linked from this page): none in the HIG.
 - Developer docs: ProximityReader "Adopting the Verifier API in your iPhone app". External: Apple Business Register, IDs in Wallet, Get started with ID Verifier.
 - Videos: What's new in Wallet and Apple Pay (WWDC23 10114).
