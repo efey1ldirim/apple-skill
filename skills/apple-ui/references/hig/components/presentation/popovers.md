@@ -53,7 +53,7 @@ The page has **no numbers, sizes or timings**. Concrete facts:
 | macOS | optionally detachable into a panel; minimal visual change on detach |
 | Not supported | tvOS, watchOS |
 | Developer docs | SwiftUI `popover(isPresented:attachmentAnchor:arrowEdge:content:)` · UIKit `UIPopoverPresentationController` · AppKit `NSPopover` |
-| Related HIG pages | Sheets (not yet ingested) · Action sheets ✓ · Alerts ✓ · Modality ✓ · Panels ✓ |
+| Related HIG pages | Sheets ✓ · Action sheets ✓ · Alerts ✓ · Modality ✓ · Panels ✓ |
 
 ## Visual notes (from screenshots)
 - **Hero:** a red-to-orange card with a **large pale-pink rounded rectangle** and a **small pointed arrow (caret) on its top edge**, a little left of centre; a **vertical double arrow** at its right (height) and a **horizontal double arrow** below (width): a **rounded card with an arrow tab**, no numbers **(from screenshot)**.
@@ -90,7 +90,7 @@ Field-note cross-links:
 - `hig/components/menus/menus.md`, `pop-up-buttons.md`, `pull-down-buttons.md`, `activity-views.md` (✓): menu-like popups and the **share popover** on wide screens.
 - `hig/components/layout/split-views.md` (✓) and `sidebars.md` (✓): permanent panes vs temporary popovers.
 - `hig/patterns/entering-data.md` (✓), `undo-and-redo.md` (✓): save-on-dismiss and recovery; `hig/foundations/materials.md` (✓ CRITICAL), `hig/components/menus/buttons.md` (✓ CRITICAL).
-- Not yet ingested: **Sheets**.
+- Ingested since: Sheets (✓ `sheets.md`).
 - No conflict with a field note.
 
 ## Checklist
@@ -107,5 +107,5 @@ Field-note cross-links:
 
 ## Related
 - Ingested: Panels (✓), Alerts (✓), Action sheets (✓), Modality (✓), Menus (✓), Pop-up buttons (✓), Pull-down buttons (✓), Activity views (✓), Split views (✓), Sidebars (✓), Entering data (✓), Undo and redo (✓), Materials (✓ CRITICAL), Buttons (✓ CRITICAL), Writing (✓).
-- Not yet ingested: **Sheets**.
+- Ingested since: Sheets (✓ `sheets.md`).
 - Developer docs: SwiftUI `popover(isPresented:attachmentAnchor:arrowEdge:content:)`; UIKit `UIPopoverPresentationController`; AppKit `NSPopover`.

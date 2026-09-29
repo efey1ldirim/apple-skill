@@ -118,5 +118,5 @@ Field-note cross-links:
 
 ## Related
 - Ingested: Launching (✓), Feedback (✓ CRITICAL), Offering help (✓), Privacy (✓), Managing accounts (✓), Managing notifications (✓), Loading (✓), Layout (✓ CRITICAL).
-- Not yet ingested: Sheets, Toggles. Also ingested: Modality (✓), Ratings and reviews (✓), Settings (✓).
+- Sheets (✓ `components/presentation/sheets.md`). Not yet ingested: Toggles. Also ingested: Modality (✓), Ratings and reviews (✓), Settings (✓).
 - Developer docs: TipKit. Videos: *Discoverable design* (WWDC21 10126), *Designing Award Winning Apps and Games* (WWDC19 802), *Love at First Launch* (WWDC17 816).
