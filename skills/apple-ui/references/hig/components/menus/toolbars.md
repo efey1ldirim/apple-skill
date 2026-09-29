@@ -110,7 +110,7 @@ A toolbar is **one or more sets of controls along the top or bottom edge of a vi
 | Change log | Dec 16, 2025 Liquid Glass · Jun 9, 2025 item grouping, symbols, navigation-bar guidance merged · Jun 21, 2023 visionOS · Jun 5, 2023 watchOS |
 | Developer docs | SwiftUI `Toolbars` · UIKit `UIToolbar` · AppKit `NSToolbar` |
 | Video | "Get to know the new design system" (WWDC25) |
-| Related HIG pages | Sidebars · Tab bars · Layout ✓ CRITICAL · Buttons ✓ CRITICAL · Search fields ✓ `hig/components/navigation/search-fields.md` (Sidebars and Tab bars not yet ingested) |
+| Related HIG pages | Sidebars · Tab bars · Layout ✓ CRITICAL · Buttons ✓ CRITICAL · Search fields ✓ `hig/components/navigation/search-fields.md` (Sidebars ✓ `hig/components/navigation/sidebars.md`; Tab bars not yet ingested) |
 
 ## Visual notes (from screenshots)
 - **Hero:** a red-to-pink card with a **light circular Back button** at the leading side, a wide **horizontal double arrow** between it and a **circular Compose** button, a **capsule holding Share and ⋯** at the trailing side, edge **margin brackets** at both ends and **vertical arrows above and below** the bar marking its height and its distance from the edge **(from screenshot)**.
@@ -173,6 +173,6 @@ Field-note cross-links:
 
 ## Related
 - Ingested: Buttons (✓ CRITICAL), Layout (✓ CRITICAL), Materials (✓ CRITICAL), Color (✓ CRITICAL), Menus (✓), Pull-down buttons (✓), Ornaments (✓), The menu bar (✓), Tab views (✓), Split views (✓), Going full screen (✓), Icons (✓), SF Symbols (✓).
-- Ingested since: **Search fields** (✓ `hig/components/navigation/search-fields.md`: trailing-side toolbar search, bottom vs top search). Not yet ingested: **Sidebars**, **Tab bars**, Windows, Immersive experiences.
+- Ingested since: **Search fields** (✓ `hig/components/navigation/search-fields.md`: trailing-side toolbar search, bottom vs top search). Sidebars (✓ `hig/components/navigation/sidebars.md`). Not yet ingested: **Tab bars**, Windows, Immersive experiences.
 - Developer docs: SwiftUI `Toolbars`, UIKit `UIToolbar`, AppKit `NSToolbar`, `ScrollEdgeEffectStyle`, `UIBarButtonItem.SystemItem.fixedSpace`, `prefersLargeTitles`.
 - Video: "Get to know the new design system" (WWDC25).
