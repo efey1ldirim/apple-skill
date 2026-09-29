@@ -97,4 +97,4 @@ apply to TV web apps, smart-TV/HTML5 apps, kiosks, digital signage and presentat
 
 ## Related (ingestion status)
 Remotes, Game controls, Siri, Playing video (TV app), SharePlay, Top Shelf (✓ `components/system-experiences/top-shelf.md`), Managing accounts
-(TV provider accounts), Focus and selection — not yet ingested. Ingested since: Lockups (✓ `components/layout/lockups.md`), Collections (✓), Lists and tables (✓), Image views (✓).
+(TV provider accounts) — not yet ingested; Focus and selection (✓ `inputs/focus-and-selection.md`). Ingested since: Lockups (✓ `components/layout/lockups.md`), Collections (✓), Lists and tables (✓), Image views (✓).

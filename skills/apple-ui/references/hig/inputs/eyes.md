@@ -100,7 +100,7 @@ Gaze is **not exposed to web pages** (consistent with the page's privacy note); 
 Field-note cross-links:
 - `hig/foundations/spatial-layout.md` (✓): **field of view, depth, 60 pt spacing** (this page uses the same 60 pt centre distance; that note's "Eyes not yet ingested" lines are now updated); `hig/foundations/immersive-experiences.md` (✓): Apple's Related page (comfort in immersive scenes); `hig/components/menus/ornaments.md` (✓) and `hig/components/navigation/tab-bars.md` (✓): the **tab-bar expansion** and gaze-hover behaviour; `hig/components/menus/buttons.md` (✓ CRITICAL) and **Buttons GATE**: visionOS hit regions and spacing; `hig/foundations/layout.md` (✓ CRITICAL) and **Layout gate**; `hig/foundations/accessibility.md` (✓): multiple ways to interact; `hig/inputs/apple-pencil-and-scribble.md` (✓): hover previews (**preview, never action**) share this logic; `hig/inputs/digital-crown.md` (✓): the other visionOS system input; `hig/patterns/feedback.md` (✓ CRITICAL): visible feedback for every input.
 - `field-notes/*`: no gaze/spatial-input recipe; **no conflict**.
-- Not yet ingested (linked from this page): **Gestures** (visionOS indirect gestures), **Focus and selection**.
+- Not yet ingested (linked from this page): **Gestures** (visionOS indirect gestures); Focus and selection now ✓ `focus-and-selection.md`.
 
 ## Checklist
 - [ ] Every interactive element has **hover, focus-visible and pressed states**; **actions happen only on click/tap/Enter**, never on hover.
@@ -116,6 +116,6 @@ Field-note cross-links:
 
 ## Related
 - Ingested: Immersive experiences (✓), Spatial layout (✓), Ornaments (✓), Tab bars (✓), Buttons (✓ CRITICAL), Layout (✓ CRITICAL), Accessibility (✓), Digital Crown (✓), Apple Pencil and Scribble (✓), Feedback (✓ CRITICAL).
-- Not yet ingested (linked from this page): **Gestures**, **Focus and selection**.
+- Not yet ingested (linked from this page): **Gestures** (Focus and selection now ✓ `focus-and-selection.md`).
 - Developer docs: "Adopting best practices for privacy and user preferences" (visionOS); RealityKit hover effects.
 - Videos: Design hover interactions for visionOS (WWDC25 303), Design for spatial input (WWDC23 10073), Design considerations for vision and motion (WWDC23 10078).
