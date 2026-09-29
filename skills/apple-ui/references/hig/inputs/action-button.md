@@ -39,7 +39,7 @@ The **Action button** is a **physical button on supported iPhone and Apple Watch
 | Secondary functions per app | **prefer one** |
 | iOS context | Live Activities and custom snippets instead of launching the app |
 | Platforms | iOS (supported iPhones), watchOS (supported Apple Watches); **not** iPadOS, macOS, tvOS, visionOS |
-| Apple's Related list | Workouts (✓), Digital Crown (not yet ingested), App Shortcuts (✓), Live Activities (✓) |
+| Apple's Related list | Workouts (✓), Digital Crown (✓), App Shortcuts (✓), Live Activities (✓) |
 | Change log | Sep 12 2023: iOS guidance added · Sep 14 2022: new page |
 | Videos / developer docs | none on this page |
 
@@ -72,7 +72,7 @@ The Action button is **hardware** with no web API. The transferable ideas: **a s
 Field-note cross-links:
 - `hig/components/system-experiences/app-shortcuts.md` (✓): the shortcuts that the Action button runs, with **phrases, ≤ 10 shortcuts, parameters**; this page adds **the hardware trigger, label rules and Watch multi-press behaviour**; that note's "not yet ingested: Action button" line is now updated. `live-activities.md` (✓) and `snippets.md` (✓): **context-preserving responses** (Set Timer example); `controls.md` (✓): Controls can also be bound to the Action button (hint text rules there); `hig/inputs/apple-pencil-and-scribble.md` (✓): squeeze/double tap follow the same rules; `hig/patterns/workouts.md` (✓): the workout controls and pause behaviour on Watch; `hig/foundations/writing.md` (✓): **capitalisation table** (a row for Action button labels added).
 - `field-notes/*`: no hardware-input recipe; **no conflict**. Nonplo's own sentence-case convention is set aside (see `writing.md`), so **Title Case labels follow Apple**.
-- Not yet ingested (linked from this page): **Digital Crown** (Inputs).
+- Ingested since: Digital Crown (✓ `inputs/digital-crown.md`).
 
 ## Checklist
 - [ ] Quick actions are **few, essential, high-frequency**; there is **no "Open app" action**.
@@ -85,4 +85,4 @@ Field-note cross-links:
 
 ## Related
 - Ingested: App Shortcuts (✓), Live Activities (✓), Snippets (✓), Controls (✓), Workouts (✓), Writing (✓), Playing haptics (✓), Offering help (✓), Accessibility (✓).
-- Not yet ingested (linked from this page): **Digital Crown**.
+- Not yet ingested (linked from this page): none.
