@@ -2,6 +2,7 @@
   "name": "apple-skill",
   "version": "0.1.0",
   "description": "Apple-quality UI/UX for web and native apps: Human Interface Guidelines distilled page by page, plus field-proven web patterns (tokens, components, anti-patterns).",
+  "license": "MIT",
   "author": {
     "name": "Efe Yıldırım"
   },

@@ -19,13 +19,13 @@ It combines two kinds of knowledge:
 ### As a plugin (recommended)
 In Claude Code:
 ```
-/plugin marketplace add <github-user>/apple-skill
+/plugin marketplace add efey1ldirim/apple-skill
 /plugin install apple-skill@apple-skill
 ```
 
 ### As a plain skill
 ```bash
-git clone https://github.com/<github-user>/apple-skill.git
+git clone https://github.com/efey1ldirim/apple-skill.git
 cp -R apple-skill/skills/apple-ui ~/.claude/skills/apple-ui
 ```
 
@@ -69,3 +69,6 @@ MAINTAINING.md             how pages are ingested (template, copyright rule)
 HIG notes are written in our own words; Apple's text and images are not redistributed.
 Apple, the Apple logo and Human Interface Guidelines are trademarks of Apple Inc. This project
 is not affiliated with or endorsed by Apple.
+
+## License
+MIT — see [LICENSE](LICENSE).
