@@ -4,6 +4,10 @@ Measured on Apple's live sites (computed CSS at 1440px, plus user screenshots), 
 These are Apple's *web* implementations — the most direct reference for building Apple-quality
 websites. Add to this file whenever a new site pattern is observed.
 
+**Product pages** (apple.com/macbook-pro, iPhone, AirPods: hero, "Get the highlights." gallery,
+"Everything to see here." explorer, battery photo section, plans, dark footer, device stages) are
+in `product-pages.md`.
+
 ---
 
 ## 1. Global navigation mega-menu ("flyout") — Platforms menu

@@ -127,7 +127,7 @@ work from memory of this summary.**
 |---|---|---|
 | Apple HIG, distilled | `references/hig/` | One file per developer.apple.com/design page: every rule, value, do/don't, platform difference. Start at `references/INDEX.md`. |
 | Field notes | `references/field-notes/` | Patterns validated on a production web app, with exact Tailwind/CSS values, components, rejected ideas and engineering traps. |
-| Apple's web patterns | `references/apple-web/` | Apple's own websites measured live (mega-menu, nav, cards, docs layout) — the closest reference for web work. |
+| Apple's web patterns | `references/apple-web/` | Apple's own websites measured live (mega-menu, nav, cards, docs layout) — the closest reference for web work. **`product-pages.md`**: apple.com product-page architecture and every section measured from Apple's CSS (hero, "Get the highlights." gallery, "Everything to see here." explorer, battery photo section, plans, footer, device stages, motion curves) — read it for any landing, hero or feature-card work. |
 | Apple's visual do/don't | `references/visual-examples/` | Apple's ✗/✓ example images (fetched locally by a script) with a catalog of which rule each pair illustrates — for visual self-checks. |
 | Symbol effects kit | `references/symbol-effects.md`, `tokens/apple-symbol-effects.*` | SF Symbols animation presets measured frame-by-frame from Apple's videos, rebuilt for any icon set (CSS + JS), with a how-to per effect. |
 | Liquid Glass | `references/liquid-glass/` (`overview.md`, `adopting.md`, `controls-motion.md`), `tokens/apple-glass-controls.*` | Apple's Liquid Glass pages distilled, plus the slider thumb and segmented control measured frame-by-frame from Apple's videos and rebuilt (lens, refraction, press/release motion) as a web kit — the base for other glass controls. |
@@ -139,6 +139,8 @@ work from memory of this summary.**
 2. **Route.** Open `references/INDEX.md` and read every file the routing table lists for this
    task type. Always read `field-notes/principles.md` and `field-notes/anti-patterns.md`.
    For web work also read `field-notes/tokens.md` and `field-notes/components.md`.
+   For a landing, product or marketing page (hero, highlights cards, closing photo, pricing
+   section) also read `apple-web/product-pages.md` and `field-notes/landing-and-motion.md`.
 3. **Check the host project first.** If it already has an Apple-style surface module (shared
    group/row/button primitives), import from it — never re-invent a second grammar on the
    same page. Match its tokens exactly.
@@ -222,3 +224,12 @@ never decoration). Use them to resolve trade-offs; details and web translations 
 - [ ] Touch targets ≥ 44px; focus is visible for keyboard users.
 - [ ] Privacy per `hig/foundations/privacy.md`: permissions asked only from the feature's own trigger with a one-sentence active reason; any pre-permission screen has one "Continue" button (no Allow wording, no Cancel/×); no consent incentives, cookie walls or fake prompts; no secrets in web storage.
 - [ ] Rendered and looked at in both themes — screenshot, not assumption.
+
+**Landing / product pages** (`references/apple-web/product-pages.md`, `field-notes/landing-and-motion.md`):
+- [ ] Hero concept proposed in words first (3–5 ideas) and picked by the owner; hero = one object + one message + one action, nothing else.
+- [ ] Sections follow the product-page order, each answering one question; text column 980 px, galleries/stages 1260 px; breakpoints 1068 / 734.
+- [ ] Highlights gallery uses the measured values and the one-number motion model (`pos`); inactive cards on their first frame, outgoing card frozen while sliding, reduced motion = final frames, no autoplay.
+- [ ] Every card shows a concrete output of a feature that all customers have today; every figure and trust claim verified in code or policy.
+- [ ] Real-life photo tells the headline literally, real people (no AI humans), licence recorded, no identifiable faces from free stock in ads; headline and stat card stay readable via the measured gradients.
+- [ ] Devices drawn from published mm specs with current hardware details; on-screen UI 1:1 with the real UI; no Apple device images.
+- [ ] Animations hold 60 fps on real hardware (transform/opacity only); no cookie banner or chat bubble covering a showcase or the primary action.
