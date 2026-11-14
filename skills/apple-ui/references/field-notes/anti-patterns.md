@@ -30,6 +30,17 @@ without a new reason.
 | Full-page scrolling wizard with the CTA falling off-screen | Primary action disappears | Fixed header/footer, only the middle scrolls |
 | Sticky footer with a hard top border | Looks like a second screen | Blur + gradient fade from content |
 | Hard-coded `hour12:false` in time formatting (Node 20) | Midnight renders as "24" | `hourCycle: "h23"` |
+| Concept hero: a thermal receipt printing and tearing off | "No need to be this creative" | One impressive object + one message |
+| Hero: product screen on a reflective desk, or the composer as a thick ray-traced glass object | Interface-in-a-frame is what every SaaS page does; glass heroes rejected | The product's own brand object, born on black |
+| Apple-Intelligence styling (orb, spectrum edge, colourful cards) on product UI | Liked as a mock-up, disliked live | Ask for a reference screenshot before a big visual change |
+| Showing a plan-gated feature (e.g. voice mode) as if everyone has it | Promises what the customer can't use | Show the feature everyone has (dictation) |
+| Lock-screen notification for something the product delivers in-app | Depicts a channel that doesn't exist | Draw where the result really lands |
+| Unverifiable figures or claims in a trust section ("~70 tools", "never used for training") | One overstated line cheapens the whole page | Only numbers/claims checked in code or policy |
+| AI-generated people in a real-life photo section | The exact "smells like AI" feeling | Real customer shoot, or locale-matching free stock with no identifiable face |
+| Busy-shop photo under an "after closing" headline | Photo tells a different story | The photo states the headline literally |
+| "We are X's official partner" as the card headline | Reads as boasting | User action as headline, partner status as a small badge |
+| Highlights cards resetting to frame 0 while sliding out | Animation jumps mid-slide | Freeze the outgoing card where it is; reset off-screen |
+| Card slides / device motion at ~30 fps | "Not smooth" | transform/opacity only, DOM writes per frame, measure on real hardware |
 
 General smell test — if you see any of these, stop and fix:
 gradients on buttons (except a deliberate brand CTA), coloured page backgrounds in app chrome,
